@@ -1,0 +1,31 @@
+
+header{
+	padding-bottom:40px;
+	display: flex; 	
+	/* Распределяем элементы внутри шапки */
+	justify-content: space-between;
+	/* Выравниваем элементы вертикально по центру. */
+	align-items: center;
+	color:white;
+
+}
+
+.header-social{
+
+	word-spacing: 5px;
+
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+}
+
+.avatar{
+	width:36px;
+	height:36px;
+}
+.header-left {width:100%;font-size:1.1em; word-spacing:5px; padding-bottom:20px; text-align:center}
+  .social {text-align:center;padding-top:10px}
+  .header-right {width:100%;font-size:1.1em; word-spacing:5px; padding-bottom:10px; padding-top:20px; text-align:center}
+  .logo {width:145px}
