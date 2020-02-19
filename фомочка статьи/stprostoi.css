@@ -32,14 +32,14 @@ justify-content: space-between;
 
 .fix_width                                                         /*  ЦВЕТ !!!!!!!!!!! */
 {
-	/* max-width: 1024px; */
+	max-width: 1420px;
 	/* max-width: 64em; */
 	/* width: 100vw; */
 	
 	  /* text-align: center; */
 		/* max-width: 1600px; */
-line-height: 120%;
-max-width: 80%;
+line-height: 155%;
+/* max-width: 80%; */
 margin: 0 auto;
 font-family: 'Montserrat', 'Arial', sans-serif;
 
@@ -165,14 +165,20 @@ font-size: 150%;
 }
 
 .software_price{
-text-align: left;
+/* text-align: left; */
 font-size: 25px;
 font-weight: bold;
 padding-bottom: 0.25em;
 white-space: nowrap;
-    margin-right: 57%;
+    /* margin-right: 57%; */
+padding-top: 0.6em;
+float: right;
 }
 
+
+.software_container_img_text {
+	width: 100%;
+}
 
 .software_type_description {
 text-align: left;
@@ -203,27 +209,65 @@ font-size: 14px;
 .software_container_button {
 	height: 3em;
 	margin-top: 1.4em;
+	font-size: 70%;
 }
 
 
-.software_button-like_style {
-  width: 10%;
-  cursor: pointer;
-	}
+.software_container_image_button {
+  width: 35%;
+      padding-right: 1em;
+}
+
+
+.software_div_images {
+/* height: 60%; */
+
+    /* padding-right: 1em; */
+/* padding-left: 10px; */
+}
+
+/* .software_button-like_style { */
+  /* width: 10%; */
+  /* cursor: pointer; */
+	/* } */
 
 	
-	.software_button-like_style:onclick {
-  width: 10%;
+	/* .software_button-like_style:onclick { */
+  /* width: 10%; */
+  /* cursor: pointer; */
+  /* fill: red; */
+	/* } */
+	
+	
+	
+	
+	
+	
+	.software_button-like_style {
+  width: 32px;
   cursor: pointer;
-  fill: red;
-	}
+  background-repeat: no-repeat;
+  border:none;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfkAhMOEB1aNwunAAAB/klEQVRIx6XUz0uUURTG8c+MCi6sFqKk0cIIJQoiIVq1iiiMinJXtLIiatG/4CKpRRAmbfpBLTVXEdS2giiEooRCF+PCLIMciZLMwfG0UAebZpwfPe/mved5v+fee+57Lv+pRN54i1YJE2YKfNukTfjsS+FUja6ZECvPexfU5rw6F43mvAlXNebj3WaFrBEPDfsohDfaQJu3Qvhg2LARWWHWybX4WVmL+rXkIp2eC9PatZsWntmT81rctCirZzWwz4J5R/PWVOOBMGZMuK8mzz1m3oK9y2V8I5wrUJWkx0J4JFnAPS+MwEHhdZEzajZuTHMRd0Q4wC3h9DrHnCjqnREGGBVF51hfm4V3CWm1NlWVgB8ySQ3mqsSZ08CUTMEql1ZSxmRSSp2dVSXYpU4q6QlOVJXgBJ7SJuObDRXjG83ILHfLHeF6xQluCLeXX1vNyDpUEX7Ykhmtq8Mjlny3u2x8p7RwfG2oT5ha6f9S2mZKuPJ3MOGuMKm9JN7hk3D73x6pcU+YXnNxFFKnr8Ldwr9ewoDwU1dRvMtPoX+dDnVZ1qJLBb0eGUt6S+2x2y+hP2+RCb3Cb6fKqfJ+aWFQfS5Sb1BI218OvlzplPBSE2jyUkjpKBeHRi+ElB22GxdeVX5r1RsS0maFoTXbqUAJfbKy+tY7tlLaamv1cFn6A07AqQPwiU3qAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTAyLTE5VDE0OjE2OjI5KzAwOjAwZG7DVwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0wMi0xOVQxNDoxNjoyOSswMDowMBUze+sAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC');
+  }
+
+  
+  .software_button-like_style:hover {
+    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAjcAAAI3AGf6F88AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAPlQTFRF/////wAA/1VVv0BAzGYz32BA41VVzGZN0V1G3VVE1VVH21VJ01lO1lxH2FhO21tJ21dJ2ldL1lxN11pL11lM2FlK1lpI2FxL2FpK11pL2FlK1ltJ1lpL11lK1llK11pL11lK1llL1lpK11tJ2FpL1lpK1ltJ11pL2FpJ11lL11pK11pK1lpK1lpL1llL11pK11pK11tK2FpL11pK2FpL11pK11pK2FlK1lpL11tK1lpK11pK11lK11pK11pL11pK11pK11pL2FpK11lK11pJ11pK11pK11pK11pK11pK11pL11pK11pK11pK11pK11pK11pK11pK11pKufAZywAAAFJ0Uk5TAAEDBAUICQoLDxIVFxkaHCMpMjM5SEpOT1JWV1hZZGZnanGBgoOEhYiMjY6Qlp2frLS1uby+wMLDxcnK0NHU1djb4uTl5unt8fLz9fb4+/z9/vuD+GoAAADtSURBVBgZlcELW8FgGAbgx6GUjZpEpCTpiHRwSFGig1bS8/9/TLNr48P2XnXf+Bs9fVI724/CoeUvasdpHa5gccyJ99IKLOvnJifGxSBs8SZdtxFAf6CrGYcl0OLMDSJPnGkFABSo2i1RVQC0IVUvX1QNNeQoyqFCUQVdiroYUDRAh6IO6hTVUaaoDIMiA2hQ0ACQpSALINymr3YYllifPvox2BImPZkJODIjehhlMJUyueRjG4rkGxe8bmGO8cw5vU0s2Hik4l7Dkugdp67X4GH1io5qCJ5Cl7Qdwdcpye8DCA5/Pncg2kvin34Be7PLuUSO45UAAAAASUVORK5CYII=');
+  
+  }
+	
+	
+	
+	
+	
 	
 	
 .software_button-pay_style {                                                         /*  ЦВЕТ !!!!!!!!!!! */
   text-decoration: none;
   outline: none;
   display: inline-block;
-  padding: 10px 10px;
+  padding: 5px 5px;
   position: relative;
   color: white;
   border: 1px solid rgba(255,255,255,.4);
@@ -231,7 +275,7 @@ font-size: 14px;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   cursor: pointer;
   /*display:inline-block;*/
   width:80%;
