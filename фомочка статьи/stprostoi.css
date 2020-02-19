@@ -1,0 +1,390 @@
+
+
+/* Общие классы */
+
+
+
+.visibility_hidden { visibility: hidden;  }
+	
+	
+.flex_row{
+	display: flex; 	
+	  flex-direction: row;
+}
+
+.flex_column{
+	display: flex; 	
+	  flex-direction: column;
+}
+
+.flex_flex-start {
+		/* display: flex; 	 */
+	  /* flex-direction: row; */
+justify-content: flex-start;
+}
+
+
+.flex_justify-content_space-between {
+		/* display: flex; 	 */
+	  /* flex-direction: row; */
+justify-content: space-between;
+}
+
+.fix_width                                                         /*  ЦВЕТ !!!!!!!!!!! */
+{
+	/* max-width: 1024px; */
+	/* max-width: 64em; */
+	/* width: 100vw; */
+	
+	  /* text-align: center; */
+		/* max-width: 1600px; */
+line-height: 120%;
+max-width: 80%;
+margin: 0 auto;
+font-family: 'Montserrat', 'Arial', sans-serif;
+
+
+
+/* background: brown; */
+/* color: blue; */
+
+}
+
+
+
+
+
+.bg-head {
+/* background: radial-gradient(#F2B9B3 0.2px, transparent 0.9px); */
+/* background-size: 20px 20px; */
+
+/* background-image:  */
+/* linear-gradient(-45deg, transparent 2px, #F2B9B3 1px, transparent 3px),  */
+/* linear-gradient(45deg, transparent 2px, #F2B9B3 1px, transparent 3px); */
+/* background-size: 6px 6px; */
+
+
+
+
+    /* background-image: */
+	/* linear-gradient(-450deg, transparent 1px, #f2f3f5 1px, transparent 3px),  */
+	/* linear-gradient(450deg, transparent 1px, #f2f3f5 1px, transparent 3px); */
+}
+
+
+.flex_item_img_text
+{
+	width:100%;
+	flex: 0 1 auto;
+}
+
+.column-2
+{
+		width: calc(50% - 0.5em);
+		  justify-content: space-between;
+}
+
+
+.column-2:nth-child(n+3){
+	padding-top: 1em;
+}
+
+.blue_bg {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+ background-color: #F0F8FF;	
+}
+
+.images_width {
+width: 100%;
+}
+
+/* .box:hover { */
+/* border: 5px solid #1E90FF; */
+/* width: 51%; */
+/* height: 34%; */
+/* } */
+
+.link_style {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+text-decoration: none;
+color: #2F4F4F;
+
+}
+
+a {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+text-decoration: none;
+color: #2F4F4F;
+}
+
+a:hover {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+    color: red; /* Цвет ссылки */
+}
+
+.link_style_border {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+text-decoration: none;
+color: #2F4F4F;
+}
+
+
+
+.link_style:hover {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+    color: red; /* Цвет ссылки */
+	
+} 
+
+.link_style_border:hover {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+	border-bottom:solid 0.1em red;
+    /* text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: red; /* Цвет ссылки */
+} 
+
+
+.link_read-more {                                                           /*  ЦВЕТ !!!!!!!!!!! */
+	text-decoration: none;	
+	overflow: hidden;	
+	
+	/* padding-right: 30px; */
+	font-size: 12px;
+    /* color: #F5E2CD; */
+	color: blue;
+	
+}
+
+
+/* Классы для ПО */
+
+.software_alone_container {
+	flex-flow: row wrap;  
+  max-height: 500px;
+  padding: 0.7em;
+}
+
+
+.software_name {
+text-align: left;
+font-size: 150%;
+    line-height: 120%;
+}
+
+.software_price{
+text-align: left;
+font-size: 25px;
+font-weight: bold;
+padding-bottom: 0.25em;
+white-space: nowrap;
+    margin-right: 57%;
+}
+
+
+.software_type_description {
+text-align: left;
+font-size: 14px;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+}
+
+.software_description {
+text-align: left;
+font-size: 14px;
+
+}
+
+.software_description_marker::before {
+	/* list-style-image:url(icons/marker_list.png); */
+	content: "\273D";
+	display: inline-block; /* Расстояние между точкой и текстом */
+    width: 1.4em; /* Задать значение расстояния */
+}
+
+.software_description_list {
+	margin-block-start: 0em;
+	padding-inline-start: 0em;
+	    line-height: 160%;
+}
+
+.software_container_button {
+	height: 3em;
+	margin-top: 1.4em;
+}
+
+
+.software_button-like_style {
+  width: 10%;
+  cursor: pointer;
+	}
+
+	
+	.software_button-like_style:onclick {
+  width: 10%;
+  cursor: pointer;
+  fill: red;
+	}
+	
+	
+.software_button-pay_style {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255,255,255,.4);
+  background: #9370DB;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  /*display:inline-block;*/
+  width:80%;
+}
+.software_button-pay_style:before,
+.software_button-pay_style:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.software_button-pay_style:before {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.software_button-pay_style:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+.software_button-pay_style:hover:before,
+.software_button-pay_style:hover:after{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.software_button-pay_style:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+.software_button-pay_style:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+/* .software_button-pay_style:hover {background: rgba(255,255,255,.2);} */
+
+
+
+
+.software_tag {
+font-size: 70%;
+	word-spacing: 1em;
+	    padding-top: 1.5em;
+}
+
+
+
+/* Классы для статей */
+
+.article_title {
+/* text-align: right; */
+font-size: 20px;
+padding-top: 0.7em;
+/* color: #be290e; */
+}
+
+.article_start-of-article {
+/* text-align: right; */
+font-size: 14px;
+  /* text-align: bottom; */
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+  overflow: hidden;
+  height: 3em;	
+
+/* color: #be290e; */
+}
+
+.article_div_images {
+/* height: 60%; */
+width: 35%;
+    padding-right: 1em;
+/* padding-left: 10px; */
+}
+
+
+
+.article_div_text {
+	width: 65%;
+
+}
+
+
+.article_container
+{
+    flex-wrap: wrap;	
+	justify-content: space-between;
+}
+
+.article_alone_container
+{
+  flex-flow: row wrap;  
+  max-height: 200px;
+  padding: 0.7em;
+}
+
+
+
+.article_container_img_text
+{
+
+  width: 100%;
+  /* height: 300px; */
+}
+
+/* .container-article:hover { */
+/* border: 5px solid #1E90FF; */
+/* width: 51%; */
+/* height: 34%; */
+/* } */
+
+
+
+.article_box_author_date
+{
+
+  justify-content: space-between;
+  /* padding: 0.45em; */
+
+  /* background: red; */
+  /* color: white; */
+  font-size: 12px;
+  /* text-align: center; */
+    /* word-break: break-all; */
+  /* line-height: 200px; */
+      /* margin: 10px; */
+  /* width: 200px; */
+  /* height: 200px; */
+
+    /* background-color: #F0F8FF; */
+	  /* background-color: yellow; */
+}
+
+
+/* Color Theme Swatches in Hex */
+.dark_blue { color: #207D90; }
+.dark_blue-bg { background-color: #207D90; }
+.light_blue { color: #7EB9BF; }
+.light_blue_bg { background-color: #7EB9BF; }
+.light_blue_bg1 { background-color: #DAF3F5; }
+.red{ color: #D9756C; }
+.red-bg{ background-color: #D9756C; }
+.rose { color: #F2B9B3; }
+.rose-bg { background-color: #F2B9B3; }
+.스크린샷-2020-02-07-오후-5-5-hex { color: #F2F2F2; }
+
+
+.article_read-more_text-align {  
+/* padding-right: 0.45em; */ 
+text-align:right;
+height: 1.5em;
+}
+
+
