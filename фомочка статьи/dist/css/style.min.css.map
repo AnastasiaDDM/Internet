@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,GAAG,AAAA,CAAC,KAAK,CAAC,GAAG,CAAE,ADEf,AAAA,KAAK,AAAC,CAEF,KAAK,CADG,GAAG,CAEZ,AAED,AAAA,QAAQ,AAAC,CACP,KAAK,CALG,GAAG,CAMZ",
+    "sources": [
+        "../../scss/style.scss",
+        "../../scss/header.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}

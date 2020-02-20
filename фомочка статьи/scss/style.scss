@@ -1,0 +1,10 @@
+@import "header.scss";
+
+#main {
+    $width: 3em !global;
+    width: $width;
+  }
+  
+  #sidebar {
+    width: $width;
+  }
