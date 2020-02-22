@@ -1,0 +1,89 @@
+.article_alone_container
+{
+  @include alone_card;  
+  max-height: 200px;
+}
+
+.article {
+  &_title {
+    font-size: 120%;
+    padding-top: 0.7em;
+  }
+  &_start-of-article {
+    /* text-align: right; */
+    // font-size: 100%;
+      /* text-align: bottom; */
+    padding: 1em 0em;
+    text-align: left;
+    overflow: hidden;
+    height: 3em;	
+  }
+  &_box_author_date
+  {
+    justify-content: space-between;
+    font-size: 85%;
+  }
+  &_read-more_text-align {  
+    text-align:right;
+    height: 1.5em;
+  }
+}
+
+
+
+.article_div {
+  &_images {
+    width: 35%;
+    padding-right: 1em;
+  }
+  &_text {
+    width: 65%;
+  }
+}
+
+
+
+.article_container
+{
+  flex-wrap: wrap;	
+	justify-content: space-between;
+}
+
+
+
+
+
+// .article_container_img_text
+// {
+
+//   width: 100%;
+//   /* height: 300px; */
+// }
+
+/* .container-article:hover { */
+/* border: 5px solid #1E90FF; */
+/* width: 51%; */
+/* height: 34%; */
+/* } */
+
+
+
+
+/* Color Theme Swatches in Hex */
+// .dark_blue { color: #207D90; }
+// .dark_blue-bg { background-color: #207D90; }
+// .light_blue { color: #7EB9BF; }
+// .light_blue_bg { background-color: #7EB9BF; }
+// .light_blue_bg1 { background-color: #DAF3F5; }
+// .red{ color: #D9756C; }
+// .red-bg{ background-color: #D9756C; }
+// .rose { color: #F2B9B3; }
+// .rose-bg { background-color: #F2B9B3; }
+// .스크린샷-2020-02-07-오후-5-5-hex { color: #F2F2F2; }
+
+
+// .article_read-more_text-align {  
+// /* padding-right: 0.45em; */ 
+// text-align:right;
+// height: 1.5em;
+// }

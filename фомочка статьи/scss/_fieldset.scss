@@ -1,0 +1,65 @@
+.fieldset {
+    &_article {
+        border-color: $red;
+        width: 100%;
+        // height: 100%;
+        margin-right: auto;
+        // margin: auto;
+        padding: 1em 2em;
+        max-height: 11em;
+        line-height: 250%;
+        font-size: $size_120;
+        &_input_width {width: 80%;}
+    }
+    &_tags {
+        border-color: $red;
+
+        // width: 100%;
+        // height: 100%;
+        // margin-right: auto;
+        // margin: auto;
+        padding: 1em 2em;
+        // max-height: 11em;
+        line-height: 250%;
+        font-size: $size_120;
+        
+        &_word {
+            word-spacing: 1em;
+        }
+    }
+
+}
+.input_big {width: 100%; height: 1.5em;}
+.input_middle {width: 75%; height: 1.5em;}
+
+.padding_date {
+padding: 0em 1em;
+}
+
+.fieldset_size {
+    &_article {
+        width: 80%;
+        padding-top: 1em;
+        padding-bottom: 5em;
+        // max-height: 10em; 
+    }
+
+}
+
+.fieldset {
+    &_title{
+        font-size: $size_150;
+    }
+    &_roll-up {
+        font-size: 70%;
+        cursor: pointer;
+        &:hover
+        {
+            // href="#top"
+            // @import "visibility_hidden";
+            visibility: hidden;
+        }
+
+    }
+    
+}

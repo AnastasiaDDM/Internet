@@ -1,0 +1,218 @@
+.icon {   
+    height: 2.3em;
+}
+
+.logo {width:100%;}
+  
+.text-align {
+text-align:center;
+}
+
+
+.visibility_hidden { visibility: hidden;  }
+	
+	
+.flex_row{
+	display: flex; 	
+	  flex-direction: row;
+}
+
+.flex_column{
+	display: flex; 	
+	  flex-direction: column;
+}
+
+.flex_flex-start {
+justify-content: flex-start;
+}
+
+.flex_flex-end {
+	justify-content: flex-end;
+	}
+	
+
+.flex_space-between {
+justify-content: space-between;
+}
+
+.fix_width                                                         /*  ЦВЕТ !!!!!!!!!!! */
+{
+	max-width: 1420px;
+	/* max-width: 64em; */
+	/* width: 100vw; */
+	
+	  /* text-align: center; */
+		/* max-width: 1600px; */
+line-height: 155%;
+// letter-spacing: .05em; 
+/* max-width: 80%; */
+margin: 0 auto;
+font-family: $font1, $font2, sans-serif;
+
+
+
+/* background: brown; */
+/* color: blue; */
+
+}
+
+
+
+
+
+.bg-head {
+/* background: radial-gradient(#F2B9B3 0.2px, transparent 0.9px); */
+/* background-size: 20px 20px; */
+
+/* background-image:  */
+/* linear-gradient(-45deg, transparent 2px, #F2B9B3 1px, transparent 3px),  */
+/* linear-gradient(45deg, transparent 2px, #F2B9B3 1px, transparent 3px); */
+/* background-size: 6px 6px; */
+
+
+
+
+    /* background-image: */
+	/* linear-gradient(-450deg, transparent 1px, #f2f3f5 1px, transparent 3px),  */
+	/* linear-gradient(450deg, transparent 1px, #f2f3f5 1px, transparent 3px); */
+}
+
+
+.flex_item_img_text
+{
+	width:100%;
+	flex: 0 1 auto;
+}
+
+.column-2
+{
+		width: calc(50% - 0.5em);
+		  justify-content: space-between;
+}
+
+
+.column-2:nth-child(n+3){
+	padding-top: 1em;
+}
+
+.blue_bg {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+//  background-color: #F0F8FF;	
+background-color: $light_blue_2;
+}
+
+// .blue_bg {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+// 	//  background-color: #F0F8FF;	
+// 	background-color: $bright;
+// 	}
+
+.img_width {
+width: 100%;
+}
+
+/* .box:hover { */
+/* border: 5px solid #1E90FF; */
+/* width: 51%; */
+/* height: 34%; */
+/* } */
+
+
+a {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+text-decoration: none;
+color: $gray;
+	&:hover
+	{                                                         /*  ЦВЕТ !!!!!!!!!!! */
+		color: $red; /* Цвет ссылки */
+	}
+}
+
+
+// .link_style_border {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+// text-decoration: none;
+// color: $gray;
+// }
+
+ 
+
+.link_style_border:hover {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+	border-bottom:solid 0.1em $red;
+    /* text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: $red; /* Цвет ссылки */
+} 
+
+
+.link_read-more {                                                           /*  ЦВЕТ !!!!!!!!!!! */
+	text-decoration: none;	
+	overflow: hidden;	
+	
+	/* padding-right: 30px; */
+	font-size: 12px;
+    /* color: #F5E2CD; */
+	color: blue;
+	
+}
+
+.padding_left_2em {padding-left: 2em;}
+.padding_left_1em {padding-left: 1em;}
+.width_50 {width: 40%;}
+.width_100 {width: 100%;}
+
+.pos_right {
+margin-left: auto;
+// text-align: right;
+
+}
+
+.pos_left {
+	margin-right: auto;
+	// text-align: end;
+	flex-direction: row-reverse;
+	}
+
+.pos_center {
+	margin: auto;
+	text-align: center;
+}
+
+.width_100 {
+	width: 100%;
+	}
+
+
+.margin_top-bootom_1em { margin: 1em 0em;}
+
+
+.pagination {
+	width: 40%;
+	margin: auto;
+	padding: 3em 0em;
+	height: 3em;
+	&_page_numbers {
+		// border-bottom:solid 0.1em $red;
+		// border-top:solid 0.1em $red;
+		// border-right:solid 0.1em $red;
+		// background: $light_blue_2;
+		// color: #303030;
+		// height: 2.5em;
+		width: 100%;
+		line-height: 40px;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 150%;
+		// margin: auto;
+		// margin-left: 5px;
+		// justify-content: center;
+		&:hover {
+			border-bottom:solid 0.1em $red;
+		}
+		&_active {
+			background: $rose;
+		}
+
+	}
+}
+
+.contact {
+	font-size: 150%;
+	line-height: 200%;
+	font-weight: bold;
+}

@@ -1,0 +1,28 @@
+.reviews {
+width: 33.3333%;
+padding: 1.2em 3em;
+// text-align: center;
+// border:solid 0.1em $red;
+    &:nth-child(n+2) {
+    border-left:solid 0.3em $red;
+    }
+
+    &_adm {
+    width: 80%;
+    border-top:solid 0.1em $red;
+    border-left:solid 0.3em $red;
+    padding: .5em;
+    }
+    &_all {
+    border-top:solid 0.1em $red; 
+    border-bottom:solid 0.1em $red;
+    padding: .5em;
+    }
+    &_button_margin {
+        margin-left: 5em;
+    }
+    &_stars {
+        margin: 2em 0em;
+        // width: 60%;
+    }
+}

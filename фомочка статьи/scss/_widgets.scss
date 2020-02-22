@@ -1,0 +1,25 @@
+.widget {
+    width: 20em;
+    // height: 30em;
+    padding: 1.5em;
+    cursor: pointer;
+    border:solid 0.1em $red;
+}
+.widget_div {
+    &_img {
+        width: 100%;
+    }
+    &_title {
+        padding-left: .5em;
+        text-align: left;
+        margin: auto;
+        font-size: 120%;  
+        flex-grow: 2;
+    }
+    &_date {
+        text-align: center;
+        font-size: 120%;  
+        margin: auto;
+    }
+
+}

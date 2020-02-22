@@ -1,0 +1,51 @@
+.button_search {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(212,75,56); /* фон кнопки */
+    padding: .7em 2em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    &:hover { 
+        color: #fff; /* цвет текста */
+        background: rgb(232,95,76); 
+    } /* при наведении курсора мышки */
+    &:active { 
+        color: #fff; /* цвет текста */
+        background: rgb(152,15,0); 
+    } /* при нажатии */
+}
+
+
+.button_reset {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(212,75,56); /* фон кнопки */
+    padding: .3em .5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    &:hover { 
+        color: #fff; /* цвет текста */
+        background: rgb(232,95,76); 
+    } /* при наведении курсора мышки */
+    &:active { 
+        color: #fff; /* цвет текста */
+        background: rgb(152,15,0); 
+    } /* при нажатии */
+}
+
+.button_show-more {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(212,75,56); /* фон кнопки */
+    padding: .7em 6em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    &:hover { 
+        color: #fff; /* цвет текста */
+        background: rgb(232,95,76); 
+    } /* при наведении курсора мышки */
+    &:active { 
+        color: #fff; /* цвет текста */
+        background: rgb(152,15,0); 
+    } /* при нажатии */   
+}

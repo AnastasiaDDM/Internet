@@ -1,1 +1,97 @@
-div{width:1em}
+
+.header-top {
+	width:100%;
+	word-spacing:5px; 
+	padding-bottom:20px; 
+	text-align:center;
+
+	&_container{                                                         /*  ЦВЕТ !!!!!!!!!!! */
+		height: 5em;
+		/* padding-bottom:40px; */
+		display: flex; 	
+		  flex-direction: row;
+		  width: 100%;
+		/* Распределяем элементы внутри шапки */
+		/* justify-content: space-between; */
+		 /* flex-wrap: wrap; */
+		/* Выравниваем элементы вертикально по центру. */
+		/* align-items: center; */
+		
+		
+	/* background: blue; */
+	}
+
+	&_border{                                                         /*  ЦВЕТ !!!!!!!!!!! */
+		border-bottom:solid 0.1em $red;
+		width: 100%;
+	}
+
+}
+
+
+
+.header_container {
+	&_height{
+		height: 15em;
+	}
+	&_social {
+	justify-content: space-around;
+	width: 25%;
+	    height: 60%;
+		 /* margin-top: 1em; */
+		 align-items: center;
+		 align-self: center;
+	}
+	&_mail_phone {
+		align-items: center;
+	align-self: center;
+	}
+}
+
+
+.header_social_mail {  margin: auto; }
+.header_social_phone {  margin: auto; }
+
+
+.header-bottom {width:100%; word-spacing:5px; padding-bottom:10px; }
+  
+  
+.header-margin_left-top{
+
+	margin-left: 5em;
+	margin-top: 1em;
+	/* width: 9%; */
+	height: 3em;
+		/* word-spacing: 5px; */
+
+}
+
+  
+.header-logo {
+	width: 6em;
+	&_name {
+		margin-top: 1em;
+		font-size: 2em;
+	}
+}
+ 
+
+.header_navbar {
+	ul {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+		display: table-row;
+	}
+	li {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+		display: table-cell;
+		background: white;
+	}
+	ul li:hover, .menu a:hover {                                 /*  ЦВЕТ !!!!!!!!!!! */
+		/* background: gray; */ 
+		   border-bottom:solid 0.1em $red;
+	   }
+	li a {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+		display: block;
+		padding: 0.8em 2.5em;
+		color: black;
+		text-align: center;
+	}
+}

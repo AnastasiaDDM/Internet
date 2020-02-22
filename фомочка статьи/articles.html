@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Название страницы
+    </title>
+    <meta name="description" content="Описание страницы" />
+    <!--link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="stprostoi.css"-->
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class = "fix_width bg-head ">
+    <header class = "flex_column header_container_height">
+      <div class="flex_row header-top_container header-top_border flex_space-between">
+        <div class="flex_row header_container_mail_phone">
+          <div>
+            <img class="icon" src="icons/mail.png"/>
+          </div>
+          <div class = "header_social_mail">
+            <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
+              example@mail.ru
+            </a>
+          </div>
+        </div>
+        <div class="flex_row header_container_mail_phone">
+          <div>
+            <img class="icon" src="icons/phone.png"/>
+          </div>
+          <div class = "header_social_phone">
+            <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
+              +7 (901) 123-45-67
+            </a>
+          </div>
+        </div>
+        <div class="flex_row header_container_social">
+          <div>
+            <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
+              <img class="icon" src="icons/telegram.png"/>
+            </a>
+          </div>
+          <div>
+            <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
+              <img class="icon" src="icons/vk2.png"/>
+            </a>
+          </div>
+          <div>
+            <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+              <img class="icon" src="icons/whatsapp.png"/>
+            </a>
+          </div>
+          <div>
+            <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+              <img class="icon" src="icons/instagram.png"/>
+            </a>
+          </div>
+        </div>
+        <div class="header-margin_left-top">
+          <a  id = "user" href = "myaccount.html" >    
+            <img class="icon" src="icons/user.png">
+          </a>
+        </div>
+      </div>
+      <div class="flex_row header-bottom flex_space-between">
+        <div class="flex_row flex_justify-content_flex-start">
+          <div class="header-logo">
+            <a href="#">
+              <img class="logo" href="#" src="icons/logo.png" alt="Название сайта"/>
+            </a>
+          </div>
+          <div class="header-logo_name">
+            <a href="prostoi.html">Название сайта
+            </a>
+          </div>
+        </div>
+        <div class="flex_row header_navbar">
+          <ul>
+            <li>
+              <a title="О компании" href="/about.html">О&nbsp;компании
+              </a>
+            </li>
+            <li>
+              <a title="Каталог" href="/catalog.html">Каталог
+              </a>
+            </li>
+            <li>
+              <a title="Статьи" href="/articles.html">Статьи
+              </a>
+            </li>
+            <li>
+              <a title="Отзывы" href="/articles.html">Отзывы
+              </a>
+            </li>
+            <li>
+              <a title="Контакты" href="/articles.html">Контакты
+              </a>
+            </li>
+            <li>
+              <a title="заказать" href="/articles.html">Заказать
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>Заголовок страницы
+        </h1>
+        Основная часть	
+      </section>
+
+
+
+
+      <!-- <fieldset class="article_fieldset">
+         <legend>Поиск:</legend>
+        <div class="flex_column">
+          <div class="flex_row">Дата: 
+            <div  class="padding_date">от: <input  type="date"></div>
+            <div  class="padding_date">до: <input type="date"></div>
+          </div>
+          <div>Название: <input type="text"  class="input_big"></div>
+          <div>Ключевые слова: <input type="text" class="input_big"></div>
+
+        </div>
+        
+      </fieldset> -->
+
+
+      <div class="fieldset_size_article">
+      <div class="fieldset_title">Поиск <a class="fieldset_roll-up">Свернуть ↑</a></div>
+      <fieldset class="fieldset_article" name="fieldset">
+        <form>
+        <!-- <legend>Поиск:</legend> -->
+        <div class="flex_column">
+        <div class="flex_row flex_space-between">
+          <div class="flex_column">
+            <div class="flex_row">
+              <div>Автор:</div>
+              <!-- <div class="flex_row">Дата:</div> -->
+            </div>
+            <div>Название:</div>
+            <div>Ключевые слова:</div>
+  
+          </div>
+
+          <div class="flex_column  article_fieldset_input_width">
+            <div class="flex_row flex_space-between">
+              <div><input type="text" class="input_big"></div>
+              <div  class="flex_row flex_space-between">Дата:
+                <!-- <div>Дата:</div> -->
+                <div class="padding_left_2em">от: <input  type="date" class="input_middle"></div>
+                <div class="padding_left_2em">до: <input type="date" class="input_middle"></div>
+              </div>
+            </div>
+            <div><input type="text"  class="input_big"></div>
+            <div><input type="text" class="input_big"></div>
+          </div>
+        </div>
+
+        <div class="flex_row flex_space-between">
+          <div class="margin_top-bootom_1em"><a href="#" class="button_reset">Сбросить</a></div>
+          <div class="margin_top-bootom_1em"><a href="#" class="button_search">Поиск</a></div>  
+        </div>
+      </div>
+       
+        
+      </form>
+      </fieldset>
+    </div>
+
+
+
+
+
+
+
+      <!--  -->
+      <section class="flex_row article_container"> 
+        <!-- Контейнер для всех карточек --> 
+        <div class="box column-2"> 
+          <!-- Бокс одной карточки --> 
+          <article class="flex_column article_alone_container blue_bg"> 
+            <!-- Контейнер одной карточки --> 
+            <div class="flex_row container_img_text">  
+              <!-- Контейнер картинки и текста --> 
+              <div class = "article_div_images"> 
+                <!-- Бокс картинки --> 
+                <img  class = "images_width" src="images/timetable.jpg" alt="Расписание"/>
+              </div>
+              <div class = "article_div_text">
+                <div class="flex_row article_box_author_date"> 
+                  <!-- Бокс автора и даты --> 
+                  <div>Автор: 
+                    <a class = "link_style_border"  href="URL">Петров И.И.
+                    </a>
+                  </div>
+                  <div>Опубликована: 01.01.2020
+                  </div>
+                </div>
+                <div class = "article_title">
+                  <a  href="URL">  Автоматизация составления расписания в системе управления учебным процессом
+                  </a>
+                </div>
+                <div class = "article_start-of-article">Начало статьи  Начало статьи  Начало статьиНачало статьи  Начало статьи  Начало статьиНачало статьи...
+                </div>
+                <!--/div-->
+                <div class = "article_read-more_text-align">
+                  <a href="#" class="link_read-more link_style_border">
+                    <span>Читать далее
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="box column-2"> 
+          <!-- Бокс одной карточки --> 
+          <article class="flex_column article_alone_container blue_bg"> 
+            <!-- Контейнер одной карточки --> 
+            <div class="flex_row container_img_text">  
+              <!-- Контейнер картинки и текста --> 
+              <div class = "article_div_images"> 
+                <!-- Бокс картинки --> 
+                <img  class = "images_width" src="images/timetable.jpg" alt="Расписание"/>
+              </div>
+              <div class = "article_div_text">
+                <div class="flex_row article_box_author_date"> 
+                  <!-- Бокс автора и даты --> 
+                  <div>Автор: 
+                    <a class = "link_style_border"  href="URL">Петров И.И.
+                    </a>
+                  </div>
+                  <div>Опубликована: 01.01.2020
+                  </div>
+                </div>
+                <div class = "article_title">
+                  <a href="URL">  Автоматизация составления расписания в системе управления учебным процессом
+                  </a>
+                </div>
+                <div class = "article_start-of-article">Начало статьи  Начало статьи  Начало статьиНачало статьи  Начало статьи  Начало статьиНачало статьи...
+                </div>
+                <!--/div-->
+                <div class = "article_read-more_text-align">
+                  <a href="#" class="link_read-more link_style_border">
+                    <span>Читать далее
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+      </section>
+        </main>
+      <aside>
+        Боковая колонка - вдруг надо!
+      </aside>
+     <footer class = "flex_row header_container_height flex_space-between footer_container">
+	           <div class="header-logo">
+            <a href="#">
+              <img class="logo" href="#" src="icons/logo.png" alt="Название сайта"/>
+            </a>
+          </div>
+		  
+		  
+		  
+		          <div class="flex_row link_style_border footer_all-link ">
+				  <div class="flex_column footer_first-link">
+
+              <a title="Заказать" href="/catalog.html">Заказать
+              </a>
+
+              <a title="Доработка" href="/articles.html">Доработка
+              </a>
+
+              <a title="О нас" href="/articles.html">О нас
+              </a>
+
+        </div>
+		
+		
+						  <div class="flex_column">
+
+              <a title="Каталог" href="/catalog.html">Каталог
+              </a>
+
+              <a title="Статьи" href="/articles.html">Статьи
+              </a>
+
+              <a title="Отзывы" href="/articles.html">Отзывы
+              </a>
+
+        </div>
+		
+				  </div>
+		  
+		  
+      <div class="flex_column">
+	          <div class="flex_row">
+        <div class="flex_row footer_container_mail">
+          <div>
+            <img class="icon" src="icons/mail.png"/>
+          </div>
+          <div class = "header_social_mail">
+            <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
+              example@mail.ru
+            </a>
+          </div>
+        </div>
+        <div class="flex_row header_container_phone">
+          <div>
+            <img class="icon" src="icons/phone.png"/>
+          </div>
+          <div class = "header_social_phone">
+            <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
+              +7 (901) 123-45-67
+            </a>
+          </div>
+        </div>
+		</div>
+		
+        <div class="flex_row footer_container_social">
+          <div>
+            <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
+              <img class="icon" src="icons/telegram.png"/>
+            </a>
+          </div>
+          <div>
+            <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
+              <img class="icon" src="icons/vk2.png"/>
+            </a>
+          </div>
+          <div>
+            <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+              <img class="icon" src="icons/whatsapp.png"/>
+            </a>
+          </div>
+          <div>
+            <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+              <img class="icon" src="icons/instagram.png"/>
+            </a>
+          </div>
+        </div>
+       
+      </div>
+     
+    </footer>
+
+
+
+
+
+
+
+<!-- 
+    <footer class = "flex_row header_container_height flex_space-between footer_container">
+      <div class="header-logo">
+     <a href="#">
+       <img class="logo" href="#" src="icons/logo.png" alt="Название сайта"/>
+     </a>
+   </div>
+
+
+
+       <div class="flex_row link_style_border footer_all-link ">
+   <div class="flex_column footer_first-link">
+
+       <a title="Заказать" href="/catalog.html">Заказать
+       </a>
+
+       <a title="Доработка" href="/articles.html">Доработка
+       </a>
+
+
+ </div>
+
+
+ <div class="flex_column footer_second-link">
+
+
+  <a title="О нас" href="/articles.html">О нас
+  </a>
+
+  <a title="Отзывы" href="/articles.html">Отзывы
+  </a>
+
+</div>
+
+ <div class="flex_column">
+
+       <a title="Каталог" href="/catalog.html">Каталог
+       </a>
+
+       <a title="Статьи" href="/articles.html">Статьи
+       </a>
+
+       
+
+ </div>
+
+   </div>
+
+
+<div class="flex_column footer_all-contact ">
+     <div class="flex_row">
+ <div class="flex_row footer_container_mail">
+   <div>
+     <img class="icon" src="icons/mail.png"/>
+   </div>
+   <div class = "header-social header_social_mail">
+     <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
+       example@mail.ru
+     </a>
+   </div>
+ </div>
+ <div class="flex_row header_container_phone">
+   <div>
+     <img class="icon" src="icons/phone.png"/>
+   </div>
+   <div class = "header_social_phone">
+     <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
+       +7 (901) 123-45-67
+     </a>
+   </div>
+ </div>
+</div>
+
+ <div class="flex_row footer_container_social">
+   <div class = "header-social">
+     <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
+       <img class="icon" src="icons/telegram.png"/>
+     </a>
+   </div>
+   <div class = "header-social">
+     <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
+       <img class="icon" src="icons/vk2.png"/>
+     </a>
+   </div>
+   <div class = "header-social">
+     <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+       <img class="icon" src="icons/whatsapp.png"/>
+     </a>
+   </div>
+   <div class = "header-social">
+     <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+       <img class="icon" src="icons/instagram.png"/>
+     </a>
+   </div>
+ </div>
+
+</div>
+
+</footer> -->
+
+
+
+      </body>
+    </html>
