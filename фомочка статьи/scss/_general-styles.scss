@@ -1,3 +1,10 @@
+@mixin float_right { float: right; }
+
+
+@mixin float_left { float: left; }
+
+
+
 .icon {   
     height: 2.3em;
 }
@@ -43,7 +50,7 @@ justify-content: space-between;
 	
 	  /* text-align: center; */
 		/* max-width: 1600px; */
-line-height: 155%;
+line-height: 165%;
 // letter-spacing: .05em; 
 /* max-width: 80%; */
 margin: 0 auto;
@@ -153,8 +160,9 @@ color: $gray;
 
 .padding_left_2em {padding-left: 2em;}
 .padding_left_1em {padding-left: 1em;}
-.width_50 {width: 40%;}
-.width_100 {width: 100%;}
+.padding_left_4em {padding-left: 4em;}
+// .width_50 {width: 40%;}
+// .width_100 {width: 100%;}
 
 .pos_right {
 margin-left: auto;
@@ -173,9 +181,24 @@ margin-left: auto;
 	text-align: center;
 }
 
+
+.pos_center_for_div {
+	margin: auto;
+}
+
+.pos_right_for_div {
+	margin: auto;
+	text-align: right;
+}
+
 .width_100 {
 	width: 100%;
 	}
+
+.width_50 {
+	width: 50%;
+	}
+	
 
 
 .margin_top-bootom_1em { margin: 1em 0em;}
@@ -216,3 +239,30 @@ margin-left: auto;
 	line-height: 200%;
 	font-weight: bold;
 }
+
+
+ul.breadcrumb {
+	list-style: none;
+	margin: 0em;
+	padding: 1em 0em;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 0.5em;
+    color: &gray;
+	content: "ᐳ";
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 110%;
+}
+
+.max_width_50em {max-width: 50em;}
+
+.max_width_70em {max-width: 70em;}
+
+.padding_2em {padding: 2em;}
+.padding_top_2em {padding-top: 2em;}
+.padding_bottom_2em {padding-bottom: 2em;}
+.margin_2em {margin: 2em;}

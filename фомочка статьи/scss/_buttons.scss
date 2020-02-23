@@ -49,3 +49,10 @@
         background: rgb(152,15,0); 
     } /* при нажатии */   
 }
+
+.button_pay {
+    @include mix_button_pay;
+    padding: .9em;
+     
+      &_width {width:80%;}
+}
