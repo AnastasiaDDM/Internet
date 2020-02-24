@@ -5,6 +5,9 @@
     background: rgb(212,75,56); /* фон кнопки */
     padding: .7em 2em; /* отступ от текста */
     outline: none; /* убирать контур в Mozilla */
+    border-radius: 20% 0%;
+    transition-duration: .2s;
+    transition-delay: .1s;
     &:hover { 
         color: #fff; /* цвет текста */
         background: rgb(232,95,76); 
@@ -55,4 +58,11 @@
     padding: .9em;
      
       &_width {width:80%;}
+      &_width_70 {width:70%;}
+      &_width_50 {width:50%;}
+}
+
+.button_like_pos {
+    margin-left: 1em;
+    margin-top: .5em;
 }

@@ -208,7 +208,7 @@ margin-left: auto;
 	width: 40%;
 	margin: auto;
 	padding: 3em 0em;
-	height: 3em;
+	height: 9em;
 	&_page_numbers {
 		// border-bottom:solid 0.1em $red;
 		// border-top:solid 0.1em $red;
@@ -228,17 +228,13 @@ margin-left: auto;
 			border-bottom:solid 0.1em $red;
 		}
 		&_active {
-			background: $rose;
+			color: $red;
 		}
 
 	}
 }
 
-.contact {
-	font-size: 150%;
-	line-height: 200%;
-	font-weight: bold;
-}
+
 
 
 ul.breadcrumb {
@@ -266,3 +262,5 @@ ul.breadcrumb li {
 .padding_top_2em {padding-top: 2em;}
 .padding_bottom_2em {padding-bottom: 2em;}
 .margin_2em {margin: 2em;}
+
+.cursor {cursor: pointer;}

@@ -4,12 +4,13 @@ padding: 1.2em 3em;
 // text-align: center;
 // border:solid 0.1em $red;
     &:nth-child(n+2) {
-    border-left:solid 0.3em $red;
+    border-left:dotted 0.2em $red;
     }
 
     &_adm {
     width: 80%;
     border-top:solid 0.1em $red;
+    // border-top:dotted 0.2em $red;
     border-left:solid 0.3em $red;
     padding: .5em;
     }
@@ -24,5 +25,21 @@ padding: 1.2em 3em;
     &_stars {
         margin: 2em 0em;
         // width: 60%;
+    }
+    &_title {
+        // padding-left: .5em;
+        text-align: left;
+        margin: auto;
+        font-size: 120%;  
+        flex-grow: 2;
+    }
+    &_date {
+        text-align: right;
+        font-size: 120%;  
+        margin: auto;
+    }
+    &_text {
+        padding: .5em 0em;
+
     }
 }

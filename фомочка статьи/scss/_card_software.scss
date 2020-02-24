@@ -48,6 +48,8 @@ font-size: 100%;
     margin-block-start: 0em;
     padding-inline-start: 0em;
     line-height: 160%;
+    overflow: hidden;
+    height: 13em;	
   }
 }
 
@@ -124,6 +126,7 @@ font-size: 100%;
       padding: .5em;
      
       &_width {width:80%;}
+      &_width_100 {width:100%;}
 
 
 

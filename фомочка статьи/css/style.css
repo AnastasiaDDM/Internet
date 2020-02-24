@@ -172,7 +172,7 @@ a:hover {
   width: 40%;
   margin: auto;
   padding: 3em 0em;
-  height: 3em;
+  height: 9em;
 }
 
 .pagination_page_numbers {
@@ -188,13 +188,7 @@ a:hover {
 }
 
 .pagination_page_numbers_active {
-  background: #F2B9B3;
-}
-
-.contact {
-  font-size: 150%;
-  line-height: 200%;
-  font-weight: bold;
+  color: #D9756C;
 }
 
 ul.breadcrumb {
@@ -236,6 +230,10 @@ ul.breadcrumb li {
 
 .margin_2em {
   margin: 2em;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 .header-top {
@@ -512,9 +510,9 @@ ul {
 
 .widget_div_title {
   padding-left: .5em;
-  text-align: left;
+  text-align: center;
   margin: auto;
-  font-size: 120%;
+  font-size: 130%;
   flex-grow: 2;
 }
 
@@ -530,7 +528,7 @@ ul {
 }
 
 .reviews:nth-child(n+2) {
-  border-left: solid 0.3em #D9756C;
+  border-left: dotted 0.2em #D9756C;
 }
 
 .reviews_adm {
@@ -552,6 +550,23 @@ ul {
 
 .reviews_stars {
   margin: 2em 0em;
+}
+
+.reviews_title {
+  text-align: left;
+  margin: auto;
+  font-size: 120%;
+  flex-grow: 2;
+}
+
+.reviews_date {
+  text-align: right;
+  font-size: 120%;
+  margin: auto;
+}
+
+.reviews_text {
+  padding: .5em 0em;
 }
 
 .footer_container {
@@ -610,6 +625,17 @@ ul {
   height: 5.9em;
 }
 
+.page_software_description_full {
+  padding: 1em 0em;
+  text-align: left;
+  overflow: none;
+  height: 5.9em;
+}
+
+.page_software_slider_float {
+  float: left;
+}
+
 .button_search {
   color: #fff;
   /* цвет текста */
@@ -623,6 +649,9 @@ ul {
   /* отступ от текста */
   outline: none;
   /* убирать контур в Mozilla */
+  border-radius: 20% 0%;
+  transition-duration: .2s;
+  transition-delay: .1s;
   /* при наведении курсора мышки */
   /* при нажатии */
 }
@@ -731,6 +760,19 @@ ul {
   width: 80%;
 }
 
+.button_pay_width_70 {
+  width: 70%;
+}
+
+.button_pay_width_50 {
+  width: 50%;
+}
+
+.button_like_pos {
+  margin-left: 1em;
+  margin-top: .5em;
+}
+
 .fieldset_article {
   border-color: #D9756C;
   width: 100%;
@@ -747,9 +789,9 @@ ul {
 
 .fieldset_tags {
   border-color: #D9756C;
-  padding: 1em 2em;
+  padding: .5em 2em;
   line-height: 250%;
-  font-size: 120%;
+  font-size: 110%;
 }
 
 .fieldset_tags_word {
@@ -834,6 +876,8 @@ ul {
   margin-block-start: 0em;
   padding-inline-start: 0em;
   line-height: 160%;
+  overflow: hidden;
+  height: 13em;
 }
 
 .software_container_button {
@@ -903,6 +947,10 @@ ul {
   width: 80%;
 }
 
+.software_button-pay_style_width_100 {
+  width: 100%;
+}
+
 /* .software_button-pay_style:hover {background: rgba(255,255,255,.2);} */
 .software_tag {
   font-size: 70%;
@@ -960,6 +1008,19 @@ ul {
 /* height: 34%; */
 /* } */
 /* Color Theme Swatches in Hex */
+.contact {
+  font-size: 150%;
+  line-height: 200%;
+  font-weight: bold;
+}
+
+.contact_container {
+  width: 23%;
+  height: 35em;
+  vertical-align: middle;
+  margin: 3em 0em;
+}
+
 .footer_container {
   height: 10em;
   border-top: solid 0.1em #D9756C;
