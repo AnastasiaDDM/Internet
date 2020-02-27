@@ -38,6 +38,7 @@ padding: 0.5em 0em;
 .software_description {
 text-align: left;
 font-size: 100%;
+overflow: hidden;
   &_marker::before {
 	/* list-style-image:url(icons/marker_list.png); */
     content: "\273D";

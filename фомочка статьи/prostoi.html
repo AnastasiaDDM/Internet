@@ -114,9 +114,165 @@
       </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="software_search">
+        <!-- <div class="search_title">Фильтр <a class="search_roll-up">Свернуть ↑</a></div> -->
+        <fieldset class="" name="fieldset">
+          <legend>Фильтр</legend>
+          <form>
+
+          <div class="flex_column">
+            <div class="form-row software_search_section">
+              <input type="text" id="email" required autocomplete="off"><label for="email">Наименование ПО</label>
+            </div>
+
+          <div class="flex_column software_search_section">
+            <div>Цена:</div>
+            <div><input type="radio" name="vehicle" value="Bike">Бесплатно</div>
+            <div><input type="radio" name="vehicle" value="Bike">Платно</div>
+            <div>
+              <input type="range" min="100" max="100000" value="4000" class="range" id="Price_Range">
+              <p>Цена: <span id="Price_Range_val"></p>
+            </div>
+
+            <script>
+              var slider = document.getElementById("Price_Range");
+              var output = document.getElementById("Price_Range_val");
+              output.innerHTML = slider.value;
+              
+              slider.oninput = function() {
+                output.innerHTML = this.value;
+              }
+              </script>
+          </div>
+
+          <div class = "software_search_section "><input type="checkbox" name="vehicle" value="Bike">Возможна доработка</div>
+
+          <div class = "software_search_section ">
+            <div>Вид:</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Настольное приложение</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Сайт</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Мобильное приложение</div>
+          </div>
+
+          <div class = "software_search_section ">
+            <div>Область применения:</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Образование</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Грузоперевозки</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Кафе</div>
+            <a class = "link_read-more link_style_border">еще...</a>
+          </div>
+
+          <div class = "software_search_section ">
+            <div>Тип использования:</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Индивидуальный доступ</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Групповой</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Сетевой</div>
+          </div>
+
+          <div class = "software_search_section ">
+            <div>Размер:</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Небольшой</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Средний</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Большой</div>
+          </div>
+
+          <div class = "software_search_section ">
+            <div>Ограничение доступа:</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Разделение ролей</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Без ролей</div>
+          </div>
+
+          <div class = "software_search_section ">
+            <div>Дополнительные установки:</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Требуются</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Не требуются</div>
+          </div>
+
+          <div class = "software_search_section ">
+            <div>Установка ПО:</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">Без установки</div>
+            <div><input type="checkbox" name="vehicle" value="Bike">С установкой</div>
+          </div>
+
+<!-- <div>
+  <p>
+    <label for="amount">Price range:</label>
+    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+  </p>
+  
+</div>
+              <div id="slider-range"></div>
+
+
+              <script>
+                $( function() {
+                  $( "#slider-range" ).slider({
+                    range: true,
+                    min: 0,
+                    max: 500,
+                    values: [ 75, 300 ],
+                    slide: function( event, ui ) {
+                      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                    }
+                  });
+                  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+                    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+                } );
+                </script> -->
+
+
+
+
+
+          </div>
+  
+          <div class="flex_row flex_space-between">
+            <div class="margin_top-bootom_1em"><a href="#" class="button_reset">Сбросить</a></div>
+            <div class="margin_top-bootom_1em"><a href="#" class="button_search">Поиск</a></div>  
+          
+        </div>
+         
+          
+        </form>
+        </fieldset>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="flex_row banner_order">
       <div class="banner_order_text" href="/articles.html"><h2>Хотите заказать свою разработку ?</h2><p>Узнайте сроки выполнения и стоимость реализации прямо сейчас</p></div>
-      <div class="arrow-1">
+      <div class="banner_order_arrow">
         <div></div>
     </div>
   </div>
@@ -135,9 +291,9 @@
           <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
         </div>
         <div>
-          <ul class = "software_description_list"style = "list-style: none">
-            <li class="software_description_marker">Контроль доходов и расходов
-            <li class="software_description_marker">Мониторинг деятельности компании
+          <ul class = "widget_list">
+            <li class="widget_marker">Контроль доходов и расходов
+            <li class="widget_marker">Мониторинг деятельности компании
           </ul>
           <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
         </div>
@@ -203,44 +359,20 @@
           </div>
         </div>
 
-
         <div class="reviews flex_column">
           <div class="flex_row">
-            <div > 
-              <!-- Бокс картинки --> 
-              <img  class = "icon" src="icons/icon_reviews.png"/>
-            </div>
-            <div class = "widget_div_title">Иванов М.Л.</div>
-            <div class = "widget_div_date">20.01.2020</div>
+    
+            <div class = "reviews_title">Иванов М.Л.</div>
+            <div class = "reviews_date">20.01.2020</div>
           </div>
-          <div class="flex_row reviews_stars">
-            <div class = "img_width"> 
-              <!-- Бокс картинки --> 
-              <img  class = "icon" src="icons/star_fill.png"/>
-            </div>
-            <div class = "img_width"> 
-              <!-- Бокс картинки --> 
-              <img  class = "icon" src="icons/star_fill.png"/>
-            </div>
-            <div class = "img_width"> 
-              <!-- Бокс картинки --> 
-              <img  class = "icon" src="icons/star_fill.png"/>
-            </div>
-            <div class = "img_width"> 
-              <!-- Бокс картинки --> 
-              <img  class = "icon" src="icons/star.png"/>
-            </div>
-            <div class = "img_width"> 
-              <!-- Бокс картинки --> 
-              <img  class = "icon" src="icons/star.png"/>
-            </div>
-          </div>
-          <span>Замечательная программа!Спасибо вам! </span>
+    
+          <span>Спасибо вам! </span>
             
             <div>
               <div  class="flex_column reviews_adm pos_right">
-                <div class = "widget_div_title">Администратор</div>
-                <span>Огромное спасмбо за отзыв!</span>
+                <div class = "reviews_title">Администратор</div>
+                <span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                  с каждым выходом нового ПО! </span>
                   
               </div>
             </div>
@@ -364,11 +496,11 @@
 <section>
   <div  class="flex_row flex_space-between">
 
-    <div class="flex_column contact_container ">
+    <div class="flex_column contact_container">
       <div class = " ">
-        <div class = "img_width pos_center"> 
+        <div class = " pos_center "> 
           <!-- Бокс картинки --> 
-          <img  class = "1icon" src="icons/phone_you.png"/>
+          <img  class = "contact_img" src="icons/phone_you.png"/>
         </div>
   
   
@@ -394,7 +526,7 @@
       <div class = " ">
         <div class = "img_width pos_center"> 
           <!-- Бокс картинки --> 
-          <img  class = "1icon" src="icons/review.png"/>
+          <img  class = "contact_img" src="icons/review.png"/>
         </div>
 
 
@@ -417,7 +549,7 @@
     <div class = " ">
       <div class = "img_width pos_center"> 
         <!-- Бокс картинки --> 
-        <img  class = "1icon" src="icons/email.png"/>
+        <img  class = "contact_img" src="icons/email.png"/>
       </div>
 
 
@@ -440,7 +572,7 @@
     <div class = " ">
       <div class = "img_width pos_center"> 
         <!-- Бокс картинки --> 
-        <img  class = "1icon" src="icons/feedback.png"/>
+        <img  class = "contact_img" src="icons/feedback.png"/>
       </div>
 
 
@@ -486,9 +618,9 @@
       </fieldset> -->
 
 
-      <div class="fieldset_size_article">
-      <div class="fieldset_title">Поиск <a class="fieldset_roll-up">Свернуть ↑</a></div>
-      <fieldset class="fieldset_article" name="fieldset">
+      <div class="article_search_size">
+      <div class="search_title">Поиск <a class="search_roll-up">Свернуть ↑</a></div>
+      <fieldset class="article_search" name="fieldset">
         <form>
         <!-- <legend>Поиск:</legend> -->
         <div class="flex_column">
@@ -503,7 +635,7 @@
   
           </div>
 
-          <div class="flex_column  article_fieldset_input_width">
+          <div class="flex_column">
             <div class="flex_row flex_space-between">
               <div><input type="text" class="input_big"></div>
               <div  class="flex_row flex_space-between">Дата:
@@ -528,6 +660,54 @@
       </fieldset>
     </div>
 
+
+
+
+
+
+
+    
+    <div class="article_search_size">
+      <div class="search_title">Поиск <a class="search_roll-up">Свернуть ↑</a></div>
+      <fieldset class="article_search" name="fieldset">
+        <form>
+        <!-- <legend>Поиск:</legend> -->
+        <div class="flex_column">
+        <div class="flex_row flex_space-between">
+          <div class="flex_column">
+            <div class="flex_row">
+              <div>Автор:</div>
+              <!-- <div class="flex_row">Дата:</div> -->
+            </div>
+            <div>Название:</div>
+            <div>Ключевые слова:</div>
+  
+          </div>
+
+          <div class="flex_column">
+            <div class="flex_row flex_space-between">
+              <div><input type="text" class="input_big"></div>
+              <div  class="flex_row flex_space-between">Дата:
+                <!-- <div>Дата:</div> -->
+                <div class="padding_left_2em">от: <input  type="date" class="input_middle"></div>
+                <div class="padding_left_2em">до: <input type="date" class="input_middle"></div>
+              </div>
+            </div>
+            <div><input type="text"  class="input_big"></div>
+            <div><input type="text" class="input_big"></div>
+          </div>
+        </div>
+
+        <div class="flex_row flex_space-between">
+          <div class="margin_top-bootom_1em"><a href="#" class="button_reset">Сбросить</a></div>
+          <div class="margin_top-bootom_1em"><a href="#" class="button_search">Поиск</a></div>  
+        
+      </div>
+       
+        
+      </form>
+      </fieldset>
+    </div>
 
 
 
@@ -842,13 +1022,16 @@
 
         <div class=" pos_center"><a href="#" class="button_show-more">Показать еще</a></div>
         <div class=" flex_row pagination flex_space-between">
-        <div class = "pagination_page_numbers" ><a href="#">&laquo;</a></div>
-        <div class = "pagination_page_numbers" ><a  href="#">1</a></div>
+          <a class = "pagination_page_numbers" href="#">&laquo;</a>
+          <a class = "pagination_page_numbers" href="#">1</a>
           <a class = "pagination_page_numbers pagination_page_numbers_active"  href="#">2</a>
           <a class = "pagination_page_numbers" href="#">3</a>
           <a class = "pagination_page_numbers" href="#">4</a>
           <a class = "pagination_page_numbers" href="#">5</a>
           <a class = "pagination_page_numbers" href="#">6</a>
+          <a class = "pagination_ellipsis" href="#">...</a>
+          <a class = "pagination_page_numbers" href="#">15</a>
+          <a class = "pagination_page_numbers" href="#">16</a>
           <a class = "pagination_page_numbers" href="#">&raquo;</a>
         </div>
       </div>

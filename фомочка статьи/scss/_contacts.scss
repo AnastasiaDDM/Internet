@@ -1,14 +1,17 @@
 
     
     .contact {
-        font-size: 150%;
-        line-height: 200%;
+        font-size: 120%;
+        line-height: 180%;
         font-weight: bold;
 
         &_container {
-            width: 23%;
+            width: 20%;
             height: 35em;
             vertical-align: middle;
             margin: 3em 0em;
             }
+        &_img {
+            width: 50%;
+        }
     }

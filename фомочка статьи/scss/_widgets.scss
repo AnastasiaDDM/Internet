@@ -4,6 +4,21 @@
     padding: 1.5em;
     cursor: pointer;
     border:solid 0.1em $red;
+    &_marker::before {
+        /* list-style-image:url(icons/marker_list.png); */
+        content: "\273D";
+        display: inline-block; /* Расстояние между точкой и текстом */
+        // width: 1.4em;
+      }
+      &_list {
+        margin-block-start: 0em;
+        padding-inline-start: 0em;
+        line-height: 160%;
+        overflow: hidden;
+        list-style: none;
+        height: 5.5em;	
+      }
+
 }
 .widget_div {
     &_img {
@@ -20,6 +35,5 @@
         text-align: center;
         font-size: 120%;  
         margin: auto;
-    }
-
+    }  
 }

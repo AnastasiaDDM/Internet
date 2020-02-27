@@ -91,9 +91,22 @@ font-family: $font1, $font2, sans-serif;
 	flex: 0 1 auto;
 }
 
+// .column-2
+// {
+// 		width: calc(50% - 0.5em);
+// 		  justify-content: space-between;
+// }
+
+
+// .column-2:nth-child(n+3){
+// 	padding-top: 1em;
+// }
+
+
+
 .column-2
 {
-		width: calc(50% - 0.5em);
+	width: calc((99% -0.5em)/2);
 		  justify-content: space-between;
 }
 
@@ -101,6 +114,8 @@ font-family: $font1, $font2, sans-serif;
 .column-2:nth-child(n+3){
 	padding-top: 1em;
 }
+
+
 
 .blue_bg {                                                         /*  ЦВЕТ !!!!!!!!!!! */
 //  background-color: #F0F8FF;	
@@ -115,6 +130,12 @@ background-color: $light_blue_2;
 .img_width {
 width: 100%;
 }
+
+.img_width_calc {
+	width: calc(100% - 0.5em);
+	// width: 90%;
+}
+	
 
 /* .box:hover { */
 /* border: 5px solid #1E90FF; */
@@ -230,7 +251,17 @@ margin-left: auto;
 		&_active {
 			color: $red;
 		}
-
+	}
+	&_ellipsis {
+		width: 100%;
+		line-height: 40px;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 150%;
+		cursor: default;
+		&:hover {
+			color: gray;
+		}
 	}
 }
 
