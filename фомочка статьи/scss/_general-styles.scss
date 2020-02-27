@@ -51,6 +51,7 @@ justify-content: space-between;
 	  /* text-align: center; */
 		/* max-width: 1600px; */
 line-height: 165%;
+// letter-spacing: 160%;
 // letter-spacing: .05em; 
 /* max-width: 80%; */
 margin: 0 auto;
@@ -62,6 +63,8 @@ font-family: $font1, $font2, sans-serif;
 /* color: blue; */
 
 }
+
+.let_sp_01em {letter-spacing: 0.1em; }
 
 
 
@@ -107,7 +110,7 @@ font-family: $font1, $font2, sans-serif;
 .column-2
 {
 	width: calc((99% -0.5em)/2);
-		  justify-content: space-between;
+	justify-content: space-between;
 }
 
 
@@ -173,7 +176,7 @@ color: $gray;
 	overflow: hidden;	
 	
 	/* padding-right: 30px; */
-	font-size: 12px;
+	font-size: .9em;
     /* color: #F5E2CD; */
 	color: blue;
 	
@@ -221,8 +224,22 @@ margin-left: auto;
 	}
 	
 
+.width_30 {
+	width: 30%;
+	}
+
+.width_40 {
+	width: 40%;
+	}
+
+.width_45 {
+	width: 45%;
+	}
+	
+
 
 .margin_top-bootom_1em { margin: 1em 0em;}
+.margin_left-right_1em { margin: 0em 1em;}
 
 
 .pagination {
@@ -293,5 +310,8 @@ ul.breadcrumb li {
 .padding_top_2em {padding-top: 2em;}
 .padding_bottom_2em {padding-bottom: 2em;}
 .margin_2em {margin: 2em;}
+.margin_top_1em {margin-top: 1em;}
+.margin_bottom_1em {margin-bottom: 1em;}
+.margin_top_2em {margin-top: 2em;}
 
 .cursor {cursor: pointer;}

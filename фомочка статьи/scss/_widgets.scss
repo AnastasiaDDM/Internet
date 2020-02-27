@@ -1,9 +1,11 @@
 .widget {
-    width: 20em;
-    // height: 30em;
-    padding: 1.5em;
+    // width: 20em;
+    
+    max-height: 25em;
+    padding: .7em;
     cursor: pointer;
-    border:solid 0.1em $red;
+    border:solid 0.1em $blue3;
+    background: $light_blue_2;
     &_marker::before {
         /* list-style-image:url(icons/marker_list.png); */
         content: "\273D";
@@ -11,6 +13,7 @@
         // width: 1.4em;
       }
       &_list {
+        font-size: 80%; 
         margin-block-start: 0em;
         padding-inline-start: 0em;
         line-height: 160%;
@@ -18,6 +21,12 @@
         list-style: none;
         height: 5.5em;	
       }
+      &:hover { 
+        // color: #fff; /* цвет текста */
+        // background-color: opacify($light_blue_2, 00.1em); 
+        background-color: white; 
+
+    } /* при наведении курсора мышки */
 
 }
 .widget_div {
@@ -26,14 +35,16 @@
     }
     &_title {
         padding-left: .5em;
+        padding-bottom: .5em;
         text-align: center;
+        line-height: 140%;
         margin: auto;
-        font-size: 130%;  
+        font-size: 110%;  
         flex-grow: 2;
     }
     &_date {
         text-align: center;
-        font-size: 120%;  
+        font-size: 80%;  
         margin: auto;
     }  
 }

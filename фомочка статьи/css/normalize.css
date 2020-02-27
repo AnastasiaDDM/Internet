@@ -181,6 +181,20 @@ outline: 1px dotted ButtonText;
 fieldset {
 padding: 0.35em 0.75em 0.625em;
 }
+
+
+/* ЭТО Я САМА ДОБАВИЛА!!!!!!!!!!!!!! */
+* {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-block-start: 0em;
+    padding-inline-start: 0em;
+    padding-inline-end: 0em;
+}
+
+
+
+
 /**
 * 1. Correct the text wrapping in Edge and IE.
 * 2. Correct the color inheritance from `fieldset` elements in IE.

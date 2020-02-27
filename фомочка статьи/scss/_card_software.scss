@@ -1,6 +1,10 @@
 .software_alone_container {
   @include alone_card; 
   max-height: 500px;
+  border: .2em solid $light_blue;
+  &:hover {
+    // border: .6em solid $light_blue_2;
+  }
 }
 
 
@@ -125,6 +129,7 @@ overflow: hidden;
      
       @include mix_button_pay;
       padding: .5em;
+      line-height: 130%;
      
       &_width {width:80%;}
       &_width_100 {width:100%;}

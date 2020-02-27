@@ -21,7 +21,7 @@
         padding: .5em 2em;
         // max-height: 11em;
         line-height: 250%;
-        font-size: 100%;
+        font-size: 80%;
         
         &_word {
             word-spacing: 1em;
@@ -61,5 +61,26 @@ padding: 0em 1em;
         }
 
     }
+    &_border {
+    &_primary {
+        border: solid .15em $red;
+    }
+    &_secondary {
+        // border: solid .15em $red;
+        padding: 10px;
+        
+        border: 2px solid $light_blue_2;
+        // border: 2px solid $blue2;
+        border-bottom: 2px solid $light_blue;
+        &:hover {
+            border-bottom: 2px solid $rose;
+        }
+        &:nth-child(n+2){
+            margin-top: 1em;
+        }
+        legend { padding: 0em .5em;
+        font-weight: bold;}
+    }
+}
     
 }

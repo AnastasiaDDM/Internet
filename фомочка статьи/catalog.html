@@ -83,7 +83,7 @@
               </a>
             </li>
             <li>
-              <a title="Каталог" href="/catalog.html">Каталог
+              <a  class = "header_navbar_active" title="Каталог" href="/catalog.html">Каталог
               </a>
             </li>
             <li>
@@ -115,92 +115,138 @@
             <li>Каталог</li>
         </ul>
 
-        <section>
+        <section class="margin_top_2em">
 
           <div class="flex_row flex_space-between">
 
+            <div class="flex_column software_left_column">
             <div class="software_search">
               <!-- <div class="search_title">Фильтр <a class="search_roll-up">Свернуть ↑</a></div> -->
-              <fieldset class="" name="fieldset" style="
-              border-color: red ;
-              border-style:solid;
-              border-width: 1px;">
-                <legend style='padding: 10px;'>Фильтр</legend>
+              <fieldset class="fieldset_border_primary" name="fieldset" >
+                <!-- <legend style='padding: 10px;'>Фильтр</legend> -->
                 <form>
       
                 <div class="flex_column">
-                  <div class="form-row software_search_section">
+
+                  <div>Показать по:
+                    <select>
+                      <option>6</option>
+                      <option>12</option>
+                      <option>24</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <select class="width_100">
+                      <option>Популярное</option>
+                      <option>Новое</option>
+                      <option>&#8657 по размеру</option>
+                      <option>&#8659 по размеру</option>
+                    </select>
+                  </div>
+
+
+                  <div class="form-row ">
                     <input type="text" id="email" required autocomplete="off"><label for="email">Наименование ПО</label>
                   </div>
+
+                  <div class="margin_top-bootom_1em pos_right_for_div"><a href="#" class="button_search ">Поиск</a></div> 
       
-                <div class="flex_column software_search_section">
-                  <div>Цена:</div>
-                  <div><input type="radio" name="vehicle" value="Bike">Бесплатно</div>
-                  <div><input type="radio" name="vehicle" value="Bike">Платно</div>
-                  <div>
-                    <input type="range" min="100" max="100000" value="4000" class="range" id="Price_Range">
-                    <p>Цена: <span id="Price_Range_val"></p>
+                  <fieldset class="fieldset_border_secondary" name="fieldset" >
+                    <legend >Цена</legend>
+                    <div class="flex_column ">
+                      <!-- <div>Цена:</div> -->
+                      <div><input type="radio" name="vehicle" value="Bike">Бесплатно</div>
+                      <div><input type="radio" name="vehicle" value="Bike">Платно</div>
+                      <div>
+                        <input type="range" min="100" max="100000" value="4000" class="range" id="Price_Range">
+                        <p>Цена: <span id="Price_Range_val"></p>
+                      </div>
+          
+                      <script>
+                        var slider = document.getElementById("Price_Range");
+                        var output = document.getElementById("Price_Range_val");
+                        output.innerHTML = slider.value;
+                        
+                        slider.oninput = function() {
+                          output.innerHTML = this.value;
+                        }
+                        </script>
+                    </div>
+                  </fieldset>
+
+                  <fieldset class="fieldset_border_secondary" name="fieldset" > 
+                    <div class = " "><input type="checkbox" name="vehicle" value="Bike">Возможна доработка</div> </fieldset>
+                
+      
+                <fieldset class="fieldset_border_secondary" name="fieldset" >
+                  <legend >Вид</legend>
+                  <div class = " ">
+
+                    <div><input type="checkbox" name="vehicle" value="Bike">Настольное приложение</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Сайт</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Мобильное приложение</div>
                   </div>
+                </fieldset>
+
       
-                  <script>
-                    var slider = document.getElementById("Price_Range");
-                    var output = document.getElementById("Price_Range_val");
-                    output.innerHTML = slider.value;
-                    
-                    slider.oninput = function() {
-                      output.innerHTML = this.value;
-                    }
-                    </script>
-                </div>
+                <fieldset class="fieldset_border_secondary" name="fieldset" >
+                  <legend >Область применения</legend>
+                  <div class = " ">
+                    <div><input type="checkbox" name="vehicle" value="Bike">Образование</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Грузоперевозки</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Кафе</div>
+                    <a class = "link_read-more link_style_border">еще...</a>
+                  </div>
+                </fieldset>
+
       
-                <div class = "software_search_section "><input type="checkbox" name="vehicle" value="Bike">Возможна доработка</div>
+                <fieldset class="fieldset_border_secondary" name="fieldset" >
+                  <legend >Тип использования</legend>
+                  <div class = " ">
+                    <div><input type="checkbox" name="vehicle" value="Bike">Индивидуальный доступ</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Групповой</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Сетевой</div>
+                  </div>
+                </fieldset>
+
       
-                <div class = "software_search_section ">
-                  <div>Вид:</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Настольное приложение</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Сайт</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Мобильное приложение</div>
-                </div>
+                <fieldset class="fieldset_border_secondary" name="fieldset">
+                  <legend >Размер</legend>
+                  <div class = " ">
+                    <div><input type="checkbox" name="vehicle" value="Bike">Небольшой</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Средний</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Большой</div>
+                  </div>
+                </fieldset>
+
       
-                <div class = "software_search_section ">
-                  <div>Область применения:</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Образование</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Грузоперевозки</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Кафе</div>
-                  <a class = "link_read-more link_style_border">еще...</a>
-                </div>
+                <fieldset class="fieldset_border_secondary" name="fieldset">
+                  <legend >Ограничение доступа</legend>
+                  <div class = " ">
+                    <div><input type="checkbox" name="vehicle" value="Bike">Разделение ролей</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Без ролей</div>
+                  </div>
+                </fieldset>
+
       
-                <div class = "software_search_section ">
-                  <div>Тип использования:</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Индивидуальный доступ</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Групповой</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Сетевой</div>
-                </div>
+                <fieldset class="fieldset_border_secondary" name="fieldset">
+                  <legend >Дополнительные установки</legend>
+                  <div class = " ">
+                    <div><input type="checkbox" name="vehicle" value="Bike">Требуются</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">Не требуются</div>
+                  </div>
+                </fieldset>
+
       
-                <div class = "software_search_section ">
-                  <div>Размер:</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Небольшой</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Средний</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Большой</div>
-                </div>
-      
-                <div class = "software_search_section ">
-                  <div>Ограничение доступа:</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Разделение ролей</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Без ролей</div>
-                </div>
-      
-                <div class = "software_search_section ">
-                  <div>Дополнительные установки:</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Требуются</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Не требуются</div>
-                </div>
-      
-                <div class = "software_search_section ">
-                  <div>Установка ПО:</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">Без установки</div>
-                  <div><input type="checkbox" name="vehicle" value="Bike">С установкой</div>
-                </div>
+                <fieldset class="fieldset_border_secondary" name="fieldset">
+                  <legend >Установка ПО</legend>
+                  <div class = " ">
+                    <div><input type="checkbox" name="vehicle" value="Bike">Без установки</div>
+                    <div><input type="checkbox" name="vehicle" value="Bike">С установкой</div>
+                  </div>
+                </fieldset>
+
       
       <!-- <div>
         <p>
@@ -246,13 +292,94 @@
             </div>
 
 
-            <section class="flex_row article_container padding_bottom_2em" style ="width: 78%;"> 
+
+            <fieldset class="fieldset_border_primary margin_top_2em" name="fieldset" >
+              <legend >Популярные на этой неделе</legend>
+              <div class="flex_column ">
+
+                <div class = "pos_center margin_bottom_1em cursor"> 
+                  <!-- Бокс картинки --> 
+                  <img  class = "" src="icons/up.png" />
+                </div>
+
+            <section class="">
+              <div>
+                <div class="widget flex_column"  href="URL">
+                  <div class = "widget_div_title">Автоматизируй образование!</div>
+                  <div class = "widget_div_img"> 
+                    <!-- Бокс картинки --> 
+                    <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
+                  </div>
+                  <div>
+                    <ul class = "widget_list">
+                      <li class="widget_marker">Контроль доходов и расходов
+                      <li class="widget_marker">Мониторинг деятельности компании
+                    </ul>
+                    <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                  </div>
+                  <button class="width_100 software_button-pay_style ">Скачать бесплатно
+                  </button>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="margin_top_1em">
+              <div>
+                <div class="widget flex_column"  href="URL">
+                  <div class = "widget_div_title">Автоматизируй образование!</div>
+                  <div class = "widget_div_img"> 
+                    <!-- Бокс картинки --> 
+                    <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
+                  </div>
+                  <div>
+                    <ul class = "widget_list">
+                      <li class="widget_marker">Контроль доходов и расходов
+                      <li class="widget_marker">Мониторинг деятельности компании
+                    </ul>
+                    <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                  </div>
+                  <button class="width_100 software_button-pay_style ">Скачать бесплатно
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <div class = "pos_center margin_top_1em cursor"> 
+              <!-- Бокс картинки --> 
+              <img  class = "" src="icons/down.png" />
+            </div>
+
+
+          </div>
+          </fieldset>
+
+
+         
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="flex_row article_container padding_bottom_2em " style="width: 78%;"> 
               <!-- Контейнер для всех карточек --> 
       
           
           <div class="column-2"> 
                 <!-- Бокс одной карточки --> 
-                <article class="flex_column software_alone_container blue_bg"> 
+                <article class="flex_column software_alone_container "> 
                   <!-- Контейнер одной карточки --> 
       
                   <div class = "flex_column"> 
@@ -276,7 +403,7 @@
                       </div>
                       <div class="flex_row software_container_button flex_space-between"> 
                         <!-- Бокс кнопки покупки и лайка --> 
-                        <button class="software_button-pay_style software_button-pay_style_width">Скачать бесплатно
+                        <button class="software_button-pay_style software_button-pay_style_width">Скачать 
                         </button>
                         <div class="software_button-like_style" ></div>
                       </div>

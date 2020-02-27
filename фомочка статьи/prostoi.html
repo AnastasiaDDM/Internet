@@ -127,7 +127,7 @@
 
 
 
-      <div class="software_search">
+      <div class="software_search" style="width: 20%;">
         <!-- <div class="search_title">Фильтр <a class="search_roll-up">Свернуть ↑</a></div> -->
         <fieldset class="" name="fieldset">
           <legend>Фильтр</legend>
@@ -281,11 +281,33 @@
 
 
 
-  <section>
+  <section style="width: 20%;">
 
     <div>
       <div class="widget flex_column"  href="URL">
         <div class = "widget_div_title">Автоматизируй образование!</div>
+        <div class = "widget_div_img"> 
+          <!-- Бокс картинки --> 
+          <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
+        </div>
+        <div>
+          <ul class = "widget_list">
+            <li class="widget_marker">Контроль доходов и расходов
+            <li class="widget_marker">Мониторинг деятельности компании
+          </ul>
+          <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+        </div>
+        <button class="width_100 software_button-pay_style ">Скачать бесплатно
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section style="width: 20%;">
+
+    <div>
+      <div class="widget flex_column"  href="URL">
+        <div class = "widget_div_title">Автоматизируй образование легко и быстро!</div>
         <div class = "widget_div_img"> 
           <!-- Бокс картинки --> 
           <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
@@ -312,7 +334,8 @@
 
   <section>
 
-    <div class="flex_row reviews_all flex_space-between ">
+    <h2 class="pos_center let_sp_01em">Отзывы</h2>
+    <div class="flex_row reviews_all flex_space-between margin_top_1em">
       <div class="reviews flex_column">
       <div class="flex_row">
 
@@ -620,42 +643,41 @@
 
       <div class="article_search_size">
       <div class="search_title">Поиск <a class="search_roll-up">Свернуть ↑</a></div>
-      <fieldset class="article_search" name="fieldset">
+      <fieldset class="fieldset_border_primary"  name="fieldset">
         <form>
+          <!-- <div class="margin_left-right_1em"> -->
         <!-- <legend>Поиск:</legend> -->
-        <div class="flex_column">
+        <!-- <div class="flex_column"> -->
         <div class="flex_row flex_space-between">
-          <div class="flex_column">
-            <div class="flex_row">
-              <div>Автор:</div>
-              <!-- <div class="flex_row">Дата:</div> -->
+          <div class="form-row width_45">
+            <input type="text" id="author" required autocomplete="off"><label for="author">Автор</label>
+          </div>
+          <div class="form-row width_45">
+            <input type="text" id="article_name" required autocomplete="off"><label for="article_name">Название</label>
+          </div>
+          </div>
+
+          <div class="flex_row flex_space-between padding_top_2em">
+            <div  class="flex_row flex_space-between pos_center">Дата:
+              <!-- <div>Дата:</div> -->
+              <div class="padding_left_2em"><input  type="date" class="input_middle"></div> 	
+              &#8212
+              <div class="padding_left_2em"><input type="date" class="input_middle"></div>
             </div>
-            <div>Название:</div>
-            <div>Ключевые слова:</div>
+            <div class="form-row column-2">
+              <input type="text" id="keyword" required autocomplete="off"><label for="keyword">Ключевые слова</label>
+            </div>
+            </div>
   
-          </div>
 
-          <div class="flex_column">
-            <div class="flex_row flex_space-between">
-              <div><input type="text" class="input_big"></div>
-              <div  class="flex_row flex_space-between">Дата:
-                <!-- <div>Дата:</div> -->
-                <div class="padding_left_2em">от: <input  type="date" class="input_middle"></div>
-                <div class="padding_left_2em">до: <input type="date" class="input_middle"></div>
-              </div>
-            </div>
-            <div><input type="text"  class="input_big"></div>
-            <div><input type="text" class="input_big"></div>
-          </div>
-        </div>
-
-        <div class="flex_row flex_space-between">
+        <div class="flex_row flex_space-between ">
           <div class="margin_top-bootom_1em"><a href="#" class="button_reset">Сбросить</a></div>
           <div class="margin_top-bootom_1em"><a href="#" class="button_search">Поиск</a></div>  
-        
-      </div>
-       
-        
+        </div>
+
+      <!-- </div>            -->
+    <!-- </div> -->
+          
       </form>
       </fieldset>
     </div>
