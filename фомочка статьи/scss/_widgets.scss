@@ -4,8 +4,8 @@
     max-height: 25em;
     padding: .7em;
     cursor: pointer;
-    border:solid 0.1em $blue3;
-    background: $light_blue_2;
+    border:solid $border_width $light_blue;
+
     &_marker::before {
         /* list-style-image:url(icons/marker_list.png); */
         content: "\273D";
@@ -24,9 +24,14 @@
       &:hover { 
         // color: #fff; /* цвет текста */
         // background-color: opacify($light_blue_2, 00.1em); 
-        background-color: white; 
-
+        background: $light_blue_2; 
     } /* при наведении курсора мышки */
+
+    &_arrows {
+        font-size: 300%;
+        color: $light_blue;
+        &:hover { color: $dark_blue; }
+    }
 
 }
 .widget_div {

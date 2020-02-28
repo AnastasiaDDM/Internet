@@ -63,17 +63,22 @@ padding: 0em 1em;
     }
     &_border {
     &_primary {
-        border: solid .15em $red;
+        border: solid $border_width $red;
     }
     &_secondary {
         // border: solid .15em $red;
         padding: 10px;
         
-        border: 2px solid $light_blue_2;
+        border: solid $border_width $light_blue_2;
         // border: 2px solid $blue2;
-        border-bottom: 2px solid $light_blue;
+        border-bottom: solid $border_width $light_blue;
         &:hover {
-            border-bottom: 2px solid $rose;
+            border-bottom: solid $border_width $rose;
+            transition: width .5s ease, background-color .5s ease;
+        }
+        &:after {
+            border-bottom: solid $border_width $light_blue_2;
+            transition: width .5s ease, background-color .5s ease;
         }
         &:nth-child(n+2){
             margin-top: 1em;

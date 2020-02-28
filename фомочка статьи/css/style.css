@@ -15,6 +15,10 @@
   visibility: hidden;
 }
 
+.disp_none {
+  display: none;
+}
+
 .flex_row {
   display: flex;
   flex-direction: row;
@@ -204,7 +208,8 @@ a:hover {
   line-height: 40px;
   text-align: center;
   vertical-align: middle;
-  font-size: 150%;
+  font-size: 120%;
+  height: fit-content;
 }
 
 .pagination_page_numbers:hover {
@@ -231,7 +236,7 @@ a:hover {
 ul.breadcrumb {
   list-style: none;
   margin: 0em;
-  padding: 1em 0em;
+  padding: 0em 0em 1em 0em;
 }
 
 ul.breadcrumb li + li:before {
@@ -314,7 +319,7 @@ ul.breadcrumb li {
 }
 
 .header_container_height {
-  height: 15em;
+  height: 13em;
 }
 
 .header_container_social {
@@ -387,16 +392,11 @@ ul.breadcrumb li {
   /*  ЦВЕТ !!!!!!!!!!! */
   display: block;
   padding: 0.8em 2.5em;
-  color: #2F4F4F;
   text-align: center;
 }
 
 .header_navbar_active {
   color: #D9756C;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .banner_order {
@@ -537,8 +537,7 @@ ul.breadcrumb li {
   max-height: 25em;
   padding: .7em;
   cursor: pointer;
-  border: solid 0.1em #8A79D4;
-  background: #F0F8FF;
+  border: solid 0.15em #7EB9BF;
   /* при наведении курсора мышки */
 }
 
@@ -560,7 +559,16 @@ ul.breadcrumb li {
 }
 
 .widget:hover {
-  background-color: white;
+  background: #F0F8FF;
+}
+
+.widget_arrows {
+  font-size: 300%;
+  color: #7EB9BF;
+}
+
+.widget_arrows:hover {
+  color: #207D90;
 }
 
 .widget_div_img {
@@ -614,6 +622,10 @@ ul.breadcrumb li {
 
 .search_roll-up:hover {
   visibility: hidden;
+}
+
+.search_input input {
+  padding-left: 1em;
 }
 
 .software_search {
@@ -711,9 +723,9 @@ ul.breadcrumb li {
 }
 
 .reviews_text {
-  padding: .5em 0em;
+  padding-top: .5em;
   overflow: hidden;
-  height: 15em;
+  max-height: 15em;
 }
 
 .form-row {
@@ -724,7 +736,6 @@ ul.breadcrumb li {
   margin-top: .8em;
   display: block;
   width: 100%;
-  padding: 0 10px;
   line-height: 40px;
   background: none;
   border-width: 0;
@@ -759,6 +770,134 @@ ul.breadcrumb li {
   outline: 0;
   border-color: #F77A52;
   color: #F77A52;
+}
+
+._form {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  width: 100%;
+  height: 1em;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 2px;
+  list-style-type: none;
+}
+
+.select_options {
+  list-style-type: none;
+}
+
+.select_expand {
+  width: 0;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.select_expand::after {
+  content: '\003E';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%) rotate(90deg) scaleY(1.75);
+  color: #207D90;
+  font-size: 28px;
+  pointer-events: none;
+  z-index: 2;
+  transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+  opacity: .6;
+}
+
+.select_expand:hover::after {
+  opacity: 1;
+}
+
+.select_expand:checked::after {
+  transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75);
+}
+
+.select_expandLabel {
+  display: block;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.select_close {
+  display: none;
+}
+
+.select_closeLabel {
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.select_items {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 0.15em solid #7EB9BF;
+  border-radius: 2px;
+  padding-top: 40px;
+}
+
+.select_input {
+  display: none;
+}
+
+.select_label {
+  transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+  display: block;
+  height: 0;
+  font-size: 110%;
+  line-height: 40px;
+  overflow: hidden;
+  color: #3e3e3e;
+  background-color: #fff;
+  cursor: pointer;
+  padding-left: 1em;
+}
+
+.select_label-placeholder {
+  height: 2em;
+  vertical-align: middle;
+  position: absolute;
+  opacity: .6;
+  background-color: transparent;
+}
+
+.select_expand:checked + .select_closeLabel {
+  display: block;
+}
+
+.select_expand:checked + .select_closeLabel + .select_options .select_label {
+  height: 40px;
+}
+
+.select_expand:checked + .select_closeLabel + .select_options .select_label:hover {
+  background-color: #f7f7f7;
+}
+
+.select_expand:checked + .select_closeLabel + .select_options + .select_expandLabel {
+  display: none;
+}
+
+.select_input:checked + .select_label {
+  height: 40px;
+  margin-top: -40px;
 }
 
 .page_software_price {
@@ -990,12 +1129,18 @@ ul.breadcrumb li {
 
 .fieldset_border_secondary {
   padding: 10px;
-  border: 2px solid #F0F8FF;
-  border-bottom: 2px solid #7EB9BF;
+  border: solid 0.15em #F0F8FF;
+  border-bottom: solid 0.15em #7EB9BF;
 }
 
 .fieldset_border_secondary:hover {
-  border-bottom: 2px solid #F2B9B3;
+  border-bottom: solid 0.15em #F2B9B3;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.fieldset_border_secondary:after {
+  border-bottom: solid 0.15em #F0F8FF;
+  transition: width .5s ease, background-color .5s ease;
 }
 
 .fieldset_border_secondary:nth-child(n+2) {
@@ -1007,11 +1152,38 @@ ul.breadcrumb li {
   font-weight: bold;
 }
 
+.software_alone_container1 {
+  padding: 0.7em;
+  flex-flow: row wrap;
+  height: 24.4em;
+  overflow: hidden;
+  border-bottom: solid 0.15em #7EB9BF;
+  border-right: solid 0.15em #7EB9BF;
+  border-top: solid 0.15em white;
+  border-left: solid 0.15em white;
+  position: relative;
+}
+
+.software_alone_container1:hover {
+  border: solid 0.15em #7EB9BF;
+  transition: all .7s;
+}
+
 .software_alone_container {
   padding: 0.7em;
   flex-flow: row wrap;
-  max-height: 500px;
-  border: 0.2em solid #7EB9BF;
+  height: 24.4em;
+  overflow: hidden;
+  position: relative;
+  border-width: 0.15em;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #7EB9BF 0%, transparent 40%, transparent 60%, #7EB9BF 100%);
+  border-image-slice: 1;
+}
+
+.software_alone_container:hover {
+  border-image: linear-gradient(to bottom, #207D90 0%, transparent 40%, transparent 60%, #207D90 100%);
+  border-image-slice: 1;
 }
 
 .software_name {
@@ -1028,6 +1200,7 @@ ul.breadcrumb li {
   float: right;
   /* text-align: left; */
   padding-top: 0.6em;
+  padding-left: .4em;
 }
 
 .software_type {
@@ -1055,7 +1228,12 @@ ul.breadcrumb li {
   padding-inline-start: 0em;
   line-height: 160%;
   overflow: hidden;
-  height: 13em;
+  height: 10em;
+}
+
+.software_container {
+  align-content: flex-start;
+  width: 78%;
 }
 
 .software_container_button {

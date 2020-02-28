@@ -5,13 +5,14 @@
     <title>Название страницы
     </title>
     <meta name="description" content="Описание страницы" />
+    <script src="https://use.fontawesome.com/65da41867f.js"></script>
     <!--link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="stprostoi.css"-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
@@ -112,6 +113,78 @@
         </h1>
         Основная часть	
       </section>
+
+
+
+
+
+
+
+<div class="width_50">
+        <form class="_form">
+
+
+
+          <ul class="select">
+            <li>
+              <input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value=""/>
+              <span class="select_label select_label-placeholder">Awesomeness Level</span>
+            </li>
+            
+            <li class="select_items">
+              <input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener"/>
+              <label class="select_closeLabel" for="awesomeness-close"></label>
+              
+              <ul class="select_options">
+                <li class="select_option">
+                  <input class="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous"/>
+                  <label class="select_label" for="awesomeness-ridiculous">ridiculous</label>
+                </li>
+        
+                <li class="select_option">
+                  <input class="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable"/>
+                  <label class="select_label" for="awesomeness-reasonable">reasonable</label>
+                </li>
+        
+                <li class="select_option">
+                  <input class="select_input" type="radio" name="awesomeness" id="awesomeness-lacking"/>
+                  <label class="select_label" for="awesomeness-lacking">lacking</label>
+                </li>
+        
+                <li class="select_option">
+                  <input class="select_input" type="radio" name="awesomeness" id="awesomeness-awesomeless"/>
+                  <label class="select_label" for="awesomeness-awesomeless">awesomeless</label>
+                </li>
+              </ul>
+              
+              <label class="select_expandLabel" for="awesomeness-opener"></label>
+            </li>
+          </ul>
+
+
+
+
+
+
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -336,14 +409,14 @@
 
     <h2 class="pos_center let_sp_01em">Отзывы</h2>
     <div class="flex_row reviews_all flex_space-between margin_top_1em">
-      <div class="reviews flex_column">
+      <div class="reviews flex_column cursor">
       <div class="flex_row">
 
         <div class = "reviews_title">Иванов М.Л.</div>
         <div class = "reviews_date">20.01.2020</div>
       </div>
 
-      <span>Замечательная программа! Не могу нарадоваться! Жду доработки, 
+      <span class="reviews_text">Замечательная программа! Не могу нарадоваться! Жду доработки, 
         которую предложила, и тогда приложение станет совершенно идеальным 
         для меня! Спасибо вам! </span>
         
@@ -357,7 +430,7 @@
         </div>
       </div>
 
-      <div class="reviews flex_column">
+      <div class="reviews flex_column cursor">
         <div class="flex_row">
   
           <div class = "reviews_title">Иванов М.Л.</div>
@@ -382,14 +455,14 @@
           </div>
         </div>
 
-        <div class="reviews flex_column">
+        <div class="reviews flex_column cursor">
           <div class="flex_row">
     
             <div class = "reviews_title">Иванов М.Л.</div>
             <div class = "reviews_date">20.01.2020</div>
           </div>
     
-          <span>Спасибо вам! </span>
+          <span class="reviews_text">Спасибо вам! </span>
             
             <div>
               <div  class="flex_column reviews_adm pos_right">
@@ -555,7 +628,7 @@
 
       <div  class = "pos_center" >
         <h2>Оставьте свой отзыв</h2>
-        <p>Поделитесь своим мнением о нашем сервисе! Мы рады каждому отзыву!</p>
+        <p>Поделитесь своим мнением о нашем сервисе!</p>
         <div class=" contact">
           <a class = "text-align" href="mailto: example@mail.ru">
             Написать отзыв

@@ -5,13 +5,14 @@
     <title>Название страницы
     </title>
     <meta name="description" content="Описание страницы" />
+    <script src="https://use.fontawesome.com/65da41867f.js"></script>
     <!--link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="stprostoi.css"-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
@@ -120,15 +121,86 @@
           <div class="flex_row flex_space-between">
 
             <div class="flex_column software_left_column">
-            <div class="software_search">
+            <div class="flex_column software_search">
               <!-- <div class="search_title">Фильтр <a class="search_roll-up">Свернуть ↑</a></div> -->
-              <fieldset class="fieldset_border_primary" name="fieldset" >
+               <fieldset class="fieldset_border_primary padding_bottom_2em" name="fieldset" >
+                <form>
+                  <div class="flex_column">
+
+                    <div>Показать по:
+                      <select>
+                        <option>6</option>
+                        <option>12</option>
+                        <option>24</option>
+                      </select>
+                    </div>
+  
+
+
+                    <div class="">
+                      <form class="_form">
+              
+              
+              
+                        <ul class="select">
+                          <li>
+                            <input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value=""/>
+                            <span class="select_label select_label-placeholder">Сортировать по</span>
+                          </li>
+                          
+                          <li class="select_items">
+                            <input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener"/>
+                            <label class="select_closeLabel" for="awesomeness-close"></label>
+                            
+                            <ul class="select_options">
+                              <li class="select_option">
+                                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous"/>
+                                <label class="select_label" for="awesomeness-ridiculous">Популярное</label>
+                              </li>
+                      
+                              <li class="select_option">
+                                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable"/>
+                                <label class="select_label" for="awesomeness-reasonable">Новое</label>
+                              </li>
+                      
+                              <li class="select_option">
+                                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-lacking"/>
+                                <label class="select_label" for="awesomeness-lacking">&#8657 по размеру</label>
+                              </li>
+                      
+                              <li class="select_option">
+                                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-awesomeless"/>
+                                <label class="select_label" for="awesomeness-awesomeless">&#8659 по размеру</label>
+                              </li>
+                            </ul>
+                            
+                            <label class="select_expandLabel" for="awesomeness-opener"></label>
+                          </li>
+                        </ul>
+         
+                      </form>
+                    </div>
+
+
+
+
+                    <!-- <div>
+                      <select class="width_100">
+                        <option>Популярное</option>
+                        <option>Новое</option>
+                        <option>&#8657 по размеру</option>
+                        <option>&#8659 по размеру</option>
+                      </select>
+                    </div> -->
+                </form>
+               </fieldset>
+              <fieldset class="fieldset_border_primary margin_top_2em" name="fieldset" >
                 <!-- <legend style='padding: 10px;'>Фильтр</legend> -->
                 <form>
       
                 <div class="flex_column">
 
-                  <div>Показать по:
+                  <!-- <div>Показать по:
                     <select>
                       <option>6</option>
                       <option>12</option>
@@ -143,7 +215,7 @@
                       <option>&#8657 по размеру</option>
                       <option>&#8659 по размеру</option>
                     </select>
-                  </div>
+                  </div> -->
 
 
                   <div class="form-row ">
@@ -181,9 +253,9 @@
       
                 <fieldset class="fieldset_border_secondary" name="fieldset" >
                   <legend >Вид</legend>
-                  <div class = " ">
+                  <div class = "search_input">
 
-                    <div><input type="checkbox" name="vehicle" value="Bike">Настольное приложение</div>
+                    <div><input  type="checkbox" name="vehicle" value="Bike">Настольное приложение</div>
                     <div><input type="checkbox" name="vehicle" value="Bike">Сайт</div>
                     <div><input type="checkbox" name="vehicle" value="Bike">Мобильное приложение</div>
                   </div>
@@ -299,7 +371,8 @@
 
                 <div class = "pos_center margin_bottom_1em cursor"> 
                   <!-- Бокс картинки --> 
-                  <img  class = "" src="icons/up.png" />
+                  <!-- <img  class = "" src="icons/up.png" /> -->
+                  <i class="fa fa-angle-up widget_arrows" aria-hidden="true"></i>
                 </div>
 
             <section class="">
@@ -347,7 +420,7 @@
 
             <div class = "pos_center margin_top_1em cursor"> 
               <!-- Бокс картинки --> 
-              <img  class = "" src="icons/down.png" />
+              <i class="fa fa-angle-down widget_arrows" aria-hidden="true"></i>
             </div>
 
 
@@ -373,7 +446,7 @@
 
 
 
-            <section class="flex_row article_container padding_bottom_2em " style="width: 78%;"> 
+            <section class="flex_row article_container software_container padding_bottom_2em"> 
               <!-- Контейнер для всех карточек --> 
       
           
@@ -385,7 +458,7 @@
                   <div class = "flex_column"> 
             <div>
             
-                        <div class = "software_price visibility_hidden">35 000 р</div>
+                        <div class = "software_price disp_none"></div>
                     <!-- Контейнер названия и типа ПО -->
                     <a class = "software_name" href="/software.html">Автоматизированное кафе для доставки кофе на дом и в офис
                     </a>
@@ -405,7 +478,9 @@
                         <!-- Бокс кнопки покупки и лайка --> 
                         <button class="software_button-pay_style software_button-pay_style_width">Скачать 
                         </button>
-                        <div class="software_button-like_style" ></div>
+                        <div >
+                          <i class="fa fa-heart-o widget_arrows" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
                     <div class = "software_description article_div_text">
@@ -456,7 +531,7 @@
           
               <div class="column-2"> 
                 <!-- Бокс одной карточки --> 
-                <article class="flex_column software_alone_container blue_bg"> 
+                <article class="flex_column software_alone_container "> 
                   <!-- Контейнер одной карточки --> 
       
                   <div class = "flex_column"> 
@@ -518,13 +593,13 @@
               </div>
              <div class="column-2"> 
                 <!-- Бокс одной карточки --> 
-                <article class="flex_column software_alone_container blue_bg"> 
+                <article class="flex_column software_alone_container "> 
                   <!-- Контейнер одной карточки --> 
       
                   <div class = "flex_column"> 
             <div>
             
-                        <div class = "software_price visibility_hidden">35 000 р</div>
+                        <div class = "software_price visibility_hidden">350 000 000 р</div>
                     <!-- Контейнер названия и типа ПО -->
                     <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
                     </a>
@@ -607,12 +682,12 @@
 
               <div class="column-2"> 
                 <!-- Бокс одной карточки --> 
-                <article class="flex_column software_alone_container blue_bg"> 
+                <article class="flex_column software_alone_container "> 
                   <!-- Контейнер одной карточки --> 
       
                   <div class = "flex_column"> 
             <div>
-                        <div class = "software_price">35 000 р</div>
+                        <div class = "software_price">350 000 000 р</div>
                     <!-- Контейнер названия и типа ПО -->
                     <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
                     </a>
@@ -671,7 +746,7 @@
 
               <div class="column-2"> 
                 <!-- Бокс одной карточки --> 
-                <article class="flex_column software_alone_container blue_bg"> 
+                <article class="flex_column software_alone_container "> 
                   <!-- Контейнер одной карточки --> 
       
                   <div class = "flex_column"> 
@@ -735,7 +810,7 @@
 
               <div class="column-2"> 
                 <!-- Бокс одной карточки --> 
-                <article class="flex_column software_alone_container blue_bg"> 
+                <article class="flex_column software_alone_container "> 
                   <!-- Контейнер одной карточки --> 
       
                   <div class = "flex_column"> 
@@ -799,7 +874,7 @@
 
               <div class="column-2"> 
                 <!-- Бокс одной карточки --> 
-                <article class="flex_column software_alone_container blue_bg"> 
+                <article class="flex_column software_alone_container "> 
                   <!-- Контейнер одной карточки --> 
       
                   <div class = "flex_column"> 
