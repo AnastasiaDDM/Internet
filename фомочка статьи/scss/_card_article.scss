@@ -9,7 +9,7 @@
     font-size: 120%;
     padding-top: 0.7em;
   }
-  &_start-of-article {
+  &_start-of-article1 {
     /* text-align: right; */
     // font-size: 100%;
       /* text-align: bottom; */
@@ -18,8 +18,24 @@
     overflow: hidden;
     height: 3em;	
   }
+  &_start-of-article {
+    /* text-align: right; */
+    // font-size: 100%;
+      /* text-align: bottom; */
+    text-indent: 2.5em;
+    padding-left: 1em;
+    text-align: left;
+    overflow: hidden;
+    height: 10em;	
+  }
+  &_box_author_date1
+  {
+    justify-content: space-between;
+    font-size: 85%;
+  }
   &_box_author_date
   {
+    padding-top: 1em;
     justify-content: space-between;
     font-size: 85%;
   }
@@ -27,6 +43,12 @@
     text-align:right;
     height: 1.5em;
   }
+  
+  &_tag {
+  font-size: 70%;
+  word-spacing: 1em;
+  // padding-top: 1.5em;
+  } 
 }
 
 

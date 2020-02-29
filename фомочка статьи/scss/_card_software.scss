@@ -62,11 +62,16 @@
   }
 }
 
-
 .software_name {
 text-align: left;
 font-size: 150%;
 line-height: 120%;
+	
+}
+
+.software_div_name {
+  overflow: hidden;
+  height: 4em;
 }
 
 .software_price{

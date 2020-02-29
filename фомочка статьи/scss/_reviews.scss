@@ -8,12 +8,19 @@ padding: 1.2em 3em;
     }
 
     &_adm {
-    width: 80%;
-    border-top:solid 0.1em $red;
-    // border-top:dotted 0.2em $red;
-    border-left:solid 0.3em $red;
-    padding: .5em;
-    margin-top: 1em;
+        width: 80%;
+        border-top:solid 0.1em $red;
+        // border-top:dotted 0.2em $red;
+        border-left:solid 0.3em $red;
+        padding: .5em;
+        margin-top: 1em;
+        &_full {
+            // border:solid 0.1em $red;
+            border-left:solid 0.1em $red;
+            border-right:solid 0.1em $red;
+            padding: 1em;
+            margin: 2em 0em;
+        }
     }
     &_all {
     border-top:solid 0.1em $red; 
@@ -25,7 +32,7 @@ padding: 1.2em 3em;
     }
     &_stars {
         margin: 2em 0em;
-        // width: 60%;
+        width: 60%;
     }
     &_title {
         // padding-left: .5em;
@@ -42,7 +49,48 @@ padding: 1.2em 3em;
     &_text {
         padding-top: .5em;
         overflow: hidden;
-        max-height: 15em;
+        max-height: 20em;
+        line-height: 180%;
+        &_full {
+            padding-top: .5em;
+            line-height: 180%;
+        }
+    }
+    
 
+
+    // &_title {
+    //     padding-left: .5em;
+    //     padding-bottom: .5em;
+    //     text-align: center;
+    //     line-height: 140%;
+    //     margin: auto;
+    //     font-size: 110%;  
+    //     flex-grow: 2;
+    // }
+    // &_date {
+    //     text-align: center;
+    //     font-size: 80%;  
+    //     margin: auto;
+    // }  
+
+
+
+    &_alone_container {
+        padding: 2em;
+        // border:solid 0.1em $light_blue;
+        background-color:$light_blue_2;
+        // margin: 1em 1em 0em 0em;
+        height: 37em;
+
+        &:nth-child(2n){
+            // padding-top: 1em;
+            margin: 1em 1em 0em 0em;
+        }
+
+    }
+
+    &_soft_full {
+        font-size: 120%;
     }
 }

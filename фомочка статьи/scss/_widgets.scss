@@ -30,9 +30,17 @@
     &_arrows {
         font-size: 300%;
         color: $light_blue;
+        cursor: pointer;
         &:hover { color: $dark_blue; }
     }
 
+    &_section{
+        width: 20%;
+        &:nth-child(n+3){
+            padding-left: 3em;
+        }
+    }
+    
 }
 .widget_div {
     &_img {

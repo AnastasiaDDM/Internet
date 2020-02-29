@@ -71,7 +71,7 @@ font-family: $font1, $font2, sans-serif;
 
 
 
-.bg-head {
+// .bg-head {
 /* background: radial-gradient(#F2B9B3 0.2px, transparent 0.9px); */
 /* background-size: 20px 20px; */
 
@@ -86,7 +86,7 @@ font-family: $font1, $font2, sans-serif;
     /* background-image: */
 	/* linear-gradient(-450deg, transparent 1px, #f2f3f5 1px, transparent 3px),  */
 	/* linear-gradient(450deg, transparent 1px, #f2f3f5 1px, transparent 3px); */
-}
+// }
 
 
 .flex_item_img_text
@@ -150,6 +150,7 @@ width: 100%;
 
 a {                                                         /*  ЦВЕТ !!!!!!!!!!! */
 text-decoration: none;
+cursor: pointer;
 color: $gray;
 	&:hover
 	{                                                         /*  ЦВЕТ !!!!!!!!!!! */
@@ -163,9 +164,15 @@ color: $gray;
 // color: $gray;
 // }
 
- 
+.link_style_none:hover {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+	text-decoration: none;
+	color: $gray;
+	cursor: pointer;
+}
 
-.link_style_border:hover {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+
+.link_style_border:hover { 
+	cursor: pointer;                                                        /*  ЦВЕТ !!!!!!!!!!! */
 	border-bottom:solid 0.1em $red;
     /* text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
     color: $red; /* Цвет ссылки */
@@ -175,6 +182,7 @@ color: $gray;
 .link_read-more {                                                           /*  ЦВЕТ !!!!!!!!!!! */
 	text-decoration: none;	
 	overflow: hidden;	
+	cursor: pointer;
 	
 	/* padding-right: 30px; */
 	font-size: .9em;
@@ -183,11 +191,7 @@ color: $gray;
 	
 }
 
-.padding_left_2em {padding-left: 2em;}
-.padding_left_1em {padding-left: 1em;}
-.padding_left_4em {padding-left: 4em;}
-// .width_50 {width: 40%;}
-// .width_100 {width: 100%;}
+
 
 .pos_right {
 margin-left: auto;
@@ -229,6 +233,10 @@ margin-left: auto;
 	width: 30%;
 	}
 
+.width_70 {
+	width: 70%;
+	}
+
 .width_40 {
 	width: 40%;
 	}
@@ -239,15 +247,11 @@ margin-left: auto;
 	
 
 
-.margin_top-bootom_1em { margin: 1em 0em;}
-.margin_left-right_1em { margin: 0em 1em;}
-
-
 .pagination {
 	width: 40%;
 	margin: auto;
 	padding: 3em 0em;
-	height: 9em;
+	height: 2em;
 	&_page_numbers {
 		// border-bottom:solid 0.1em $red;
 		// border-top:solid 0.1em $red;
@@ -315,5 +319,18 @@ ul.breadcrumb li {
 .margin_top_1em {margin-top: 1em;}
 .margin_bottom_1em {margin-bottom: 1em;}
 .margin_top_2em {margin-top: 2em;}
+.margin_top_3em {margin-top: 3em;}
+
+
+.padding_left_2em {padding-left: 2em;}
+.padding_left_1em {padding-left: 1em;}
+.padding_left_4em {padding-left: 4em;}
+
+.padding_bottom_4em {padding-bottom: 4em;}
+
+
+.margin_top-bootom_1em { margin: 1em 0em;}
+.margin_left-right_1em { margin: 0em 1em;}
+
 
 .cursor {cursor: pointer;}
