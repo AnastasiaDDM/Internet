@@ -43,6 +43,10 @@ justify-content: flex-start;
 justify-content: space-between;
 }
 
+.flex_space-around {
+	justify-content: space-around;
+	}
+
 .fix_width                                                         /*  ЦВЕТ !!!!!!!!!!! */
 {
 	max-width: 1420px;
@@ -193,17 +197,18 @@ color: $gray;
 
 
 
-.pos_right {
-margin-left: auto;
-// text-align: right;
 
-}
 
 .pos_left {
 	margin-right: auto;
 	// text-align: end;
 	flex-direction: row-reverse;
-	}
+}
+
+.pos_left_for_text {
+	text-align: left;
+}
+	
 
 .pos_center {
 	margin: auto;
@@ -215,8 +220,17 @@ margin-left: auto;
 	margin: auto;
 }
 
+.pos_right {
+	margin-left: auto;
+}
+
+
 .pos_right_for_div {
 	margin: auto;
+	text-align: right;
+}
+
+.pos_right_for_text {
 	text-align: right;
 }
 
@@ -327,7 +341,10 @@ ul.breadcrumb li {
 .padding_left_4em {padding-left: 4em;}
 
 .padding_bottom_4em {padding-bottom: 4em;}
+.padding_top_4em {padding-top: 4em;}
 
+.padding_right_4em {padding-right: 4em;}
+.padding_right_2em {padding-right: 2em;}
 
 .margin_top-bootom_1em { margin: 1em 0em;}
 .margin_left-right_1em { margin: 0em 1em;}

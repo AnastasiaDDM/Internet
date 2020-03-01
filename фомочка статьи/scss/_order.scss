@@ -1,0 +1,41 @@
+.order {
+    &_type {
+
+        font-size: 110%;
+        font-weight: bold;
+        // vertical-align: middle;
+        // margin: auto;
+        &_i {
+            font-size: 200%;
+            // margin: auto;
+        }
+    }
+    &_state {
+        font-size: 130%;
+        font-weight: bold;
+        color: $yellow;
+
+    }
+    &_chat {
+        font-size: 130%;
+        font-weight: bold;
+
+        &_i {
+            font-size: 150%;
+            vertical-align: middle;
+            color: $red_intense;
+        }
+    }
+    &_pay {
+        font-size: 130%;
+        // font-weight: bold;
+        line-height: 170%;
+        padding: 1em;
+        border-bottom:solid 0.1em $dark_blue;
+        border-left:solid 0.1em $light_blue;
+    }
+    &_text {
+        font-size: 110%;
+        line-height: 160%;
+    }
+}

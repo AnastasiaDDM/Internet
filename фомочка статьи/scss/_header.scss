@@ -97,3 +97,30 @@
 	}
 	&_active {color: $red;}
 }
+
+
+
+
+.second_menu {
+	padding: 1em 0em;
+	background: $light_blue_1;
+	ul {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+		display: table-row;
+	}
+	li {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+		display: table-cell;
+		background: white;
+		border-bottom:solid 0.1em white;
+	}
+	ul li:hover, .menu a:hover {                                 /*  ЦВЕТ !!!!!!!!!!! */
+		/* background: gray; */ 
+		   border-bottom:solid 0.1em $red;
+	   }
+	li a {                                                         /*  ЦВЕТ !!!!!!!!!!! */
+		display: block;
+		padding: 1em 2.5em;
+
+		text-align: center;
+	}
+	&_active {color: $red;}
+}

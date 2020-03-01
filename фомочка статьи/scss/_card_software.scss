@@ -147,6 +147,21 @@ overflow: hidden;
 }
 
 
+.software_container_all-width {
+  // align-content: flex-start;
+  width: 90%;
+  &_button {
+	height: 3em;
+	margin-top: 1.4em;
+  font-size: 70%;
+  }
+  &_image_button {
+    width: 35%;
+        padding-right: 1em;
+  }
+}
+
+
 // .software_container_image_button {
 //   width: 35%;
 //       padding-right: 1em;

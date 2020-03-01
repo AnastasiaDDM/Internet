@@ -51,7 +51,7 @@
     transition-delay: .1s;
     &:hover { 
         color: #fff; /* цвет текста */
-        background: rgb(232,95,76); 
+        background: #e85f4c; 
     } /* при наведении курсора мышки */
     &:active { 
         color: #fff; /* цвет текста */
@@ -74,4 +74,35 @@
 .button_like_pos {
     margin-left: 1em;
     margin-top: .5em;
+}
+
+
+.button_with_icon {
+    &_i {
+        font-size: 150%;
+        // text-align: start;
+        vertical-align: middle;
+        padding-right: 6px;
+    }
+}
+
+.button_delicate {
+    @extend .link_style_none;
+    // color: #fff; /* цвет текста */
+    // text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: $light_blue_1; /* фон кнопки */
+    padding: .3em .5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    // border-radius: 20% 0%;
+    // transition-duration: .2s;
+    // transition-delay: .1s;
+    &:hover { 
+        // color: #fff; /* цвет текста */
+        background: $light_blue_2; 
+    } /* при наведении курсора мышки */
+    &:active { 
+        // color: #fff; /* цвет текста */
+        // background: $da_blue; 
+    } /* при нажатии */
 }

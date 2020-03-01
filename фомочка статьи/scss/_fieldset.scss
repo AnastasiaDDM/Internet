@@ -71,6 +71,11 @@
         }
     }
 
+    &_form_password {
+        // background-color: $light_blue_2;
+        border: solid $border_width $light_blue_1;
+
+    }
 }
 .input_big {width: 100%; height: 1.5em;}
 .input_middle {width: 75%; height: 1.5em;}
