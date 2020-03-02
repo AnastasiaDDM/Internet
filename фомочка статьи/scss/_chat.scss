@@ -1,0 +1,104 @@
+.chat {
+    &_img {
+        max-height: 10em;
+        &_margin_between:nth-child(n+2){
+            margin-left: .6em;
+        }
+   }
+    &_left {
+        display: flex;
+        flex-direction: row;
+    }
+    &_right {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &_comment {
+        max-width: 80%; 
+        // flex-basis: 50%;
+        // margin-left: 50px;
+        margin-bottom: 2em;
+        // padding-left: 53px;
+        &_date {
+            &_left {
+                text-align: start;
+                padding-bottom: .6em;
+                font-size: 90%;
+                letter-spacing: .1em;
+            }
+            &_right {
+                text-align: end;
+                padding-bottom: .6em;
+                font-size: 90%;
+                letter-spacing: .1em;
+            }
+        }
+        &_bubble {
+            &_left {
+                background: $light_blue_1;
+                position: relative;
+                // -moz-border-radius: 10px;
+                // -webkit-border-radius: 10px;
+                border-radius: 16px;
+                margin-left: 3em;
+                padding: 1em;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    right: 100%;
+                    top: 25px;
+                    width: 0;
+                    height: 0;
+                    border-top: 12px solid transparent;
+                    border-right: 18px solid $light_blue_1;
+                    border-bottom: 12px solid transparent;
+                }
+            }
+            &_right {
+                background: $light_blue_1;
+                position: relative;
+                // -moz-border-radius: 10px;
+                // -webkit-border-radius: 10px;
+                border-radius: 16px;
+                margin-right: 3em;
+                padding: 1em;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 100%;
+                    top: 25px;
+                    width: 0;
+                    height: 0;
+                    border-top: 12px solid transparent;
+                    border-left: 18px solid $light_blue_1;
+                    border-bottom: 12px solid transparent;
+                }
+            }
+        }
+
+    }
+}
+
+
+// .chat_comment_bubble {
+// 	background: $light_blue_1;
+// 	position: relative;
+// 	// -moz-border-radius: 10px;
+// 	// -webkit-border-radius: 10px;
+// 	border-radius: 16px;
+//     margin-left: 50px;
+//     padding: 1em;
+// }
+// .chat_comment_bubble:before {
+// 	content: "";
+//     position: absolute;
+//     right: 100%;
+//     top: 25px;
+//     width: 0;
+//     height: 0;
+//     border-top: 12px solid transparent;
+//     border-right: 18px solid $light_blue_1;
+//     border-bottom: 12px solid transparent;
+// }
+

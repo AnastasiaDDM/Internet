@@ -1,5 +1,8 @@
 .form-row {
     position: relative;
+    &_edit {
+
+    }
   }
   .form-row input {
     margin-top: .8em;
@@ -375,7 +378,7 @@
 }
 
 
-  .input_square {
+.input_square {
     // font: 15px/24px
     //  "Lato", Arial, sans-serif; 
     //  color: #333; 
@@ -384,7 +387,7 @@
       letter-spacing: 1px;
       height: 2.5em;
       border: none;
-    }
+}
 
 
 .input_square{
@@ -510,3 +513,11 @@
       }
   }
 }
+
+
+
+
+
+
+
+
