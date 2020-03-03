@@ -4,10 +4,12 @@
         font-size: 110%;
         font-weight: bold;
         // vertical-align: middle;
-        // margin: auto;
+        // margin: auto
+        margin: auto 0em;
         &_i {
             font-size: 200%;
-            // margin: auto;
+            // margin: auto 0em;
+            padding-left: 1em;
         }
     }
     &_state {
@@ -31,7 +33,7 @@
         // font-weight: bold;
         line-height: 170%;
         padding: 1em;
-        border-bottom:solid 0.1em $dark_blue;
+
         border-left:solid 0.1em $light_blue;
     }
     &_text {
