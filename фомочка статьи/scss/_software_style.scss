@@ -17,12 +17,14 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       cursor: pointer;
+      transition: .2s ease; 
 
 
 
       &:hover { 
         color: #fff; /* цвет текста */
         background:$light_blue; 
+        transition: .1s ease; 
     } /* при наведении курсора мышки */
     &:active { 
         color: #fff; /* цвет текста */
