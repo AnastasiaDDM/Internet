@@ -5,12 +5,13 @@
     <title>Название страницы
     </title>
     <meta name="description" content="Описание страницы" />
-    <script src="https://use.fontawesome.com/65da41867f.js"></script>
+    <!-- <script src="https://use.fontawesome.com/65da41867f.js"></script> -->
     <!--link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="stprostoi.css"-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
@@ -107,6 +108,29 @@
         </div>
       </div>
     </header>
+    
+    <div class="flex_row second_menu margin_bottom_1em">
+      <ul class="pos_center">
+        <li>
+          <a href="/aboutcompany.html">Мои&nbsp;данные
+          </a>
+        </li>
+        <li>
+          <a href="/catalog.html">Мои&nbsp;заказы
+          </a>
+        </li>
+        <li>
+          <a href="/articles.html">Мои&nbsp;загрузки
+          </a>
+        </li>
+        <li>
+          <a  class = "header_navbar_active" href="/reviews.html">Избранное
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
     <main>
       <section>
         <h1>Избранное
@@ -116,31 +140,6 @@
             <li><a href="URL">Личный кабинет</a></li>
             <li>Избранное</li>
         </ul>
-
-        <div class="flex_row second_menu margin_bottom_1em">
-            <ul class="pos_center">
-              <li>
-                <a href="/aboutcompany.html">Мои&nbsp;данные
-                </a>
-              </li>
-              <li>
-                <a href="/catalog.html">Мои&nbsp;заказы
-                </a>
-              </li>
-              <li>
-                <a href="/articles.html">Мои&nbsp;загрузки
-                </a>
-              </li>
-              <li>
-                <a  class = "header_navbar_active" href="/reviews.html">Избранное
-                </a>
-              </li>
- 
-            </ul>
-          </div>
-
-
-         
 
           
           <section class="margin_top_3em"> 
@@ -180,7 +179,7 @@
                       <button class="software_button-pay_style software_button-pay_style_width">Скачать 
                       </button>
                       <div >
-                        <i class="fa fa-heart-o widget_arrows" aria-hidden="true"></i>
+                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
                       </div>
                     </div>
                   </div>
@@ -237,9 +236,9 @@
     
                 <div class = "flex_column"> 
           <div>
-                      <div class = "software_price">35 000 р</div>
+                      <div class = "software_price pos_right_for_div">35 000 р</div>
                   <!-- Контейнер названия и типа ПО -->
-                  <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
+                  <a class = "software_name" href="URL">Автоматизированное кафе 
                   </a>
              </div>
                   <a class = "software_type" href="URL">Настольное приложение
@@ -257,7 +256,9 @@
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Приобрести
                       </button>
-                      <div class="software_button-like_style" ></div>
+                      <div >
+                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                      </div>
                     </div>
                   </div>
                   <div class = "software_description article_div_text">
@@ -320,7 +321,9 @@
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style dark_blue-bg software_button-pay_style_width">Скачать бесплатно
                       </button>
-                                        <div class="software_button-like_style" ></div>
+                      <div >
+                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                      </div>
                     </div>
                   </div>
                   <div class = "software_description article_div_text">
@@ -408,7 +411,9 @@
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Приобрести
                       </button>
-                      <div class="software_button-like_style" ></div>
+                      <div >
+                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                      </div>
                     </div>
                   </div>
                   <div class = "software_description article_div_text">
@@ -472,7 +477,9 @@
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Приобрести
                       </button>
-                      <div class="software_button-like_style" ></div>
+                      <div >
+                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                      </div>
                     </div>
                   </div>
                   <div class = "software_description article_div_text">
@@ -536,7 +543,9 @@
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Приобрести
                       </button>
-                      <div class="software_button-like_style" ></div>
+                      <div >
+                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                      </div>
                     </div>
                   </div>
                   <div class = "software_description article_div_text">
@@ -600,7 +609,10 @@
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Приобрести
                       </button>
-                      <div class="software_button-like_style" ></div>
+
+                       <div >
+                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                      </div> 
                     </div>
                   </div>
                   <div class = "software_description article_div_text">

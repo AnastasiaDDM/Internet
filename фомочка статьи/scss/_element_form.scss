@@ -14,13 +14,15 @@
     border-width: 0;
     border-bottom: 2px solid $light_blue;
     transition: all 0.2s ease;
+    padding-left: 1rem;
     &:hover {
       border-bottom: 2px solid $rose;
     } 
   }
   .form-row_edit label {
     position: absolute;
-    left: 12px;
+    left: 1rem;
+    bottom: -2rem;
     color: #9d959d;
     // font-size: 20px;
     font-weight: 300;
@@ -43,6 +45,8 @@
     border-color: #F77A52;
     color: #F77A52;
   }
+
+
 
 
 

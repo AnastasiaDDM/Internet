@@ -109,3 +109,61 @@
         // background: $da_blue; 
     } /* при нажатии */
 }
+
+.button_like {
+    font-size: 300%;
+    cursor: pointer;
+    color: lightgrey;
+    // text-shadow: 1px 1px #bbb;
+    &:hover {
+        color:$rose;
+        // text-shadow: 1px 1px #bbb;
+    }
+}
+
+
+
+
+// .like-area {
+// 	overflow: hidden;
+//     // width: 265px;
+//     // width: 20em;
+// 	// margin: 0 auto;
+// }
+// .like-area:not(:checked) > input {
+// 	display: none;
+// }
+// .like-area:not(:checked) > label {
+// 	float: right;
+// 	width: 42px;
+// 	padding: 0;
+// 	cursor: pointer;
+// 	font-size: 50px;
+// 	line-height: 50px;
+// 	color: lightgrey;
+// 	text-shadow: 1px 1px #bbb;
+// }
+// .like-area:not(:checked) > label:before {
+//     // content: '★';
+//     content: '❤';
+    
+// }
+// .like-area > input:checked ~ label {
+// 	color: gold;
+// 	text-shadow: 1px 1px #c60;
+// }
+// .like-area:not(:checked) > label:hover,
+// .like-area:not(:checked) > label:hover ~ label {
+// 	color: gold;
+// }
+// .like-area > input:checked + label:hover,
+// .like-area > input:checked + label:hover ~ label,
+// .like-area > input:checked ~ label:hover,
+// .like-area > input:checked ~ label:hover ~ label,
+// .like-area > label:hover ~ input:checked ~ label {
+// 	color: gold;
+// 	text-shadow: 1px 1px goldenrod;
+// }
+// .like-area > label:active {
+// 	position: relative;
+// }

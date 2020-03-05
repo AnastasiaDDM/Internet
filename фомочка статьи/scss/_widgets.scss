@@ -5,6 +5,7 @@
     padding: .7em;
     cursor: pointer;
     border:solid $border_width $light_blue;
+    background-color: white;
 
     &_marker::before {
         /* list-style-image:url(icons/marker_list.png); */

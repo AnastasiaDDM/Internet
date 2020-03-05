@@ -1,4 +1,11 @@
 .order {
+    &_card_type_state {
+        width: fit-content;
+        padding: 2em;
+        margin-bottom: 1em;
+        border:solid 0.5em $light_rose;
+        // background-color:$light_rose;
+    }
     &_type {
 
         font-size: 110%;

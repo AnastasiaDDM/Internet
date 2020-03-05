@@ -31,8 +31,15 @@ padding: 1.2em 3em;
         margin-left: 5em;
     }
     &_stars {
-        margin: 2em 0em;
+        margin: 0.4em 0em;
         width: 60%;
+        &_active {
+            border-color: blue($color: #000000);;
+            font-size: 300%;
+            color: $light_blue;
+            cursor: pointer;
+            &:hover { color: $dark_blue; }
+        }
     }
     &_title {
         // padding-left: .5em;
@@ -47,7 +54,7 @@ padding: 1.2em 3em;
         margin: auto;
     }
     &_text {
-        padding-top: .5em;
+        padding-top: .2em;
         overflow: hidden;
         max-height: 20em;
         line-height: 180%;
@@ -55,6 +62,10 @@ padding: 1.2em 3em;
             padding-top: .5em;
             line-height: 180%;
         }
+    }
+    &_img {
+        max-height: 2.5em;
+        margin-right: .4em;
     }
     
 
@@ -93,4 +104,76 @@ padding: 1.2em 3em;
     &_soft_full {
         font-size: 120%;
     }
+}
+
+
+
+
+
+
+
+
+
+.rating-area {
+	overflow: hidden;
+    // width: 265px;
+    // width: 20em;
+	// margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 50px;
+	line-height: 50px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+    // content: '★';
+    content: '✪';
+    
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+
+.rating-result {
+	// width: 265px;
+	// margin: 0 auto;
+}
+.rating-result span {
+	padding: 0;
+	font-size: 2.5em;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+	content: '✪';
+}
+.rating-result > span.active {
+	color: gold;
+	text-shadow: 1px 1px #c60;
 }
