@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="stprostoi.css"-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
@@ -142,7 +143,7 @@
 
 
         <div class="margin_top_4em padding_top-bootom_1em">    <!--Это контейнер новых ПО-->
-            <div class="pos_center text_up"><h2>Наши новинки</h2></div>
+            <div class="pos_center text_up padding_bottom_1em"><h2>Наши новинки</h2></div>
         <div class="flex_row flex_space-between margin_top-bootom_1em margin_top_2em">
                 
             <i class="fa fa-angle-left pos_center widget_arrows" aria-hidden="true"></i>
@@ -219,7 +220,7 @@
 
 
 
-        <div class="margin_top_4em padding_top-bootom_1em"  style="background-color:#f5f5fd; box-shadow: 0 0 10px 10px #f5f5fd;">    <!--Это контейнер примеров ПО-->
+        <div class="margin_top_4em padding_top-bootom_1em main_block_bg">    <!--Это контейнер примеров ПО-->
             <div class = "flex_row  pos_center_for_div" style="flex-wrap: center;justify-content: space-between;
             width: 70%; ">
                 <div class=" main_type-soft cursor" style=" text-align: right;  width: 25%;"><h2>Мобильные приложения</h2></div>
@@ -381,9 +382,9 @@
 
 
         
-        <div style="background-color:lavender; box-shadow: 0 0 10px 10px lavender;">
+        <div>
         <div class="margin_top_4em padding_top-bootom_1em width_70 pos_center">    <!--Это контейнер видов заказов-->
-            <div class="pos_center text_up"><h2>Закажи прямо сейчас</h2></div>
+            <div class="pos_center text_up padding_bottom_1em"><h2>Закажи прямо сейчас</h2></div>
         <div class="flex_row flex_space-between margin_top-bootom_1em margin_top_2em">
 
               <div>
@@ -407,7 +408,7 @@
                   </button>
                 </div>
 
-                <div class = "">
+                <div class = "margin_top_1em">
                     <a href="#" class="link_read-more link_style_border">
                       <span>Или посмотреть демо
                       </span>
@@ -438,7 +439,7 @@
                     </button>
                   </div>
 
-                  <div class = "">
+                  <div class = "margin_top_1em">
                     <a href="#" class="link_read-more link_style_border">
                       <span>Или скачать бесплатно
                       </span>
@@ -470,7 +471,7 @@
                     </button>
                   </div>
 
-                  <div class = "">
+                  <div class = "margin_top_1em">
                     <a href="#" class="link_read-more link_style_border">
                       <span>Или скачать бесплатно
                       </span>
@@ -490,8 +491,8 @@
 
 
                 <!--Стек технологий-->
-                <div class="padding_top_4em">
-                    <div class="pos_center text_up"><h2>Стек технологий</h2></div>
+                <div class="margin_top_4em padding_top-bootom_1em main_block_bg">
+                    <div class="pos_center text_up padding_bottom_1em"><h2>Стек технологий</h2></div>
                     <div class="flex_row flex_space-around main_stack_all">
         
         
@@ -595,11 +596,11 @@
 
 
 
-        <section class="padding_top_4em">
+        <section class="margin_top_4em padding_top-bootom_1em">
 
           <!-- <div class ="flex_row flex_flex-center"> -->
             <div class ="text_up">
-              <h2 class="pos_center let_sp_01em">Отзывы</h2>
+              <h2 class="pos_center let_sp_01em padding_bottom_1em">Отзывы</h2>
             </div>
             <!-- <div class="margin_top-bootom_1em"><a href="#" class="button_search">Добавить отзыв</a></div>
           </div> -->
@@ -615,14 +616,14 @@
                 которую предложила, и тогда приложение станет совершенно идеальным 
                 для меня! Спасибо вам! </span>
                 
-                <div>
-                  <div  class="flex_column reviews_adm pos_right">
-                    <div class = "reviews_title">Администратор</div>
-                    <span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                      с каждым выходом нового ПО! </span>
-                      
-                  </div>
+                <div  class="flex_column 1reviews_adm pos_right margin_top_1em">	   
+                  <fieldset class="" name="fieldset" style="border: none; border-top: solid 0.3em lightblue;">
+                    <legend class="pos_center" style="padding: 0em 1em;">Администратор</legend>
+                    <span>Огромное спасмбо за отзыв!Огромное спасмбо за отзыв!Огромное спасмбо за отзыв!
+                    </span>	
+                  </fieldset>           
                 </div>
+
               </div>
         
               <div class="reviews flex_column cursor">
@@ -640,14 +641,23 @@
                   которую предложила, и тогда приложение станет совершенно идеальным 
                   для меня! Спасибо вам! </span>
                   
-                  <div>
+                  <!-- <div>
                     <div  class="flex_column reviews_adm pos_right">
                       <div class = "reviews_title">Администратор</div>
                       <span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
                         с каждым выходом нового ПО! </span>
                         
                     </div>
+                  </div> -->
+
+                  <div  class="flex_column 1reviews_adm pos_right margin_top_1em">	   
+                    <fieldset class="" name="fieldset" style="border: none; border-top: solid 0.3em lightblue;">
+                      <legend class="pos_center" style="padding: 0em 1em;">Администратор</legend>
+                      <span>Огромное спасмбо за отзыв!Огромное спасмбо за отзыв!Огромное спасмбо за отзыв!
+                      </span>	
+                    </fieldset>           
                   </div>
+
                 </div>
         
                 <div class="reviews flex_column cursor">
@@ -658,7 +668,7 @@
                   </div>
             
                   <span class="reviews_text">Спасибо вам! </span>
-                    
+<!--                     
                     <div>
                       <div  class="flex_column reviews_adm pos_right">
                         <div class = "reviews_title">Администратор</div>
@@ -668,12 +678,25 @@
                           с каждым выходом нового ПО </span>
                           
                       </div>
+                    </div> -->
+
+                    <div  class="flex_column 1reviews_adm pos_right margin_top_1em">	   
+                      <fieldset class="" name="fieldset" style="border: none; border-top: solid 0.3em lightblue;">
+                        <legend class="pos_center" style="padding: 0em 1em;">Администратор</legend>
+                        <span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                          с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                          с каждым выходом нового ПО Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                          с каждым выходом нового ПО 
+                        </span>	
+                      </fieldset>           
                     </div>
+
+
                   </div>
         
             </div>
         
-            <div class="flex_row flex_flex-center">   
+            <div class="flex_row flex_flex-center margin_top_1em">   
               <div class="margin_top-bootom_1em"><a href="#" class="button_search">Читать еще</a></div>
               <div class="margin_top-bootom_1em"><a href="#" class="button_search reviews_button_margin">Добавить отзыв</a></div> 
             </div>

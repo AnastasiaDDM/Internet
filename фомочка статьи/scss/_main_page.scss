@@ -1,14 +1,19 @@
 
 .main {
-
+&_block_bg {
+    background-color:#f5f5fd;
+}
   
 &_banner {
     width: 100%;
-    border-top:solid 0.1em $red;
-    border-bottom:solid 0.1em $dark_blue;
+    border-top:solid $border_width $red;
+    border-bottom:solid $border_width $dark_blue;
+    transition-duration: .2s;
+    transition-delay: .2s;
     &:hover {
         background: $light_blue_2;
         box-shadow: 0 0 10px 10px $light_blue_2;
+        transition: .2s ease; 
     }
     &_order {
 
@@ -180,10 +185,10 @@
             line-height: 200%;
             letter-spacing: 1.4px;
             &_div {
-                background-color: #ededfa;
-                border-right:solid $border_width $light_blue;
-                border-left:solid $border_width $light_blue;
-                box-shadow: 0 0 10px 10px #ededfa;
+                background-color: #eff3fd;
+                // border-right:solid $border_width $light_blue;
+                // border-left:solid $border_width $light_blue;
+                box-shadow: 0 0 10px 10px #eff3fd;
             }
         }
     }

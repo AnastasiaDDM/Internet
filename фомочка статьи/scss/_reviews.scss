@@ -8,23 +8,30 @@ padding: 1.2em 3em;
     }
 
     &_adm {
-        width: 80%;
-        border-top:solid 0.1em $red;
-        // border-top:dotted 0.2em $red;
-        border-left:solid 0.3em $red;
-        padding: .5em;
-        margin-top: 1em;
+        // width: 80%;
+        // border-top:solid 0.1em $red;
+        // // border-top:dotted 0.2em $red;
+        // border-left:solid 0.3em $red;
+        // padding: .5em;
+        // margin-top: 1em;
+
+        overflow: hidden;
+        max-height: 20em;
+        @extend .border_fieldset_top;
+
+
         &_full {
             // border:solid 0.1em $red;
-            border-left:solid 0.1em $red;
-            border-right:solid 0.1em $red;
-            padding: 1em;
+            // border-left:solid 0.1em $red;
+            // border-right:solid 0.1em $red;
+            // padding: 1em;
             margin: 2em 0em;
+            @extend .border_fieldset_top;
         }
     }
     &_all {
-    border-top:solid 0.1em $red; 
-    border-bottom:solid 0.1em $red;
+    // border-top:solid 0.1em $red; 
+    // border-bottom:solid 0.1em $red;
     padding: .5em;
     }
     &_button_margin {
@@ -86,6 +93,14 @@ padding: 1.2em 3em;
     // }  
 
 
+    &_screenshot {
+
+        &:nth-child(n+2){
+            // padding-top: 1em;
+            margin-left: .5em ;
+        }
+
+    }
 
     &_alone_container {
         padding: 2em;
@@ -134,24 +149,24 @@ padding: 1.2em 3em;
 	text-shadow: 1px 1px #bbb;
 }
 .rating-area:not(:checked) > label:before {
-    // content: '★';
-    content: '✪';
+    content: '★';
+    // content: '✪';
     
 }
 .rating-area > input:checked ~ label {
-	color: gold;
+	color: $light_blue;
 	text-shadow: 1px 1px #c60;
 }
 .rating-area:not(:checked) > label:hover,
 .rating-area:not(:checked) > label:hover ~ label {
-	color: gold;
+	color:$light_blue;
 }
 .rating-area > input:checked + label:hover,
 .rating-area > input:checked + label:hover ~ label,
 .rating-area > input:checked ~ label:hover,
 .rating-area > input:checked ~ label:hover ~ label,
 .rating-area > label:hover ~ input:checked ~ label {
-	color: gold;
+	color: $light_blue;
 	text-shadow: 1px 1px goldenrod;
 }
 .rate-area > label:active {
@@ -171,9 +186,9 @@ padding: 1.2em 3em;
 	text-shadow: 1px 1px #bbb;
 }
 .rating-result > span:before {
-	content: '✪';
+	content: '★';
 }
 .rating-result > span.active {
-	color: gold;
+	color: $red;
 	text-shadow: 1px 1px #c60;
 }

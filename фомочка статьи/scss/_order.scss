@@ -1,9 +1,12 @@
 .order {
     &_card_type_state {
+        @include float_right;
         width: fit-content;
-        padding: 2em;
-        margin-bottom: 1em;
-        border:solid 0.5em $light_rose;
+        padding: 1.5em;
+        // margin-bottom: 1em;
+        // border:solid $border_width_fat $light_rose;
+        border:solid $border_width_fat $light_blue;
+
         // background-color:$light_rose;
     }
     &_type {
@@ -12,17 +15,20 @@
         font-weight: bold;
         // vertical-align: middle;
         // margin: auto
-        margin: auto 0em;
+        // margin: auto 0em;
+        vertical-align: top;
         &_i {
-            font-size: 200%;
+            font-size: 180%;
+            color: $dark_blue;
             // margin: auto 0em;
-            padding-left: 1em;
+            // padding-left: 1em;
         }
     }
     &_state {
         font-size: 130%;
         font-weight: bold;
         color: $yellow;
+        padding-top: .5em;
 
     }
     &_chat {

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.float_right {
+  float: right;
+}
+
 .icon {
   height: 2.3em;
 }
@@ -273,8 +277,16 @@ ul.breadcrumb li {
   max-width: 70em;
 }
 
+.max_height_10em {
+  max-height: 10em;
+}
+
 .padding_2em {
   padding: 2em;
+}
+
+.padding_bottom_1em {
+  padding-bottom: 1em;
 }
 
 .padding_top_2em {
@@ -355,6 +367,30 @@ ul.breadcrumb li {
 
 .text_up {
   text-transform: uppercase;
+}
+
+.border_top_bottom {
+  border: none;
+  border-top: solid 0.1em #D9756C;
+  border-bottom: solid 0.1em #207D90;
+}
+
+.border_none {
+  border: none;
+}
+
+.border_fieldset_top, .reviews_adm, .reviews_adm_full {
+  border: none;
+  border-top: solid 0.3em lightblue;
+}
+
+.border_fieldset_top_legend {
+  padding: 0em 1em;
+}
+
+.border_fieldset_top_legend_big {
+  padding: 0em 1em;
+  font-size: 140%;
 }
 
 .header-top {
@@ -505,15 +541,22 @@ ul.breadcrumb li {
   font-size: 120%;
 }
 
+.main_block_bg {
+  background-color: #f5f5fd;
+}
+
 .main_banner {
   width: 100%;
   border-top: solid 0.1em #D9756C;
   border-bottom: solid 0.1em #207D90;
+  transition-duration: .2s;
+  transition-delay: .2s;
 }
 
 .main_banner:hover {
   background: #F0F8FF;
   box-shadow: 0 0 10px 10px #F0F8FF;
+  transition: .2s ease;
 }
 
 .main_banner_order {
@@ -645,7 +688,7 @@ ul.breadcrumb li {
   width: 17em;
   padding: .7em;
   cursor: pointer;
-  border: solid 0.15em #7EB9BF;
+  border: solid 0.1em #7EB9BF;
 }
 
 .main_order_list {
@@ -684,10 +727,8 @@ ul.breadcrumb li {
 }
 
 .main_contact_title_div {
-  background-color: #ededfa;
-  border-right: solid 0.15em #7EB9BF;
-  border-left: solid 0.15em #7EB9BF;
-  box-shadow: 0 0 10px 10px #ededfa;
+  background-color: #eff3fd;
+  box-shadow: 0 0 10px 10px #eff3fd;
 }
 
 .main_bg_img {
@@ -734,7 +775,7 @@ ul.breadcrumb li {
 .main_stack {
   width: 30%;
   margin: 1rem 0rem;
-  border-bottom: solid 0.15em #7EB9BF;
+  border-bottom: solid 0.1em #7EB9BF;
 }
 
 .main_stack_all {
@@ -769,7 +810,7 @@ ul.breadcrumb li {
   max-height: 25em;
   padding: .7em;
   cursor: pointer;
-  border: solid 0.15em #7EB9BF;
+  border: solid 0.1em #7EB9BF;
   background-color: white;
   /* при наведении курсора мышки */
 }
@@ -930,23 +971,15 @@ ul.breadcrumb li {
 }
 
 .reviews_adm {
-  width: 80%;
-  border-top: solid 0.1em #D9756C;
-  border-left: solid 0.3em #D9756C;
-  padding: .5em;
-  margin-top: 1em;
+  overflow: hidden;
+  max-height: 20em;
 }
 
 .reviews_adm_full {
-  border-left: solid 0.1em #D9756C;
-  border-right: solid 0.1em #D9756C;
-  padding: 1em;
   margin: 2em 0em;
 }
 
 .reviews_all {
-  border-top: solid 0.1em #D9756C;
-  border-bottom: solid 0.1em #D9756C;
   padding: .5em;
 }
 
@@ -1000,6 +1033,10 @@ ul.breadcrumb li {
   margin-right: .4em;
 }
 
+.reviews_screenshot:nth-child(n+2) {
+  margin-left: .5em;
+}
+
 .reviews_alone_container {
   padding: 2em;
   background-color: #F0F8FF;
@@ -1034,17 +1071,17 @@ ul.breadcrumb li {
 }
 
 .rating-area:not(:checked) > label:before {
-  content: '✪';
+  content: '★';
 }
 
 .rating-area > input:checked ~ label {
-  color: gold;
+  color: #7EB9BF;
   text-shadow: 1px 1px #c60;
 }
 
 .rating-area:not(:checked) > label:hover,
 .rating-area:not(:checked) > label:hover ~ label {
-  color: gold;
+  color: #7EB9BF;
 }
 
 .rating-area > input:checked + label:hover,
@@ -1052,7 +1089,7 @@ ul.breadcrumb li {
 .rating-area > input:checked ~ label:hover,
 .rating-area > input:checked ~ label:hover ~ label,
 .rating-area > label:hover ~ input:checked ~ label {
-  color: gold;
+  color: #7EB9BF;
   text-shadow: 1px 1px goldenrod;
 }
 
@@ -1069,11 +1106,11 @@ ul.breadcrumb li {
 }
 
 .rating-result > span:before {
-  content: '✪';
+  content: '★';
 }
 
 .rating-result > span.active {
-  color: gold;
+  color: #D9756C;
   text-shadow: 1px 1px #c60;
 }
 
@@ -1247,7 +1284,7 @@ ul.breadcrumb li {
   position: relative;
   top: 0;
   left: 0;
-  border: 0.15em solid #7EB9BF;
+  border: 0.1em solid #7EB9BF;
   border-radius: 2px;
   padding-top: 40px;
 }
@@ -1560,7 +1597,7 @@ ul.breadcrumb li {
   display: inline-block;
   position: relative;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 0.1em solid rgba(255, 255, 255, 0.4);
   background: #207D90;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
@@ -1637,7 +1674,7 @@ ul.breadcrumb li {
 }
 
 .button_like:hover {
-  color: #F2B9B3;
+  color: #D9756C;
 }
 
 .fieldset_article {
@@ -1655,7 +1692,7 @@ ul.breadcrumb li {
 }
 
 .fieldset_tags {
-  border: solid 0.15em #D9756C;
+  border: solid 0.1em #D9756C;
   padding: .5em 2em;
   line-height: 250%;
   font-size: 80%;
@@ -1684,22 +1721,22 @@ ul.breadcrumb li {
 }
 
 .fieldset_border_primary {
-  border: solid 0.15em #D9756C;
+  border: solid 0.1em #D9756C;
 }
 
 .fieldset_border_secondary {
   padding: 10px;
-  border: solid 0.15em #F0F8FF;
-  border-bottom: solid 0.15em #7EB9BF;
+  border: solid 0.1em #F0F8FF;
+  border-bottom: solid 0.1em #7EB9BF;
 }
 
 .fieldset_border_secondary:hover {
-  border-bottom: solid 0.15em #F2B9B3;
+  border-bottom: solid 0.1em #F2B9B3;
   transition: width .5s ease, background-color .5s ease;
 }
 
 .fieldset_border_secondary:after {
-  border-bottom: solid 0.15em #F0F8FF;
+  border-bottom: solid 0.1em #F0F8FF;
   transition: width .5s ease, background-color .5s ease;
 }
 
@@ -1713,7 +1750,7 @@ ul.breadcrumb li {
 }
 
 .fieldset_form_password {
-  border: solid 0.15em #DAF3F5;
+  border: solid 0.1em #DAF3F5;
 }
 
 .input_big {
@@ -1741,15 +1778,15 @@ ul.breadcrumb li {
   flex-flow: row wrap;
   height: 24.4em;
   overflow: hidden;
-  border-bottom: solid 0.15em #7EB9BF;
-  border-right: solid 0.15em #7EB9BF;
-  border-top: solid 0.15em white;
-  border-left: solid 0.15em white;
+  border-bottom: solid 0.1em #7EB9BF;
+  border-right: solid 0.1em #7EB9BF;
+  border-top: solid 0.1em white;
+  border-left: solid 0.1em white;
   position: relative;
 }
 
 .software_alone_container1:hover {
-  border: solid 0.15em #7EB9BF;
+  border: solid 0.1em #7EB9BF;
   transition: all .7s;
 }
 
@@ -1759,7 +1796,7 @@ ul.breadcrumb li {
   height: 24.4em;
   overflow: hidden;
   position: relative;
-  border-width: 0.15em;
+  border-width: 0.1em;
   border-style: solid;
   border-image: linear-gradient(to bottom, #7EB9BF 0%, transparent 40%, transparent 60%, #7EB9BF 100%);
   border-image-slice: 1;
@@ -1879,7 +1916,7 @@ ul.breadcrumb li {
   display: inline-block;
   position: relative;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 0.1em solid rgba(255, 255, 255, 0.4);
   background: #207D90;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
@@ -1919,6 +1956,8 @@ ul.breadcrumb li {
   font-size: 70%;
   word-spacing: 1em;
   padding-top: 1.5em;
+  overflow: hidden;
+  max-height: 4em;
 }
 
 .article_alone_container {
@@ -2039,21 +2078,25 @@ ul.breadcrumb li {
 }
 
 .chat {
-  padding: 1em;
+  padding: .4rem;
 }
 
 .chat_panel_sticky {
   position: sticky;
   bottom: 0;
   height: 13em;
-  border: 2px solid #7EB9BF;
+  border: solid 0.1em #7EB9BF;
   background-color: #DAF3F5;
 }
 
 .chat_panel_sticky_i {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #207D90;
   cursor: pointer;
+}
+
+.chat_panel_sticky_i:hover {
+  color: #7EB9BF;
 }
 
 .chat_panel_sticky_clip {
@@ -2332,6 +2375,17 @@ ul.breadcrumb li {
   }
 }
 
+.scrollbox {
+  overflow: auto;
+  width: 70%;
+  max-height: 40rem;
+  margin: 30px auto;
+  background: linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  background-attachment: local, local, scroll, scroll;
+}
+
 .form_group_textarea {
   position: relative;
   margin: 45px 0;
@@ -2437,27 +2491,28 @@ input[type="password"] {
 }
 
 .order_card_type_state {
+  float: right;
   width: fit-content;
-  padding: 2em;
-  margin-bottom: 1em;
-  border: solid 0.5em #ffdeda;
+  padding: 1.5em;
+  border: solid 0.3em #7EB9BF;
 }
 
 .order_type {
   font-size: 110%;
   font-weight: bold;
-  margin: auto 0em;
+  vertical-align: top;
 }
 
 .order_type_i {
-  font-size: 200%;
-  padding-left: 1em;
+  font-size: 180%;
+  color: #207D90;
 }
 
 .order_state {
   font-size: 130%;
   font-weight: bold;
   color: #F9B401;
+  padding-top: .5em;
 }
 
 .order_chat {

@@ -1,15 +1,18 @@
 .chat {
-    padding: 1em;
+    padding: .4rem;
     &_panel_sticky {
         position: sticky;
         bottom: 0;
         height: 13em;
-        border: 2px solid $light_blue;
+        border:solid $border_width $light_blue;
         background-color: $light_blue_1;
         &_i {
-            font-size: 2.2rem;
+            font-size: 2rem;
             color: $dark_blue; 
-            cursor: pointer;   
+            cursor: pointer;  
+            &:hover {
+              color: $light_blue; 
+            } 
         }
         &_clip {
             width: 2.5em;
@@ -342,3 +345,22 @@
       transform: translate3d(0, -4px, 0);
     }
   }
+
+
+
+
+
+  .scrollbox {
+    overflow: auto;
+    width: 70%;
+    max-height: 40rem;
+    margin: 30px auto;
+    background:
+     linear-gradient(white 30%, rgba(255,255,255,0)),
+     linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+     radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.2), rgba(0,0,0,0)),
+     radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll;
+   }

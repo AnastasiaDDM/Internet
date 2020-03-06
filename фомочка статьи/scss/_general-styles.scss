@@ -3,7 +3,9 @@
 
 @mixin float_left { float: left; }
 
-
+.float_right {
+	float: right;
+}
 
 .icon {   
     height: 2.3em;
@@ -336,7 +338,10 @@ ul.breadcrumb li {
 
 .max_width_70em {max-width: 70em;}
 
+.max_height_10em {max-height: 10em;}
+
 .padding_2em {padding: 2em;}
+.padding_bottom_1em {padding-bottom: 1em;}
 .padding_top_2em {padding-top: 2em;}
 .padding_bottom_2em {padding-bottom: 2em;}
 .margin_2em {margin: 2em;}
@@ -367,3 +372,27 @@ ul.breadcrumb li {
 .text_up {
 	text-transform: uppercase;
 }    
+
+
+.border_top_bottom {
+	border: none;
+    border-top:solid $border_width $red;
+	border-bottom:solid $border_width $dark_blue;
+}
+
+.border_none {
+	border: none;
+}
+
+
+.border_fieldset_top {
+	border: none; 
+	border-top: solid $border_width_fat lightblue;
+	&_legend {
+		padding: 0em 1em;
+		&_big {
+			padding: 0em 1em;
+			font-size: 140%;
+		}
+	}
+}
