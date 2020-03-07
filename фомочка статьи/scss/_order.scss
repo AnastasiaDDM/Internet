@@ -1,13 +1,28 @@
 .order {
-    &_card_type_state {
-        @include float_right;
-        width: fit-content;
-        padding: 1.5em;
-        // margin-bottom: 1em;
-        // border:solid $border_width_fat $light_rose;
-        border:solid $border_width_fat $light_blue;
+    &_card {
+        border: solid $border_width $red;
+        padding: 1em;
+        line-height: 250%;
+        font-size: 80%;
+        height: 23em;
+        legend { padding: 0em .5em;
+            font-weight: bold;
+        font-size: 120%;}
+        &_type_state {
+            @include float_right;
+            width: fit-content;
+            padding: 1.5em;
+            // margin-bottom: 1em;
+            // border:solid $border_width_fat $light_rose;
+            border:solid $border_width_fat $light_blue;
 
-        // background-color:$light_rose;
+            // background-color:$light_rose;
+            &_small {
+                width: fit-content;
+                padding: .6em;
+               
+            }
+        }
     }
     &_type {
 
@@ -27,8 +42,14 @@
     &_state {
         font-size: 130%;
         font-weight: bold;
-        color: $yellow;
+        // color: $yellow;
         padding-top: .5em;
+        &_dev {
+
+            font-size: 130%;
+            font-weight: bold;
+            color: $yellow;
+        }
 
     }
     &_chat {

@@ -94,6 +94,15 @@
   padding-top: 1em;
 }
 
+.column-3 {
+  width: calc((99% -0.5em)/3);
+  justify-content: space-between;
+}
+
+.column-3:nth-child(n+2) {
+  margin-left: 2em;
+}
+
 .blue_bg {
   /*  ЦВЕТ !!!!!!!!!!! */
   background-color: #F0F8FF;
@@ -1657,6 +1666,72 @@ ul.breadcrumb li {
   margin: 0 auto;
 }
 
+/*	=	Select */
+.slct {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 10px 15px 10px 10px;
+  z-index: 10000;
+  /*
+		Супер финт обрезаем текст
+		чтобы не вылезал за рамку
+	*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+.slct_div {
+  position: relative;
+}
+
+.slct.active {
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  z-index: 10000;
+}
+
+.drop {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 1px solid #cecece;
+  border-top: none;
+  display: none;
+  position: absolute;
+  background: #fff;
+  z-index: 10000;
+}
+
+.drop li {
+  list-style: none;
+  border-top: 1px dotted #e8e8e8;
+  cursor: pointer;
+  display: block;
+  padding: 10px 15px 10px 10px;
+  background-position: 10px -119px;
+  z-index: 10000;
+}
+
+.drop li a {
+  color: #444;
+  z-index: 10000;
+}
+
+.drop li:hover {
+  background-color: #e8e8e8;
+  z-index: 10000;
+}
+
+.drop li:hover a {
+  color: #222;
+  z-index: 10000;
+}
+
 .page_software_price {
   font-size: 160%;
   font-weight: bold;
@@ -1981,7 +2056,7 @@ ul.breadcrumb li {
 .software_alone_container {
   padding: 0.7em;
   flex-flow: row wrap;
-  height: 24.4em;
+  height: 24em;
   overflow: hidden;
   position: relative;
   border-width: 0.1em;
@@ -2003,7 +2078,7 @@ ul.breadcrumb li {
 
 .software_div_name {
   overflow: hidden;
-  height: 4em;
+  height: 4.2em;
 }
 
 .software_price {
@@ -2678,11 +2753,30 @@ input[type="password"] {
   padding-right: 4em;
 }
 
+.order_card {
+  border: solid 0.1em #D9756C;
+  padding: 1em;
+  line-height: 250%;
+  font-size: 80%;
+  height: 23em;
+}
+
+.order_card legend {
+  padding: 0em .5em;
+  font-weight: bold;
+  font-size: 120%;
+}
+
 .order_card_type_state {
   float: right;
   width: fit-content;
   padding: 1.5em;
   border: solid 0.3em #7EB9BF;
+}
+
+.order_card_type_state_small {
+  width: fit-content;
+  padding: .6em;
 }
 
 .order_type {
@@ -2699,8 +2793,13 @@ input[type="password"] {
 .order_state {
   font-size: 130%;
   font-weight: bold;
-  color: #F9B401;
   padding-top: .5em;
+}
+
+.order_state_dev {
+  font-size: 130%;
+  font-weight: bold;
+  color: #F9B401;
 }
 
 .order_chat {

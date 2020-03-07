@@ -935,3 +935,73 @@
   cursor: pointer;
   margin: 0 auto;
 }
+
+
+
+
+
+
+
+/*	=	Select */
+.slct {
+	display: block;
+        border-radius: 5px;
+        border: 1px solid #cecece;
+        background-color: transparent;
+        text-decoration: none;
+        // width: 285px;
+        // width: 100%;
+        padding: 10px 15px 10px 10px;
+        // background-position: 290px -145px;
+        z-index: 10000;
+	/*
+		Супер финт обрезаем текст
+		чтобы не вылезал за рамку
+	*/
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;	
+  &_div {
+    position: relative;
+  }
+}
+.slct.active {
+	border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  z-index: 10000;
+}
+.drop {
+	margin: 0;
+	padding: 0;
+  // width: 310px;
+  width: 100%;
+	border: 1px solid #cecece;
+	border-top: none;
+	display: none;
+	position: absolute;
+  background: #fff;
+  z-index: 10000;
+}
+.drop li {
+	list-style: none;
+	border-top: 1px dotted #e8e8e8;
+	cursor: pointer;
+	display: block;
+  // padding: 4px 15px 4px 25px;
+  padding: 10px 15px 10px 10px;
+  background-position: 10px -119px;
+  z-index: 10000;
+}
+.drop li a {
+  color: #444;
+  z-index: 10000;
+}
+.drop li:hover {
+  background-color: #e8e8e8;
+  z-index: 10000;
+}
+.drop li:hover a {
+  color: #222;
+  z-index: 10000;
+}

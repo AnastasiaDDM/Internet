@@ -13,7 +13,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="/js/select.js"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
+
+    <!-- <script src="js/javascript.js"></script> -->
+    <!-- <script defer type="text/javascript" src="./js/select.js"></script> -->
+    <script defer type="text/javascript" src="./js/javascript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 
@@ -163,6 +168,17 @@
 
 
 
+                  <div class="">
+                    <a href="javascript:void(0);" class="slct">Выберите Ваше лучшее качество:</a>
+                    <ul class="drop">
+                      <li><a data-znach="kras">Красивый(ая)</a></li>
+                      <li><a data-znach="ymn">Умный(ая)</a></li>
+                      <li><a data-znach="kom">Коммуникабульный(ая)</a></li>
+                      <li><a data-znach="scr">Скромный(ая)</a></li>
+                    </ul>
+                    <input type="hidden" id="select">
+                  </div>
+
 
 
                   <li>
@@ -222,7 +238,7 @@
                 </label>
              </div>
 
-             <script>
+             <!-- <script>
               let inputs = document.querySelectorAll('.input__file');
               Array.prototype.forEach.call(inputs, function (input) {
                 let label = input.nextElementSibling,
@@ -239,7 +255,7 @@
                     label.querySelector('.input__file-button-text').innerText = labelVal;
                 });
               });
-          </script>
+          </script> -->
           
 
 

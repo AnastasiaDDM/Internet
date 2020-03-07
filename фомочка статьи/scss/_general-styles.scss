@@ -130,6 +130,18 @@ font-family: $font1, $font2, sans-serif;
 
 
 
+.column-3
+{
+	width: calc((99% -0.5em)/3);
+	justify-content: space-between;
+	&:nth-child(n+2){
+		margin-left: 2em;
+	}
+}
+
+
+
+
 .blue_bg {                                                         /*  ЦВЕТ !!!!!!!!!!! */
 //  background-color: #F0F8FF;	
 background-color: $light_blue_2;

@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
@@ -116,7 +119,7 @@
           </a>
         </li>
         <li>
-          <a href="/catalog.html">Мои&nbsp;заказы
+          <a class = "header_navbar_active" href="/catalog.html">Мои&nbsp;заказы
           </a>
         </li>
         <li>
@@ -124,7 +127,7 @@
           </a>
         </li>
         <li>
-          <a  class = "header_navbar_active" href="/reviews.html">Избранное
+          <a href="/reviews.html">Избранное
           </a>
         </li>
 
@@ -133,187 +136,538 @@
 
     <main>
       <section>
-        <h1>Избранное
+        <h1>Мои заказы
         </h1>
         <ul class="breadcrumb">
             <li><a href="URL">Главная</a></li>
             <li><a href="URL">Личный кабинет</a></li>
-            <li>Избранное</li>
+            <li>Мои заказы</li>
         </ul>
 
           
           <section class="margin_top_3em"> 
-              <div class="software_container_all-width software_container pos_center_for_div">
-                <div class="pos_left"><a href="#" class="button_search">Очистить все</a></div>
-              </div>
+
+
+
+            <div class="article_search_size">
+              <div class="search_title">Поиск <a class="search_roll-up">Свернуть ↑</a></div>
+              <fieldset class="fieldset_border_primary"  name="fieldset">
+                <form>
+                  <!-- <div class="margin_left-right_1em"> -->
+                <!-- <legend>Поиск:</legend> -->
+                <!-- <div class="flex_column"> -->
+
+                  <!-- <div class="input__wrapper">
+                    <input name="file" type="file" name="file" id="input__file" class="input input__file " multiple>
+                    <label for="input__file" class="input__file-button">
+                       <span class="input__file-icon-wrapper"><i class="fa fa-paperclip chat_panel_sticky_clip_i" aria-hidden="true"></i></span>
+                       <span class="input__file-button-text">Выберите файл</span>
+                    </label>
+                 </div> -->
+
+                 
+
+
+                  <!-- <ul class="radio_checkbox pos_center_for_div">
+
+                    <li>
+                      <input id="r1" type="radio" name="radio" value="1">
+                      <label for="r1">Отзыв о компании</label>
+                    </li>
+                    <li>
+                      <input id="r2" type="radio" name="radio" value="2" >
+                      <label for="r2">Отзыв о заказе</label>
+                    </li>
+                    <li>
+                      <input id="r3" type="radio" name="radio" value="3" >
+                      <label for="r3">Отзыв о продукте</label>
+                    </li> 
+                    <select name="namesel">
+                      <option value="">Укажите возраст</option>
+                      <option value="012">0 - 12 месяцев</option>
+                      <option value="13">1 - 3 года</option>
+                      <option value="35">3 - 5 лет</option>
+                      <option value="5">Больше 5 лет</option>
+                    </select> -->
+  
+  
+  
+
+  
+  
+<!--   
+                    <li>
+                      <input id="c1" type="checkbox">
+                      <label for="c1">Checkbox</label>
+                    </li>
+                    <li>
+                      <input id="c2" type="checkbox" checked>
+                      <label for="c2">Checkbox</label>
+                    </li>
+  
+                  </ul>  -->
+
+
+
+
+                <div class="flex_row width_100 flex_space-between margin_top_1em">
+
+                  <div class="slct_div column-3 ">
+                    <a href="javascript:void(0);" class="slct">Выберите по какой дате искать:</a>
+                    <ul class="drop">
+                      <li><a data-value="kras">По дате начала</a></li>
+                      <li><a data-value="ymn">По дате завершения</a></li>
+                      <li><a data-value="kom">Коммуникабульный(ая)</a></li>
+                      <li><a data-value="scr">Скромный(ая)</a></li>
+                    </ul>
+                    <input type="hidden" id="select">
+                  </div>
+
+                  <div  class="flex_row column-3 flex_space-between pos_center">
+                    <!-- <div>Дата:</div> -->
+                    <div class=><input  type="date" class="input_middle"></div> 	
+                    &#8212
+                    <div class=""><input type="date" class="input_middle"></div>
+                  </div>
+
+                  <div class="slct_div column-3 ">
+                    <label >Месяц</label>
+                    <a href="javascript:void(0);" id="month" class="slct">Месяц</a>
+                    <ul class="drop">
+                      <li><a data-value="kras">Не выбрано</a></li>
+                      <li><a data-value="kras">Январь</a></li>
+                      <li><a data-value="ymn">Февраль</a></li>
+                      <li><a data-value="kom">Март</a></li>
+                      <li><a data-value="scr">Апрель</a></li>
+                    </ul>
+                    <input type="hidden" id="select">
+                  </div>
+<!-- 
+                  <div class="form-row width_45">
+                    <input type="text" id="author" required autocomplete="off"><label for="author">Автор</label>
+                  </div>
+                  <div class="form-row width_45">
+                    <input type="text" id="article_name" required autocomplete="off"><label for="article_name">Название</label>
+                  </div> -->
+                </div>
+        
+                  <div class="flex_row width_100 flex_space-between padding_top_2em">
+
+                    <div class="slct_div column-3 ">
+                      <a href="javascript:void(0);" class="slct">Состояние заказа:</a>
+                      <ul class="drop">
+                        <li><a data-value="kras">Все</a></li>
+                        <li><a data-value="ymn">Завершенные</a></li>
+                        <li><a data-value="kom">В разработке</a></li>
+                        <li><a data-value="scr">Неоплаченные</a></li>
+                      </ul>
+                      <input type="hidden" id="select">
+                    </div>
+
+                    <div class="slct_div column-3 ">
+                      <a href="javascript:void(0);" class="slct">Тип заказа:</a>
+                      <ul class="drop">
+                        <li><a data-value="kras">Все</a></li>
+                        <li><a data-value="ymn">Оригинальная разработка</a></li>
+                        <li><a data-value="kom">Доработка</a></li>
+                        <li><a data-value="scr">Купленные ПО</a></li>
+                      </ul>
+                      <input type="hidden" id="select">
+                    </div>
+
+                    <ul class="radio_checkbox column-3 ">
+                      <li style="margin: auto 0em;">
+                        <input id="c2" type="checkbox" checked>
+                        <label for="c2" >Непрочитанные в чате</label>
+                      </li>
+                    </ul>
+
+                    </div>
+          
+                    <div class="flex_row  width_100 padding_top_2em">
+  
+                      <div class="form-row column-3">
+                        <input type="text" id="num" required autocomplete="off"><label for="num">Номер заказа</label>
+                      </div>
+
+                      <div class="form-row column-3">
+                        <input type="text" id="name" required autocomplete="off"><label for="name">Наименование ПО </label>
+                      </div> 
+
+                      <div class = "flex_row column-3">
+
+                        
+                      <div class=" slct_div" style ="width: 4em;">
+                        <a href="javascript:void(0);" class="slct">По</a>
+                        <ul class="drop ">
+                          <li><a data-value="kras">4</a></li>
+                          <li><a data-value="ymn">6</a></li>
+                          <li><a data-value="kom">10</a></li>
+                          <li><a data-value="scr">12</a></li>
+                        </ul>
+                        <input type="hidden" id="select">
+                      </div>
+
+
+                      <div class="slct_div margin_bottom_1em" style="margin-left: .5em; width: 15em;">
+                        <a href="javascript:void(0);" class="slct">Тип заказа:</a>
+                        <ul class="drop">
+                          <li><a data-value="kras">Все</a></li>
+                          <li><a data-value="ymn">Оригинальная разработка</a></li>
+                          <li><a data-value="kom">Доработка</a></li>
+                          <li><a data-value="scr">Купленные ПО</a></li>
+                        </ul>
+                        <input type="hidden" id="select">
+                      </div>
+                      </div >
+                    
+
+
+
+                      </div>
+
+
+
+        
+                <div class="flex_row flex_space-between ">
+                  <div class="margin_top-bootom_1em"><a href="#" class="button_reset">Сбросить</a></div>
+                  <div class="margin_top-bootom_1em"><a href="#" class="button_search">Поиск</a></div>  
+                </div>
+        
+              <!-- </div>            -->
+            <!-- </div> -->
+                  
+              </form>
+              </fieldset>
+            </div>
+  
+            
+
 
             <!-- Контейнер для всех карточек --> 
     <div  class="flex_row pos_center article_container software_container_all-width padding_bottom_2em margin_top_2em">
         
+      
+
+
+
+    
+
         <div class="column-2"> 
               <!-- Бокс одной карточки --> 
-              <article class="flex_column software_alone_container "> 
+              <article class="flex_column  "> 
                 <!-- Контейнер одной карточки --> 
     
-                <div class = "flex_column width_100"> 
-          <div>
-          
-                      <div class = "software_price disp_none"></div>
-                  <!-- Контейнер названия и типа ПО -->
-                  <a class = "software_name" href="/software.html">Автоматизированное кафе для доставки кофе на дом и в офис
-                  </a>
-            </div>
-                  <a class = "software_type" href="URL">Настольное приложение
-                  </a>
+               
+      <fieldset class=" order_card margin_top_2em" name="fieldset">
+        <legend>25</legend>
+        <form>
+
+          <div class="float_right">
+
+            <div class="order_type_i pos_right order_card_type_state_small"><i class="fa fa-magic order_type_i " aria-hidden="true"></i></div>
+
+            <div  class="order_state_dev">Состояние: В разработке</div>
+
+            <div class="" style="width: 100%; ">
+
+              <div class = "flex_row flex_space-between">
+                <div style ="font-size: 140%;">Итого: 100 000 &#8381</div>
+                <div style =" vertical-align: middle;">
+                  <div>Внесено: 5 000 &#8381</div>
+                  <div>Осталось: 95 000 &#8381</div>
                 </div>
-                <div class="flex_row container_img_text">  
-                  <!-- Контейнер картинки и текста --> 
-                  <div class = "flex_column software_container_image_button"> 
-                    <!-- Контейнер картинки и кнопок -->
-                    <div class = "software_div_images" > 
-                      <!-- Бокс картинки --> 
-                      <a href="/software.html"><img  class = "img_width cursor" src="images/cafe.jpg"  alt="Расписание"/></a>
-                    </div>
-                    <div class="flex_row software_container_button flex_space-between"> 
-                      <!-- Бокс кнопки покупки и лайка --> 
-                      <button class="software_button-pay_style software_button-pay_style_width">Скачать 
-                      </button>
-                      <div >
-                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+              </div>
+
+              <button class="button_pay margin_top_1em img_width">Оплатить</button>
+            </div> 
+
+
+          </div>     
+          
+          
+          <div class = "pos_left_for_text "> 
+            <div class="software_div_name">
+                        <!-- <div class = "software_price">350 000 000 р</div> -->
+                    <!-- Контейнер названия и типа ПО -->
+                    <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
+                    </a>
+               </div>
+                    <a class = "software_type" href="URL">Настольное приложение
+                    </a>
+
+                    <!-- <div  class="order_state_dev">Состояние: В разработке</div> -->
+
+
+                    <!-- <div class="float_right" style="width: 50%; ">
+
+                      <div class = "flex_row flex_space-between">
+                        <div style ="font-size: 140%;">Итого: 100 000 &#8381</div>
+                        <div style =" vertical-align: middle;">
+                          <div>Внесено: 5 000 &#8381</div>
+                          <div>Осталось: 95 000 &#8381</div>
+                        </div>
+                      </div>
+  
+                      <button class="button_pay margin_top_1em img_width">Оплатить</button>
+                    </div>  -->
+
+                    
+                    <div class="order_text">
+                      <div class="">
+                        <div>Дата заказа: 10.12.2019 11:45</div>
+                        <div>Дата покупки: -</div>
+                        <div>Дата завершения: 10.06.2020</div>
+                        <div>Скидка: 30%</div>
+                        <div>Лицензия: Не ограничена</div>
                       </div>
                     </div>
-                  </div>
-                  <div class = "software_description article_div_text">
-                    <div style = "padding-bottom: 0.25em">Для: 
-                      <a href="URL">Кафе
-                      </a>
+
+                    <div class="order_chat cursor">
+
+                      <a class="link_style_border">Чат (3)</a>
+                      <i class="fa fa-exclamation-circle order_chat_i animated infinite pulse" aria-hidden="true"></i>
                     </div>
-                    <ul class = "software_description_list"style = "list-style: none">
-                      <li class="software_description_marker">Контроль доходов и расходов
-                      <li class="software_description_marker">Контроль  количества продуктов и запасов
-                      <li class="software_description_marker">Мониторинг деятельности компании
-                      <li class="software_description_marker">Контроль деятельности работников
-                      <li class="software_description_marker">И многое другое...
-                    </ul>
+
+
                   </div>
-                </div>
-                <div class = "software_tag">
-                  <span>
-                    <a href="URL">#Платно
-                    </a>  
-                    <a href="URL">#Доходы
-                    </a>  
-                    <a href="URL">#ПО ПК
-                    </a>  
-                    <a href="URL">#Бизнес
-                    </a>  
-                    <a href="URL">#Кафе
-                    </a>  
-                    <a href="URL">#Гастропаб
-                    </a>                
-                    <a href="URL">#Платно
-                    </a>  
-                    <a href="URL">#Доходы
-                    </a>  
-                    <a href="URL">#ПО ПК
-                    </a>  
-                    <a href="URL">#Бизнес
-                    </a>  
-                    <a href="URL">#Кафе
-                    </a>  
-                    <a href="URL">#Гастропаб
-                    </a>
-                  </span>
-                </div>
+
+
+
+        </form>
+      </fieldset>
               </article>
             </div>
-        
+
+
             <div class="column-2"> 
               <!-- Бокс одной карточки --> 
-              <article class="flex_column software_alone_container "> 
+              <article class="flex_column  "> 
                 <!-- Контейнер одной карточки --> 
     
-                <div class = "flex_column width_100"> 
-          <div>
-                      <div class = "software_price pos_right_for_div">35 000 р</div>
-                  <!-- Контейнер названия и типа ПО -->
-                  <a class = "software_name pos_left_for_text" href="URL">Автоматизированное кафе  Авто мат изиров анное кафе  Авто мат изиров анное кафе   Авто мат изиров анное кафе Авто мат изиров анное кафе А вт омат изиров анное кафе
-                  </a>
-             </div>
-                  <a class = "software_type" href="URL">Настольное приложение
-                  </a>
-                </div>
-                <div class="flex_row container_img_text">  
-                  <!-- Контейнер картинки и текста --> 
-                  <div class = "flex_column software_container_image_button"> 
-                    <!-- Контейнер картинки и кнопок -->
-                    <div class = "software_div_images"> 
-                      <!-- Бокс картинки --> 
-                      <a href="/software.html"><img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/></a>
-                    </div>
-                    <div class="flex_row software_container_button flex_space-between"> 
-                      <!-- Бокс кнопки покупки и лайка --> 
-                      <button class="software_button-pay_style software_button-pay_style_width">Приобрести
-                      </button>
-                      <div >
-                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+               
+      <fieldset class=" order_card margin_top_2em" name="fieldset">
+        <legend>25</legend>
+        <form>
+
+          <div class="float_right">
+
+            <div class="order_type_i  order_card_type_state_small"><i class="fa fa-magic order_type_i" aria-hidden="true"></i></div>
+
+
+
+
+          </div>     
+          
+          
+          <div class = "pos_left_for_text "> 
+            <div class="software_div_name">
+                        <!-- <div class = "software_price">350 000 000 р</div> -->
+                    <!-- Контейнер названия и типа ПО -->
+                    <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
+                    </a>
+               </div>
+
+               
+                    <a class = "software_type" href="URL">Настольное приложение
+                    </a>
+
+                    <div  class="order_state_dev">Состояние: В разработке</div> 
+
+
+                    <div class="float_right" style="width: 55%; padding-top: 1.5em;">
+
+                      <div class = "flex_row flex_space-between">
+                        <div style ="font-size: 140%;">Итого: 100 000 &#8381</div>
+                        <div style =" vertical-align: middle;">
+                          <div>Внесено: 5 000 &#8381</div>
+                          <div>Осталось: 95 000 &#8381</div>
+                        </div>
+                      </div>
+  
+                      <button class="button_pay margin_top_1em img_width">Оплатить</button>
+                    </div>  
+                    
+                    <div class="order_text">
+                      <div class="">
+                        <div>Дата заказа: 10.12.2019 11:45</div>
+                        <div>Дата покупки: -</div>
+                        <div>Дата завершения: 10.06.2020</div>
+                        <div>Скидка: 30%</div>
+                        <div>Лицензия: Не ограничена</div>
                       </div>
                     </div>
-                  </div>
-                  <div class = "software_description article_div_text">
-                    <div style = "padding-bottom: 0.25em">Для: 
-                      <a href="URL">Кафе
-                      </a>
+
+                    
+
+                    <div class="order_chat cursor">
+
+                      <a class="link_style_border">Чат (3)</a>
+                      <i class="fa fa-exclamation-circle order_chat_i animated infinite pulse" aria-hidden="true"></i>
                     </div>
-                    <ul class = "software_description_list"style = "list-style: none">
-                      <li class="software_description_marker">Контроль доходов и расходов
-                      <li class="software_description_marker">Контроль  количества продуктов и запасов
-                      <li class="software_description_marker">Мониторинг деятельности компании
-                      <li class="software_description_marker">Контроль деятельности работников
-                      <li class="software_description_marker">И многое другое...
-                    </ul>
+
+
                   </div>
-                </div>
-                <div class = "software_tag">
-                  <span>
-                    <a href="URL">#Платно
-                    </a>  
-                    <a href="URL">#Доходы
-                    </a>  
-                    <a href="URL">#ПО ПК
-                    </a>  
-                    <a href="URL">#Бизнес
-                    </a>  
-                    <a href="URL">#Кафе
-                    </a>  
-                    <a href="URL">#Гастропаб
+
+
+
+        </form>
+      </fieldset>
+              </article>
+            </div>
+
+
+            
+            <div class="column-2"> 
+              <!-- Бокс одной карточки --> 
+              <article class="flex_column  "> 
+                <!-- Контейнер одной карточки --> 
+    
+               
+      <fieldset class=" order_card margin_top_2em" name="fieldset">
+        <legend>25</legend>
+        <form>
+
+          <div class="float_right">
+
+            <div class="order_type_i  order_card_type_state_small"><i class="fa fa-magic order_type_i" aria-hidden="true"></i></div>
+
+
+
+
+          </div>     
+          
+          
+          <div class = "pos_left_for_text "> 
+            <div class="software_div_name">
+                        <!-- <div class = "software_price">350 000 000 р</div> -->
+                    <!-- Контейнер названия и типа ПО -->
+                    <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
                     </a>
-                    <a href="URL">#Платно
-                    </a>  
-                    <a href="URL">#Доходы
-                    </a>  
-                    <a href="URL">#ПО ПК
-                    </a>  
-                    <a href="URL">#Бизнес
-                    </a>  
-                    <a href="URL">#Кафе
-                    </a>  
-                    <a href="URL">#Гастропаб
+               </div>
+
+               
+                    <a class = "software_type" href="URL">Настольное приложение
                     </a>
-                    <a href="URL">#Платно
-                    </a>  
-                    <a href="URL">#Доходы
-                    </a>  
-                    <a href="URL">#ПО ПК
-                    </a>  
-                    <a href="URL">#Бизнес
-                    </a>  
-                    <a href="URL">#Кафе
-                    </a>  
-                    <a href="URL">#Гастропаб
+
+                    <div  class="order_state_dev">Состояние: В разработке</div> 
+
+
+                    <div class="float_right" style="width: 55%; padding-top: 1.5em;">
+
+                      <div class = "flex_row flex_space-between">
+                        <div style ="font-size: 140%;">Итого: 100 000 &#8381</div>
+                        <div style =" vertical-align: middle;">
+                          <div>Внесено: 5 000 &#8381</div>
+                          <div>Осталось: 95 000 &#8381</div>
+                        </div>
+                      </div>
+  
+                      <button class="button_pay margin_top_1em img_width">Оплатить</button>
+                    </div>  
+                    
+                    <div class="order_text">
+                      <div class="">
+                        <div>Дата заказа: 10.12.2019 11:45</div>
+                        <div>Дата покупки: -</div>
+                        <div>Дата завершения: 10.06.2020</div>
+                        <div>Скидка: 30%</div>
+                        <div>Лицензия: Не ограничена</div>
+                      </div>
+                    </div>
+
+                    
+
+                    <div class="order_chat cursor">
+
+                      <a class="link_style_border">Чат (3)</a>
+                      <i class="fa fa-exclamation-circle order_chat_i animated infinite pulse" aria-hidden="true"></i>
+                    </div>
+
+
+                  </div>
+
+
+
+        </form>
+      </fieldset>
+              </article>
+            </div>
+
+            
+            <div class="column-2"> 
+              <!-- Бокс одной карточки --> 
+              <article class="flex_column  "> 
+                <!-- Контейнер одной карточки --> 
+    
+               
+      <fieldset class=" order_card margin_top_2em" name="fieldset">
+        <legend>25</legend>
+        <form>
+
+          <div class="float_right">
+
+            <div class="order_type_i  order_card_type_state_small"><i class="fa fa-magic order_type_i" aria-hidden="true"></i></div>
+
+
+
+
+          </div>     
+          
+          
+          <div class = "pos_left_for_text "> 
+            <div class="software_div_name">
+                        <!-- <div class = "software_price">350 000 000 р</div> -->
+                    <!-- Контейнер названия и типа ПО -->
+                    <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе
                     </a>
-                  </span>
-                </div>
+               </div>
+
+               
+                    <a class = "software_type" href="URL">Настольное приложение
+                    </a>
+
+                    <div  class="order_state_dev">Состояние: В разработке</div> 
+
+
+                    <div class="float_right" style="width: 55%; padding-top: 1.5em;">
+
+                      <div class = "flex_row flex_space-between">
+                        <div style ="font-size: 140%;">Итого: 100 000 &#8381</div>
+                        <div style =" vertical-align: middle;">
+                          <div>Внесено: 5 000 &#8381</div>
+                          <div>Осталось: 95 000 &#8381</div>
+                        </div>
+                      </div>
+  
+                      <button class="button_pay margin_top_1em img_width">Оплатить</button>
+                    </div>  
+                    
+                    <div class="order_text">
+                      <div class="">
+                        <div>Дата заказа: 10.12.2019 11:45</div>
+                        <div>Дата покупки: -</div>
+                        <div>Дата завершения: 10.06.2020</div>
+                        <div>Скидка: 30%</div>
+                        <div>Лицензия: Не ограничена</div>
+                      </div>
+                    </div>
+
+                    
+
+                    <div class="order_chat cursor">
+
+                      <a class="link_style_border">Чат (3)</a>
+                      <i class="fa fa-exclamation-circle order_chat_i animated infinite pulse" aria-hidden="true"></i>
+                    </div>
+
+
+                  </div>
+
+
+
+        </form>
+      </fieldset>
               </article>
             </div>
 
@@ -326,7 +680,7 @@
           <div>
                       <div class = "software_price">350 000 000 р</div>
                   <!-- Контейнер названия и типа ПО -->
-                  <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
+                  <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе 
                   </a>
              </div>
                   <a class = "software_type" href="URL">Настольное приложение
