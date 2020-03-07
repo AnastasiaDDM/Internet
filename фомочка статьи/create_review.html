@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="/js/select.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 
@@ -120,8 +121,8 @@
     </header>
     <main>
       <section>
-        <h1>Написать отзыв
-        </h1>
+        <!-- <h1>Написать отзыв
+        </h1> -->
         <ul class="breadcrumb">
             <li><a href="URL">Главная</a></li>
             <li>Написать отзыв</li>
@@ -137,6 +138,62 @@
               <div class = "width_50 pos_center margin_top_3em" class="pos_center">
 
 
+
+                <ul class="radio_checkbox pos_center_for_div">
+
+                  <li>
+                    <input id="r1" type="radio" name="radio" value="1">
+                    <label for="r1">Отзыв о компании</label>
+                  </li>
+                  <li>
+                    <input id="r2" type="radio" name="radio" value="2" >
+                    <label for="r2">Отзыв о заказе</label>
+                  </li>
+                  <li>
+                    <input id="r3" type="radio" name="radio" value="3" >
+                    <label for="r3">Отзыв о продукте</label>
+                  </li> 
+                  <!-- <select name="namesel">
+                    <option value="">Укажите возраст</option>
+                    <option value="012">0 - 12 месяцев</option>
+                    <option value="13">1 - 3 года</option>
+                    <option value="35">3 - 5 лет</option>
+                    <option value="5">Больше 5 лет</option>
+                  </select> -->
+
+
+
+
+
+                  <li>
+                    <input id="c1" type="checkbox">
+                    <label for="c1">Checkbox</label>
+                  </li>
+                  <li>
+                    <input id="c2" type="checkbox" checked>
+                    <label for="c2">Checkbox</label>
+                  </li>
+
+                </ul>
+
+                <div class="flex_row reviews_stars flex_flex-center padding_top-bootom_1em">	
+                  <div class="rating-area">
+                    <input type="radio" id="star-5" name="rating" value="5">
+                    <label for="star-5" title="Оценка «5»"></label>	
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4" title="Оценка «4»"></label>    
+                    <input type="radio" id="star-3" name="rating" value="3">
+                    <label for="star-3" title="Оценка «3»"></label>  
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2" title="Оценка «2»"></label>    
+                    <input type="radio" id="star-1" name="rating" value="1">
+                    <label for="star-1" title="Оценка «1»"></label>
+                  </div>	
+                </div>
+
+
+
+
               <div class="form-row ">
                 <input type="text" id="name" required autocomplete="off"><label for="name">Ваше имя</label>
               </div>
@@ -148,12 +205,44 @@
                   &#42;</div> -->
 
 
+
               <div>
                 <div class="form_group_textarea margin_top_3em">
                   <textarea class = "form_textarea" type="textarea" rows="5" required="required"></textarea>
                   <label id = "label" class = "form_textarea_label">Отзыв</label>
                   </div>
               </div>
+
+
+              <div class="input__wrapper">
+                <input name="file" type="file" name="file" id="input__file" class="input input__file " multiple>
+                <label for="input__file" class="input__file-button">
+                   <span class="input__file-icon-wrapper"><i class="fa fa-paperclip chat_panel_sticky_clip_i" aria-hidden="true"></i></span>
+                   <span class="input__file-button-text">Выберите файл</span>
+                </label>
+             </div>
+
+             <script>
+              let inputs = document.querySelectorAll('.input__file');
+              Array.prototype.forEach.call(inputs, function (input) {
+                let label = input.nextElementSibling,
+                  labelVal = label.querySelector('.input__file-button-text').innerText;
+           
+                input.addEventListener('change', function (e) {
+                  let countFiles = '';
+                  if (this.files && this.files.length >= 1)
+                    countFiles = this.files.length;
+           
+                  if (countFiles)
+                    label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
+                  else
+                    label.querySelector('.input__file-button-text').innerText = labelVal;
+                });
+              });
+          </script>
+          
+
+
 
               <div class="flex_row flex_space-between margin_top_3em">
                 <div class="pos_сenter"><a href="#" class="button_reset">Отменить</a></div>

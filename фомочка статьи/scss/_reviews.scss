@@ -39,7 +39,7 @@ padding: 1.2em 3em;
     }
     &_stars {
         margin: 0.4em 0em;
-        width: 60%;
+        // width: 60%;
         &_active {
             border-color: blue($color: #000000);;
             font-size: 300%;
@@ -140,10 +140,10 @@ padding: 1.2em 3em;
 }
 .rating-area:not(:checked) > label {
 	float: right;
-	width: 42px;
+	width: fit-content;
 	padding: 0;
 	cursor: pointer;
-	font-size: 50px;
+	font-size: 60px;
 	line-height: 50px;
 	color: lightgrey;
 	text-shadow: 1px 1px #bbb;
