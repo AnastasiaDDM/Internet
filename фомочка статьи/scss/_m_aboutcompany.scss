@@ -1,0 +1,33 @@
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+    .max_width_70em {
+        max-width: 100%;
+    }
+    .width_50 {
+        width: 100%;
+    }
+    .fix_width {
+        max-width: 767.98px;
+        width: 100%;
+        margin: 0;
+    }
+    .flex_row {
+        flex-wrap: wrap;
+    }
+    .header-bottom {
+        display: none;
+    }
+    .header_container_social {
+        width: 70%;
+    }
+    .header_container_mail_phone {
+        width: 50%;
+    }
+    .header_i {
+        font-size: 1.5rem;
+    }
+    .header_i_for_div {
+        width: 2rem;
+        height: 2rem;
+    }
+}

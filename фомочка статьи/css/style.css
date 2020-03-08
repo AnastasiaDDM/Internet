@@ -63,12 +63,21 @@
   /* max-width: 80%; */
   margin: 0 auto;
   font-family: "Montserrat", "Arial", sans-serif;
+  color: #2F4F4F;
   /* background: brown; */
   /* color: blue; */
 }
 
 .let_sp_01em {
   letter-spacing: 0.1em;
+}
+
+.let_sp_1px {
+  letter-spacing: 1px;
+}
+
+.text_indent_25px {
+  text-indent: 25px;
 }
 
 /* background: radial-gradient(#F2B9B3 0.2px, transparent 0.9px); */
@@ -224,6 +233,10 @@ a:hover {
   width: 20%;
 }
 
+.width_55 {
+  width: 55%;
+}
+
 .pagination {
   width: 40%;
   margin: auto;
@@ -275,7 +288,7 @@ ul.breadcrumb li + li:before {
 
 ul.breadcrumb li {
   display: inline;
-  font-size: 110%;
+  font-size: 100%;
 }
 
 .max_width_50em {
@@ -402,6 +415,32 @@ ul.breadcrumb li {
   font-size: 140%;
 }
 
+.i_big {
+  font-size: 6rem;
+  color: #207D90;
+}
+
+.a_big {
+  font-size: 130%;
+  margin-left: 0.5em;
+}
+
+.margin_right_04em {
+  margin-right: 0.4em;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.vertical_mid {
+  vertical-align: middle;
+}
+
+.margin_top_07em {
+  margin-top: .7em;
+}
+
 .header-top {
   width: 100%;
   word-spacing: 5px;
@@ -411,8 +450,8 @@ ul.breadcrumb li {
 
 .header-top_container {
   /*  ЦВЕТ !!!!!!!!!!! */
-  height: 5em;
-  /* padding-bottom:40px; */
+  padding-bottom: 20px;
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -543,6 +582,35 @@ ul.breadcrumb li {
 
 .second_menu_active {
   color: #D9756C;
+}
+
+.header_i {
+  font-size: 2.5rem;
+}
+
+.header_i_vk:hover {
+  color: #4c75a3;
+}
+
+.header_i_tlg:hover {
+  color: #0088cc;
+}
+
+.header_i_ig:hover {
+  color: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  color: #c13584;
+}
+
+.header_i_wa:hover {
+  color: #25D366;
+}
+
+.header_i_for_div {
+  background-color: #DAF3F5;
+  /* padding: 1rem; */
+  border-radius: 50%;
+  width: 3.3rem;
+  height: 3.3rem;
 }
 
 .person_acc {
@@ -861,6 +929,23 @@ ul.breadcrumb li {
 
 .widget_section:nth-child(n+3) {
   padding-left: 3em;
+}
+
+.widget_article_box {
+  position: relative;
+  margin: auto;
+}
+
+.widget_article_box_text {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.3em;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  color: #000000;
+  right: 0;
+  top: 0;
+  letter-spacing: 1px;
 }
 
 .widget_div_img {
@@ -1618,7 +1703,7 @@ ul.breadcrumb li {
 }
 
 .radio_checkbox li {
-  margin: 16px 0;
+  margin: .5rem 0;
   position: relative;
 }
 
@@ -1835,6 +1920,7 @@ ul.breadcrumb li {
   outline: none;
   /* убирать контур в Mozilla */
   border-radius: 20% 0%;
+  border: none;
   transition-duration: .2s;
   transition-delay: .1s;
   /* при наведении курсора мышки */
@@ -2758,13 +2844,14 @@ input[type="password"] {
   padding: 1em;
   line-height: 250%;
   font-size: 80%;
-  height: 23em;
+  height: 21em;
 }
 
 .order_card legend {
   padding: 0em .5em;
   font-weight: bold;
   font-size: 120%;
+  text-align: left;
 }
 
 .order_card_type_state {
@@ -2776,7 +2863,6 @@ input[type="password"] {
 
 .order_card_type_state_small {
   width: fit-content;
-  padding: .6em;
 }
 
 .order_type {
@@ -2786,7 +2872,7 @@ input[type="password"] {
 }
 
 .order_type_i {
-  font-size: 180%;
+  font-size: 3rem;
   color: #207D90;
 }
 
@@ -2797,6 +2883,24 @@ input[type="password"] {
 }
 
 .order_state_dev {
+  font-size: 130%;
+  font-weight: bold;
+  color: #F9B401;
+}
+
+.order_state_not_pay {
+  font-size: 130%;
+  font-weight: bold;
+  color: #e85f4c;
+}
+
+.order_state_pay {
+  font-size: 130%;
+  font-weight: bold;
+  color: #13c950;
+}
+
+.order_state_part {
   font-size: 130%;
   font-weight: bold;
   color: #F9B401;
@@ -2823,6 +2927,63 @@ input[type="password"] {
 .order_text {
   font-size: 110%;
   line-height: 160%;
+}
+
+.orders_text_big {
+  text-align: left;
+  font-size: 170%;
+  line-height: 120%;
+}
+
+.orders_text_medium {
+  text-align: left;
+  font-size: 120%;
+  line-height: 1.5rem;
+}
+
+.orders_text_small {
+  text-align: left;
+  font-size: 110%;
+  line-height: 1.5rem;
+}
+
+.orders_legend_text {
+  font-size: 1.2rem;
+  margin: auto 0rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .max_width_70em {
+    max-width: 100%;
+  }
+  .width_50 {
+    width: 100%;
+  }
+  .fix_width {
+    max-width: 767.98px;
+    width: 100%;
+    margin: 0;
+  }
+  .flex_row {
+    flex-wrap: wrap;
+  }
+  .header-bottom {
+    display: none;
+  }
+  .header_container_social {
+    width: 70%;
+  }
+  .header_container_mail_phone {
+    width: 50%;
+  }
+  .header_i {
+    font-size: 1.5rem;
+  }
+  .header_i_for_div {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 #main {

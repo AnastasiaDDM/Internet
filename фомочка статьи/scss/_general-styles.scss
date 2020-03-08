@@ -66,6 +66,7 @@ line-height: 165%;
 /* max-width: 80%; */
 margin: 0 auto;
 font-family: $font1, $font2, sans-serif;
+color: $gray;
 
 
 
@@ -75,6 +76,11 @@ font-family: $font1, $font2, sans-serif;
 }
 
 .let_sp_01em {letter-spacing: 0.1em; }
+.let_sp_1px {letter-spacing: 1px; }
+
+.text_indent_25px {
+	text-indent: 25px;
+}
 
 
 
@@ -284,6 +290,10 @@ color: $gray;
 	width: 20%;
 	}
 
+.width_55 {
+	width: 55%;
+	}
+
 
 .pagination {
 	width: 40%;
@@ -339,11 +349,14 @@ ul.breadcrumb li+li:before {
     padding: 0.5em;
     color: &gray;
 	content: "ᐳ";
+	// content: "»";
+		
+
 }
 
 ul.breadcrumb li {
     display: inline;
-    font-size: 110%;
+    font-size: 100%;
 }
 
 .max_width_50em {max-width: 50em;}
@@ -407,4 +420,31 @@ ul.breadcrumb li {
 			font-size: 140%;
 		}
 	}
+}
+
+.i_big {
+	font-size: 6rem;
+	color: $dark_blue;
+}
+
+.a_big {
+	font-size: 130%; 
+	margin-left: 0.5em;
+} 
+
+.margin_right_04em {
+	margin-right: 0.4em;
+}
+
+.text_bold {
+	font-weight: bold;
+}
+
+
+.vertical_mid {
+	vertical-align: middle;
+}
+
+.margin_top_07em {
+	margin-top: .7em;
 }

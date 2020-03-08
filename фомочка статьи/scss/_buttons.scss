@@ -45,10 +45,11 @@
     color: #fff; /* цвет текста */
     text-decoration: none; /* убирать подчёркивание у ссылок */
     user-select: none; /* убирать выделение текста */
-    background: rgb(212,75,56); /* фон кнопки */
+    background: #d44b38; /* фон кнопки */
     padding: .7em 6em; /* отступ от текста */
     outline: none; /* убирать контур в Mozilla */
     border-radius: 20% 0%;
+    border: none;
     transition-duration: .2s;
     transition-delay: .1s;
     &:hover { 

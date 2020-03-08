@@ -4,10 +4,13 @@
         padding: 1em;
         line-height: 250%;
         font-size: 80%;
-        height: 23em;
-        legend { padding: 0em .5em;
+        height: 21em;
+        legend { 
+            padding: 0em .5em;
             font-weight: bold;
-        font-size: 120%;}
+            font-size: 120%;
+            text-align: left;
+        }
         &_type_state {
             @include float_right;
             width: fit-content;
@@ -19,7 +22,7 @@
             // background-color:$light_rose;
             &_small {
                 width: fit-content;
-                padding: .6em;
+                // padding: .4em;
                
             }
         }
@@ -33,7 +36,8 @@
         // margin: auto 0em;
         vertical-align: top;
         &_i {
-            font-size: 180%;
+            // font-size: 180%;
+            font-size: 3rem;
             color: $dark_blue;
             // margin: auto 0em;
             // padding-left: 1em;
@@ -45,6 +49,24 @@
         // color: $yellow;
         padding-top: .5em;
         &_dev {
+
+            font-size: 130%;
+            font-weight: bold;
+            color: $yellow;
+        }
+        &_not_pay {
+
+            font-size: 130%;
+            font-weight: bold;
+            color: $red_intense;
+        }
+        &_pay {
+
+            font-size: 130%;
+            font-weight: bold;
+            color: $green;
+        }
+        &_part {
 
             font-size: 130%;
             font-weight: bold;
@@ -73,5 +95,28 @@
     &_text {
         font-size: 110%;
         line-height: 160%;
+    }
+}
+
+.orders {
+    &_text_big {
+        text-align: left;
+        font-size: 170%;
+        line-height: 120%;
+    }
+    &_text_medium {
+        text-align: left;
+        font-size: 120%;
+        line-height: 1.5rem;
+    }
+    &_text_small {
+        text-align: left;
+        font-size: 110%;
+        line-height: 1.5rem;
+    }
+    &_legend_text {
+       font-size: 1.2rem; 
+       margin: auto 0rem;
+       padding-right: 2rem;
     }
 }

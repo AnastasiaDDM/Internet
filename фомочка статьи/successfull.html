@@ -5,13 +5,25 @@
     <title>Название страницы
     </title>
     <meta name="description" content="Описание страницы" />
+  <!--script src="https://use.fontawesome.com/65da41867f.js"></script-->
     <!--link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="stprostoi.css"-->
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+
+<!--link href="bxslider-4-4.2.12/dist/jquery.bxslider.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+<script src="bxslider-4-4.2.12/dist/jquery.bxslider.js"></script-->
+
+
+
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
@@ -59,7 +71,7 @@
           </div>
         </div>
         <div class="header-margin_left-top">
-          <a  id = "user" href = "myaccount.html" >    
+          <a  id = "user" href = "personal_data.html" >    
             <img class="icon" src="icons/user.png">
           </a>
         </div>
@@ -91,7 +103,7 @@
               </a>
             </li>
             <li>
-              <a  class = "header_navbar_active" title="Отзывы" href="/reviews.html">Отзывы
+              <a  title="Отзывы" href="/reviews.html">Отзывы
               </a>
             </li>
             <li>
@@ -108,94 +120,98 @@
     </header>
     <main>
       <section>
-        <h1>О нас
-        </h1>
+        <!-- <h1>Написать нам 
+        </h1> -->
         <ul class="breadcrumb">
             <li><a href="URL">Главная</a></li>
-            <li><a href="URL">пук</a></li>
-            <li>О Нас</li>
-            </ul>
-            <div class ="max_width_70em padding_bottom_4em"> 
-                <div class="flex_column">
-                    <div class="flex_row">
-                        <div class="width_50 padding_2em">
-                            <!-- <figure> -->
-                                 <img  class = "width_100" src="images/cafe.jpg" > 
-                            <!-- </figure> -->
-                        </div>
-                        
-                            <div class="width_50 padding_left_2em padding_2em">
-                                Одной из причин быстрого роста популярности flexbox среди веб-разработчиков 
-                                    было то, что впервые были предоставлены адекватные возможности выравнивания.
-                                     Он предоставил адекватное вертикальное выравнивание, и стало возможным, 
-                                     наконец, легко поместить элемент в центр по вертикали. В этом руководстве 
-                                     детально рассматривается, как выравнивание и распределение работают во Flexbox.
-                            </div>
-                    </div>
+            <li><a href="URL">Каталог</a></li>
+            <li><a href="URL">Грузоперевозки</a></li>
+            <li>Покупка завершена</li>
+        </ul>
 
-                
 
-                    <div class="flex_row">
-                        <div class="width_50">
-                            <!-- <figure> -->
-                                 <img  class = "width_100" src="images/cafe.jpg" > 
-                            <!-- </figure> -->
-                        </div>
-                        
-                            <div class="width_50 padding_left_2em">
-                                Одной из причин быстрого роста популярности flexbox среди веб-разработчиков 
-                                    было то, что впервые были предоставлены адекватные возможности выравнивания.
-                                     Он предоставил адекватное вертикальное выравнивание, и стало возможным, 
-                                     наконец, легко поместить элемент в центр по вертикали. В этом руководстве 
-                                     детально рассматривается, как выравнивание и распределение работают во Flexbox.
-                            </div>
-                    </div>
-                    </div>
+        <div class="margin_top_2em">     <!-- Форма комментария -->
+          <!-- <h1>Заказать звонок</h1> -->
+          <fieldset class="padding_2em border_fieldset_top" >
+            <legend class="pos_center border_fieldset_top_legend_big" >Покупка успешно завершена</legend>
+            <form>
+
+              <div class = "width_50 pos_center margin_top_3em" class="pos_center">
+
+                <!-- <div class="form-row margin_top_3em padding_bottom_1em">
+                  <input type="text" id="email" required autocomplete="off"><label for="email">Номер телефона</label>
                 </div>
-            <!-- </div> -->
-           
+ -->
 
-            <div style="font-size: 1.2rem; margin-bottom: 1rem; text-align: end;">Наш адрес: г. Иркутск, ул. Ленина, 6</div>
-            <script type="text/javascript" charset="utf-8" async 
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A56048244aa59e55aeb4d34eb20eb3bbbf1ea7f391875fcffd27de07fec3a9e77&amp;
-            width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-  
+              <div class="pos_left_for_text padding_bottom_1em">
+                Ссылка для скачивания: <a class="a_big link_style_border">/successfull.html</a></div>
+
+                <div class="pos_left_for_text">
+                  В дальнейшем ссылка на приобретенное ПО будет доступна в личном кабинете.
+                  <a href="#" class="link_read-more link_style_border a_big">
+                    <span>Зарегистрироваться
+                    </span>
+                  </a></div>
+
+                <div class="margin_top-bootom_1em"><i class="fa fa-check i_big" aria-hidden="true"></i></div>
+
+              <!-- <div class="flex_row flex_space-between margin_top_3em">
+                <div class="pos_сenter"><a href="#" class="button_reset">Отменить</a></div>
+                <div class="pos_сenter"><a href="#" class="button_show-more">Перейти к оплате</a></div>
+              </div> -->
+
+              </div>
+
+              <!-- <div class="flex_row flex_space-between margin_top_3em">
+                <div class="pos_сenter"><a href="#" class="button_reset">Отменить</a></div>
+                <div class="pos_сenter"><a href="#" class="button_show-more">Заказать звонок</a></div>
+              </div> -->
+
+
+            </form>
+          </fieldset>
+
+
+
+        </div>
+
+           
       </section>
 
-      <footer class = "flex_row header_container_height flex_space-between footer_container">
+      <footer class = "flex_row header_container_height flex_space-between footer_container">	           
         <div class="header-logo">
-          <a href="/main.html">
-            <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
-          </a>
-        </div>
-    
-    
-    
-            <div class="flex_row footer_all-link ">
-        <div class="flex_column footer_first-link">
-
-            <a title="Заказать" href="/catalog.html">Заказать
-            </a>
-
-            <a title="Доработка" href="/articles.html">Доработка
-            </a>
-
-            <a title="О нас" href="/aboutcompany.html">О нас
-            </a>
-
+        <a href="/main.html">
+          <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
+        </a>
       </div>
   
   
-            <div class="flex_column">
+  
+          <div class="flex_row footer_all-link ">
+      <div class="flex_column footer_first-link">
 
-            <a title="Каталог" href="/catalog.html">Каталог
-            </a>
+          <a title="Заказать" href="/catalog.html">Заказать
+          </a>
 
-            <a title="Статьи" href="/articles.html">Статьи
-            </a>
+          <a title="Доработка" href="/articles.html">Доработка
+          </a>
 
-            <a title="Отзывы" href="/reviews.html">Отзывы
-            </a>
+          <a title="О нас" href="/aboutcompany.html">О нас
+          </a>
+
+    </div>
+
+
+          <div class="flex_column">
+
+          <a title="Каталог" href="/catalog.html">Каталог
+          </a>
+
+          <a title="Статьи" href="/articles.html">Статьи
+          </a>
+
+          <a title="Отзывы" href="/reviews.html">Отзывы
+          </a>
 
  </div>
  

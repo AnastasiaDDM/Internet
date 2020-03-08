@@ -41,6 +41,25 @@
             padding-left: 3em;
         }
     }
+
+
+    &_article_box {
+        position: relative;
+        margin: auto;
+        // padding: 1em;
+        &_text {
+        
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.3em;
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            color: #000000;
+            right: 0;
+            top: 0;
+            letter-spacing: 1px;
+        }
+    }
     
 }
 .widget_div {
@@ -62,3 +81,6 @@
         margin: auto;
     }  
 }
+
+
+
