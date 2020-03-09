@@ -22,6 +22,7 @@
     font-size: 160%;
     padding: 2em 0em;
     cursor: pointer;
+    line-height: 140%;
 
         &_text {
             text-align: center;
@@ -142,8 +143,8 @@
 
     &_order {
         
-        height: 23em;
-        width: 17em;
+        // height: 23em;
+        // width: 17em;
         padding: .7em;
         cursor: pointer;
         border:solid $border_width $light_blue;

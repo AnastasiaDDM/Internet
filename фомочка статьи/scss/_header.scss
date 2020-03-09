@@ -33,7 +33,7 @@
 
 .header_container {
 	&_height{
-		height: 13em;
+		// height: 13em;
 	}
 	&_social {
 	justify-content: space-around;
@@ -79,6 +79,7 @@
 
 .header_navbar {
 	padding-top: 1em;
+	margin: 0em auto;
 	ul {                                                         /*  ЦВЕТ !!!!!!!!!!! */
 		display: table-row;
 	}

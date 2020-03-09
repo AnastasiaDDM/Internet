@@ -53,6 +53,10 @@
   justify-content: space-around;
 }
 
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
 .fix_width {
   max-width: 1420px;
   /* max-width: 64em; */
@@ -469,10 +473,6 @@ ul.breadcrumb li {
   width: 100%;
 }
 
-.header_container_height {
-  height: 13em;
-}
-
 .header_container_social {
   justify-content: space-around;
   width: 25%;
@@ -520,6 +520,7 @@ ul.breadcrumb li {
 
 .header_navbar {
   padding-top: 1em;
+  margin: 0em auto;
 }
 
 .header_navbar ul {
@@ -642,6 +643,7 @@ ul.breadcrumb li {
   font-size: 160%;
   padding: 2em 0em;
   cursor: pointer;
+  line-height: 140%;
 }
 
 .main_banner_order_text {
@@ -761,8 +763,6 @@ ul.breadcrumb li {
 }
 
 .main_order {
-  height: 23em;
-  width: 17em;
   padding: .7em;
   cursor: pointer;
   border: solid 0.1em #7EB9BF;
