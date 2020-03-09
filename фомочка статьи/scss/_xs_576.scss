@@ -1,0 +1,39 @@
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px) 
+{ 
+    .column-2 {
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+        &:nth-child(n+2){
+            padding-top: 1em;
+        }
+    }
+    .pagination {
+        width: 95%;
+    }
+    .pagination_ellipsis {
+        width: 10%;
+    }
+    .pagination_page_numbers {
+        width: 10%;
+    }
+    .software_container_width {
+        width: 95%;
+        margin: auto;
+    }
+    .software_left_column {
+        width: 100%;
+    }
+    .article_search_size {
+        width: 95%;
+        margin: auto;
+    }
+    .widget_disp {
+        display: none;
+    }
+    .software_container {
+        width: 100%;
+    }
+
+}

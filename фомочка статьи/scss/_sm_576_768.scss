@@ -1,0 +1,43 @@
+// Малые девайсы («ландшафтные», >= 575px)
+@media (min-width: 576px) and (max-width: 767.98px) 
+{ 
+    .column-2 {
+        width: 100%;
+        // width: 95%;
+        // margin: auto;
+        &:nth-child(n+2){
+            padding-top: 1em;
+        }
+    }
+    .pagination {
+        width: 95%;
+    }
+    .pagination_ellipsis {
+        width: 10%;
+    }
+    .pagination_page_numbers {
+        width: 10%;
+    }
+    .software_container_width {
+        width: 95%;
+        margin: auto;
+    }
+    .software_left_column {
+        width: 100%;
+    }
+    .widget_disp {
+        display: none;
+    }
+    .software_container {
+        width: 100%;
+        // width: 95%;
+        // margin: auto;
+    }
+    .article_container {
+        width: 95%;
+        margin: auto;
+    }
+
+
+
+}

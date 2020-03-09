@@ -2,7 +2,8 @@
     padding: .4rem;
     &_panel_sticky {
         position: sticky;
-        bottom: 0;
+        // bottom: 0;
+        bottom: -15.5px;
         height: 13em;
         border:solid $border_width $light_blue;
         background-color: $light_blue_1;
@@ -42,6 +43,7 @@
             padding: .4em;
             resize: none;
             border: 1px solid $light_blue;
+            width: calc(100% - 1em);
         }
     }
     &_img {
