@@ -1,7 +1,12 @@
 .widget {
     // width: 20em;
-    &_disp {}
-    max-height: 25em;
+    &_disp {
+
+        &_two {}
+        &_three {}
+    }
+
+    // max-height: 25em;
     padding: .7em;
     cursor: pointer;
     border:solid $border_width $light_blue;
@@ -38,7 +43,7 @@
     &_section{
         width: 20%;
         &:nth-child(n+3){
-            padding-left: 3em;
+            padding-left: 2em;
         }
     }
 
