@@ -38,7 +38,7 @@ padding: 1.2em 3em;
         margin-left: 5em;
     }
     &_stars {
-        margin: 0.4em 0em;
+        // margin: 0.4em 0em;
         // width: 60%;
         &_active {
             border-color: blue($color: #000000);;
@@ -113,6 +113,12 @@ padding: 1.2em 3em;
 
     &_soft_full {
         font-size: 120%;
+    }
+
+    &_search_size {
+        width: 40%;
+        padding-top: 1em;
+        padding-bottom: 5em;
     }
 }
 

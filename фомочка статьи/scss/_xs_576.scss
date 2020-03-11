@@ -3,14 +3,23 @@
 { 
     .column-2 {
         justify-content: space-between;
-        width: 95%;
+        width: 100%;
         margin: auto;
         &:nth-child(n+2){
             padding-top: 1em;
         }
     }
+    .column-3 {
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        &:nth-child(n+2){
+            margin-left: 0em;
+            padding-top: 1em;
+        }
+    }
     .pagination {
-        width: 95%;
+        width: 100%;
     }
     .pagination_ellipsis {
         width: 10%;
@@ -19,14 +28,14 @@
         width: 10%;
     }
     .software_container_width {
-        width: 95%;
+        width: 100%;
         margin: auto;
     }
     .software_left_column {
         width: 100%;
     }
     .article_search_size {
-        width: 95%;
+        width: 100%;
         margin: auto;
     }
     .widget_disp {
@@ -34,6 +43,13 @@
     }
     .software_container {
         width: 100%;
+    }
+    .software_alone_container {
+        height: fit-content;
+    }
+    .software_container_image_button {
+        width: 100%;
+        padding-right: 0em;
     }
     .widget_disp_two {
         display: none;
@@ -47,23 +63,60 @@
     .order_card_type_state {
         padding: .5em;
         float: none;
-        margin-left: 0;
+        // margin-left: 0;
         margin-bottom: 1em;
     }
-    .order_type {
-        font-size: 100%;
-    }
-    // .order_state_dev {
-    //     font-size: 100%;
+    // .order_type {
+    //     // font-size: 100%;
     // }
-    .order_text {
-        font-size: 100%;
-    }
-    .chat_comment_text {
-        font-size: 90%;
-    }
+    // // .order_state_dev {
+    // //     font-size: 100%;
+    // // }
+    // .order_text {
+    //     // font-size: 100%;
+    // }
+    // .chat_comment_text {
+    //     // font-size: 90%;
+    // }
     .button_show-more {
         padding: .7em 3em;
     }
-
+    .article_div_text {
+        width: 100%;
+        margin-top: 1em;
+    }
+    .article_read-more_text-align {
+        text-align: center;
+    }
+    .software_price {
+        padding-top: 0em;
+    }
+    .discussion {
+        width: 100%;
+    }
+    .contact_container {
+        width: 100%;
+    }
+    .order_pay {
+        border: none;
+        padding: 0em;
+    }
+    .order_type_i {
+        font-size: 2rem;
+    }
+    .software_div_name {
+        overflow: auto; 
+        height: auto;
+    }
+    .order_card {
+        height: auto;
+    }
+    .reviews_search_size {
+        width: 100%;
+        padding-bottom: 3em;
+    }
+    .reviews_alone_container {
+        padding: 1em;
+        height: auto;
+    }
 }

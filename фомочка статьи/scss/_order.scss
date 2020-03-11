@@ -135,3 +135,33 @@
         }
     }
 }
+
+.disp_state_empty {
+	@media (max-width: 575.98px) { 
+		display: none;
+	}
+ }
+
+
+.disp_div_state_first {
+    display: none;
+	@media (max-width: 575.98px) { 
+        display: block;
+        margin: auto;
+	}
+ }
+
+ .disp_div_state_second {
+    display: block;
+	@media (max-width: 576px) { 
+		display: none;
+	}
+ }
+
+
+ .bt_read_pos_center {
+    @media (max-width: 576px) {
+        margin: 0 auto;
+        width: fit-content;
+    }
+}

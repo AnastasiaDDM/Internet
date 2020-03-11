@@ -881,11 +881,15 @@
 
 
 .input__wrapper {
-  width: 100%;
+  // width: 100%;
+  // position: relative;
+  // text-align: center;
+  // right: 20px;
+
+
+
+  width: calc(100% - 60px);
   position: relative;
-  // margin: 15px 0;
-  text-align: center;
-  right: 20px;
 }
  
 .input__file {
@@ -893,6 +897,7 @@
   visibility: hidden;
   position: absolute;
   width: 10em;
+  left: 0;
 }
  
 .input__file-icon-wrapper {
@@ -914,6 +919,7 @@
 .input__file-button-text {
   line-height: 1;
   margin-top: 1px;
+  font-size: 80%;
 }
  
 .input__file-button {
