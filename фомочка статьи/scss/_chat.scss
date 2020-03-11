@@ -61,6 +61,12 @@
         // //     max-height: 5em;
         // //     margin-right: .6em;
         // // }
+        @media (max-width: 575.98px) {
+          max-height: 2em;
+        }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+          max-height: 4em;
+        }
    }
     &_left {
         display: flex;
@@ -77,6 +83,7 @@
         // margin-left: 50px;
         margin-bottom: 2em;
         // padding-left: 53px;
+        &_text {}
         &_date {
             &_left {
                 text-align: start;

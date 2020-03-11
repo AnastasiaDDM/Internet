@@ -192,6 +192,12 @@ a:hover {
   margin: auto;
 }
 
+@media (max-width: 767.98px) {
+  .pos_center_sm {
+    margin: auto;
+  }
+}
+
 .pos_right {
   margin-left: auto;
 }
@@ -267,8 +273,28 @@ a:hover {
   }
 }
 
+.w_70_sm {
+  width: 70%;
+}
+
+@media (max-width: 767.98px) {
+  .w_70_sm {
+    width: 95%;
+  }
+}
+
 .width_40 {
   width: 40%;
+}
+
+.w_40_sm_70 {
+  width: 40%;
+}
+
+@media (max-width: 767.98px) {
+  .w_40_sm_70 {
+    width: 70%;
+  }
 }
 
 .width_45 {
@@ -501,6 +527,38 @@ ul.breadcrumb li {
 
 .img_margin:nth-child(n+2), .reviews_screenshot:nth-child(n+2) {
   margin-left: .5em;
+}
+
+.padding_left_4em_sm {
+  padding-left: 4em;
+}
+
+@media (max-width: 767.98px) {
+  .padding_left_4em_sm {
+    padding-left: 0em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .padding_top_2em_sm {
+    padding-top: 2em;
+  }
+}
+
+.max_width_10em_img {
+  max-width: 10em;
+}
+
+@media (max-width: 575.98px) {
+  .max_width_10em_img {
+    max-width: 5em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .max_width_10em_img {
+    max-width: 7em;
+  }
 }
 
 .header-top {
@@ -2537,6 +2595,18 @@ ul.breadcrumb li {
   margin-right: .4em;
 }
 
+@media (max-width: 575.98px) {
+  .chat_img {
+    max-height: 2em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .chat_img {
+    max-height: 4em;
+  }
+}
+
 .chat_left {
   display: flex;
   flex-direction: row;
@@ -3006,6 +3076,23 @@ input[type="password"] {
 }
 
 @media (max-width: 767.98px) {
+  .orders_legend_text {
+    font-size: .9rem;
+  }
+}
+
+.orders_legend_i {
+  font-size: 3rem;
+  color: #207D90;
+}
+
+@media (max-width: 767.98px) {
+  .orders_legend_i {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767.98px) {
   .fix_width {
     width: 100%;
     margin: 0;
@@ -3077,6 +3164,15 @@ input[type="password"] {
   .widget_section {
     width: 30%;
   }
+  .order_card_type_state {
+    padding: .5em;
+  }
+  .order_type {
+    font-size: 100%;
+  }
+  .order_text {
+    font-size: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -3122,6 +3218,24 @@ input[type="password"] {
   }
   .widget_section {
     width: 65%;
+  }
+  .order_card_type_state {
+    padding: .5em;
+    float: none;
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+  .order_type {
+    font-size: 100%;
+  }
+  .order_text {
+    font-size: 100%;
+  }
+  .chat_comment_text {
+    font-size: 90%;
+  }
+  .button_show-more {
+    padding: .7em 3em;
   }
 }
 
