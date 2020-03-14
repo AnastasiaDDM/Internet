@@ -9,15 +9,7 @@
             padding-top: 1em;
         }
     }
-    .column-3 {
-        justify-content: space-between;
-        width: 100%;
-        margin: auto;
-        &:nth-child(n+2){
-            margin-left: 0em;
-            padding-top: 1em;
-        }
-    }
+
     .pagination {
         width: 100%;
     }
@@ -79,7 +71,7 @@
     //     // font-size: 90%;
     // }
     .button_show-more {
-        padding: .7em 3em;
+        padding: .7em 2em;
     }
     .article_div_text {
         width: 100%;
@@ -101,10 +93,6 @@
     .contact_container {
         width: 100%;
     }
-    .order_pay {
-        border: none;
-        padding: 0em;
-    }
     .order_type_i {
         font-size: 2rem;
     }
@@ -125,5 +113,12 @@
     }
     .header-logo_name {
         font-size: 1.5em;
+    }
+    .fieldset_width_p2_p1 {
+        padding: 1em;
+        width: calc(100% - 2em);
+    }
+    .chat_comment {
+        max-width: 95%;
     }
 }

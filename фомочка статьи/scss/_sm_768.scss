@@ -6,11 +6,11 @@
     // .width_50 {
     //     width: 100%;
     // }
-    .fix_width {
-        // max-width: 767.98px;
-        width: 95%;
-        margin: auto;
-    }
+    // .fix_width {
+    //     // max-width: 767.98px;
+    //     width: 95%;
+    //     margin: auto;
+    // }
     .flex_row {
         flex-wrap: wrap;
     }
@@ -19,6 +19,15 @@
     // }
     .flex_nowrap {
         flex-wrap: nowrap;
+    }
+    .column-3 {
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        &:nth-child(n+2){
+            margin-left: 0em;
+            padding-top: 1.4em;
+        }
     }
     .header_container_social {
         width: 70%;
@@ -35,5 +44,27 @@
     }
     .header_disp_none {
         display: none;
+    }
+    .search_disp {
+        &_f {
+            display: none;
+        }
+        &_r_u{
+            display: none;
+        }
+        &_r_d{
+            display: inline;
+        }
+    }
+    .scrollbox {
+        overflow: unset;
+        max-height: fit-content;
+    }
+    .order_pay {
+        border: none;
+        padding: 0em;
+    }
+    .order_search_size {
+        width: 100%;
     }
 }

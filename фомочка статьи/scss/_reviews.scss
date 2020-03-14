@@ -63,7 +63,7 @@ padding: 1.2em 3em;
     &_text {
         padding-top: .2em;
         overflow: hidden;
-        max-height: 20em;
+        max-height: 19.1em;
         line-height: 180%;
         &_full {
             padding-top: .5em;
@@ -73,10 +73,12 @@ padding: 1.2em 3em;
     &_img {
         max-height: 2.5em;
         margin-right: .4em;
+        &_small {
+            max-height: 6em;
+            margin-right: .4em;
+        }
     }
     
-
-
     // &_title {
     //     padding-left: .5em;
     //     padding-bottom: .5em;
@@ -116,15 +118,24 @@ padding: 1.2em 3em;
     }
 
     &_search_size {
-        width: 40%;
+        width: 70%;
         padding-top: 1em;
         padding-bottom: 5em;
     }
 }
 
 
+.review_img_small_disp {
+    @media (min-width: 576px) {
+        display: none;
+    }
+}
 
-
+.review_img_big_disp {
+    @media (max-width: 575.98px) {
+        display: none;
+    }
+}
 
 
 

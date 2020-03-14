@@ -1,10 +1,10 @@
 // Средние девайсы («таблетки», >= 768px) 
 @media (min-width: 768px) and (max-width: 991.98px) 
 { 
-    .fix_width {
-        width: 95%;
-        margin: auto;
-    }
+    // .fix_width {
+    //     width: 95%;
+    //     margin: auto;
+    // }
     .header_navbar {
         padding-top: 0em;
         margin: 0em auto; 
@@ -15,7 +15,45 @@
     .pagination {
         width: 60%;
     }
+    .widget_section {
+        width: 25%;
+    }
+    .order_card_type_state {
+        float: none;
+    }
+    .contact_container {
+        width: 50%;
+    }
+    .order_search_size {
+        width: 100%;
+    }
     
+    .review_card_software {
+        .software_alone_container {
+            height: fit-content;
+        }
+        .software_price {
+            padding-top: 0em;
+        }
+        .flex_row {
+            flex-wrap: wrap;
+        }
+        .software_container_image_button {
+            width: 100%;
+            padding-right: 0em;
+        }
+        .software_button-pay_style_width {
+            width: 80%;
+        }
+        .article_div_text {
+            width: 100%;
+            margin-top: 1em;
+        }
+    }
+    .reviews_search_size {
+        width: 85%;
+        padding-bottom: 3em;
+    }
 
 
     

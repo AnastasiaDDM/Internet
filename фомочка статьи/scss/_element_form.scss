@@ -5,7 +5,7 @@
     // }
   }
   .form-row_edit input {
-    margin-top: 1.4em;
+    margin-top: 2em;
     display: block;
     width: 100%;
     // padding: 0 10px;
@@ -957,19 +957,16 @@
 /*	=	Select */
 .slct {
 	display: block;
-        border-radius: 5px;
-        border: 1px solid #cecece;
-        background-color: transparent;
-        text-decoration: none;
-        // width: 285px;
-        // width: 100%;
-        padding: 10px 15px 10px 10px;
-        // background-position: 290px -145px;
-        z-index: 10000;
-	/*
-		Супер финт обрезаем текст
-		чтобы не вылезал за рамку
-	*/
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  background-color: transparent;
+  text-decoration: none;
+  // width: 285px;
+  // width: 100%;
+  padding: 5px 15px 5px 10px;
+  // background-position: 290px -145px;
+  z-index: 5;
+  line-height: 160%;
 	overflow: hidden;
 	white-space:nowrap;
 	text-overflow: ellipsis;
@@ -1001,7 +998,7 @@
 	cursor: pointer;
 	display: block;
   // padding: 4px 15px 4px 25px;
-  padding: 10px 15px 10px 10px;
+  padding: 5px 10px 5px 10px;
   background-position: 10px -119px;
   z-index: 10000;
 }
@@ -1019,3 +1016,16 @@
 }
 
 
+
+.div_datepic {
+  width: calc(100%/2 - 20px);
+  &:nth-child(1) {
+    margin-right: 0.5em;
+  }
+  &:nth-child(2) {
+    margin-left: 0.5em;
+  }
+  input {
+    width: calc(100% - 25px);
+  }
+}

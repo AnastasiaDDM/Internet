@@ -11,8 +11,9 @@
     <link rel="stylesheet" type="text/css" href="stprostoi.css"-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 
@@ -29,9 +30,12 @@
     <header class = "flex_column header_container_height">
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="flex_row header_container_mail_phone">
-          <div>
-            <img class="icon" src="icons/mail.png"/>
+          <a>
+          <div class="header_i_for_div margin_right_04em">
+            <i class="far fa-envelope header_i"></i>
+            <!-- <i class="far fa-envelope-open header_i"></i> -->
           </div>
+        </a>
           <div class = "header_social_mail">
             <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
               example@mail.ru
@@ -39,8 +43,8 @@
           </div>
         </div>
         <div class="flex_row header_container_mail_phone">
-          <div>
-            <img class="icon" src="icons/phone.png"/>
+          <div class="header_i_for_div margin_right_04em">
+            <i class="fas fa-phone-alt header_i"></i>
           </div>
           <div class = "header_social_phone">
             <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
@@ -50,34 +54,79 @@
         </div>
         <div class="flex_row header_container_social">
           <div>
-            <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
-              <img class="icon" src="icons/telegram.png"/>
+            <a class ="header_i_tlg" title="Telegram" href="https://vk.com/dmitrievnaa1999">
+              <!-- <i class="fab fa-telegram header_i"></i> -->
+              <div class="header_i_for_div ">
+                <i class="fab fa-telegram-plane header_i"></i>
+              </div>
             </a>
           </div>
           <div>
-            <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
-              <img class="icon" src="icons/vk2.png"/>
+            <a class ="header_i_vk" title="Vkontakte" href="https://vk.com/dmitrievnaa1999">
+              <div class="header_i_for_div">
+                <i class="fab fa-vk header_i "></i>
+              </div>   
             </a>
           </div>
           <div>
-            <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
-              <img class="icon" src="icons/whatsapp.png"/>
+            <a class ="header_i_wa" title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+              <!-- <img class="icon" src="icons/whatsapp.png"/> -->
+              <div class="header_i_for_div">
+                <i class="fab fa-whatsapp header_i"></i>
+              </div>
             </a>
           </div>
           <div>
-            <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
-              <img class="icon" src="icons/instagram.png"/>
+            <a class ="header_i_ig" title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+              <div class="header_i_for_div">
+                <i class="fab fa-instagram header_i"></i>
+              </div>
+
             </a>
           </div>
         </div>
         <div class="header-margin_left-top">
-          <a  id = "user" href = "personal_data.html" >    
-            <img class="icon" src="icons/user.png">
+          <a  id = "user" href = "personal_data.html" > 
+            <div class="header_i_for_div header_i">
+              <i class="fas fa-user"></i>
+            </div>   
           </a>
         </div>
       </div>
-      <div class="flex_row header-bottom flex_space-between">
-        <div class="flex_row flex_justify-content_flex-start">
+      <div class="flex_row header-bottom flex_space-between flex_wrap">
+
+        <div class="header">
+          <!-- <a href="/" class="logo">AGT</a> -->
+          <div class="flex_row flex_justify-content_flex-start logo" style="width: 70%;">
+            <div class="header-logo">
+              <a href="/main.html">
+                <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
+              </a>
+            </div>
+            <div class="header-logo_name">
+              <a class = "link_style_none" href="/main.html">Название сайта
+              </a>
+            </div>
+          </div>
+  
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="/aboutcompany.html">О&nbsp;компании</a></li>
+            <li><a href="/catalog.html">Каталог</a></li>
+            <li><a href="/articles.html">Статьи</a></li>
+            <li><a href="/reviews.html">Отзывы</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+            <li><a href="/order.html">Заказать</a></li>
+            <li><a href="/reviews.html">Мои заказы</a></li>
+            <li><a href="/contacts.html">Мои загрузки</a></li>
+            <li><a href="/order.html">Избранное</a></li>
+            <li><a href="/reviews.html">Мои данные</a></li>
+          </ul>
+        </div>
+
+
+        <div class="flex_row flex_justify-content_flex-start header_disp_none">
           <div class="header-logo">
             <a href="/main.html">
               <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -88,7 +137,7 @@
             </a>
           </div>
         </div>
-        <div class="flex_row header_navbar">
+        <div class="flex_row header_navbar header_disp_none">
           <ul>
             <li>
               <a title="О компании" href="/aboutcompany.html">О&nbsp;компании
@@ -140,7 +189,7 @@
       
       </div>
       
-      <div class="reviews_soft_full">Посмотри его прямо сейчас: <a href="/software.html" class="a_big">
+      <div class="reviews_soft_full">Посмотри его прямо сейчас: <a href="/software.html" class="link_style_col_bor margin_left_05em">
           Автоматизированное кафе</a></div>
              
 
@@ -457,9 +506,9 @@
                           </fieldset>
             
             
-            
+          
                           <div class="flex_row flex_space-between margin_top-bootom_1em padding_top_2em">
-                            
+                              
                             <i class="fa fa-angle-left pos_center widget_arrows" aria-hidden="true"></i>
             
                             <section class="widget_section">
@@ -483,7 +532,7 @@
                               </div>
                             </section>
             
-                            <section  class="widget_section">
+                            <section  class="widget_section widget_disp_two">
                               <div>
                                 <div class="widget flex_column"  href="URL">
                                   <div class = "widget_div_title">Автоматизируй образование!</div>
@@ -505,7 +554,7 @@
                             </section>
             
             
-                            <section  class="widget_section">
+                            <section  class="widget_section widget_disp_three">
                               <div>
                                 <div class="widget flex_column"  href="URL">
                                   <div class = "widget_div_title">Автоматизируй образование!</div>

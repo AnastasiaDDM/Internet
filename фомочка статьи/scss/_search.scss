@@ -88,3 +88,19 @@
     cursor: pointer;
 }
 
+.search_disp {
+    &_f {}
+    &_r_u{}
+    &_r_d{}
+    @media (min-width: 768px) {
+        &_r_d{
+            display: none;
+        }
+        &_r_u{
+            display: inline;
+        }
+        &_f{
+            display: block;
+        }
+    }
+}

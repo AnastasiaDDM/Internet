@@ -3,7 +3,8 @@
     &_panel_sticky {
         position: sticky;
         // bottom: 0;
-        bottom: -15.5px;
+        // bottom: -15.5px;
+        bottom: 0px;
         height: 13em;
         border:solid $border_width $light_blue;
         background-color: $light_blue_1;
@@ -361,7 +362,7 @@
 
   .scrollbox {
     overflow: auto;
-    width: 70%;
+    width: 90%;
     max-height: 40rem;
     margin: 30px auto;
     background:

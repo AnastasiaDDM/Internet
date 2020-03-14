@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Статьи
+    <title>Каталог
     </title>
     <meta name="description" content="Описание страницы" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -11,7 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="js/jquery.js"></script>
+
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <script src="js/datepicker.min.js"></script>
+
+    <!-- Include English language -->
+    <script src="js/datepicker.ru.js"></script>
+
     <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
+
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
@@ -161,11 +169,14 @@
 
         <section class="margin_top_2em">
           <div class="software_container_width"> 
-            <div class="search_title">Фильтр <a class="search_roll-up">Развернуть ↓</a></div>
+            <!-- <div class="search_title">Фильтр <a class="search_roll-up">Развернуть ↓</a></div> -->
+
+            <div class="search_title">Фильтр <a id = "search_roll_up" class="search_roll-up search_disp_r_u">Свернуть <i class="fas fa-arrow-up"></i></a>
+              <a id = "search_roll_down" class="search_roll-up search_disp_r_d" ">Развернуть <i class="fas fa-arrow-down"></i></a></div>
             <div class="flex_row flex_space-between">
         
               <div class="flex_column software_left_column">
-              <div class="flex_column software_search margin_bottom_2em">
+              <div class="flex_column software_search margin_bottom_2em search_disp_f" id="search_div_fieldset">
         
                  <fieldset class="fieldset_border_primary" name="fieldset" >
                   <form>
@@ -497,7 +508,7 @@
         
         
         
-              <section class="flex_row software_container padding_bottom_2em"> 
+              <section class="flex_row software_container padding_bottom_2em padding_top_2em"> 
                 <!-- Контейнер для всех карточек --> 
         
                <div class="column-2"> 
@@ -1086,4 +1097,32 @@
 
 
 </body>
+
+<script>
+  jQuery(document).ready(function () {
+    // $( "#search_roll_up" ).click(function() {
+    // $( "#search_fieldset" ).slideToggle( "slow", function() {
+    //   $( "#search_roll_up" ).html("Развернуть");
+    //   // Animation complete.
+    //   });
+    // });
+
+    $( "#search_roll_up" ).click(function() {
+      $( "#search_div_fieldset" ).slideUp( "slow", function() {
+        $( "#search_roll_down" ).show();
+        $( "#search_roll_up" ).hide();
+        // Animation complete.
+      });
+    });
+    $( "#search_roll_down" ).click(function() {
+      $( "#search_div_fieldset" ).slideDown( "slow", function() {
+        $( "#search_roll_up" ).show();
+        $( "#search_roll_down" ).hide();
+        // Animation complete.
+      });
+    });
+  })
+</script>
+
+
 </html>

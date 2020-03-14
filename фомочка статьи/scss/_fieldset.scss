@@ -1,4 +1,8 @@
 .fieldset {
+    &_width_p2_p1 {
+        padding: 2em;
+        width: calc(100% - 4em);
+    }
     &_article {
         border-color: $red;
         width: 100%;

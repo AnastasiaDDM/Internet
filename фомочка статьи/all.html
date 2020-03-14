@@ -20,8 +20,8 @@
     <script src="js/datepicker.min.js"></script>
 
     <!-- Include English language -->
-    <script src="js/datepicker.en.js"></script>
-    
+    <script src="js/datepicker.ru.js"></script>
+
     <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
 
 
@@ -106,7 +106,7 @@
 
         <div class="header">
           <!-- <a href="/" class="logo">AGT</a> -->
-          <div class="flex_row flex_justify-content_flex-start logo" style="width: 80%;">
+          <div class="flex_row flex_justify-content_flex-start logo" style="width: 70%;">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -176,8 +176,9 @@
       <!-- <section> -->
 
         <div class="article_search_size">
-          <div class="search_title">Поиск <a class="search_roll-up">Свернуть ↑</a></div>
-          <fieldset class="fieldset_border_primary"  name="fieldset">
+          <div class="search_title">Поиск <a id = "search_roll_up" class="search_roll-up search_disp_r_u">Свернуть <i class="fas fa-arrow-up"></i></a>
+            <a id = "search_roll_down" class="search_roll-up search_disp_r_d" ">Развернуть <i class="fas fa-arrow-down"></i></a></div>
+          <fieldset class="fieldset_border_primary search_disp_f"  id = "search_fieldset" name="fieldset">
             <form>
               <!-- <div class="margin_left-right_1em"> -->
             <!-- <legend>Поиск:</legend> -->
@@ -191,16 +192,21 @@
               </div>
               </div>
     
-              <div class="flex_row flex_space-between padding_top_2em">
-                <div  class="flex_row flex_space-between pos_center">Дата:
-                  <!-- <div>Дата:</div> -->
-                  <div class="padding_left_2em"><input  type="text" class="input_middle slct_div slct datepicker"></div> 	
-                  &#8212
-                  <div class="padding_left_2em"><input type="text" class="input_middle datepicker"></div>
-                </div>
+              <div class="flex_row flex_space-between padding_top-bootom_1em ">
                 <div class="form-row w_45_xs">
                   <input type="text" id="keyword" required autocomplete="off"><label for="keyword">Ключевые слова</label>
                 </div>
+
+                <div  class="flex_row flex_space-between w_45_xs" style="margin-top: 1.7em;">
+                  <!-- <div>Дата:</div> -->
+                  <div class="div_datepic"><input  type="text" class=" slct_div slct search_datepicker"></div> 	
+                  &#8212  
+                  <div class="div_datepic"><input type="text" class=" slct_div slct search_datepicker"></div>
+                  <!-- <div class=" flex_row"><p>Дата от: </p><input  type="text" class="input_middle slct_div slct search_datepicker"></div> 	
+                  &#8212
+                  <div class=" flex_row"><p>до: </p><input type="text" class="input_middle slct_div slct search_datepicker"></div> -->
+                </div>
+   
                 </div>
       
     
@@ -2014,7 +2020,7 @@
   
           <div class="    margin_top_2em">     <!-- Форма комментария -->
             <!-- <h1>Заказать звонок</h1> -->
-            <fieldset class=" padding_2em_xs  border_fieldset_top" >
+            <fieldset class="border_fieldset_top fieldset_width_p2_p1" >
               <legend class="pos_center border_fieldset_top_legend_big" >Написать отзыв</legend>
               <form>
   
@@ -2037,7 +2043,7 @@
                       <label for="r3">Отзыв о продукте</label>
                     </li> 
 
-  
+<!--   
                     <div class="">
                       <a href="javascript:void(0);" class="slct">Выберите Ваше лучшее качество:</a>
                       <ul class="drop">
@@ -2048,7 +2054,7 @@
                       </ul>
                       <input type="hidden" id="select">
                     </div>
-  
+   -->
   
   
                     <li>
@@ -2218,7 +2224,7 @@
             <a data-slide-index="10" href=""><img src="images/timetable.jpg" /></a>
           </div>
           </div> -->
-            <div class="order_pay pos_center_sm"name="fieldset">
+            <div class="order_pay 1pos_center_sm"name="fieldset">
                 <form>
             
                   <div class="w_80_xs">
@@ -2601,7 +2607,7 @@
 
 
 
-        <div class="article_search_size">
+        <div class="order_search_size">
           <div class="search_title">Поиск <a class="search_roll-up">Свернуть ↑</a></div>
           <fieldset class="fieldset_border_primary"  name="fieldset">
             <form>
@@ -2675,15 +2681,28 @@
                 <input type="hidden" id="select">
               </div>
 
-              <div  class="flex_row column-3 flex_space-between pos_center">
-                <!-- <div>Дата:</div> -->
+              <!-- <div  class="flex_row column-3 flex_space-between pos_center">
+
                 <div class=><input  type="date" class="input_middle"></div> 	
                 &#8212
                 <div class=""><input type="date" class="input_middle"></div>
+              </div> -->
+
+
+              <div  class="flex_row flex_space-between column-3">
+                <!-- <div>Дата:</div> -->
+                <div class="div_datepic"><input  type="text" class=" slct_div slct search_datepicker"></div> 	
+                &#8212  
+                <div class="div_datepic"><input type="text" class=" slct_div slct search_datepicker"></div>
+                <!-- <div class=" flex_row"><p>Дата от: </p><input  type="text" class="input_middle slct_div slct search_datepicker"></div> 	
+                &#8212
+                <div class=" flex_row"><p>до: </p><input type="text" class="input_middle slct_div slct search_datepicker"></div> -->
               </div>
 
+
+
               <div class="slct_div column-3 ">
-                <label >Месяц</label>
+                <!-- <label >Месяц</label> -->
                 <a href="javascript:void(0);" id="month" class="slct">Месяц</a>
                 <ul class="drop">
                   <li><a data-value="kras">Не выбрано</a></li>
@@ -2727,7 +2746,7 @@
                   <input type="hidden" id="select">
                 </div>
 
-                <ul class="radio_checkbox column-3 ">
+                <ul class="radio_checkbox column-3 " style="margin-top: 0.3em;">
                   <li style="margin: auto 0em;">
                     <input id="c2" type="checkbox">
                     <label for="c2" >Непрочитанные в чате</label>
@@ -2739,38 +2758,42 @@
                 <div class="flex_row  width_100 padding_top_2em">
 
                   <div class="form-row column-3">
-                    <input type="text" id="num" required autocomplete="off"><label for="num">Номер заказа</label>
+                    <input type="text" style="margin-top: 0em;" id="num" required autocomplete="off"><label for="num">Номер заказа</label>
                   </div>
 
                   <div class="form-row column-3">
-                    <input type="text" id="name" required autocomplete="off"><label for="name">Наименование ПО </label>
+                    <input type="text" style="margin-top: 0em;" id="name" required autocomplete="off"><label for="name">Наименование ПО </label>
                   </div> 
 
                   <div class = "flex_row column-3">
+    
+                    <div class=" slct_div" style ="width: 30%;">
+                      <a href="javascript:void(0);" class="slct">По</a>
+                      <ul class="drop ">
+                        <li><a data-value="kras">4</a></li>
+                        <li><a data-value="ymn">6</a></li>
+                        <li><a data-value="kom">10</a></li>
+                        <li><a data-value="scr">12</a></li>
+                      </ul>
+                      <input type="hidden" id="select">
+                    </div>
+    
+    
+                    <div class="slct_div" style="margin-left: .5em; width: calc(100% - 30% - 10px);">
+                      <a href="javascript:void(0);" class="slct">Сортировать:</a>
+                      <ul class="drop">
+                        <li><a data-value="kras">Все</a></li>
+                        <li><a data-value="ymn">Популярное</a></li>
+                        <li><a data-value="kom">Новое</a></li>
+                        <li><a data-value="scr">&#8657 по размеру</a></li>
+                        <li><a data-value="scr">&#8659 по размеру</a></li>
+                      </ul>
+                      <input type="hidden" id="select">
+                    </div>
 
-                    
-                  <div class=" slct_div" style ="width: 4em;">
-                    <a href="javascript:void(0);" class="slct">По</a>
-                    <ul class="drop ">
-                      <li><a data-value="kras">4</a></li>
-                      <li><a data-value="ymn">6</a></li>
-                      <li><a data-value="kom">10</a></li>
-                      <li><a data-value="scr">12</a></li>
-                    </ul>
-                    <input type="hidden" id="select">
-                  </div>
 
 
-                  <div class="slct_div margin_bottom_1em" style="margin-left: .5em; width: 15em;">
-                    <a href="javascript:void(0);" class="slct">Тип заказа:</a>
-                    <ul class="drop">
-                      <li><a data-value="kras">Все</a></li>
-                      <li><a data-value="ymn">Оригинальная разработка</a></li>
-                      <li><a data-value="kom">Доработка</a></li>
-                      <li><a data-value="scr">Купленные ПО</a></li>
-                    </ul>
-                    <input type="hidden" id="select">
-                  </div>
+                  
                   </div >
                 
 
@@ -2794,7 +2817,7 @@
         </div>
 
         
-<div class="flex_row main_block_bg padding_top-bootom_1em flex_flex-center">
+<div class="flex_row main_block_bg padding_top-bootom_1em flex_flex-start" style="line-height: 2em;">
 
 <div class="flex_row">
 <div class=" pos_right order_card_type_state_small">
@@ -2820,7 +2843,7 @@
 </div>
 
         <!-- Контейнер для всех карточек --> 
-<div  class="flex_row pos_center article_container software_container_all-width padding_bottom_2em margin_top_2em">
+<div  class="flex_row pos_center article_container padding_bottom_2em margin_top_2em">
     
   
 
@@ -2838,20 +2861,23 @@
     <legend>Заказ №25</legend>
     <form>
 
-      
+      <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+
+        <div class="order_type_i pos_right order_card_type_state_small"><i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+      </div>   
       
       <div class = "pos_left_for_text "> 
-        <div class="software_div_name">
+        <div class="order_div_name">
                     <!-- <div class = "software_price">350 000 000 р</div> -->
                 <!-- Контейнер названия и типа ПО -->
-                <a class = "orders_text_big" href="URL">Автоматизированное кафе
+                <a class = "orders_text_big" href="URL">Автоматизированное кафе ати зир ованное кафе
                 </a>
            </div>
 
            
       <div class="float_right w_55_xs">
 
-        <div class="order_type_i pos_right order_card_type_state_small"><i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+  
 
         <div  class="order_state_dev">Состояние: В разработке</div>
 
@@ -2931,10 +2957,13 @@
     <legend>Заказ №25</legend>
     <form>
 
-      
+      <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+
+        <div class="order_type_i pos_right order_card_type_state_small"><i class="fas fa-pencil-alt order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+      </div> 
       
       <div class = "pos_left_for_text "> 
-        <div class="software_div_name">
+        <div class="order_div_name">
                     <!-- <div class = "software_price">350 000 000 р</div> -->
                 <!-- Контейнер названия и типа ПО -->
                 <a class = "orders_text_big" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
@@ -2944,7 +2973,7 @@
            
       <div class="float_right w_55_xs">
 
-        <div class="order_type_i pos_right order_card_type_state_small"><i class="fas fa-pencil-alt order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+       
 
         <div  class="order_state_pay">Состояние: Оплачено</div>
 
@@ -3004,10 +3033,13 @@
     <legend>Заказ №25</legend>
     <form>
 
-      
+      <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+
+        <div class="order_type_i pos_right order_card_type_state_small"><i class="fas fa-cart-plus order_type_i" title="Купленное ПО" aria-hidden="true"></i></div>
+      </div> 
       
       <div class = "pos_left_for_text "> 
-        <div class="software_div_name">
+        <div class="order_div_name">
                     <!-- <div class = "software_price">350 000 000 р</div> -->
                 <!-- Контейнер названия и типа ПО -->
                 <a class = "orders_text_big" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
@@ -3017,7 +3049,7 @@
            
       <div class="float_right w_55_xs">
 
-        <div class="order_type_i pos_right order_card_type_state_small"><i class="fas fa-cart-plus order_type_i" title="Купленное ПО" aria-hidden="true"></i></div>
+      
 
         <div  class="order_state_not_pay">Состояние: Не оплачено</div>
 
@@ -3076,10 +3108,13 @@
     <legend>Заказ №25</legend>
     <form>
 
-      
+      <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+
+        <div class="order_type_i pos_right order_card_type_state_small"><i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+      </div> 
       
       <div class = "pos_left_for_text "> 
-        <div class="software_div_name">
+        <div class="order_div_name">
                     <!-- <div class = "software_price">350 000 000 р</div> -->
                 <!-- Контейнер названия и типа ПО -->
                 <a class = "orders_text_big" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
@@ -3089,7 +3124,7 @@
            
       <div class="float_right w_55_xs">
 
-        <div class="order_type_i pos_right order_card_type_state_small"><i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+        
 
         <div  class="order_state_dev">Состояние: В разработке</div>
 
@@ -3148,10 +3183,13 @@
     <legend>Заказ №25</legend>
     <form>
 
-      
+      <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+
+        <div class="order_type_i pos_right order_card_type_state_small"><i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+      </div> 
       
       <div class = "pos_left_for_text "> 
-        <div class="software_div_name">
+        <div class="order_div_name">
                     <!-- <div class = "software_price">350 000 000 р</div> -->
                 <!-- Контейнер названия и типа ПО -->
                 <a class = "orders_text_big" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
@@ -3161,7 +3199,7 @@
            
       <div class="float_right width_55">
 
-        <div class="order_type_i pos_right order_card_type_state_small"><i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+      
 
         <div  class="order_state_dev">Состояние: В разработке</div>
 
@@ -3219,10 +3257,13 @@
     <legend>Заказ №25</legend>
     <form>
 
-      
+      <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+
+        <div class="order_type_i pos_right order_card_type_state_small"><i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+      </div> 
       
       <div class = "pos_left_for_text "> 
-        <div class="software_div_name">
+        <div class="order_div_name">
                     <!-- <div class = "software_price">350 000 000 р</div> -->
                 <!-- Контейнер названия и типа ПО -->
                 <a class = "orders_text_big" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
@@ -3232,7 +3273,7 @@
            
       <div class="float_right width_55">
 
-        <div class="order_type_i pos_right order_card_type_state_small"><i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true"></i></div>
+    
 
         <div  class="order_state_dev">Состояние: В разработке</div>
 
@@ -3652,7 +3693,7 @@
       
       
       
-                    <div class="1column-2"> 
+                    <div class="review_card_software"> 
                       <!-- Бокс одной карточки --> 
                       <article class="flex_column software_alone_container "> 
                         <!-- Контейнер одной карточки --> 
@@ -4066,7 +4107,10 @@
                 <div class="flex_row reviews_alone_container">
                   <div class=" flex_column">
                     <div class=" flex_row">
-                      <div class="flex_column width_30 "> 
+
+
+                      
+                      <div class="flex_column width_30 review_img_big_disp"> 
                         <!--фото ПО и теги(которые потом в мобилке будут убираться)-->
                         <img  class = "img_width " src="images/rewiew.jpg" alt="Расписание"/>
                         <!-- <div class="flex_row flex_space-between">
@@ -4093,8 +4137,23 @@
                           <div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div> -->
     
                         </div>
-                      </div>      
-                      <div class="flex_column padding_left_2em_xs w_70_xs">	          
+                      </div>
+                      
+                      
+                          
+                      <div class="flex_row  margin_top-bootom_1em review_img_small_disp" >
+                        <div class = " chat_img_margin_between"><img class = "reviews_img_small cursor"  src="images/rewiew.jpg" alt="Расписание"/></div>
+                        <div class = " chat_img_margin_between"><img class = "reviews_img_small cursor"  src="images/rewiew.jpg" alt="Расписание"/></div>
+                        <div class = "chat_img_margin_between"><img  class = "reviews_img_small cursor" src="images/rewiew.jpg" alt="Расписание"/></div>
+                        <div class = "chat_img_margin_between"><img  class = "reviews_img_small cursor" src="images/rewiew.jpg" alt="Расписание"/></div>
+                        <div class = "chat_img_margin_between"><img  class = "reviews_img_small cursor" src="images/rewiew.jpg" alt="Расписание"/></div>
+                    
+                      </div>
+
+
+
+
+                      <div class="flex_column padding_left_2em_xs w_60_xs">	          
                         <div class="flex_row flex_space-between">
                           <div class = "reviews_title">Иванов М.Л.
                           </div>	
@@ -5106,4 +5165,31 @@
 
 
 </body>
+
+
+<script>
+  jQuery(document).ready(function () {
+    // $( "#search_roll_up" ).click(function() {
+    // $( "#search_fieldset" ).slideToggle( "slow", function() {
+    //   $( "#search_roll_up" ).html("Развернуть");
+    //   // Animation complete.
+    //   });
+    // });
+
+    $( "#search_roll_up" ).click(function() {
+      $( "#search_fieldset" ).slideUp( "slow", function() {
+        $( "#search_roll_down" ).show();
+        $( "#search_roll_up" ).hide();
+        // Animation complete.
+      });
+    });
+    $( "#search_roll_down" ).click(function() {
+      $( "#search_fieldset" ).slideDown( "slow", function() {
+        $( "#search_roll_up" ).show();
+        $( "#search_roll_down" ).hide();
+        // Animation complete.
+      });
+    });
+  })
+</script>
 </html>

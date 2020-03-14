@@ -67,15 +67,18 @@ let inputs = document.querySelectorAll('.input__file');
 	  
 	  select();
 	    input_file();
+		
+		  $('.search_datepicker').datepicker({
+    language: 'ru',
+	autoClose: true,
+    // minDate: new Date() // Now can select only dates, which goes after today
+});
 
               })
   
 
   
-  $('.datepicker').datepicker({
-    language: 'en',
-    minDate: new Date() // Now can select only dates, which goes after today
-})
+
 
 
        
