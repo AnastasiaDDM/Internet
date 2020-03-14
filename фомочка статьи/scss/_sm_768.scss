@@ -14,9 +14,9 @@
     .flex_row {
         flex-wrap: wrap;
     }
-    .header_navbar {
-        display: none;
-    }
+    // .header-bottom {
+    //     display: none;
+    // }
     .flex_nowrap {
         flex-wrap: nowrap;
     }
@@ -32,5 +32,8 @@
     .header_i_for_div {
         width: 2rem;
         height: 2rem;
+    }
+    .header_disp_none {
+        display: none;
     }
 }
