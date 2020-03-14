@@ -17,6 +17,11 @@
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
 
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <script src="js/datepicker.min.js"></script>
+
+    <!-- Include English language -->
+    <script src="js/datepicker.en.js"></script>
 
 
 <!--link href="bxslider-4-4.2.12/dist/jquery.bxslider.css" rel="stylesheet">
@@ -98,7 +103,7 @@
 
         <div class="header">
           <!-- <a href="/" class="logo">AGT</a> -->
-          <div class="flex_row flex_justify-content_flex-start logo1">
+          <div class="flex_row flex_justify-content_flex-start logo" style="width: 80%;">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -186,9 +191,9 @@
               <div class="flex_row flex_space-between padding_top_2em">
                 <div  class="flex_row flex_space-between pos_center">Дата:
                   <!-- <div>Дата:</div> -->
-                  <div class="padding_left_2em"><input  type="date" class="input_middle slct_div slct"></div> 	
+                  <div class="padding_left_2em"><input  type="text" class="input_middle slct_div slct datepicker"></div> 	
                   &#8212
-                  <div class="padding_left_2em"><input type="date" class="input_middle"></div>
+                  <div class="padding_left_2em"><input type="text" class="input_middle datepicker"></div>
                 </div>
                 <div class="form-row w_45_xs">
                   <input type="text" id="keyword" required autocomplete="off"><label for="keyword">Ключевые слова</label>
