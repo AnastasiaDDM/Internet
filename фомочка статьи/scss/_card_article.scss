@@ -22,7 +22,6 @@
     /* text-align: right; */
     // font-size: 100%;
       /* text-align: bottom; */
-    text-indent: 2.5em;
     padding-left: 1em;
     text-align: left;
     overflow: hidden;
@@ -47,6 +46,8 @@
   &_tag {
   font-size: 70%;
   word-spacing: 1em;
+  max-height: 6.5em;
+  overflow: hidden;
   // padding-top: 1.5em;
   } 
 }

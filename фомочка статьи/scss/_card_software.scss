@@ -115,7 +115,7 @@ overflow: hidden;
     padding-inline-start: 0em;
     line-height: 160%;
     overflow: hidden;
-    height: 9.3em;	
+    max-height: 9.3em;
   }
 }
 
@@ -138,7 +138,7 @@ overflow: hidden;
   justify-content: space-between;
   width: 78%;
   &_button {
-	height: 3em;
+	// height: 3em;
 	margin-top: 1.4em;
   font-size: 70%;
   }

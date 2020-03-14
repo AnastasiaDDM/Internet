@@ -1,7 +1,20 @@
 // Средние девайсы («таблетки», >= 768px) 
 @media (min-width: 768px) and (max-width: 991.98px) 
 { 
-   
+    .fix_width {
+        width: 95%;
+        margin: auto;
+    }
+    .header_navbar {
+        padding-top: 0em;
+        margin: 0em auto; 
+    }
+    .header_navbar li a {
+        padding: 0.8em 1.5em;
+    }
+    .pagination {
+        width: 60%;
+    }
     
 
 

@@ -18,6 +18,9 @@
     &:hover {
       border-bottom: 2px solid $rose;
     } 
+    @media (max-width: 767.98px) { 
+      padding-left: 0rem;
+    }
   }
   .form-row_edit label {
     position: absolute;
@@ -54,7 +57,7 @@
     position: relative;
   }
   .form-row input {
-    margin-top: .8em;
+    margin-top: 1.3em;
     display: block;
     width: 100%;
     // padding: 0 10px;
@@ -1014,3 +1017,5 @@
   color: #222;
   z-index: 10000;
 }
+
+

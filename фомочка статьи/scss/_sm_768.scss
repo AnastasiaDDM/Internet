@@ -14,8 +14,11 @@
     .flex_row {
         flex-wrap: wrap;
     }
-    .header-bottom {
+    .header_navbar {
         display: none;
+    }
+    .flex_nowrap {
+        flex-wrap: nowrap;
     }
     .header_container_social {
         width: 70%;

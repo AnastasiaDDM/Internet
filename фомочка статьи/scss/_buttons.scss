@@ -112,9 +112,10 @@
 }
 
 .button_like {
-    font-size: 300%;
+    font-size: 350%;
     cursor: pointer;
     color: lightgrey;
+    vertical-align: middle;
     // text-shadow: 1px 1px #bbb;
     &:hover {
         color:$red;
