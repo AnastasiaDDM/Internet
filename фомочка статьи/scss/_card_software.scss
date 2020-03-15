@@ -44,7 +44,7 @@
 
 .software_alone_container {
   @include alone_card; 
-  height: 24em;
+  height: 24.3em;
   overflow: hidden;
   position: relative;
   border-width: $border_width;
@@ -211,7 +211,7 @@ overflow: hidden;
       padding: .5em;
       line-height: 130%;
      
-      &_width {width:80%;}
+      &_width {width: calc(100% - 50px)}
       &_width_100 {width:100%;}
 
 

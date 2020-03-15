@@ -19,9 +19,12 @@
     <header class = "flex_column header_container_height">
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="flex_row header_container_mail_phone">
-          <div>
-            <img class="icon" src="icons/mail.png"/>
+          <a>
+          <div class="header_i_for_div margin_right_04em">
+            <i class="far fa-envelope header_i"></i>
+            <!-- <i class="far fa-envelope-open header_i"></i> -->
           </div>
+        </a>
           <div class = "header_social_mail">
             <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
               example@mail.ru
@@ -29,8 +32,8 @@
           </div>
         </div>
         <div class="flex_row header_container_mail_phone">
-          <div>
-            <img class="icon" src="icons/phone.png"/>
+          <div class="header_i_for_div margin_right_04em">
+            <i class="fas fa-phone-alt header_i"></i>
           </div>
           <div class = "header_social_phone">
             <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
@@ -40,34 +43,79 @@
         </div>
         <div class="flex_row header_container_social">
           <div>
-            <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
-              <img class="icon" src="icons/telegram.png"/>
+            <a class ="header_i_tlg" title="Telegram" href="https://vk.com/dmitrievnaa1999">
+              <!-- <i class="fab fa-telegram header_i"></i> -->
+              <div class="header_i_for_div ">
+                <i class="fab fa-telegram-plane header_i"></i>
+              </div>
             </a>
           </div>
           <div>
-            <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
-              <img class="icon" src="icons/vk2.png"/>
+            <a class ="header_i_vk" title="Vkontakte" href="https://vk.com/dmitrievnaa1999">
+              <div class="header_i_for_div">
+                <i class="fab fa-vk header_i "></i>
+              </div>   
             </a>
           </div>
           <div>
-            <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
-              <img class="icon" src="icons/whatsapp.png"/>
+            <a class ="header_i_wa" title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+              <!-- <img class="icon" src="icons/whatsapp.png"/> -->
+              <div class="header_i_for_div">
+                <i class="fab fa-whatsapp header_i"></i>
+              </div>
             </a>
           </div>
           <div>
-            <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
-              <img class="icon" src="icons/instagram.png"/>
+            <a class ="header_i_ig" title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+              <div class="header_i_for_div">
+                <i class="fab fa-instagram header_i"></i>
+              </div>
+
             </a>
           </div>
         </div>
         <div class="header-margin_left-top">
-          <a  id = "user" href = "personal_data.html" >    
-            <img class="icon" src="icons/user.png">
+          <a  id = "user" href = "personal_data.html" > 
+            <div class="header_i_for_div header_i">
+              <i class="fas fa-user"></i>
+            </div>   
           </a>
         </div>
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
-        <div class="flex_row flex_justify-content_flex-start">
+
+        <div class="header">
+          <!-- <a href="/" class="logo">AGT</a> -->
+          <div class="flex_row flex_justify-content_flex-start logo" style="width: 70%;">
+            <div class="header-logo">
+              <a href="/main.html">
+                <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
+              </a>
+            </div>
+            <div class="header-logo_name">
+              <a class = "link_style_none" href="/main.html">Название сайта
+              </a>
+            </div>
+          </div>
+  
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="/aboutcompany.html">О&nbsp;компании</a></li>
+            <li><a href="/catalog.html">Каталог</a></li>
+            <li><a href="/articles.html">Статьи</a></li>
+            <li><a href="/reviews.html">Отзывы</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+            <li><a href="/order.html">Заказать</a></li>
+            <li><a href="/reviews.html">Мои заказы</a></li>
+            <li><a href="/contacts.html">Мои загрузки</a></li>
+            <li><a href="/order.html">Избранное</a></li>
+            <li><a href="/reviews.html">Мои данные</a></li>
+          </ul>
+        </div>
+
+
+        <div class="flex_row flex_justify-content_flex-start header_disp_none">
           <div class="header-logo">
             <a href="/main.html">
               <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -78,7 +126,7 @@
             </a>
           </div>
         </div>
-        <div class="flex_row header_navbar">
+        <div class="flex_row header_navbar header_disp_none">
           <ul>
             <li>
               <a title="О компании" href="/aboutcompany.html">О&nbsp;компании
@@ -93,7 +141,7 @@
               </a>
             </li>
             <li>
-              <a  title="Отзывы" href="/reviews.html">Отзывы
+              <a  class = "header_navbar_active" title="Отзывы" href="/reviews.html">Отзывы
               </a>
             </li>
             <li>
@@ -111,16 +159,16 @@
     <main>
       <section>
 
-        <div class="main_bg_img margin_top_3em">
-            <div class="width_50 pos_center  main_slider">
+        <div class="main_bg_img111 margin_top_3em">
+            <div class="w_50_sm pos_center  main_slider">
                 <img  class = "img_width " src="images/business.jpg" alt=""/>
                 <div class="main_slider_text">Мы предоставляем вам любые возможности 
                     усовершенствования вашего бизнеса!<br>
                     1. Покупка или бесплатное скачивание уже готовых продуктов<br>
                     2. Доработка вашего или нашего продукта<br>
                     3. Разработка уникального нового продукта <br>
-                    У нас вы найдете оптимальный вариант с интересующими<br>
-                     вас возможностями под бюджет вашего проекта<br>
+                    <!-- У нас вы найдете оптимальный вариант с интересующими<br>
+                     вас возможностями под бюджет вашего проекта<br> -->
 
                 </div>
             </div>
@@ -144,163 +192,174 @@
 
         <div class="margin_top_4em padding_top-bootom_1em">    <!--Это контейнер новых ПО-->
             <div class="pos_center text_up padding_bottom_1em"><h2>Наши новинки</h2></div>
-        <div class="flex_row flex_space-between margin_top-bootom_1em margin_top_2em">
-                
-            <i class="fa fa-angle-left pos_center widget_arrows" aria-hidden="true"></i>
 
-            <section class="widget_section">
-              <div>
-                <div class="widget flex_column"  href="URL">
-                  <div class = "widget_div_title">Автоматизируй образование!</div>
-                  <div class = "widget_div_img"> 
-                    <!-- Бокс картинки --> 
-                    <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
-                  </div>
+            <div class="margin_top_3em">
+                        
+              <div class="flex_row flex_space-between margin_top-bootom_1em padding_top_2em">
+        
+                <i class="fa fa-angle-left pos_center widget_arrows" aria-hidden="true"></i>
+
+                <section class="widget_section">
                   <div>
-                    <ul class = "widget_list">
-                      <li class="widget_marker">Контроль доходов и расходов
-                      <li class="widget_marker">Мониторинг деятельности компании
-                    </ul>
-                    <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                    <div class="widget flex_column"  href="URL">
+                      <div class = "widget_div_title">Автоматизируй образование!</div>
+                      <div class = "widget_div_img"> 
+                        <!-- Бокс картинки --> 
+                        <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
+                      </div>
+                      <div>
+                        <ul class = "widget_list">
+                          <li class="widget_marker">Контроль доходов и расходов
+                          <li class="widget_marker">Мониторинг деятельности компании
+                        </ul>
+                        <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                      </div>
+                      <button class="width_100 software_button-pay_style ">Скачать бесплатно
+                      </button>
+                    </div>
                   </div>
-                  <button class="width_100 software_button-pay_style ">Скачать бесплатно
-                  </button>
-                </div>
-              </div>
-            </section>
+                </section>
 
-            <section  class="widget_section">
-              <div>
-                <div class="widget flex_column"  href="URL">
-                  <div class = "widget_div_title">Автоматизируй образование!</div>
-                  <div class = "widget_div_img"> 
-                    <!-- Бокс картинки --> 
-                    <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
-                  </div>
+                <section  class="widget_section widget_disp_two">
                   <div>
-                    <ul class = "widget_list">
-                      <li class="widget_marker">Контроль доходов и расходов
-                      <li class="widget_marker">Мониторинг деятельности компании
-                    </ul>
-                    <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                    <div class="widget flex_column"  href="URL">
+                      <div class = "widget_div_title">Автоматизируй образование!</div>
+                      <div class = "widget_div_img"> 
+                        <!-- Бокс картинки --> 
+                        <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
+                      </div>
+                      <div>
+                        <ul class = "widget_list">
+                          <li class="widget_marker">Контроль доходов и расходов
+                          <li class="widget_marker">Мониторинг деятельности компании
+                        </ul>
+                        <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                      </div>
+                      <button class="width_100 software_button-pay_style ">Скачать бесплатно
+                      </button>
+                    </div>
                   </div>
-                  <button class="width_100 software_button-pay_style ">Скачать бесплатно
-                  </button>
-                </div>
-              </div>
-            </section>
+                </section>
 
 
-            <section  class="widget_section">
-              <div>
-                <div class="widget flex_column"  href="URL">
-                  <div class = "widget_div_title">Автоматизируй образование!</div>
-                  <div class = "widget_div_img"> 
-                    <!-- Бокс картинки --> 
-                    <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
-                  </div>
+                <section  class="widget_section widget_disp_three">
                   <div>
-                    <ul class = "widget_list">
-                      <li class="widget_marker">Контроль доходов и расходов
-                      <li class="widget_marker">Мониторинг деятельности компании
-                    </ul>
-                    <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                    <div class="widget flex_column"  href="URL">
+                      <div class = "widget_div_title">Автоматизируй образование!</div>
+                      <div class = "widget_div_img"> 
+                        <!-- Бокс картинки --> 
+                        <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
+                      </div>
+                      <div>
+                        <ul class = "widget_list">
+                          <li class="widget_marker">Контроль доходов и расходов
+                          <li class="widget_marker">Мониторинг деятельности компании
+                        </ul>
+                        <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                      </div>
+                      <button class="width_100 software_button-pay_style ">Скачать бесплатно
+                      </button>
+                    </div>
                   </div>
-                  <button class="width_100 software_button-pay_style ">Приобрести
-                  </button>
-                </div>
+                </section>
+
+                <i class="fa fa-angle-right pos_center widget_arrows" aria-hidden="true"></i>
+
               </div>
-            </section>
+            </div>
 
-            <i class="fa fa-angle-right pos_center widget_arrows" aria-hidden="true"></i>
 
-          </div>
-          <div class="margin_top-bootom_1em pos_center"><a href="#" class="button_reset ">Посмотреть еще</a></div>
-        </div>
+              
+              <div class="margin_top-bootom_1em pos_center"><a href="#" class="button_reset ">Посмотреть еще</a></div> 
+            </div>
 
 
 
         <div class="margin_top_4em padding_top-bootom_1em main_block_bg">    <!--Это контейнер примеров ПО-->
             <div class = "flex_row  pos_center_for_div" style="flex-wrap: center;justify-content: space-between;
             width: 70%; ">
-                <div class=" main_type-soft cursor" style=" text-align: right;  width: 25%;"><h2>Мобильные приложения</h2></div>
-                <div class=" main_type-soft_active cursor" style="   text-align: center;  width: 25%;"><h2>Настольные приложения</h2></div>
-                <div class=" main_type-soft cursor" style="  text-align: left;    width: 25%;"><h2>Сайты</h2></div>
+                <div class=" main_type-soft cursor w_25_sm text_right"><h2>Мобильные приложения</h2></div>
+                <div class=" main_type-soft_active cursor w_25_sm text_center"><h2>Настольные приложения</h2></div>
+                <div class=" main_type-soft cursor w_25_sm text_left"><h2>Сайты</h2></div>
             </div>
 
-        <div class="flex_row flex_space-between margin_top-bootom_1em margin_top_2em">
-                
-            <i class="fa fa-angle-left pos_center widget_arrows" aria-hidden="true"></i>
+            <div>
+                        
+              <div class="flex_row flex_space-between margin_top-bootom_1em padding_top_2em">
+        
+                <i class="fa fa-angle-left pos_center widget_arrows" aria-hidden="true"></i>
 
-            <section class="widget_section">
-              <div>
-                <div class="widget flex_column"  href="URL">
-                  <div class = "widget_div_title">Автоматизируй образование!</div>
-                  <div class = "widget_div_img"> 
-                    <!-- Бокс картинки --> 
-                    <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
-                  </div>
+                <section class="widget_section">
                   <div>
-                    <ul class = "widget_list">
-                      <li class="widget_marker">Контроль доходов и расходов
-                      <li class="widget_marker">Мониторинг деятельности компании
-                    </ul>
-                    <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                    <div class="widget flex_column"  href="URL">
+                      <div class = "widget_div_title">Автоматизируй образование!</div>
+                      <div class = "widget_div_img"> 
+                        <!-- Бокс картинки --> 
+                        <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
+                      </div>
+                      <div>
+                        <ul class = "widget_list">
+                          <li class="widget_marker">Контроль доходов и расходов
+                          <li class="widget_marker">Мониторинг деятельности компании
+                        </ul>
+                        <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                      </div>
+                      <button class="width_100 software_button-pay_style ">Скачать бесплатно
+                      </button>
+                    </div>
                   </div>
-                  <button class="width_100 software_button-pay_style ">Скачать бесплатно
-                  </button>
-                </div>
-              </div>
-            </section>
+                </section>
 
-            <section  class="widget_section">
-              <div>
-                <div class="widget flex_column"  href="URL">
-                  <div class = "widget_div_title">Автоматизируй образование!</div>
-                  <div class = "widget_div_img"> 
-                    <!-- Бокс картинки --> 
-                    <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
-                  </div>
+                <section  class="widget_section widget_disp_two">
                   <div>
-                    <ul class = "widget_list">
-                      <li class="widget_marker">Контроль доходов и расходов
-                      <li class="widget_marker">Мониторинг деятельности компании
-                    </ul>
-                    <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                    <div class="widget flex_column"  href="URL">
+                      <div class = "widget_div_title">Автоматизируй образование!</div>
+                      <div class = "widget_div_img"> 
+                        <!-- Бокс картинки --> 
+                        <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
+                      </div>
+                      <div>
+                        <ul class = "widget_list">
+                          <li class="widget_marker">Контроль доходов и расходов
+                          <li class="widget_marker">Мониторинг деятельности компании
+                        </ul>
+                        <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                      </div>
+                      <button class="width_100 software_button-pay_style ">Скачать бесплатно
+                      </button>
+                    </div>
                   </div>
-                  <button class="width_100 software_button-pay_style ">Скачать бесплатно
-                  </button>
-                </div>
-              </div>
-            </section>
+                </section>
 
 
-            <section  class="widget_section">
-              <div>
-                <div class="widget flex_column"  href="URL">
-                  <div class = "widget_div_title">Автоматизируй образование!</div>
-                  <div class = "widget_div_img"> 
-                    <!-- Бокс картинки --> 
-                    <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
-                  </div>
+                <section  class="widget_section widget_disp_three">
                   <div>
-                    <ul class = "widget_list">
-                      <li class="widget_marker">Контроль доходов и расходов
-                      <li class="widget_marker">Мониторинг деятельности компании
-                    </ul>
-                    <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                    <div class="widget flex_column"  href="URL">
+                      <div class = "widget_div_title">Автоматизируй образование!</div>
+                      <div class = "widget_div_img"> 
+                        <!-- Бокс картинки --> 
+                        <img  class = "img_width" src="images/cafe.jpg" alt="Расписание"/>
+                      </div>
+                      <div>
+                        <ul class = "widget_list">
+                          <li class="widget_marker">Контроль доходов и расходов
+                          <li class="widget_marker">Мониторинг деятельности компании
+                        </ul>
+                        <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
+                      </div>
+                      <button class="width_100 software_button-pay_style ">Скачать бесплатно
+                      </button>
+                    </div>
                   </div>
-                  <button class="width_100 software_button-pay_style ">Приобрести
-                  </button>
-                </div>
+                </section>
+
+                <i class="fa fa-angle-right pos_center widget_arrows" aria-hidden="true"></i>
+
               </div>
-            </section>
-
-            <i class="fa fa-angle-right pos_center widget_arrows" aria-hidden="true"></i>
-
-          </div>
-          <div class="margin_top-bootom_1em pos_center"><a href="#" class="button_reset ">Посмотреть еще</a></div>
-        </div>
+            </div>
+              
+              <div class="margin_top-bootom_1em pos_center"><a href="#" class="button_reset ">Посмотреть еще</a></div> 
+            </div>
 
 
 <!-- 
@@ -383,11 +442,11 @@
 
         
         <div>
-        <div class="margin_top_4em padding_top-bootom_1em width_70 pos_center">    <!--Это контейнер видов заказов-->
-            <div class="pos_center text_up padding_bottom_1em"><h2>Закажи прямо сейчас</h2></div>
-        <div class="flex_row flex_space-between margin_top-bootom_1em margin_top_2em">
+        <div class="margin_top_4em padding_top-bootom_1em w_70_95_70_95_md pos_center">    <!--Это контейнер видов заказов-->
+            <div class="pos_center text_up"><h2>Закажи прямо сейчас</h2></div>
+        <div class="flex_row flex_space-between margin_top-bootom_1em">
 
-              <div class="column-3">
+              <div class="ord_column-3 margin_top_3em">
                 <div class="main_order flex_column"  href="URL">
                   <div class = "main_order_title">Сайт</div>
                   <!-- <div class = "widget_div_img">  -->
@@ -418,7 +477,7 @@
               </div>
 
 
-                <div class="column-3">
+                <div class="ord_column-3 margin_top_3em">
                   <div class="main_order flex_column"  href="URL">
                     <div class = "main_order_title">Настольные приложения</div>
                     <!-- <div class = "widget_div_img">  -->
@@ -450,7 +509,7 @@
 
 
 
-                <div class="column-3">
+                <div class="margin_top_3em ord_column-3">
                   <div class="main_order flex_column"  href="URL">
                     <div class = "main_order_title">Мобильное приложение</div>
                     <!-- <div class = "widget_div_img">  -->
@@ -696,9 +755,9 @@
         
             </div>
         
-            <div class="flex_row flex_flex-center margin_top_1em">   
-              <div class="margin_top-bootom_1em"><a href="#" class="button_search">Читать еще</a></div>
-              <div class="margin_top-bootom_1em"><a href="#" class="button_search reviews_button_margin">Добавить отзыв</a></div> 
+            <div class="w_50_sm_70_md_90 flex_row flex_space-between pos_center margin_top_1em">   
+              <div class="margin_top-bootom_1em w_0_xs_100"><a href="#" class="button_search">Читать еще</a></div>
+              <div class="margin_top-bootom_1em w_0_xs_100"><a href="#" class="button_search">Добавить отзыв</a></div> 
             </div>
             
         
@@ -811,7 +870,7 @@
           
 
           <div>
-          <fieldset class="fieldset_tags d1isp_none width_50 pos_center" name="fieldset">
+          <fieldset class="fieldset_tags d1isp_none w_50_sm_80 pos_center" name="fieldset">
             <legend>Подборка</legend>
             <form>
         

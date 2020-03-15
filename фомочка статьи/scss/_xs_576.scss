@@ -121,4 +121,34 @@
     .chat_comment {
         max-width: 95%;
     }
+    .software_price {
+        float: none;
+    }
+    .main_stack {
+        width: 90%;
+        margin: 1.4rem 0rem;
+    }
+    .reviews {
+        width: 100%;
+        margin: 0em auto;
+        &:nth-child(1) {
+            // padding: 0em;
+            padding: 0em 0em 1em 0em;
+            border: none;
+            margin-bottom: 3em;
+            // border-left: dotted 0.2em #D9756C;
+            // border-right: dotted 0.2em #D9756C;
+            border-bottom: dotted 0.2em #D9756C;
+        }
+        &:nth-child(2) {
+            padding: 0em 0em 1em 0em;
+            border: none;
+            margin-bottom: 3em;
+            border-bottom: dotted 0.2em #D9756C;
+        }
+        &:nth-child(3) {
+            padding: 0em 0em 0em 0em;
+            border: none;
+        }
+    }
 }

@@ -34,7 +34,7 @@
         width: 80px;
         height: 50px;
         margin: auto;
-        padding-left: 1em;
+        // padding-left: 1em;
         animation: arrow-1 1s linear infinite;
         div {
                 position: relative;
@@ -145,6 +145,8 @@
         
         // height: 23em;
         // width: 17em;
+        height: 29em;
+        overflow: hidden;
         padding: .7em;
         cursor: pointer;
         border:solid $border_width $light_blue;
@@ -157,13 +159,14 @@
         // overflow: hidden;
         list-style: none;
         // height: 5.5em;
+        height: 18em;
+        overflow: hidden;
             &_price {
                 font-size: 120%; 
                 font-weight: bold;
             }
         }
         &_title {
-            padding-left: .5em;
             padding-bottom: .5em;
             text-align: center;
             line-height: 140%;
@@ -171,6 +174,7 @@
             font-size: 150%; 
             font-weight: bold;
             flex-grow: 2;
+            height: 3em;
         }	
 
     }
@@ -218,7 +222,7 @@
     }
 
     &_type-soft {
-        width: 20%;
+        // width: 25%;
         font-size: 80%;
         transition: .1s ease;
 
@@ -268,3 +272,14 @@
     }
 } 
 
+.text_left {
+    text-align: left; 
+}
+
+.text_right {
+    text-align: right; 
+}
+
+.text_center {
+    text-align: center; 
+}

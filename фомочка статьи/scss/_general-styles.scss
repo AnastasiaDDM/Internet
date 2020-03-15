@@ -143,6 +143,9 @@
 	padding-top: 1em;
 }
 
+.software_column-2:nth-child(n+3){
+	padding-top: 1em;
+}
 
 
 .column-3
@@ -163,7 +166,13 @@
 }
 
 
-
+.ord_column-3 {
+    width: calc((99% -0.5em)/3);
+	justify-content: space-between;
+	&:nth-child(n+2){
+		margin-left: 2em;
+	}
+}
 
 .blue_bg {                                                         /*  ЦВЕТ !!!!!!!!!!! */
 //  background-color: #F0F8FF;	
@@ -303,6 +312,12 @@ color: $gray;
 	}
 }
 
+.w_0_xs_100 {
+	@media (max-width: 575.98px) { 
+		width: 100%;
+	}
+}
+
 .w_50_sm_auto {
 	width: 50%;
 
@@ -404,6 +419,19 @@ color: $gray;
 	}
 }
 
+.w_70_95_70_95_md {
+	width: 70%;
+	@media (max-width: 575.98px) { 
+		width: 95%;
+	}
+	@media (min-width: 576px) and (max-width: 767.98px)  { 
+		width: 70%;
+	}
+	@media (min-width: 768px) and (max-width: 1129.98px) {
+		width: 95%;
+	}
+}
+
 .width_40 {
 	width: 40%;
 	}
@@ -471,6 +499,14 @@ color: $gray;
 	width: 20%;
 	}
 
+.w_25_sm {
+	width: 25%;
+
+	@media (max-width: 767.98px) { 
+		width: 100%;
+	}
+}
+
 .width_55 {
 	width: 55%;
 	}
@@ -534,8 +570,11 @@ ul.breadcrumb {
 
 ul.breadcrumb li+li:before {
     padding: 0.5em;
-    color: &gray;
-	content: "ᐳ";
+	color: &gray;
+	content: "~";
+	// content: "›";
+	// content: "➾";
+	// content: "⤏";
 	// content: "»";
 		
 

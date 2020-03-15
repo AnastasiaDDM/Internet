@@ -1,11 +1,22 @@
 .reviews {
 width: 33.3333%;
-padding: 1.2em 3em;
+// padding: 1.2em 3em;
 // text-align: center;
 // border:solid 0.1em $red;
     &:nth-child(n+2) {
     border-left:dotted 0.2em $red;
     }
+    &:nth-child(1){
+        padding: 1.2em 3em 1.2em 0em;
+	}
+
+    &:nth-child(2){
+		padding: 1.2em 3em;
+    }
+    &:nth-child(3){
+		padding: 1.2em 0em 1.2em 3em;
+	}
+
 
     &_adm {
         // width: 80%;
