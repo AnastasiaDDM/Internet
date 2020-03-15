@@ -15,7 +15,17 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <script src="js/jquery.js"></script>
 
+    <script src="js/jquery.js"></script>
+
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <script src="js/datepicker.min.js"></script>
+
+    <!-- Include English language -->
+    <script src="js/datepicker.ru.js"></script>
+
+    <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
 
 <!--link href="bxslider-4-4.2.12/dist/jquery.bxslider.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -29,9 +39,12 @@
     <header class = "flex_column header_container_height">
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="flex_row header_container_mail_phone">
-          <div>
-            <img class="icon" src="icons/mail.png"/>
+          <a>
+          <div class="header_i_for_div margin_right_04em">
+            <i class="far fa-envelope header_i"></i>
+            <!-- <i class="far fa-envelope-open header_i"></i> -->
           </div>
+        </a>
           <div class = "header_social_mail">
             <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
               example@mail.ru
@@ -39,8 +52,8 @@
           </div>
         </div>
         <div class="flex_row header_container_mail_phone">
-          <div>
-            <img class="icon" src="icons/phone.png"/>
+          <div class="header_i_for_div margin_right_04em">
+            <i class="fas fa-phone-alt header_i"></i>
           </div>
           <div class = "header_social_phone">
             <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
@@ -50,34 +63,79 @@
         </div>
         <div class="flex_row header_container_social">
           <div>
-            <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
-              <img class="icon" src="icons/telegram.png"/>
+            <a class ="header_i_tlg" title="Telegram" href="https://vk.com/dmitrievnaa1999">
+              <!-- <i class="fab fa-telegram header_i"></i> -->
+              <div class="header_i_for_div ">
+                <i class="fab fa-telegram-plane header_i"></i>
+              </div>
             </a>
           </div>
           <div>
-            <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
-              <img class="icon" src="icons/vk2.png"/>
+            <a class ="header_i_vk" title="Vkontakte" href="https://vk.com/dmitrievnaa1999">
+              <div class="header_i_for_div">
+                <i class="fab fa-vk header_i "></i>
+              </div>   
             </a>
           </div>
           <div>
-            <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
-              <img class="icon" src="icons/whatsapp.png"/>
+            <a class ="header_i_wa" title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+              <!-- <img class="icon" src="icons/whatsapp.png"/> -->
+              <div class="header_i_for_div">
+                <i class="fab fa-whatsapp header_i"></i>
+              </div>
             </a>
           </div>
           <div>
-            <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
-              <img class="icon" src="icons/instagram.png"/>
+            <a class ="header_i_ig" title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+              <div class="header_i_for_div">
+                <i class="fab fa-instagram header_i"></i>
+              </div>
+
             </a>
           </div>
         </div>
         <div class="header-margin_left-top">
-          <a  id = "user" href = "myaccount.html" >    
-            <img class="icon" src="icons/user.png">
+          <a  id = "user" href = "personal_data.html" > 
+            <div class="header_i_for_div header_i">
+              <i class="fas fa-user"></i>
+            </div>   
           </a>
         </div>
       </div>
-      <div class="flex_row header-bottom flex_space-between">
-        <div class="flex_row flex_justify-content_flex-start">
+      <div class="flex_row header-bottom flex_space-between flex_wrap">
+
+        <div class="header">
+          <!-- <a href="/" class="logo">AGT</a> -->
+          <div class="flex_row flex_justify-content_flex-start logo" style="width: 70%;">
+            <div class="header-logo">
+              <a href="/main.html">
+                <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
+              </a>
+            </div>
+            <div class="header-logo_name">
+              <a class = "link_style_none" href="/main.html">Название сайта
+              </a>
+            </div>
+          </div>
+  
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="/aboutcompany.html">О&nbsp;компании</a></li>
+            <li><a href="/catalog.html">Каталог</a></li>
+            <li><a href="/articles.html">Статьи</a></li>
+            <li><a href="/reviews.html">Отзывы</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+            <li><a href="/order.html">Заказать</a></li>
+            <li><a href="/reviews.html">Мои заказы</a></li>
+            <li><a href="/contacts.html">Мои загрузки</a></li>
+            <li><a href="/order.html">Избранное</a></li>
+            <li><a href="/reviews.html">Мои данные</a></li>
+          </ul>
+        </div>
+
+
+        <div class="flex_row flex_justify-content_flex-start header_disp_none">
           <div class="header-logo">
             <a href="/main.html">
               <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -88,7 +146,7 @@
             </a>
           </div>
         </div>
-        <div class="flex_row header_navbar">
+        <div class="flex_row header_navbar header_disp_none">
           <ul>
             <li>
               <a title="О компании" href="/aboutcompany.html">О&nbsp;компании
@@ -158,248 +216,294 @@
             <li><a href="URL">Настольные приложения</a></li>
             <li>Грузоперевозки</li>
         </ul>
+   
+
+
         <section>
-            <div class="flex_column  pos_left padding_top_2em padding_bottom_2em" style ="width: 90%;" >
-                <div class="flex_row "> <!--Это контейнер фоток ПО и начала его описания, характеристик-->
-                    <div class="flex_column width_50 "> <!--фото ПО и теги(которые потом в мобилке будут убираться)-->
-                        <img  class = "img_width padding_bottom_2em" src="images/timetable.jpg" alt="Расписание"/>
-                        <div class="flex_row flex_space-between">
-                          <div class = "img_width_calc"><img class = "img_width_calc"  src="images/timetable.jpg" alt="Расписание"/></div>
-                          <div class = "img_width_calc"><img  class = "img_width_calc" src="images/timetable.jpg" alt="Расписание"/></div>
-                          <div class = "img_width_calc"><img  class = "img_width_calc" src="images/timetable.jpg" alt="Расписание"/></div>
-                          <div class = "img_width_calc"><img  class = "img_width_calc" src="images/timetable.jpg" alt="Расписание"/></div>
-                          <div class = "img_width_calc"><img  class = "img_width_calc" src="images/timetable.jpg" alt="Расписание"/></div>
-                        </div>
+          <div class="flex_column  pos_left padding_top_2em padding_bottom_2em" >
+              <div class="flex_row "> <!--Это контейнер фоток ПО и начала его описания, характеристик-->
+                <div class="flex_column w_50_sm pos_center_sm"> <!--фото ПО и теги(которые потом в мобилке будут убираться)-->
+                  <img  class = "img_width padding_bottom_2em" src="images/timetable.jpg" alt="Расписание"/>
+                  <div class="flex_row flex_wrap">
+                    <div class = "img_margin"><img class = "max_width_10em_img"  src="images/timetable.jpg" alt="Расписание"/></div>
+                    <div class = "img_margin"><img  class = "max_width_10em_img" src="images/timetable.jpg" alt="Расписание"/></div>
+                    <div class = "img_margin"><img  class = "max_width_10em_img" src="images/timetable.jpg" alt="Расписание"/></div>
+                    <div class = "img_margin"><img  class = "max_width_10em_img" src="images/timetable.jpg" alt="Расписание"/></div>
+                    <div class = "img_margin"><img  class = "max_width_10em_img" src="images/timetable.jpg" alt="Расписание"/></div>
+                  </div>
 
-                        
-        <!-- <script>jQuery(document).ready(function(){
-          jQuery('.bxslider').bxSlider({
-             nextText: '',
-             prevText: '',
-             pagerCustom: '#bx-pager'
-          });
-          });</script>
-          
-          <div class="slider">
-          <ul class="bxslider">
-            <li><img src="images/cafe.jpg"/></li>
-            <li><img src="images/cafe.jpg"/></li>
-            <li><img src="images/cafe.jpg"/></li>
-            <li><img src="images/timetable.jpg"/></li>
-            <li><img src="images/cafe.jpg"/></li>
-            <li><img src="images/cafe.jpg"/></li>
-            <li><img src="images/cafe.jpg"/></li>
-            <li><img src="images/timetable.jpg"/></li>
-            <li><img src="images/cafe.jpg"/></li>
-            <li><img src="images/cafe.jpg"/></li>
-            <li><img src="images/timetable.jpg"/></li>
-           </ul>
-          <div id="bx-pager">
-            <a data-slide-index="0" href=""><img src="images/cafe.jpg" /></a>
-            <a data-slide-index="1" href=""><img src="images/cafe.jpg" /></a>
-            <a data-slide-index="2" href=""><img src="images/cafe.jpg" /></a>
-            <a data-slide-index="3" href=""><img src="images/timetable.jpg" /></a>
-            <a data-slide-index="4" href=""><img src="images/cafe.jpg" /></a>
-            <a data-slide-index="5" href=""><img src="images/cafe.jpg" /></a>
-            <a data-slide-index="6" href=""><img src="images/cafe.jpg" /></a>
-            <a data-slide-index="7" href=""><img src="images/timetable.jpg" /></a>
-            <a data-slide-index="8" href=""><img src="images/cafe.jpg" /></a>
-            <a data-slide-index="9" href=""><img src="images/cafe.jpg" /></a>
-            <a data-slide-index="10" href=""><img src="images/timetable.jpg" /></a>
-          </div>
-          </div> -->
+                  
+  <!-- <script>jQuery(document).ready(function(){
+    jQuery('.bxslider').bxSlider({
+       nextText: '',
+       prevText: '',
+       pagerCustom: '#bx-pager'
+    });
+    });</script>
+    
+    <div class="slider">
+    <ul class="bxslider">
+      <li><img src="images/cafe.jpg"/></li>
+      <li><img src="images/cafe.jpg"/></li>
+      <li><img src="images/cafe.jpg"/></li>
+      <li><img src="images/timetable.jpg"/></li>
+      <li><img src="images/cafe.jpg"/></li>
+      <li><img src="images/cafe.jpg"/></li>
+      <li><img src="images/cafe.jpg"/></li>
+      <li><img src="images/timetable.jpg"/></li>
+      <li><img src="images/cafe.jpg"/></li>
+      <li><img src="images/cafe.jpg"/></li>
+      <li><img src="images/timetable.jpg"/></li>
+     </ul>
+    <div id="bx-pager">
+      <a data-slide-index="0" href=""><img src="images/cafe.jpg" /></a>
+      <a data-slide-index="1" href=""><img src="images/cafe.jpg" /></a>
+      <a data-slide-index="2" href=""><img src="images/cafe.jpg" /></a>
+      <a data-slide-index="3" href=""><img src="images/timetable.jpg" /></a>
+      <a data-slide-index="4" href=""><img src="images/cafe.jpg" /></a>
+      <a data-slide-index="5" href=""><img src="images/cafe.jpg" /></a>
+      <a data-slide-index="6" href=""><img src="images/cafe.jpg" /></a>
+      <a data-slide-index="7" href=""><img src="images/timetable.jpg" /></a>
+      <a data-slide-index="8" href=""><img src="images/cafe.jpg" /></a>
+      <a data-slide-index="9" href=""><img src="images/cafe.jpg" /></a>
+      <a data-slide-index="10" href=""><img src="images/timetable.jpg" /></a>
+    </div>
+    </div> -->
 
+    <fieldset class="fieldset_tags d1isp_none  pos_center software_tag_first" name="fieldset">
+      <legend>Подборка</legend>
+      <form>
+  
+        <div class = "fieldset_tags_word">
+          <span>
+            <a href="URL">#Платно
+            </a>  
+            <a href="URL">#Доходы
+            </a>  
+            <a href="URL">#ПО ПК
+            </a>  
+            <a href="URL">#Бизнес
+            </a>  
+            <a href="URL">#Кафе
+            </a>  
+            <a href="URL">#Гастропаб
+            </a>                
+            <a href="URL">#Платно
+            </a>  
+            <a href="URL">#Доходы
+            </a>  
+          </span>
+        </div>        
+      </form>
+    </fieldset>
 
-          <fieldset class="fieldset_tags d1isp_none  pos_center" name="fieldset">
-            <legend>Подборка</legend>
-            <form>
-        
-              <div class = "fieldset_tags_word">
-                <span>
-                  <a href="URL">#Платно
-                  </a>  
-                  <a href="URL">#Доходы
-                  </a>  
-                  <a href="URL">#ПО ПК
-                  </a>  
-                  <a href="URL">#Бизнес
-                  </a>  
-                  <a href="URL">#Кафе
-                  </a>  
-                  <a href="URL">#Гастропаб
-                  </a>                
-                  <a href="URL">#Платно
-                  </a>  
-                  <a href="URL">#Доходы
-                  </a>  
-                </span>
-              </div>        
-            </form>
-          </fieldset>
-
-                    </div>
-                    
-                    <div class="flex_column width_50 padding_left_4em"> <!--Это контейнер цены, кнопок и описания-->
-
-                        <div class="flex_column"> <!--Это контейнер цены и кнопок-->
-                            <div class = "page_software_price">350 000 000 000 р  
-                            </div>
-
-                            <!-- <div class="flex_row padding_bottom_2em"> 
-
-                                <div class="flex_column software_button-pay_style_width">
-                                    <button class="button_pay margin_top-bootom_1em">Приобрести
-                                    </button>
-                                    <button class="button_pay">Заказать доработку
-                                    </button>
-                                </div>
-                                <div class="software_button-like_style" style ="margin: 1.5em;" >
-                                </div>
-
-                            </div> -->
-
-
-                            <div class="flex_column padding_bottom_2em width_50"> <!--Это контейнер кнопок-->
-
-                              <div class="">
-                                  <button class="button_pay width_100 margin_top-bootom_1em">Приобрести
-                                  </button>
-                                  
-                              </div>
-                              <div class="flex_row  flex_space-between">
-                                <button class="button_pay ">Заказать доработку
-                                </button>
-                                <div >
-                                  <i class="fa fa-heart button_like  " aria-hidden="true"></i>
-                                </div>
-                                <!-- <div class="software_button-like_style button_like_pos"  >
-                                </div> -->
-                              </div>
-
-
-                          </div>
-
-
-                            
-                        </div>
-
-                        <div >
-
-                            <div class="">
-                                <ul class = "pos_left software_description_list"style = "list-style: none">
-                                    <li class="software_description_marker">Вид: <a href="URL">Настольное приложение</a></li>
-                                    <li class="software_description_marker">Область: <a href="URL">Грузопервозки</a></li>
-                                    <li class="software_description_marker"> Размер приложения: 2,75 МБ</li>
-                                    <li class="software_description_marker">Тип использования: <a href="URL">Групповой доступ</a></li>
-                                    <li class="software_description_marker">Ограничение доступа: <a href="URL">Без разделения ролей</a></li>
-                                    <li class="software_description_marker">Дополнительные установки: <a href="URL">Не требуются</a></li>
-                                    <li class="software_description_marker">Установка приложение: <a href="URL">Не требуется</a></li>
-                                </ul>
-                                
-                            </div>
-                            <div class="margin_top-bootom_1em page_software_description">
-                                Это приложение позволяет управлять заказами грузоперевозок.
-                                Эффективное управление бизнесом при помощи этого приложения. 
-                                Выполнение соновной работы по работника: грузчикам, водителям),
-                                автомобилям, заказам. Также в этом приложении осуществяется
-                                возможность аналитической работы с бизнесом: количество заказов и многое другое.
-                                Это приложение позволяет управлять заказами грузоперевозок.
-                                Эффективное управление бизнесом при помощи этого приложения. 
-                                Выполнение соновной работы по работника: грузчикам, водителям),
-                                автомобилям, заказам. Также в этом приложении осуществяется
-                                возможность аналитической работы с бизнесом:<br><br> количество заказов и многое другое.  
-                                Это приложение позволяет управлять заказами грузоперевозок.
-                                Эффективное управление бизнесом при помощи этого приложения. 
-                                Выполнение соновной работы по работника: грузчикам, водителям),
-                                автомобилям, заказам. Также в этом приложении осуществяется
-                                возможность аналитической работы с бизнесом: количество заказов и многое другое.
-                                Это приложение позволяет управлять заказами грузоперевозок.
-                                Эффективное управление бизнесом при помощи этого приложения. 
-                                Выполнение соновной работы по работника: грузчикам, водителям),
-                                автомобилям, заказам. Также в этом приложении осуществяется
-                                возможность аналитической работы с бизнесом: количеств
-                                возможность аналитической работы с бизнесом:<br><br> количество заказов и многое другое.  
-                                Это приложение позволяет управлять заказами грузоперевозок.
-                                Эффективное управление бизнесом при помощи этого приложения. 
-                                Выполнение соновной работы по работника: грузчикам, водителям),
-                                автомобилям, заказам. Также в этом приложении осуществяется
-                                возможность аналитической работы с бизнесом: количество заказов и многое другое.
-                                Это приложение позволяет управлять заказами грузоперевозок.
-                                Эффективное управление бизнесом при помощи этого приложения. 
-                                Выполнение соновной работы по работника: грузчикам, водителям),
-                                автомобилям, заказам. Также в этом приложении осуществяется
-                                возможность аналитической работы с бизнесом: количество 
-                                возможность аналитической работы с бизнесом:<br><br> количество заказов и многое другое.  
-                                Это приложение позволяет управлять заказами грузоперевозок.
-                                Эффективное управление бизнесом при помощи этого приложения. 
-                                Выполнение соновной работы по работника: грузчикам, водителям),
-                                автомобилям, заказам. Также в этом приложении осуществяется
-                                возможность аналитической работы с бизнесом: количество заказов и многое другое.
-                                Это приложение позволяет управлять заказами грузоперевозок.
-                                Эффективное управление бизнесом при помощи этого приложения. 
-                                Выполнение соновной работы по работника: грузчикам, водителям),
-                                автомобилям, заказам. Также в этом приложении осуществяется
-                                возможность аналитической работы с бизнесом: количество о заказов и многое другое.  
-                            </div>
-                            <div class="margin_top-bootom_1em pos_left"><a href="#" class="button_reset ">Читать полностью</a></div> 
-                                
-                        </div>
-                        
-                    </div>
-
-                </div>
-            </div>
-
-            <div> <!--Это контейнер кнопок, которые находятся в контенте-->
-
-              <div class="flex_row width_30 pos_center padding_top_2em padding_bottom_2em">
-                <button class="button_pay button_pay_width_full ">350 000 000 000₽ Приобрести
-                </button>
-                      <div >
-                        <i class="fa fa-heart button_like width_30" aria-hidden="true"></i>
-                      </div>
               </div>
 
+
+                      
+      <!-- <script>jQuery(document).ready(function(){
+        jQuery('.bxslider').bxSlider({
+           nextText: '',
+           prevText: '',
+           pagerCustom: '#bx-pager'
+        });
+        });</script>
+        
+        <div class="slider">
+        <ul class="bxslider">
+          <li><img src="images/cafe.jpg"/></li>
+          <li><img src="images/cafe.jpg"/></li>
+          <li><img src="images/cafe.jpg"/></li>
+          <li><img src="images/timetable.jpg"/></li>
+          <li><img src="images/cafe.jpg"/></li>
+          <li><img src="images/cafe.jpg"/></li>
+          <li><img src="images/cafe.jpg"/></li>
+          <li><img src="images/timetable.jpg"/></li>
+          <li><img src="images/cafe.jpg"/></li>
+          <li><img src="images/cafe.jpg"/></li>
+          <li><img src="images/timetable.jpg"/></li>
+         </ul>
+        <div id="bx-pager">
+          <a data-slide-index="0" href=""><img src="images/cafe.jpg" /></a>
+          <a data-slide-index="1" href=""><img src="images/cafe.jpg" /></a>
+          <a data-slide-index="2" href=""><img src="images/cafe.jpg" /></a>
+          <a data-slide-index="3" href=""><img src="images/timetable.jpg" /></a>
+          <a data-slide-index="4" href=""><img src="images/cafe.jpg" /></a>
+          <a data-slide-index="5" href=""><img src="images/cafe.jpg" /></a>
+          <a data-slide-index="6" href=""><img src="images/cafe.jpg" /></a>
+          <a data-slide-index="7" href=""><img src="images/timetable.jpg" /></a>
+          <a data-slide-index="8" href=""><img src="images/cafe.jpg" /></a>
+          <a data-slide-index="9" href=""><img src="images/cafe.jpg" /></a>
+          <a data-slide-index="10" href=""><img src="images/timetable.jpg" /></a>
+        </div>
+        </div> -->
+
+
+   
+                  
+                  <div class="flex_column w_50_sm padding_left_4em_sm padding_top_2em_sm"> <!--Это контейнер цены, кнопок и описания-->
+
+                      <div class="flex_column"> <!--Это контейнер цены и кнопок-->
+                          <div class = "page_software_price">350 000 000 000 р  
+                          </div>
+
+                          <!-- <div class="flex_row padding_bottom_2em"> 
+
+                              <div class="flex_column software_button-pay_style_width">
+                                  <button class="button_pay margin_top-bootom_1em">Приобрести
+                                  </button>
+                                  <button class="button_pay">Заказать доработку
+                                  </button>
+                              </div>
+                              <div class="software_button-like_style" style ="margin: 1.5em;" >
+                              </div>
+
+                          </div> -->
+
+
+                          <div class="flex_column padding_bottom_2em w_70_md"> <!--Это контейнер кнопок-->
+
+                            <div class="">
+                                <button class="button_pay width_100 margin_top-bootom_1em">Приобрести
+                                </button>
+                                
+                            </div>
+                            <div class="flex_row  flex_space-between">
+                              <button class="button_pay button_pay_width_full" >Заказать доработку
+                              </button>
+                              <div >
+                                <i class="fa fa-heart button_like  " aria-hidden="true"></i>
+                              </div>
+                              <!-- <div class="software_button-like_style button_like_pos"  >
+                              </div> -->
+                            </div>
+
+
+                        </div>
+
+
+                          
+                      </div>
+
+                      <div >
+
+                          <div class="">
+                              <ul class = "pos_left software_description_list"style = "list-style: none">
+                                  <li class="software_description_marker">Вид: <a href="URL">Настольное приложение</a></li>
+                                  <li class="software_description_marker">Область: <a href="URL">Грузопервозки</a></li>
+                                  <li class="software_description_marker"> Размер приложения: 2,75 МБ</li>
+                                  <li class="software_description_marker">Тип использования: <a href="URL">Групповой доступ</a></li>
+                                  <li class="software_description_marker">Ограничение доступа: <a href="URL">Без разделения ролей</a></li>
+                                  <li class="software_description_marker">Дополнительные установки: <a href="URL">Не требуются</a></li>
+                                  <li class="software_description_marker">Установка приложение: <a href="URL">Не требуется</a></li>
+                              </ul>
+                              
+                          </div>
+                          <div class="margin_top-bootom_1em page_software_description">
+                              Это приложение позволяет управлять заказами грузоперевозок.
+                              Эффективное управление бизнесом при помощи этого приложения. 
+                              Выполнение соновной работы по работника: грузчикам, водителям),
+                              автомобилям, заказам. Также в этом приложении осуществяется
+                              возможность аналитической работы с бизнесом: количество заказов и многое другое.
+                              Это приложение позволяет управлять заказами грузоперевозок.
+                              Эффективное управление бизнесом при помощи этого приложения. 
+                              Выполнение соновной работы по работника: грузчикам, водителям),
+                              автомобилям, заказам. Также в этом приложении осуществяется
+                              возможность аналитической работы с бизнесом:<br><br> количество заказов и многое другое.  
+                              Это приложение позволяет управлять заказами грузоперевозок.
+                              Эффективное управление бизнесом при помощи этого приложения. 
+                              Выполнение соновной работы по работника: грузчикам, водителям),
+                              автомобилям, заказам. Также в этом приложении осуществяется
+                              возможность аналитической работы с бизнесом: количество заказов и многое другое.
+                              Это приложение позволяет управлять заказами грузоперевозок.
+                              Эффективное управление бизнесом при помощи этого приложения. 
+                              Выполнение соновной работы по работника: грузчикам, водителям),
+                              автомобилям, заказам. Также в этом приложении осуществяется
+                              возможность аналитической работы с бизнесом: количеств
+                              возможность аналитической работы с бизнесом:<br><br> количество заказов и многое другое.  
+                              Это приложение позволяет управлять заказами грузоперевозок.
+                              Эффективное управление бизнесом при помощи этого приложения. 
+                              Выполнение соновной работы по работника: грузчикам, водителям),
+                              автомобилям, заказам. Также в этом приложении осуществяется
+                              возможность аналитической работы с бизнесом: количество заказов и многое другое.
+                              Это приложение позволяет управлять заказами грузоперевозок.
+                              Эффективное управление бизнесом при помощи этого приложения. 
+                              Выполнение соновной работы по работника: грузчикам, водителям),
+                              автомобилям, заказам. Также в этом приложении осуществяется
+                              возможность аналитической работы с бизнесом: количество 
+                              возможность аналитической работы с бизнесом:<br><br> количество заказов и многое другое.  
+                              Это приложение позволяет управлять заказами грузоперевозок.
+                              Эффективное управление бизнесом при помощи этого приложения. 
+                              Выполнение соновной работы по работника: грузчикам, водителям),
+                              автомобилям, заказам. Также в этом приложении осуществяется
+                              возможность аналитической работы с бизнесом: количество заказов и многое другое.
+                              Это приложение позволяет управлять заказами грузоперевозок.
+                              Эффективное управление бизнесом при помощи этого приложения. 
+                              Выполнение соновной работы по работника: грузчикам, водителям),
+                              автомобилям, заказам. Также в этом приложении осуществяется
+                              возможность аналитической работы с бизнесом: количество о заказов и многое другое.  
+                          </div>
+                          <div class="margin_top-bootom_1em pos_left bt_read_pos_center"><a href="#" class="button_reset ">Читать полностью</a></div> 
+                              
+                      </div>
+                      
+                  </div>
+
+              </div>
+          </div>
+
+          <div> <!--Это контейнер кнопок, которые находятся в контенте-->
+
+            <div class="flex_row w_50_sm pos_center padding_top_2em padding_bottom_2em">
+              <button class="button_pay button_pay_width_full ">350 000 000 000₽ Приобрести
+              </button>
+                    <div >
+                      <i class="fa fa-heart button_like width_30" aria-hidden="true"></i>
+                    </div>
             </div>
 
+          </div>
 
 
-            <div class="margin_top_3em">    <!--Это контейнер похожих ПО-->
+
+          <div class="margin_top_3em">    <!--Это контейнер похожих ПО-->
 <div class="pos_center"><h2>Похожие программные продукты</h2></div>
 
 
 <div class="">
-              <fieldset class="fieldset_tags d1isp_none width_50 pos_center" name="fieldset">
-                <legend>Подборка</legend>
-                <form>
-            
-                  <div class = "fieldset_tags_word">
-                    <span>
-                      <a href="URL">#Платно
-                      </a>  
-                      <a href="URL">#Доходы
-                      </a>  
-                      <a href="URL">#ПО ПК
-                      </a>  
-                      <a href="URL">#Бизнес
-                      </a>  
-                      <a href="URL">#Кафе
-                      </a>  
-                      <a href="URL">#Гастропаб
-                      </a>                
-                      <a href="URL">#Платно
-                      </a>  
-                      <a href="URL">#Доходы
-                      </a>  
-                    </span>
-                  </div>        
-                </form>
-              </fieldset>
+            <fieldset class="fieldset_tags d1isp_none w_50_sm_auto pos_center software_tag_second" name="fieldset">
+              <legend>Подборка</legend>
+              <form>
+          
+                <div class = "fieldset_tags_word">
+                  <span>
+                    <a href="URL">#Платно
+                    </a>  
+                    <a href="URL">#Доходы
+                    </a>  
+                    <a href="URL">#ПО ПК
+                    </a>  
+                    <a href="URL">#Бизнес
+                    </a>  
+                    <a href="URL">#Кафе
+                    </a>  
+                    <a href="URL">#Гастропаб
+                    </a>                
+                    <a href="URL">#Платно
+                    </a>  
+                    <a href="URL">#Доходы
+                    </a>  
+                  </span>
+                </div>        
+              </form>
+            </fieldset>
 
 
 
+            <div class="margin_top_3em">
+                        
               <div class="flex_row flex_space-between margin_top-bootom_1em padding_top_2em">
-                
+        
                 <i class="fa fa-angle-left pos_center widget_arrows" aria-hidden="true"></i>
 
                 <section class="widget_section">
@@ -423,7 +527,7 @@
                   </div>
                 </section>
 
-                <section  class="widget_section">
+                <section  class="widget_section widget_disp_two">
                   <div>
                     <div class="widget flex_column"  href="URL">
                       <div class = "widget_div_title">Автоматизируй образование!</div>
@@ -445,7 +549,7 @@
                 </section>
 
 
-                <section  class="widget_section">
+                <section  class="widget_section widget_disp_three">
                   <div>
                     <div class="widget flex_column"  href="URL">
                       <div class = "widget_div_title">Автоматизируй образование!</div>
@@ -476,13 +580,104 @@
           </div>
 
 
-            <div class="margin_top_3em">
-              <div class="pos_center padding_top_2em"><h2>Обсуждения данного продукта</h2></div>
+          <div class="margin_top_3em">
+            <div class="pos_center padding_top_2em"><h2>Обсуждения данного продукта</h2></div>
 
 
-              <div class="margin_top_3em">      <!-- Контейнер обсуждений и формы -->
+            <div class="margin_top_3em">      <!-- Контейнер обсуждений и формы -->
 
-                <div>      <!-- Контейнер обсуждений -->
+              <div>      <!-- Контейнер обсуждений -->
+              <div class="discussion flex_column pos_center_for_div">      <!-- одно обсуждение -->
+                <div class="flex_row">
+          
+                  <div class = "reviews_title">Иванов М.Л.</div>
+                  <div class = "reviews_date">20.01.2020</div>
+                </div>
+          
+                <div  class="discussion_text">
+                  <span>Замечательная программа! Не могу нарадоваться! Жду доработки, 
+                    которую предложила, и тогда приложение станет совершенно идеальным 
+                    для меня! Спасибо вам! Замечательная программа! Не могу нарадоваться! Жду доработки, 
+                    которую предложила, и тогда приложение станет совершенно идеальным 
+                    для меня! Спасибо вам! Замечательная программа! Не могу нарадоваться! Жду доработки, 
+                    которую предложила, и тогда приложение станет совершенно идеальным 
+                    для меня! Спасибо вам! </span>
+                    
+                    <div class="pos_right_for_div"><a href="#" class="button_reset">Ответить</a></div>
+                </div>
+                
+                <div>
+                  <i class="fa fa-comments-o discussion_icon_com" aria-hidden="true"></i><a class="link_style_border">Комментарии (10)</a>
+                </div>
+
+
+                  
+                  <div class ="discussion_comment pos_right">      <!-- комментарии к обсуждению -->
+                    <div  class="discussion_comment_one flex_column 1reviews_adm ">
+                      <div class="flex_row">
+          
+                        <div class = "reviews_title">Иванов М.Л.</div>
+                        <div class = "reviews_date">20.01.2020</div>
+                      </div>
+                      <div><span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                        с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                        с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                        с каждым выходом нового ПО! </span></div>
+                        <div class="pos_right"><a href="#" class="button_reset">Ответить</a></div>
+                    </div>
+
+                    <div  class="discussion_comment_one flex_column 1reviews_adm ">
+                      <div class="flex_row">
+          
+                        <div class = "reviews_title">Иванов М.Л.</div>
+                        <div class = "reviews_date">20.01.2020</div>
+                      </div>
+                      <div><span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                        с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                        с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                        с каждым выходом нового ПО! </span></div>
+                        <div class="pos_right"><a href="#" class="button_reset">Ответить</a></div>
+                    </div>
+
+
+                    <div  class="discussion_comment_one flex_column 1reviews_adm ">
+                      <div class="flex_row">
+          
+                        <div class = "reviews_title">Иванов М.Л.</div>
+                        <div class = "reviews_date">20.01.2020</div>
+                      </div>
+                      <div><span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                        с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                        с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                        с каждым выходом нового ПО! </span></div>
+                        <div class="pos_right"><a href="#" class="button_reset">Ответить</a></div>
+                    </div>
+
+
+                    <div  class="discussion_comment_one flex_column 1reviews_adm ">
+                      <div class="flex_row">
+          
+                        <div class = "reviews_title">Иванов М.Л.</div>
+                        <div class = "reviews_date">20.01.2020</div>
+                      </div>
+                      <div><span>Огромное спасмбо за отзыв! </span></div>
+                        <div class="pos_right"><a href="#" class="button_reset">Ответить</a></div>
+                    </div>
+
+
+                    <div class="search_title"> <a class="search_roll-up">Свернуть ↑</a></div>
+                       <!-- <div class="pos_left_for_div margin_top-bootom_1em"><a href="#" class="button_reset">Свернуть</a></div> -->
+                  </div>
+
+               
+                </div>
+
+
+
+
+
+
+
                 <div class="discussion flex_column pos_center_for_div">      <!-- одно обсуждение -->
                   <div class="flex_row">
             
@@ -531,6 +726,12 @@
                         <div><span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
                           с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
                           с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                          с каждым выходом нового ПО! Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                          с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                          с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                          с каждым выходом нового ПО!  Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                          с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
+                          с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
                           с каждым выходом нового ПО! </span></div>
                           <div class="pos_right"><a href="#" class="button_reset">Ответить</a></div>
                       </div>
@@ -565,11 +766,7 @@
                          <!-- <div class="pos_left_for_div margin_top-bootom_1em"><a href="#" class="button_reset">Свернуть</a></div> -->
                     </div>
 
-                 
                   </div>
-
-
-
 
 
 
@@ -596,180 +793,87 @@
                     <div>
                       <i class="fa fa-comments-o discussion_icon_com" aria-hidden="true"></i><a class="link_style_border">Комментарии (10)</a>
                     </div>
-   
-  
-                      
-                      <div class ="discussion_comment pos_right">      <!-- комментарии к обсуждению -->
-                        <div  class="discussion_comment_one flex_column 1reviews_adm ">
-                          <div class="flex_row">
-              
-                            <div class = "reviews_title">Иванов М.Л.</div>
-                            <div class = "reviews_date">20.01.2020</div>
-                          </div>
-                          <div><span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО! </span></div>
-                            <div class="pos_right"><a href="#" class="button_reset">Ответить</a></div>
-                        </div>
-  
-                        <div  class="discussion_comment_one flex_column 1reviews_adm ">
-                          <div class="flex_row">
-              
-                            <div class = "reviews_title">Иванов М.Л.</div>
-                            <div class = "reviews_date">20.01.2020</div>
-                          </div>
-                          <div><span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО! Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!  Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО! </span></div>
-                            <div class="pos_right"><a href="#" class="button_reset">Ответить</a></div>
-                        </div>
-  
-  
-                        <div  class="discussion_comment_one flex_column 1reviews_adm ">
-                          <div class="flex_row">
-              
-                            <div class = "reviews_title">Иванов М.Л.</div>
-                            <div class = "reviews_date">20.01.2020</div>
-                          </div>
-                          <div><span>Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО!Огромное спасмбо за отзыв! Мы стараемся радовать вас 
-                            с каждым выходом нового ПО! </span></div>
-                            <div class="pos_right"><a href="#" class="button_reset">Ответить</a></div>
-                        </div>
-  
-  
-                        <div  class="discussion_comment_one flex_column 1reviews_adm ">
-                          <div class="flex_row">
-              
-                            <div class = "reviews_title">Иванов М.Л.</div>
-                            <div class = "reviews_date">20.01.2020</div>
-                          </div>
-                          <div><span>Огромное спасмбо за отзыв! </span></div>
-                            <div class="pos_right"><a href="#" class="button_reset">Ответить</a></div>
-                        </div>
-  
-  
-                        <div class="search_title"> <a class="search_roll-up">Свернуть ↑</a></div>
-                           <!-- <div class="pos_left_for_div margin_top-bootom_1em"><a href="#" class="button_reset">Свернуть</a></div> -->
-                      </div>
+                  </div>
 
+
+
+                  <div class="pos_center margin_top-bootom_1em"><a href="#" class="button_reset">Показать еще</a></div>
+
+
+              </div>
+
+
+
+              <div class=" flex_column pos_center w_50_sm margin_top_3em">     <!-- Форма комментария -->
+                <h3>Ваше мнение</h3>
+                <fieldset class="border_fieldset_top main_block_bg padding_2em_xs">
+                  <form>
+
+                    <div class="pos_center w_70_xl">
+
+
+                    <div class="form-row ">
+                      <input type="text" id="name" required autocomplete="off"><label for="name">Ваше имя</label>
+                    </div>
+
+                    <div class="form-row margin_top_3em">
+                      <input type="text" id="email" required autocomplete="off"><label for="email">Номер телефона/ эл.почта</label>
+                    </div>
+
+                    <!-- <div class="form-row">
+                      <label for="comment">Ваш комментарий</label>
+                    <textarea rows="3" cols="40"  id="comment" placeholder  = "Ваш комментарий">
+
+                      </textarea>
+                    </div-->
+
+                    <div>
+                      <div class="form_group_textarea margin_top_3em">
+                        <textarea class = "form_textarea" type="textarea" rows="5" required="required"></textarea>
+                        <label id = "label" class = "form_textarea_label">Ваш комментарий</label>
+                        </div>
                     </div>
 
 
 
 
-                    <div class="discussion flex_column pos_center_for_div">      <!-- одно обсуждение -->
-                      <div class="flex_row">
-                
-                        <div class = "reviews_title">Иванов М.Л.</div>
-                        <div class = "reviews_date">20.01.2020</div>
-                      </div>
-                
-                      <div  class="discussion_text">
-                        <span>Замечательная программа! Не могу нарадоваться! Жду доработки, 
-                          которую предложила, и тогда приложение станет совершенно идеальным 
-                          для меня! Спасибо вам! Замечательная программа! Не могу нарадоваться! Жду доработки, 
-                          которую предложила, и тогда приложение станет совершенно идеальным 
-                          для меня! Спасибо вам! Замечательная программа! Не могу нарадоваться! Жду доработки, 
-                          которую предложила, и тогда приложение станет совершенно идеальным 
-                          для меня! Спасибо вам! </span>
-                          
-                          <div class="pos_right_for_div"><a href="#" class="button_reset">Ответить</a></div>
-                      </div>
-                      
-                      <div>
-                        <i class="fa fa-comments-o discussion_icon_com" aria-hidden="true"></i><a class="link_style_border">Комментарии (10)</a>
-                      </div>
+               <!--div class="form-row">
+                      <label for="address">Адрес</label>
+                      <textarea rows="3" id="address" required></textarea>
+                    </div> -->
+
+
+
+
+                    <!-- <div class="group">
+                      <label class = "label" for="comment">Ваш комментарий</label>
+                      <textarea class= "textarea_style bar" rows="3" cols="40"  id="comment" placeholder  = "Ваш комментарий">
+
+                      </textarea> -->
                     </div>
 
+                    <div class="pos_сenter"><a href="#" class="button_reset">Оставить комментарий</a></div>
 
 
-                    <div class="pos_center margin_top-bootom_1em"><a href="#" class="button_reset">Показать еще</a></div>
-
-
-                </div>
-
-
-
-                <div class=" flex_column pos_center width_50 margin_top_3em">     <!-- Форма комментария -->
-                  <h3>Ваше мнение</h3>
-                  <fieldset class=" padding_2em"style="background: antiquewhite;">
-                    <form>
-
-                      <div style = "width: 70%;" class="pos_center">
-
-
-                      <div class="form-row ">
-                        <input type="text" id="name" required autocomplete="off"><label for="name">Ваше имя</label>
-                      </div>
-
-                      <div class="form-row margin_top_3em">
-                        <input type="text" id="email" required autocomplete="off"><label for="email">Номер телефона/ эл.почта</label>
-                      </div>
-
-                      <!-- <div class="form-row">
-                        <label for="comment">Ваш комментарий</label>
-                      <textarea rows="3" cols="40"  id="comment" placeholder  = "Ваш комментарий">
-
-                        </textarea>
-                      </div-->
-
-                      <div>
-                        <div class="form_group_textarea margin_top_3em">
-                          <textarea class = "form_textarea" type="textarea" rows="5" required="required"></textarea>
-                          <label id = "label" class = "form_textarea_label">Ваш комментарий</label>
-                          </div>
-                      </div>
-
-
-
-
-                 <!--div class="form-row">
-                        <label for="address">Адрес</label>
-                        <textarea rows="3" id="address" required></textarea>
-                      </div> -->
-
-
-
-
-                      <!-- <div class="group">
-                        <label class = "label" for="comment">Ваш комментарий</label>
-                        <textarea class= "textarea_style bar" rows="3" cols="40"  id="comment" placeholder  = "Ваш комментарий">
-
-                        </textarea> -->
-                      </div>
-
-                      <div class="pos_сenter"><a href="#" class="button_reset">Оставить комментарий</a></div>
-
-
-                    </form>
-                  </fieldset>
-
-
-
-                </div>
-
+                  </form>
+                </fieldset>
 
 
 
               </div>
 
 
+
+
             </div>
 
 
+          </div>
 
 
-        </section>
+      </section>
+
+
 
             </div>
            

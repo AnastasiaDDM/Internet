@@ -332,4 +332,14 @@ overflow: hidden;
   overflow: hidden;
   max-height: 4em;
   margin-top: .4rem;
+  &_first {
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  &_second {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
