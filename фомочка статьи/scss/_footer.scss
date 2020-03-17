@@ -1,10 +1,10 @@
 .footer_container {
 	height: 10em;
 	border-top:solid 0.1em $red;
-	width: 100%;
+	// width: 100%;
 	/* text-align: center; */
 	margin-top: 3em;
-	padding-top: 1em;
+	padding: 1em;
 	&_social {
 		justify-content: space-between;
 		width: 70%;

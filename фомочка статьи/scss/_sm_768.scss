@@ -29,19 +29,19 @@
             padding-top: 1.4em;
         }
     }
-    .header_container_social {
-        width: 70%;
-    }
-    .header_container_mail_phone {
-        width: 50%;
-    }
-    .header_i {
-        font-size: 1.5rem;
-    }
-    .header_i_for_div {
-        width: 2rem;
-        height: 2rem;
-    }
+    // .header_container_social {
+    //     width: 70%;
+    // }
+    // .header_container_mail_phone {
+    //     width: 50%;
+    // }
+    // .header_i {
+    //     font-size: 1.5rem;
+    // }
+    // .header_i_for_div {
+    //     width: 2rem;
+    //     height: 2rem;
+    // }
     .header_disp_none {
         display: none;
     }
@@ -103,5 +103,8 @@
     .main_banner_order_text {
         width: 100%;
     }
-    
+    .header_container_mail_phone {
+        align-self: center;
+        width: 100%;
+    }
 }

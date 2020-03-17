@@ -246,16 +246,19 @@ color: $gray;
 
 
 .link_style_col_bor { 
-	cursor: pointer;                                                        /*  ЦВЕТ !!!!!!!!!!! */
+	cursor: pointer;                                                     
 	border-bottom:solid 0.1em $red;
-    /* text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
-    color: $red; /* Цвет ссылки */
+    color: $red;
+} 
+
+.link_style_col { 
+	cursor: pointer;                                                     
+    color: $red;
 } 
 
 
 .pos_left {
 	margin-right: auto;
-	// text-align: end;
 	flex-direction: row-reverse;
 }
 
@@ -373,6 +376,15 @@ color: $gray;
 	}
 }
 
+.w_30_sm_50 {
+	width: 30%;
+	@media (max-width: 575.98px) { 
+		width: 100%;
+	}
+	@media (min-width: 576px) and (max-width: 991.98px)  { 
+		width: 50%;
+	}
+}
 
 .width_30 {
 	width: 30%;

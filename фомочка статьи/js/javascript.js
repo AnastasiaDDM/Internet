@@ -68,11 +68,20 @@ let inputs = document.querySelectorAll('.input__file');
 	  select();
 	    input_file();
 		
-		  $('.search_datepicker').datepicker({
-    language: 'ru',
-	autoClose: true,
-    // minDate: new Date() // Now can select only dates, which goes after today
-});
+		if ($( window ).width() < 600) {
+			$('.search_datepicker').each(function() {
+				$( this  ).attr( "type", "date" );
+			});
+			
+		}
+		else {
+				$('.search_datepicker').datepicker({
+					language: 'ru',
+					autoClose: true,
+					// minDate: new Date() // Now can select only dates, which goes after today
+				});
+		}
+		 
 
               })
   

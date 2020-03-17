@@ -5,21 +5,20 @@
 
 
 .header-top {
-	width:100%;
-	word-spacing:5px; 
-	padding-bottom:20px; 
-	text-align:center;
+	// width:100%;
+	// word-spacing:5px; 
+	// padding-bottom:20px; 
+	// text-align:center;
 
 	&_container{                                                         /*  ЦВЕТ !!!!!!!!!!! */
 		// height: 5em;
-		padding-bottom:20px;
-		padding-top:10px;
+		padding:1em;
 		display: flex; 	
 		  flex-direction: row;
-		  width: 100%;
+		//   width: 100%;
 		/* Распределяем элементы внутри шапки */
 		/* justify-content: space-between; */
-		 /* flex-wrap: wrap; */
+		flex-wrap: wrap;
 		/* Выравниваем элементы вертикально по центру. */
 		/* align-items: center; */
 		
@@ -29,7 +28,7 @@
 
 	&_border{                                                         /*  ЦВЕТ !!!!!!!!!!! */
 		// border-bottom:solid 0.1em $red;
-		width: 100%;
+		// width: 100%;
 		background-color: $light_blue_1;
 	}
 
@@ -42,16 +41,16 @@
 		// height: 13em;
 	}
 	&_social {
-	justify-content: space-around;
-	width: 25%;
-	    height: 60%;
+	// justify-content: space-around;
+	width: 20%;
+	    // height: 60%;
 		 /* margin-top: 1em; */
 		 align-items: center;
 		 align-self: center;
 	}
 	&_mail_phone {
-		align-items: center;
-	align-self: center;
+		align-self: center;
+		width: 35%;
 	}
 }
 
@@ -85,9 +84,11 @@
 
 .header_navbar {
 	padding-top: 1em;
+	margin-right: 0;
 	// margin: 0em auto;
 	ul {                                                         /*  ЦВЕТ !!!!!!!!!!! */
 		display: table-row;
+		box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
 	}
 	li {                                                         /*  ЦВЕТ !!!!!!!!!!! */
 		display: table-cell;
@@ -135,7 +136,7 @@
 
 
 .header_i {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	&_vk:hover {
 		color: #4c75a3;
 	}
@@ -158,11 +159,11 @@
 		color: #25D366;
 	}
 	&_for_div {
-		background-color: $light_blue_1;
+		// background-color: $light_blue_1;
 		/* padding: 1rem; */
-		border-radius: 50%;
-		width: 3.3rem;
-		height: 3.3rem;
+		// border-radius: 50%;
+		// width: 3.3rem;
+		// height: 3.3rem;
 		// width: 2.5rem;
 		// height: 2.5rem;
 	}
@@ -179,12 +180,12 @@
 
 .header {
 	background-color: #fff;
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,.1);
 	// position: fixed;
 	// position: absolute;
 	width: 100%;
 	z-index: 3;
-	right: 0;
+	// right: 0;
 	@media (min-width: 768px) {
 		display: none;
 	}
@@ -201,7 +202,6 @@
   .header li a {
 	display: block;
 	padding: 20px 20px;
-	border-right: 1px solid #f4f4f4;
 	border-bottom: 1px solid #f4f4f4;
 	text-decoration: none;
 	text-transform: uppercase;
