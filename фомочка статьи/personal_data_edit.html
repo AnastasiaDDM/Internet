@@ -5,68 +5,161 @@
     <title>Название страницы
     </title>
     <meta name="description" content="Описание страницы" />
-    <script src="https://use.fontawesome.com/65da41867f.js"></script>
-    <!--link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="stprostoi.css"-->
+    <script src="https://use.fontawesome.com/65da41867f.js">
+    </script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
+    <script src="js/jquery.js">
+    </script>
+    <script src="js/jquery.js">
+    </script>
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <script src="js/datepicker.min.js">
+    </script>
+    <script src="js/datepicker.ru.js">
+    </script>
+    <script type="text/javascript" src="js/javascript.js" charset="UTF-8">
+    </script>
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
       <div class="flex_row header-top_container header-top_border flex_space-between">
-        <div class="flex_row header_container_mail_phone">
-          <div>
-            <img class="icon" src="icons/mail.png"/>
+        <div class="header_container_mail_phone">
+          <div class="flex_row flex_space-between header_container_m_p_w">
+            <div class="flex_row pos_cen_400">
+              <a>
+                <div class="header_i_for_div margin_right_04em disp_none_400">
+                  <i class="far fa-envelope header_i">
+                  </i>
+                </div>
+              </a>
+              <div class = "header_social_mail">
+                <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
+                  example@mail.ru
+                </a>
+              </div>
+            </div>
+            <div class="flex_row pos_cen_400">
+              <div class="header_i_for_div margin_right_04em disp_none_400">
+                <i class="fas fa-phone-alt header_i">
+                </i>
+              </div>
+              <div class = "header_social_phone">
+                <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
+                  +7 (901) 123-45-67
+                </a>
+              </div>
+            </div>
           </div>
-          <div class = "header_social_mail">
-            <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
-              example@mail.ru
+        </div>
+        <div class="flex_row flex_space-between header_container_social">
+          <div>
+            <a class ="header_i_tlg" title="Telegram" href="https://vk.com/dmitrievnaa1999">
+              <div class="header_i_for_div ">
+                <i class="fab fa-telegram-plane header_i">
+                </i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class ="header_i_vk" title="Vkontakte" href="https://vk.com/dmitrievnaa1999">
+              <div class="header_i_for_div">
+                <i class="fab fa-vk header_i ">
+                </i>
+              </div>   
+            </a>
+          </div>
+          <div>
+            <a class ="header_i_wa" title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+              <div class="header_i_for_div">
+                <i class="fab fa-whatsapp header_i">
+                </i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class ="header_i_ig" title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+              <div class="header_i_for_div">
+                <i class="fab fa-instagram header_i">
+                </i>
+              </div>
             </a>
           </div>
         </div>
-        <div class="flex_row header_container_mail_phone">
-          <div>
-            <img class="icon" src="icons/phone.png"/>
-          </div>
-          <div class = "header_social_phone">
-            <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
-              +7 (901) 123-45-67
-            </a>
-          </div>
-        </div>
-        <div class="flex_row header_container_social">
-          <div>
-            <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
-              <img class="icon" src="icons/telegram.png"/>
-            </a>
-          </div>
-          <div>
-            <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
-              <img class="icon" src="icons/vk2.png"/>
-            </a>
-          </div>
-          <div>
-            <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
-              <img class="icon" src="icons/whatsapp.png"/>
-            </a>
-          </div>
-          <div>
-            <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
-              <img class="icon" src="icons/instagram.png"/>
-            </a>
-          </div>
-        </div>
-        <div class="header-margin_left-top">
-          <a  id = "user" href = "myaccount.html" >    
-            <img class="icon" src="icons/user.png">
+        <div class=" header_person">
+          <a  id = "user" href = "personal_data.html" > 
+            <div class="header_i_for_div header_i">
+              <i class="fas fa-user">
+              </i>
+            </div>   
           </a>
         </div>
       </div>
-      <div class="flex_row header-bottom flex_space-between">
-        <div class="flex_row flex_justify-content_flex-start">
+      <div class="flex_row header-bottom flex_space-between flex_wrap">
+        <div class="header">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
+            <div class="header-logo">
+              <a href="/main.html">
+                <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
+              </a>
+            </div>
+            <div class="header-logo_name">
+              <a class = "link_style_none" href="/main.html">Название сайта
+              </a>
+            </div>
+          </div>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn">
+            <span class="navicon">
+            </span>
+          </label>
+          <ul class="menu">
+            <li class="header_pers_menu">
+              <a href="/orders.html">Мои заказы
+              </a>
+            </li>
+            <li class="header_pers_menu">
+              <a href="/downloads.html">Мои загрузки
+              </a>
+            </li>
+            <li class="header_pers_menu">
+              <a href="/favourites.html">Избранное 
+              </a>
+            </li>
+            <li class="header_pers_menu">
+              <a href="/personal_data.html">Мои данные
+              </a>
+            </li>
+            <li>
+              <a href="/aboutcompany.html">О&nbsp;компании
+              </a>
+            </li>
+            <li>
+              <a href="/catalog.html">Каталог
+              </a>
+            </li>
+            <li>
+              <a href="/articles.html">Статьи
+              </a>
+            </li>
+            <li>
+              <a href="/reviews.html">Отзывы
+              </a>
+            </li>
+            <li>
+              <a href="/contacts.html">Контакты
+              </a>
+            </li>
+            <li>
+              <a href="/order.html" class ="link_style_col">Заказать
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex_row flex_justify-content_flex-start header_disp_none">
           <div class="header-logo">
             <a href="/main.html">
               <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -77,10 +170,10 @@
             </a>
           </div>
         </div>
-        <div class="flex_row header_navbar">
+        <div class="flex_row header_navbar header_disp_none">
           <ul>
             <li>
-              <a title="О компании" href="/aboutcompany.html">О&nbsp;компании
+              <a  class = "header_navbar_active" title="О компании" href="/aboutcompany.html">О&nbsp;компании
               </a>
             </li>
             <li>
@@ -100,266 +193,194 @@
               </a>
             </li>
             <li>
-              <a title="заказать" href="/order.html">Заказать
+              <a class ="link_style_col" title="заказать" href="/order.html">Заказать
               </a>
             </li>
           </ul>
         </div>
       </div>
     </header>
+    <div class="flex_row second_menu margin_bottom_1em header_disp_none">
+      <ul class="pos_center">
+        <li>
+          <a href="/order.html">Мои&nbsp;заказы
+          </a>
+        </li>
+        <li>
+          <a href="/articles.html">Мои&nbsp;загрузки
+          </a>
+        </li>
+        <li>
+          <a href="/reviews.html">Избранное
+          </a>
+        </li>
+        <li>
+          <a class = "header_navbar_active" href="/aboutcompany.html">Мои&nbsp;данные
+          </a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section>
         <h1>Мои данные
         </h1>
         <ul class="breadcrumb">
-            <li><a href="URL">Главная</a></li>
-            <li><a href="URL">Личный кабинет</a></li>
-            <li><a href="URL">Мои данные</a></li>
-            <li>Редактирование</li>
+          <li>
+            <a href="URL">Главная
+            </a>
+          </li>
+          <li>
+            <a href="URL">Личный кабинет
+            </a>
+          </li>
+          <li>
+            <a href="URL">Мои данные
+            </a>
+          </li>
+          <li>Редактирование
+          </li>
         </ul>
-
-        <div class="flex_row second_menu margin_bottom_1em">
-            <ul class="pos_center">
-              <li>
-                <a class = "header_navbar_active" href="/aboutcompany.html">Мои&nbsp;данные
-                </a>
-              </li>
-              <li>
-                <a href="/catalog.html">Мои&nbsp;заказы
-                </a>
-              </li>
-              <li>
-                <a href="/articles.html">Мои&nbsp;загрузки
-                </a>
-              </li>
-              <li>
-                <a href="/reviews.html">Избранное
-                </a>
-              </li>
- 
-            </ul>
+        <div>
+          <div class=" w_70_sm pos_center_for_div  margin_top_3em">
+            <div class="  pos_center_for_div person_acc">
+              <div class="pos_center w_70_sm"  >
+                <div class="form-row_edit ">
+                  <input type="text" id="name" required autocomplete="off" value="Дмитриева Анастасия Дмитриевна">
+                  <label for="name"
+                         >ФИО
+                  </label>
+                </div>
+                <div class="form-row_edit ">
+                  <input type="text" id="phone_1" required autocomplete="off" value="8-901-666-60-60">
+                  <label for="phone_1"
+                         >Телефон
+                  </label>
+                </div>
+                <div class="form-row_edit ">
+                  <input type="text" id="phone_2" required autocomplete="off" value="8-901-666-61-61">
+                  <label for="phone_2"
+                         >Запасной телефон
+                  </label>
+                </div>
+                <div class="form-row_edit ">
+                  <input type="text" id="email" required autocomplete="off" value="anastasia@mail.ru">
+                  <label for="email"
+                         >Электронная почта
+                  </label>
+                </div>
+                <div class="form-row_edit ">
+                  <input type="text" id="soc" required autocomplete="off" value="https://vk.com/dmitrievnaa1999">
+                  <label for="soc"
+                         >Электронная почта
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="checkbox pos_center_for_div w_70_sm padding_top_2em margin_bottom_1em">
+              <input id="one" type="checkbox">
+              <span class="checkbox_options">
+              </span>
+              <label for="one">Подписаться на рассылку новинок по электронной почте
+              </label>
+            </div>
           </div>
-
-
-
-
-          <div>
-
-<!-- <h2 class="width_50 pos_center" >Мои данные</h2> -->
-            <div class=" width_70 pos_center_for_div  margin_top_3em">
-
-              <div class="flex_row  pos_center_for_div person_acc">
-
-
-              <div class="padding_left_2em padding_right_2em pos_right_for_text" style="width: 40%;">
-
-                <div>ФИО:</div>
-                <div>Номер телефона:</div>
-                <div>Запасной номер:</div>
-                <div>Электронная почта:</div>
-                <div>Социальные сети:</div>
-                <div>Дата рождения:</div>
-
-              </div>
-
-
-
-
-
-
-              <div class="pos_left_for_text "  style="width: 60%;">
-
-                <div class="form-row ">
-                  <input type="text" id="email" required autocomplete="off" value="Дмитриева Анастасия Дмитриевна"><label for="email"
-                  >ФИО</label>
-                  </div>
-
-                  <div class="input_square_div">
-                    <input class="input_square_effect input_square" type="text"
-                     value="Дмитриева Анастасия Дмитриевна">
-                      <span class="focus-border">
-                        <i></i>
-                      </span>
-                  </div>
-
-
-
-
-
-
-
-
-
-
-
-                  <div class="input_square_div">
-                    <input class="input_square_effect input_square" type="text"
-                     value="8-901-666-60-60">
-                      <span class="focus-border">
-                        <i></i>
-                      </span>
-                  </div>
-
-                  <div class="input_square_div">
-                    <input class="input_square_effect input_square" type="text"
-                     value="8-901-666-61-61">
-                      <span class="focus-border">
-                        <i></i>
-                      </span>
-                  </div>
-
-                  <div class="input_square_div">
-                    <input class="input_square_effect input_square" type="text"
-                     value="anastasia@mail.ru">
-                      <span class="focus-border">
-                        <i></i>
-                      </span>
-                  </div>
-
-                  <div class="input_square_div">
-                    <input class="input_square_effect input_square" type="text"
-                     value="https://vk.com/dmitrievnaa1999">
-                      <span class="focus-border">
-                        <i></i>
-                      </span>
-                  </div>
-
-                  <div class="input_square_div">
-                    <input class="input_square_effect input_square" type="text"
-                     value="anastasia@mail.ru">
-                      <span class="focus-border">
-                        <i></i>
-                      </span>
-                  </div>
-
-
-
-
-
-
-              </div>
+          <div class="pos_center_for_div padding_bottom_2em padding_top_2em">
+            <div class="pos_center">
+              <a href="#" class="button_search">
+                Сменить пароль
+              </a>
             </div>
-
-
-              <div class="checkbox pos_center_for_div width_50 padding_top_2em">
-                <input id="one" type="checkbox">
-                <span class="checkbox_options"></span>
-                <label for="one">Подписаться на рассылку новинок по электронной почте</label>
-              </div>
-
-            </div>
-
-
-
-            <div class="pos_center_for_div padding_bottom_2em padding_top_2em">
-              <div class="pos_center"><a href="#" class="button_search">
-                Сменить пароль</a></div>
-            </div>
-
-
-
-
-            <fieldset class="width_50 padding_2em pos_center fieldset_form_password">
-              <form>
-
-                <div style = "width: 50%;" class="pos_center">
-
-
-                <div class="form-row ">
-                  <input  id="pass_old" type="password" required autocomplete="off"><label for="pass_old">Старый пароль</label>
-                </div>
-
-                <div class="form-row margin_top_3em">
-                  <input  id="pass_new" type="password" required autocomplete="off"><label for="pass_new">Новый пароль</label>
-                </div>
-
-                <div class="form-row margin_top_3em">
-                  <input  id="pass_sec_new" type="password" required autocomplete="off"><label for="pass_sec_new">Повторите пароль</label>
-                </div>
-
-                </div>
-
-                <div class="flex_row width_50 flex_space-between margin_top_3em pos_center">
-                  <div class="pos_сenter"><a href="#" class="button_delicate">Отменить</a></div>
-                  <div class="pos_сenter"><a href="#" class="button_delicate">Изменить пароль</a></div>
-                </div>
-
-              </form>
-            </fieldset>
-
-
-            <div class="flex_row flex_space-around margin_top_3em">
-              <div class="pos_сenter"><a href="#" class="button_show-more">Отменить</a></div>
-              <div class="pos_сenter"><a href="#" class="button_show-more">Сохранить</a></div>
-            </div>
-
-
           </div>
-
-
-
-      </section>
-
-
-  
-  </div>
-          </main>
-  
-       <footer class = "flex_row header_container_height flex_space-between footer_container">
-        <div class="header-logo">
-          <a href="/main.html">
-            <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
-          </a>
+          <fieldset class="w_50_sm_70_md_90 padding_2em_xs pos_center fieldset_form_password">
+            <form>
+              <div class="pos_center w_70_xl">
+                <div class="form-row ">
+                  <input  id="pass_old" type="password" required autocomplete="off">
+                  <label for="pass_old">Старый пароль
+                  </label>
+                </div>
+                <div class="form-row margin_top_3em">
+                  <input  id="pass_new" type="password" required autocomplete="off">
+                  <label for="pass_new">Новый пароль
+                  </label>
+                </div>
+                <div class="form-row margin_top_3em">
+                  <input  id="pass_sec_new" type="password" required autocomplete="off">
+                  <label for="pass_sec_new">Повторите пароль
+                  </label>
+                </div>
+              </div>
+              <div class="flex_row w_70_sm_auto flex_space-between margin_top_3em pos_center">
+                <div class="pos_сenter">
+                  <a href="#" class="button_delicate">Отменить
+                  </a>
+                </div>
+                <div class="pos_сenter">
+                  <a href="#" class="button_delicate">Изменить пароль
+                  </a>
+                </div>
+              </div>
+            </form>
+          </fieldset>
+          <div class="flex_row flex_space-around margin_top_3em">
+            <div class="pos_сenter">
+              <a href="#" class="button_reset">Отменить
+              </a>
+            </div>
+            <div class="pos_сenter">
+              <a href="#" class="button_show-more">Сохранить
+              </a>
+            </div>
+          </div>
         </div>
-    
-    
-    
-            <div class="flex_row footer_all-link ">
-        <div class="flex_column footer_first-link">
-  
+      </section>
+      </div>
+    </main>
+    <footer class = "flex_row header_container_height flex_space-between footer_container">
+      <div class="header-logo disp_none_830">
+        <a href="/main.html">
+          <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
+        </a>
+      </div>
+      <div class="footer_all-link">
+        <div class="flex_row footer_container_l">
+          <div class="flex_column footer_first-link">
             <a title="Заказать" href="/catalog.html">Заказать
             </a>
-  
             <a title="Доработка" href="/articles.html">Доработка
             </a>
-  
             <a title="О нас" href="/aboutcompany.html">О нас
             </a>
-  
-      </div>
-  
-  
-            <div class="flex_column">
-  
+          </div>
+          <div class="flex_column">
             <a title="Каталог" href="/catalog.html">Каталог
             </a>
-  
             <a title="Статьи" href="/articles.html">Статьи
             </a>
-  
             <a title="Отзывы" href="/reviews.html">Отзывы
             </a>
-  
           </div>
-          
-                    </div>
-            
-            
-        <div class="flex_column">
-                <div class="flex_row">
+        </div>
+      </div>
+      <div class="flex_column footer_cont_m_p_s">
+        <div class="flex_row footer_cont_m_p">
           <div class="flex_row footer_container_mail">
-            <div>
-              <img class="icon" src="icons/mail.png"/>
-            </div>
+            <a>
+              <div class="header_i_for_div margin_right_04em disp_none_992">
+                <i class="far fa-envelope header_i">
+                </i>
+              </div>
+            </a>
             <div class = "header_social_mail">
               <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
                 example@mail.ru
               </a>
             </div>
           </div>
-          <div class="flex_row header_container_phone">
-            <div>
-              <img class="icon" src="icons/phone.png"/>
+          <div class="flex_row footer_container_phone">
+            <div class="header_i_for_div margin_right_04em disp_none_992">
+              <i class="fas fa-phone-alt header_i">
+              </i>
             </div>
             <div class = "header_social_phone">
               <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
@@ -367,37 +388,42 @@
               </a>
             </div>
           </div>
-          </div>
-          
-          <div class="flex_row footer_container_social">
-            <div>
-              <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
-                <img class="icon" src="icons/telegram.png"/>
-              </a>
-            </div>
-            <div>
-              <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
-                <img class="icon" src="icons/vk2.png"/>
-              </a>
-            </div>
-            <div>
-              <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
-                <img class="icon" src="icons/whatsapp.png"/>
-              </a>
-            </div>
-            <div>
-              <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
-                <img class="icon" src="icons/instagram.png"/>
-              </a>
-            </div>
-          </div>
-         
         </div>
-       
-      </footer>
-    </body>
-    </html>
-
-  
-  
-  
+        <div class="flex_row footer_container_social">
+          <div>
+            <a class ="header_i_tlg" title="Telegram" href="https://vk.com/dmitrievnaa1999">
+              <div class="header_i_for_div ">
+                <i class="fab fa-telegram-plane header_i">
+                </i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class ="header_i_vk" title="Vkontakte" href="https://vk.com/dmitrievnaa1999">
+              <div class="header_i_for_div">
+                <i class="fab fa-vk header_i ">
+                </i>
+              </div>   
+            </a>
+          </div>
+          <div>
+            <a class ="header_i_wa" title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+              <div class="header_i_for_div">
+                <i class="fab fa-whatsapp header_i">
+                </i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class ="header_i_ig" title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+              <div class="header_i_for_div">
+                <i class="fab fa-instagram header_i">
+                </i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
