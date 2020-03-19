@@ -24,75 +24,80 @@
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
       <div class="flex_row header-top_container header-top_border flex_space-between">
-        <div class="flex_row header_container_mail_phone">
-          <a>
-          <div class="header_i_for_div margin_right_04em">
-            <i class="far fa-envelope header_i"></i>
-            <!-- <i class="far fa-envelope-open header_i"></i> -->
-          </div>
-        </a>
-          <div class = "header_social_mail">
-            <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
-              example@mail.ru
-            </a>
+        <div class="header_container_mail_phone">
+          <div class="flex_row flex_space-between header_container_m_p_w">
+            <div class="flex_row pos_cen_400">
+              <a>
+                <div class="header_i_for_div margin_right_04em disp_none_400">
+                  <i class="far fa-envelope header_i">
+                  </i>
+                </div>
+              </a>
+              <div class = "header_social_mail">
+                <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
+                  example@mail.ru
+                </a>
+              </div>
+            </div>
+            <div class="flex_row pos_cen_400">
+              <div class="header_i_for_div margin_right_04em disp_none_400">
+                <i class="fas fa-phone-alt header_i">
+                </i>
+              </div>
+              <div class = "header_social_phone">
+                <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
+                  +7 (901) 123-45-67
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="flex_row header_container_mail_phone">
-          <div class="header_i_for_div margin_right_04em">
-            <i class="fas fa-phone-alt header_i"></i>
-          </div>
-          <div class = "header_social_phone">
-            <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
-              +7 (901) 123-45-67
-            </a>
-          </div>
-        </div>
-        <div class="flex_row header_container_social">
+        <div class="flex_row flex_space-between header_container_social">
           <div>
             <a class ="header_i_tlg" title="Telegram" href="https://vk.com/dmitrievnaa1999">
-              <!-- <i class="fab fa-telegram header_i"></i> -->
               <div class="header_i_for_div ">
-                <i class="fab fa-telegram-plane header_i"></i>
+                <i class="fab fa-telegram-plane header_i">
+                </i>
               </div>
             </a>
           </div>
           <div>
             <a class ="header_i_vk" title="Vkontakte" href="https://vk.com/dmitrievnaa1999">
               <div class="header_i_for_div">
-                <i class="fab fa-vk header_i "></i>
+                <i class="fab fa-vk header_i ">
+                </i>
               </div>   
             </a>
           </div>
           <div>
             <a class ="header_i_wa" title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
-              <!-- <img class="icon" src="icons/whatsapp.png"/> -->
               <div class="header_i_for_div">
-                <i class="fab fa-whatsapp header_i"></i>
+                <i class="fab fa-whatsapp header_i">
+                </i>
               </div>
             </a>
           </div>
           <div>
             <a class ="header_i_ig" title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
               <div class="header_i_for_div">
-                <i class="fab fa-instagram header_i"></i>
+                <i class="fab fa-instagram header_i">
+                </i>
               </div>
-
             </a>
           </div>
         </div>
-        <div class="header-margin_left-top">
+        <div class=" header_person">
           <a  id = "user" href = "personal_data.html" > 
             <div class="header_i_for_div header_i">
-              <i class="fas fa-user"></i>
+              <i class="fas fa-user">
+              </i>
             </div>   
           </a>
         </div>
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
-
         <div class="header">
-          <!-- <a href="/" class="logo">AGT</a> -->
-          <div class="flex_row flex_justify-content_flex-start logo" style="width: 80%;">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -103,20 +108,38 @@
               </a>
             </div>
           </div>
-  
           <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <label class="menu-icon" for="menu-btn">
+            <span class="navicon">
+            </span>
+          </label>
           <ul class="menu">
-            <li><a href="/aboutcompany.html">О&nbsp;компании</a></li>
-            <li><a href="/catalog.html">Каталог</a></li>
-            <li><a href="/articles.html">Статьи</a></li>
-            <li><a href="/reviews.html">Отзывы</a></li>
-            <li><a href="/contacts.html">Контакты</a></li>
-            <li><a href="/order.html">Заказать</a></li>
+            <li>
+              <a href="/aboutcompany.html">О&nbsp;компании
+              </a>
+            </li>
+            <li>
+              <a href="/catalog.html">Каталог
+              </a>
+            </li>
+            <li>
+              <a href="/articles.html">Статьи
+              </a>
+            </li>
+            <li>
+              <a href="/reviews.html">Отзывы
+              </a>
+            </li>
+            <li>
+              <a href="/contacts.html">Контакты
+              </a>
+            </li>
+            <li>
+              <a href="/order.html" class ="link_style_col">Заказать
+              </a>
+            </li>
           </ul>
         </div>
-
-
         <div class="flex_row flex_justify-content_flex-start header_disp_none">
           <div class="header-logo">
             <a href="/main.html">
@@ -131,7 +154,7 @@
         <div class="flex_row header_navbar header_disp_none">
           <ul>
             <li>
-              <a title="О компании" href="/aboutcompany.html">О&nbsp;компании
+              <a  class = "header_navbar_active" title="О компании" href="/aboutcompany.html">О&nbsp;компании
               </a>
             </li>
             <li>
@@ -143,7 +166,7 @@
               </a>
             </li>
             <li>
-              <a  class = "header_navbar_active" title="Отзывы" href="/reviews.html">Отзывы
+              <a title="Отзывы" href="/reviews.html">Отзывы
               </a>
             </li>
             <li>
@@ -151,7 +174,7 @@
               </a>
             </li>
             <li>
-              <a title="заказать" href="/order.html">Заказать
+              <a class ="link_style_col" title="заказать" href="/order.html">Заказать
               </a>
             </li>
           </ul>
@@ -163,7 +186,7 @@
         <h1>Каталог
         </h1>
         <ul class="breadcrumb">
-            <li><a href="URL">Главная</a></li>
+            <li><a href="main.html">Главная</a></li>
             <li>Каталог</li>
         </ul>
 
@@ -248,7 +271,15 @@
                           <label for="r3">Все</label>
                         </li>
                         </ul>
-        
+
+            <div class=" flex_row flex_space-between">
+              <div class ="width_45 form-row" >
+                <input type="text" id="pricefrom" required autocomplete="off"><label for="pricefrom">Цена от:</label>
+              </div>
+              <div class ="width_45 form-row" >
+                <input type="text" id="priceto" required autocomplete="off"><label for="priceto">Цена до:</label>
+              </div>            
+            </div>
         
         
                     </fieldset>
@@ -524,11 +555,11 @@
                       <div class="software_div_name">
               
                         <!-- Контейнер названия и типа ПО -->
-                        <a class = "software_name" href="/software.html">Автоматизированное кафе с выездом на
+                        <a class = "software_name" href="software.html">Автоматизированное кафе с выездом на
                           мероприятия для доставки кофе</a>
                   </div>
                 </div>
-                      <a class = "software_type" href="URL">Настольное приложение
+                      <a class = "software_type" href="catalog.html">Настольное приложение
                       </a>
                     </div>
                     <div class="flex_row container_img_text">  
@@ -537,11 +568,11 @@
                         <!-- Контейнер картинки и кнопок -->
                         <div class = "software_div_images"> 
                           <!-- Бокс картинки --> 
-                          <a href="/software.html"><img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/></a>
+                          <a href="software.html"><img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/></a>
                         </div>
                         <div class="flex_row software_container_button flex_space-between"> 
                           <!-- Бокс кнопки покупки и лайка --> 
-                          <button class="software_button-pay_style dark_blue-bg software_button-pay_style_width">Скачать бесплатно
+                          <button  href="software.html" class="software_button-pay_style dark_blue-bg software_button-pay_style_width">Скачать бесплатно
                           </button>
                           <div >
                             <i class="fa fa-heart button_like" aria-hidden="true"></i>
@@ -550,7 +581,7 @@
                       </div>
                       <div class = "software_description article_div_text">
                         <div style = "padding-bottom: 0.25em">Для: 
-                          <a href="URL">Кафе
+                          <a  href="catalog.html">Кафе
                           </a>
                         </div>
                         <ul class = "software_description_list"style = "list-style: none">
@@ -564,41 +595,41 @@
                     </div>
                     <div class = "software_tag">
                       <span>
-                        <a href="URL">#Платно
+                        <a href="catalog.html">#Платно
                         </a>  
-                        <a href="URL">#Доходы
+                        <a href="catalog.html">#Доходы
                         </a>  
-                        <a href="URL">#ПО ПК
+                        <a href="catalog.html">#ПО ПК
                         </a>  
-                        <a href="URL">#Бизнес
+                        <a href="catalog.html">#Бизнес
                         </a>  
-                        <a href="URL">#Кафе
+                        <a href="catalog.html">#Кафе
                         </a>  
-                        <a href="URL">#Гастропаб
+                        <a href="catalog.html">#Гастропаб
                         </a>
-                <a href="URL">#Платно
+                        <a href="catalog.html">#Платно
                         </a>  
-                        <a href="URL">#Доходы
+                        <a href="catalog.html">#Доходы
                         </a>  
-                        <a href="URL">#ПО ПК
+                        <a href="catalog.html">#ПО ПК
                         </a>  
-                        <a href="URL">#Бизнес
+                        <a href="catalog.html">#Бизнес
                         </a>  
-                        <a href="URL">#Кафе
+                        <a href="catalog.html">#Кафе
                         </a>  
-                        <a href="URL">#Гастропаб
+                        <a href="catalog.html">#Гастропаб
                         </a>
-                <a href="URL">#Платно
+                        <a href="catalog.html">#Платно
                         </a>  
-                        <a href="URL">#Доходы
+                        <a href="catalog.html">#Доходы
                         </a>  
-                        <a href="URL">#ПО ПК
+                        <a href="catalog.html">#ПО ПК
                         </a>  
-                        <a href="URL">#Бизнес
+                        <a href="catalog.html">#Бизнес
                         </a>  
-                        <a href="URL">#Кафе
+                        <a href="catalog.html">#Кафе
                         </a>  
-                        <a href="URL">#Гастропаб
+                        <a href="catalog.html">#Гастропаб
                         </a>
                       </span>
                     </div>
@@ -1002,98 +1033,94 @@
       </section>
 
       <footer class = "flex_row header_container_height flex_space-between footer_container">
-        <div class="header-logo">
+        <div class="header-logo disp_none_830">
           <a href="/main.html">
             <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
           </a>
         </div>
-    
-    
-    
-            <div class="flex_row footer_all-link ">
-        <div class="flex_column footer_first-link">
-
-            <a title="Заказать" href="/catalog.html">Заказать
-            </a>
-
-            <a title="Доработка" href="/articles.html">Доработка
-            </a>
-
-            <a title="О нас" href="/aboutcompany.html">О нас
-            </a>
-
-      </div>
-  
-  
+        <div class="footer_all-link">
+          <div class="flex_row footer_container_l">
+            <div class="flex_column footer_first-link">
+              <a title="Заказать" href="/catalog.html">Заказать
+              </a>
+              <a title="Доработка" href="/articles.html">Доработка
+              </a>
+              <a title="О нас" href="/aboutcompany.html">О нас
+              </a>
+            </div>
             <div class="flex_column">
-
-            <a title="Каталог" href="/catalog.html">Каталог
-            </a>
-
-            <a title="Статьи" href="/articles.html">Статьи
-            </a>
-
-            <a title="Отзывы" href="/reviews.html">Отзывы
-            </a>
-
- </div>
- 
-           </div>
-   
-   
-<div class="flex_column">
-       <div class="flex_row">
- <div class="flex_row footer_container_mail">
-   <div>
-     <img class="icon" src="icons/mail.png"/>
-   </div>
-   <div class = "header_social_mail">
-     <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
-       example@mail.ru
-     </a>
-   </div>
- </div>
- <div class="flex_row header_container_phone">
-   <div>
-     <img class="icon" src="icons/phone.png"/>
-   </div>
-   <div class = "header_social_phone">
-     <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
-       +7 (901) 123-45-67
-     </a>
-   </div>
- </div>
- </div>
- 
- <div class="flex_row footer_container_social">
-   <div>
-     <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
-       <img class="icon" src="icons/telegram.png"/>
-     </a>
-   </div>
-   <div>
-     <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
-       <img class="icon" src="icons/vk2.png"/>
-     </a>
-   </div>
-   <div>
-     <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
-       <img class="icon" src="icons/whatsapp.png"/>
-     </a>
-   </div>
-   <div>
-     <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
-       <img class="icon" src="icons/instagram.png"/>
-     </a>
-   </div>
- </div>
-
-</div>
-
-</footer>
-
-
-
+              <a title="Каталог" href="/catalog.html">Каталог
+              </a>
+              <a title="Статьи" href="/articles.html">Статьи
+              </a>
+              <a title="Отзывы" href="/reviews.html">Отзывы
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex_column footer_cont_m_p_s">
+          <div class="flex_row footer_cont_m_p">
+            <div class="flex_row footer_container_mail">
+              <a>
+                <div class="header_i_for_div margin_right_04em disp_none_992">
+                  <i class="far fa-envelope header_i">
+                  </i>
+                </div>
+              </a>
+              <div class = "header_social_mail">
+                <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
+                  example@mail.ru
+                </a>
+              </div>
+            </div>
+            <div class="flex_row footer_container_phone">
+              <div class="header_i_for_div margin_right_04em disp_none_992">
+                <i class="fas fa-phone-alt header_i">
+                </i>
+              </div>
+              <div class = "header_social_phone">
+                <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
+                  +7 (901) 123-45-67
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex_row footer_container_social">
+            <div>
+              <a class ="header_i_tlg" title="Telegram" href="https://vk.com/dmitrievnaa1999">
+                <div class="header_i_for_div ">
+                  <i class="fab fa-telegram-plane header_i">
+                  </i>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class ="header_i_vk" title="Vkontakte" href="https://vk.com/dmitrievnaa1999">
+                <div class="header_i_for_div">
+                  <i class="fab fa-vk header_i ">
+                  </i>
+                </div>   
+              </a>
+            </div>
+            <div>
+              <a class ="header_i_wa" title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+                <div class="header_i_for_div">
+                  <i class="fab fa-whatsapp header_i">
+                  </i>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class ="header_i_ig" title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+                <div class="header_i_for_div">
+                  <i class="fab fa-instagram header_i">
+                  </i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
 
 </body>
 

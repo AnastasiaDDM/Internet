@@ -361,3 +361,31 @@
         padding-top: 1.5em;
     }
 }
+
+.w_pers_data {
+    width: 50%;
+    @media (min-width: 1012px) and (max-width: 1399.98px) {
+        width: 70%;
+    }
+    @media (min-width: 873px) and (max-width: 1011.98px) {
+        width: 80%;
+    }
+    @media (max-width: 872.98px) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700.98px) {
+    .w_pers_data_one {
+        width: 100%;
+        text-align: left;
+        font-size: 80%;
+
+    }
+    .w_pers_data_one_val {
+        border: solid $border_width $light_blue;
+        padding: .3em;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}

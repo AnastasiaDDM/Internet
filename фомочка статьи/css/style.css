@@ -690,6 +690,10 @@ ul.breadcrumb li {
   margin: 0em 1em;
 }
 
+.margin_right_2em {
+  margin-right: 2em;
+}
+
 .padding_top-bootom_1em {
   padding: 1em 0em;
 }
@@ -828,6 +832,10 @@ ul.breadcrumb li {
 
 legend h1 {
   font-size: 1.5em;
+}
+
+.header_pers_menu {
+  background-color: #fdf9f9;
 }
 
 .header-top_container {
@@ -1116,6 +1124,11 @@ legend h1 {
 .person_acc {
   line-height: 250%;
   font-size: 120%;
+}
+
+.w_pers_data_one {
+  width: 30%;
+  text-align: right;
 }
 
 .main_block_bg {
@@ -3379,7 +3392,6 @@ legend h1 {
 
 input[type="password"] {
   letter-spacing: 0.3em;
-  font-size: 150%;
 }
 
 .form_textarea_label {
@@ -4130,6 +4142,42 @@ input[type="password"] {
   .footer_container_phone {
     width: 100%;
     padding-top: 1.5em;
+  }
+}
+
+.w_pers_data {
+  width: 50%;
+}
+
+@media (min-width: 1012px) and (max-width: 1399.98px) {
+  .w_pers_data {
+    width: 70%;
+  }
+}
+
+@media (min-width: 873px) and (max-width: 1011.98px) {
+  .w_pers_data {
+    width: 80%;
+  }
+}
+
+@media (max-width: 872.98px) {
+  .w_pers_data {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700.98px) {
+  .w_pers_data_one {
+    width: 100%;
+    text-align: left;
+    font-size: 80%;
+  }
+  .w_pers_data_one_val {
+    border: solid 0.1em #7EB9BF;
+    padding: .3em;
+    width: 100%;
+    margin-bottom: 1em;
   }
 }
 

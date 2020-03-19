@@ -5,10 +5,6 @@
     <title>Название страницы
     </title>
     <meta name="description" content="Описание страницы" />
-    <!-- <script src="https://use.fontawesome.com/65da41867f.js"></script> -->
-    <!--link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="stprostoi.css"-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
@@ -18,75 +14,80 @@
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
       <div class="flex_row header-top_container header-top_border flex_space-between">
-        <div class="flex_row header_container_mail_phone">
-          <a>
-          <div class="header_i_for_div margin_right_04em">
-            <i class="far fa-envelope header_i"></i>
-            <!-- <i class="far fa-envelope-open header_i"></i> -->
-          </div>
-        </a>
-          <div class = "header_social_mail">
-            <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
-              example@mail.ru
-            </a>
+        <div class="header_container_mail_phone">
+          <div class="flex_row flex_space-between header_container_m_p_w">
+            <div class="flex_row pos_cen_400">
+              <a>
+                <div class="header_i_for_div margin_right_04em disp_none_400">
+                  <i class="far fa-envelope header_i">
+                  </i>
+                </div>
+              </a>
+              <div class = "header_social_mail">
+                <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
+                  example@mail.ru
+                </a>
+              </div>
+            </div>
+            <div class="flex_row pos_cen_400">
+              <div class="header_i_for_div margin_right_04em disp_none_400">
+                <i class="fas fa-phone-alt header_i">
+                </i>
+              </div>
+              <div class = "header_social_phone">
+                <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
+                  +7 (901) 123-45-67
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="flex_row header_container_mail_phone">
-          <div class="header_i_for_div margin_right_04em">
-            <i class="fas fa-phone-alt header_i"></i>
-          </div>
-          <div class = "header_social_phone">
-            <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
-              +7 (901) 123-45-67
-            </a>
-          </div>
-        </div>
-        <div class="flex_row header_container_social">
+        <div class="flex_row flex_space-between header_container_social">
           <div>
             <a class ="header_i_tlg" title="Telegram" href="https://vk.com/dmitrievnaa1999">
-              <!-- <i class="fab fa-telegram header_i"></i> -->
               <div class="header_i_for_div ">
-                <i class="fab fa-telegram-plane header_i"></i>
+                <i class="fab fa-telegram-plane header_i">
+                </i>
               </div>
             </a>
           </div>
           <div>
             <a class ="header_i_vk" title="Vkontakte" href="https://vk.com/dmitrievnaa1999">
               <div class="header_i_for_div">
-                <i class="fab fa-vk header_i "></i>
+                <i class="fab fa-vk header_i ">
+                </i>
               </div>   
             </a>
           </div>
           <div>
             <a class ="header_i_wa" title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
-              <!-- <img class="icon" src="icons/whatsapp.png"/> -->
               <div class="header_i_for_div">
-                <i class="fab fa-whatsapp header_i"></i>
+                <i class="fab fa-whatsapp header_i">
+                </i>
               </div>
             </a>
           </div>
           <div>
             <a class ="header_i_ig" title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
               <div class="header_i_for_div">
-                <i class="fab fa-instagram header_i"></i>
+                <i class="fab fa-instagram header_i">
+                </i>
               </div>
-
             </a>
           </div>
         </div>
-        <div class="header-margin_left-top">
+        <div class=" header_person">
           <a  id = "user" href = "personal_data.html" > 
             <div class="header_i_for_div header_i">
-              <i class="fas fa-user"></i>
+              <i class="fas fa-user">
+              </i>
             </div>   
           </a>
         </div>
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
-
         <div class="header">
-          <!-- <a href="/" class="logo">AGT</a> -->
-          <div class="flex_row flex_justify-content_flex-start logo" style="width: 70%;">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -97,24 +98,54 @@
               </a>
             </div>
           </div>
-  
           <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <label class="menu-icon" for="menu-btn">
+            <span class="navicon">
+            </span>
+          </label>
           <ul class="menu">
-            <li><a href="/aboutcompany.html">О&nbsp;компании</a></li>
-            <li><a href="/catalog.html">Каталог</a></li>
-            <li><a href="/articles.html">Статьи</a></li>
-            <li><a href="/reviews.html">Отзывы</a></li>
-            <li><a href="/contacts.html">Контакты</a></li>
-            <li><a href="/order.html">Заказать</a></li>
-            <li><a href="/reviews.html">Мои заказы</a></li>
-            <li><a href="/contacts.html">Мои загрузки</a></li>
-            <li><a href="/order.html">Избранное</a></li>
-            <li><a href="/reviews.html">Мои данные</a></li>
+            <li class="header_pers_menu">
+              <a href="/orders.html">Мои заказы
+              </a>
+            </li>
+            <li class="header_pers_menu">
+              <a href="/downloads.html">Мои загрузки
+              </a>
+            </li>
+            <li class="header_pers_menu">
+              <a href="/favourites.html">Избранное 
+              </a>
+            </li>
+            <li class="header_pers_menu">
+              <a href="/personal_data.html">Мои данные
+              </a>
+            </li>
+            <li>
+              <a href="/aboutcompany.html">О&nbsp;компании
+              </a>
+            </li>
+            <li>
+              <a href="/catalog.html">Каталог
+              </a>
+            </li>
+            <li>
+              <a href="/articles.html">Статьи
+              </a>
+            </li>
+            <li>
+              <a href="/reviews.html">Отзывы
+              </a>
+            </li>
+            <li>
+              <a href="/contacts.html">Контакты
+              </a>
+            </li>
+            <li>
+              <a href="/order.html" class ="link_style_col">Заказать
+              </a>
+            </li>
           </ul>
         </div>
-
-
         <div class="flex_row flex_justify-content_flex-start header_disp_none">
           <div class="header-logo">
             <a href="/main.html">
@@ -129,7 +160,7 @@
         <div class="flex_row header_navbar header_disp_none">
           <ul>
             <li>
-              <a title="О компании" href="/aboutcompany.html">О&nbsp;компании
+              <a  class = "header_navbar_active" title="О компании" href="/aboutcompany.html">О&nbsp;компании
               </a>
             </li>
             <li>
@@ -141,7 +172,7 @@
               </a>
             </li>
             <li>
-              <a  class = "header_navbar_active" title="Отзывы" href="/reviews.html">Отзывы
+              <a title="Отзывы" href="/reviews.html">Отзывы
               </a>
             </li>
             <li>
@@ -149,14 +180,13 @@
               </a>
             </li>
             <li>
-              <a title="заказать" href="/order.html">Заказать
+              <a class ="link_style_col" title="заказать" href="/order.html">Заказать
               </a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    
     <div class="flex_row second_menu margin_bottom_1em header_disp_none">
       <ul class="pos_center">
         <li>
@@ -182,32 +212,34 @@
         <h1>Мои загрузки
         </h1>
         <ul class="breadcrumb">
-            <li><a href="URL">Главная</a></li>
-            <li><a href="URL">Личный кабинет</a></li>
-            <li>Мои загрузки</li>
+          <li>
+            <a href="URL">Главная
+            </a>
+          </li>
+          <li>
+            <a href="URL">Личный кабинет
+            </a>
+          </li>
+          <li>Мои загрузки
+          </li>
         </ul>
-
-          
-          <section class="margin_top_3em"> 
-
-            <!-- Контейнер для всех карточек --> 
-    <div  class="flex_row pos_center article_container software_container_all-width padding_bottom_2em margin_top_2em">
-        
-        <div class="column-2 review_card_software"> 
+        <section class="margin_top_3em"> 
+          <!-- Контейнер для всех карточек --> 
+          <div  class="flex_row pos_center article_container software_container_all-width padding_bottom_2em margin_top_2em">
+            <div class="column-2 review_card_software"> 
               <!-- Бокс одной карточки --> 
               <div class = "pos_right_for_div"> Дата загрузки: 20.01.2020
               </div>	
               <article class="flex_column software_alone_container "> 
                 <!-- Контейнер одной карточки --> 
-    
                 <div class = "flex_column width_100"> 
-          <div class="software_div_name">
-          
-                      <div class = "software_price disp_none"></div>
-                  <!-- Контейнер названия и типа ПО -->
-                  <a class = "software_name" href="/software.html">Автоматизированное кафе для доставки кофе на дом и в офис
-                  </a>
-            </div>
+                  <div class="software_div_name">
+                    <div class = "software_price disp_none">
+                    </div>
+                    <!-- Контейнер названия и типа ПО -->
+                    <a class = "software_name" href="/software.html">Автоматизированное кафе для доставки кофе на дом и в офис
+                    </a>
+                  </div>
                   <a class = "software_type" href="URL">Настольное приложение
                   </a>
                 </div>
@@ -217,14 +249,17 @@
                     <!-- Контейнер картинки и кнопок -->
                     <div class = "software_div_images" > 
                       <!-- Бокс картинки --> 
-                      <a href="/software.html"><img  class = "img_width cursor" src="images/cafe.jpg"  alt="Расписание"/></a>
+                      <a href="/software.html">
+                        <img  class = "img_width cursor" src="images/cafe.jpg"  alt="Расписание"/>
+                      </a>
                     </div>
                     <div class="flex_row software_container_button flex_space-between"> 
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Скачать 
                       </button>
                       <div >
-                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                        <i class="fa fa-heart button_like" aria-hidden="true">
+                        </i>
                       </div>
                     </div>
                   </div>
@@ -272,21 +307,20 @@
                 </div>
               </article>
             </div>
-        
             <div class="column-2 review_card_software margin_bottom_2em"> 
               <!-- Бокс одной карточки --> 
               <div class = "pos_right_for_div"> Дата загрузки: 20.01.2020
               </div>
               <article class="flex_column software_alone_container "> 
                 <!-- Контейнер одной карточки --> 
-    
                 <div class = "flex_column width_100"> 
-          <div class="software_div_name">
-                      <div class = "software_price pos_right_for_div">35 000 р</div>
-                  <!-- Контейнер названия и типа ПО -->
-                  <a class = "software_name pos_left_for_text" href="URL">Автоматизированное кафе  Авто мат изиров анное кафе  Авто мат изиров анное кафе   Авто мат изиров анное кафе Авто мат изиров анное кафе А вт омат изиров анное кафе
-                  </a>
-             </div>
+                  <div class="software_div_name">
+                    <div class = "software_price pos_right_for_div">35 000 р
+                    </div>
+                    <!-- Контейнер названия и типа ПО -->
+                    <a class = "software_name pos_left_for_text" href="URL">Автоматизированное кафе  Авто мат изиров анное кафе  Авто мат изиров анное кафе   Авто мат изиров анное кафе Авто мат изиров анное кафе А вт омат изиров анное кафе
+                    </a>
+                  </div>
                   <a class = "software_type" href="URL">Настольное приложение
                   </a>
                 </div>
@@ -296,14 +330,17 @@
                     <!-- Контейнер картинки и кнопок -->
                     <div class = "software_div_images"> 
                       <!-- Бокс картинки --> 
-                      <a href="/software.html"><img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/></a>
+                      <a href="/software.html">
+                        <img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/>
+                      </a>
                     </div>
                     <div class="flex_row software_container_button flex_space-between"> 
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Приобрести
                       </button>
                       <div >
-                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                        <i class="fa fa-heart button_like" aria-hidden="true">
+                        </i>
                       </div>
                     </div>
                   </div>
@@ -363,21 +400,20 @@
                 </div>
               </article>
             </div>
-
             <div class="column-2 review_card_software margin_bottom_2em"> 
               <div class = "pos_right_for_div"> Дата загрузки: 20.01.2020
               </div>
               <!-- Бокс одной карточки --> 
               <article class="flex_column software_alone_container "> 
                 <!-- Контейнер одной карточки --> 
-    
                 <div class = "flex_column width_100"> 
-          <div>
-                      <div class = "software_price">350 000 000 р</div>
-                  <!-- Контейнер названия и типа ПО -->
-                  <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
-                  </a>
-             </div>
+                  <div>
+                    <div class = "software_price">350 000 000 р
+                    </div>
+                    <!-- Контейнер названия и типа ПО -->
+                    <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
+                    </a>
+                  </div>
                   <a class = "software_type" href="URL">Настольное приложение
                   </a>
                 </div>
@@ -387,14 +423,17 @@
                     <!-- Контейнер картинки и кнопок -->
                     <div class = "software_div_images"> 
                       <!-- Бокс картинки --> 
-                      <a href="/software.html"><img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/></a>
+                      <a href="/software.html">
+                        <img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/>
+                      </a>
                     </div>
                     <div class="flex_row software_container_button flex_space-between"> 
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Приобрести
                       </button>
                       <div >
-                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                        <i class="fa fa-heart button_like" aria-hidden="true">
+                        </i>
                       </div>
                     </div>
                   </div>
@@ -430,22 +469,20 @@
                 </div>
               </article>
             </div>
-
-
             <div class="column-2 review_card_software margin_bottom_2em"> 
               <div class = "pos_right_for_div"> Дата загрузки: 20.01.2020
               </div>
               <!-- Бокс одной карточки --> 
               <article class="flex_column software_alone_container "> 
                 <!-- Контейнер одной карточки --> 
-    
                 <div class = "flex_column width_100"> 
-          <div>
-                      <div class = "software_price">35 000 р</div>
-                  <!-- Контейнер названия и типа ПО -->
-                  <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
-                  </a>
-             </div>
+                  <div>
+                    <div class = "software_price">35 000 р
+                    </div>
+                    <!-- Контейнер названия и типа ПО -->
+                    <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
+                    </a>
+                  </div>
                   <a class = "software_type" href="URL">Настольное приложение
                   </a>
                 </div>
@@ -455,14 +492,17 @@
                     <!-- Контейнер картинки и кнопок -->
                     <div class = "software_div_images"> 
                       <!-- Бокс картинки --> 
-                      <a href="/software.html"><img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/></a>
+                      <a href="/software.html">
+                        <img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/>
+                      </a>
                     </div>
                     <div class="flex_row software_container_button flex_space-between"> 
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Приобрести
                       </button>
                       <div >
-                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                        <i class="fa fa-heart button_like" aria-hidden="true">
+                        </i>
                       </div>
                     </div>
                   </div>
@@ -498,22 +538,20 @@
                 </div>
               </article>
             </div>
-        
-
             <div class="column-2 review_card_software margin_bottom_2em"> 
               <div class = "pos_right_for_div"> Дата загрузки: 20.01.2020
               </div>
               <!-- Бокс одной карточки --> 
               <article class="flex_column software_alone_container "> 
                 <!-- Контейнер одной карточки --> 
-    
                 <div class = "flex_column width_100"> 
-          <div>
-                      <div class = "software_price">35 000 р</div>
-                  <!-- Контейнер названия и типа ПО -->
-                  <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
-                  </a>
-             </div>
+                  <div>
+                    <div class = "software_price">35 000 р
+                    </div>
+                    <!-- Контейнер названия и типа ПО -->
+                    <a class = "software_name" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
+                    </a>
+                  </div>
                   <a class = "software_type" href="URL">Настольное приложение
                   </a>
                 </div>
@@ -523,14 +561,17 @@
                     <!-- Контейнер картинки и кнопок -->
                     <div class = "software_div_images"> 
                       <!-- Бокс картинки --> 
-                      <a href="/software.html"><img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/></a>
+                      <a href="/software.html">
+                        <img  class = "img_width cursor" src="images/timetable.jpg"  alt="Расписание"/>
+                      </a>
                     </div>
                     <div class="flex_row software_container_button flex_space-between"> 
                       <!-- Бокс кнопки покупки и лайка --> 
                       <button class="software_button-pay_style software_button-pay_style_width">Приобрести
                       </button>
                       <div >
-                        <i class="fa fa-heart button_like" aria-hidden="true"></i>
+                        <i class="fa fa-heart button_like" aria-hidden="true">
+                        </i>
                       </div>
                     </div>
                   </div>
@@ -566,128 +607,125 @@
                 </div>
               </article>
             </div>
-
-
-          
-
-
-
-      </section>
-
-
-      <div class=" flex_column margin_top-bootom_1em">
-
-        <div class=" pos_center"><a href="#" class="button_show-more">Показать еще</a></div>
-        <div class=" flex_row pagination flex_space-between">
-          <a class = "pagination_page_numbers" href="#">&laquo;</a>
-          <a class = "pagination_page_numbers" href="#">1</a>
-          <a class = "pagination_page_numbers pagination_page_numbers_active"  href="#">2</a>
-          <a class = "pagination_page_numbers" href="#">3</a>
-          <a class = "pagination_page_numbers" href="#">4</a>
-          <a class = "pagination_page_numbers" href="#">5</a>
-          <a class = "pagination_ellipsis" href="#">...</a>
-          <a class = "pagination_page_numbers" href="#">15</a>
-          <a class = "pagination_page_numbers" href="#">16</a>
-          <a class = "pagination_page_numbers" href="#">&raquo;</a>
-        </div>
-      </div>
-  
-  </div>
-          </main>
-  
-       <footer class = "flex_row header_container_height flex_space-between footer_container">
-        <div class="header-logo">
-          <a href="/main.html">
-            <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
-          </a>
-        </div>
-    
-    
-    
-            <div class="flex_row footer_all-link ">
-        <div class="flex_column footer_first-link">
-  
-            <a title="Заказать" href="/catalog.html">Заказать
-            </a>
-  
-            <a title="Доработка" href="/articles.html">Доработка
-            </a>
-  
-            <a title="О нас" href="/aboutcompany.html">О нас
-            </a>
-  
-      </div>
-  
-  
-            <div class="flex_column">
-  
-            <a title="Каталог" href="/catalog.html">Каталог
-            </a>
-  
-            <a title="Статьи" href="/articles.html">Статьи
-            </a>
-  
-            <a title="Отзывы" href="/reviews.html">Отзывы
-            </a>
-  
-          </div>
-          
-                    </div>
-            
-            
-        <div class="flex_column">
-                <div class="flex_row">
-          <div class="flex_row footer_container_mail">
-            <div>
-              <img class="icon" src="icons/mail.png"/>
-            </div>
-            <div class = "header_social_mail">
-              <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
-                example@mail.ru
+            </section>
+          <div class=" flex_column margin_top-bootom_1em">
+            <div class=" pos_center">
+              <a href="#" class="button_show-more">Показать еще
               </a>
             </div>
-          </div>
-          <div class="flex_row header_container_phone">
-            <div>
-              <img class="icon" src="icons/phone.png"/>
-            </div>
-            <div class = "header_social_phone">
-              <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
-                +7 (901) 123-45-67
+            <div class=" flex_row pagination flex_space-between">
+              <a class = "pagination_page_numbers" href="#">&laquo;
+              </a>
+              <a class = "pagination_page_numbers" href="#">1
+              </a>
+              <a class = "pagination_page_numbers pagination_page_numbers_active"  href="#">2
+              </a>
+              <a class = "pagination_page_numbers" href="#">3
+              </a>
+              <a class = "pagination_page_numbers" href="#">4
+              </a>
+              <a class = "pagination_page_numbers" href="#">5
+              </a>
+              <a class = "pagination_ellipsis" href="#">...
+              </a>
+              <a class = "pagination_page_numbers" href="#">15
+              </a>
+              <a class = "pagination_page_numbers" href="#">16
+              </a>
+              <a class = "pagination_page_numbers" href="#">&raquo;
               </a>
             </div>
           </div>
           </div>
-          
-          <div class="flex_row footer_container_social">
-            <div>
-              <a title="Телеграм" href="https://vk.com/dmitrievnaa1999">
-                <img class="icon" src="icons/telegram.png"/>
-              </a>
-            </div>
-            <div>
-              <a title="Вконтакте" href="https://vk.com/dmitrievnaa1999">
-                <img class="icon" src="icons/vk2.png"/>
-              </a>
-            </div>
-            <div>
-              <a title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
-                <img class="icon" src="icons/whatsapp.png"/>
-              </a>
-            </div>
-            <div>
-              <a title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
-                <img class="icon" src="icons/instagram.png"/>
-              </a>
+        </main>
+        <footer class = "flex_row header_container_height flex_space-between footer_container">
+          <div class="header-logo disp_none_830">
+            <a href="/main.html">
+              <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
+            </a>
+          </div>
+          <div class="footer_all-link">
+            <div class="flex_row footer_container_l">
+              <div class="flex_column footer_first-link">
+                <a title="Заказать" href="/catalog.html">Заказать
+                </a>
+                <a title="Доработка" href="/articles.html">Доработка
+                </a>
+                <a title="О нас" href="/aboutcompany.html">О нас
+                </a>
+              </div>
+              <div class="flex_column">
+                <a title="Каталог" href="/catalog.html">Каталог
+                </a>
+                <a title="Статьи" href="/articles.html">Статьи
+                </a>
+                <a title="Отзывы" href="/reviews.html">Отзывы
+                </a>
+              </div>
             </div>
           </div>
-         
-        </div>
-       
-      </footer>
-    </body>
+          <div class="flex_column footer_cont_m_p_s">
+            <div class="flex_row footer_cont_m_p">
+              <div class="flex_row footer_container_mail">
+                <a>
+                  <div class="header_i_for_div margin_right_04em disp_none_992">
+                    <i class="far fa-envelope header_i">
+                    </i>
+                  </div>
+                </a>
+                <div class = "header_social_mail">
+                  <a class = "text-align" title="Почта" href="mailto: example@mail.ru">
+                    example@mail.ru
+                  </a>
+                </div>
+              </div>
+              <div class="flex_row footer_container_phone">
+                <div class="header_i_for_div margin_right_04em disp_none_992">
+                  <i class="fas fa-phone-alt header_i">
+                  </i>
+                </div>
+                <div class = "header_social_phone">
+                  <a id = "phone" class = "text-align" href = "tel:+7 (924)8793741">
+                    +7 (901) 123-45-67
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex_row footer_container_social">
+              <div>
+                <a class ="header_i_tlg" title="Telegram" href="https://vk.com/dmitrievnaa1999">
+                  <div class="header_i_for_div ">
+                    <i class="fab fa-telegram-plane header_i">
+                    </i>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class ="header_i_vk" title="Vkontakte" href="https://vk.com/dmitrievnaa1999">
+                  <div class="header_i_for_div">
+                    <i class="fab fa-vk header_i ">
+                    </i>
+                  </div>   
+                </a>
+              </div>
+              <div>
+                <a class ="header_i_wa" title="WhatsApp " href="https://vk.com/dmitrievnaa1999"> 
+                  <div class="header_i_for_div">
+                    <i class="fab fa-whatsapp header_i">
+                    </i>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class ="header_i_ig" title="Instagram " href="https://vk.com/dmitrievnaa1999"> 
+                  <div class="header_i_for_div">
+                    <i class="fab fa-instagram header_i">
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </body>
     </html>
-
-  
-  
-  
