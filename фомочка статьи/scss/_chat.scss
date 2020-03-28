@@ -86,7 +86,6 @@
         // margin-left: 50px;
         margin-bottom: 2em;
         // padding-left: 53px;
-        &_text {}
         &_date {
             &_left {
                 text-align: start;
@@ -108,7 +107,7 @@
                 // -moz-border-radius: 10px;
                 // -webkit-border-radius: 10px;
                 border-radius: 16px;
-                margin-left: 3em;
+                margin-left: 2em;
                 padding: 1em;
                 &:before {
                     content: "";
@@ -128,7 +127,7 @@
                 // -moz-border-radius: 10px;
                 // -webkit-border-radius: 10px;
                 border-radius: 16px;
-                margin-right: 3em;
+                margin-right: 2em;
                 padding: 1em;
                 &:before {
                     content: "";

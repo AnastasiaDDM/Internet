@@ -84,8 +84,7 @@
     outline: 0;
     border-color: #F77A52;
   }
-  .form-row input:focus + label, 
-  .form-row input:valid + label {
+  .form-row input:focus + label {
     transform: translateY(-60px);
     margin-left: -13px;
     font-size: 90%;
@@ -97,7 +96,15 @@
 
 
 
-
+.input_filled + label{
+  transform: translateY(-60px);
+  margin-left: -13px;
+  font-size: 90%;
+  font-weight: 400;
+  outline: 0;
+  border-color: #F77A52;
+  color: #F77A52;
+}
 
 
   
@@ -889,10 +896,11 @@
   // text-align: center;
   // right: 20px;
 
+  width: 14em;
+  margin-right: .25em;
 
-
-  width: calc(100% - 60px);
-  position: relative;
+  // width: calc(100% - 60px);
+  // position: relative;
 }
  
 .input__file {

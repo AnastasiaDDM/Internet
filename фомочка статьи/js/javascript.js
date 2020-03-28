@@ -63,10 +63,49 @@ let inputs = document.querySelectorAll('.input__file');
  }
 
 
+ 
+ function input_filled()
+{
+  $('input').each(function(){
+    $(this).change(function(){
+      if ($(this).val().length > 0)
+      {
+        $(this).addClass("input_filled");
+      }
+      else
+      {
+        $(this).removeClass("input_filled");  
+      }
+    })
+  });
+}
+ 
+ 
+  function textarea_filled()
+{
+  $('textarea').each(function(){
+    $(this).change(function(){
+      if ($(this).val().length > 0)
+      {
+        $(this).addClass("textarea_filled");
+      }
+      else
+      {
+        $(this).removeClass("textarea_filled");  
+      }
+    })
+  });
+}
+ 
+ 
+ 
+ 
  jQuery(document).ready(function () {
 	  
 	  select();
 	    input_file();
+		input_filled();
+		textarea_filled();
 		
 		if ($( window ).width() < 600) {
 			$('.search_datepicker').each(function() {

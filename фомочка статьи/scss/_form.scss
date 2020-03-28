@@ -37,8 +37,7 @@
   border-color: #F77A52;
 }
 
-.form_textarea:focus ~ .form_textarea_label,
-.form_textarea:valid ~ .form_textarea_label {
+.form_textarea:focus ~ .form_textarea_label {
   top: -14px;
   // font-size: 12px;
   // color: #2196F3;
@@ -50,6 +49,30 @@
   font-weight: 400;
   outline: 0;
 }
+
+
+
+.textarea_filled + label{
+  top: -14px;
+  // font-size: 12px;
+  // color: #2196F3;
+  border-color: #F77A52;
+  color: #F77A52;
+  // transform: translateY(-60px);
+  margin-left: -13px;
+  font-size: 90%;
+  font-weight: 400;
+  outline: 0;
+}
+
+
+
+
+
+
+
+
+
 
 .form_textarea:focus ~ .bar:before {
   width: 320px;

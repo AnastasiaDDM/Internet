@@ -1850,8 +1850,17 @@ legend h1 {
   border-color: #F77A52;
 }
 
-.form-row input:focus + label,
-.form-row input:valid + label {
+.form-row input:focus + label {
+  transform: translateY(-60px);
+  margin-left: -13px;
+  font-size: 90%;
+  font-weight: 400;
+  outline: 0;
+  border-color: #F77A52;
+  color: #F77A52;
+}
+
+.input_filled + label {
   transform: translateY(-60px);
   margin-left: -13px;
   font-size: 90%;
@@ -2271,8 +2280,8 @@ legend h1 {
 }
 
 .input__wrapper {
-  width: calc(100% - 60px);
-  position: relative;
+  width: 14em;
+  margin-right: .25em;
 }
 
 .input__file {
@@ -3133,7 +3142,7 @@ legend h1 {
   background: #DAF3F5;
   position: relative;
   border-radius: 16px;
-  margin-left: 3em;
+  margin-left: 2em;
   padding: 1em;
 }
 
@@ -3153,7 +3162,7 @@ legend h1 {
   background: #DAF3F5;
   position: relative;
   border-radius: 16px;
-  margin-right: 3em;
+  margin-right: 2em;
   padding: 1em;
 }
 
@@ -3375,8 +3384,17 @@ legend h1 {
   border-color: #F77A52;
 }
 
-.form_textarea:focus ~ .form_textarea_label,
-.form_textarea:valid ~ .form_textarea_label {
+.form_textarea:focus ~ .form_textarea_label {
+  top: -14px;
+  border-color: #F77A52;
+  color: #F77A52;
+  margin-left: -13px;
+  font-size: 90%;
+  font-weight: 400;
+  outline: 0;
+}
+
+.textarea_filled + label {
   top: -14px;
   border-color: #F77A52;
   color: #F77A52;
