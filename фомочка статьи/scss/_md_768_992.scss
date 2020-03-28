@@ -78,14 +78,17 @@
         }
     }
     .software_column-2 {
-        width: 70%;
+        width: 80%;
         margin: 0em auto;
         &:nth-child(n+2){
             padding-top: 1em;
         }
     }
     .software_left_column {
-        width: 30%;
+        width: 35%;
+    }
+    .software_container {
+        width: 65%;
     }
     .software_price {
         float: none;

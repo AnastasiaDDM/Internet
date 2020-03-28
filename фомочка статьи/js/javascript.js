@@ -66,7 +66,7 @@ let inputs = document.querySelectorAll('.input__file');
  
  function input_filled()
 {
-  $('input').each(function(){
+  $('.input_style input').each(function(){
     $(this).change(function(){
       if ($(this).val().length > 0)
       {

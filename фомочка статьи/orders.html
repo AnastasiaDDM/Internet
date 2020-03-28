@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название страницы
+    <title>Заказы
     </title>
     <meta name="description" content="Описание страницы" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -255,19 +255,10 @@
                         <a data-value="ymn">По дате завершения
                         </a>
                       </li>
-                      <li>
-                        <a data-value="kom">Коммуникабульный(ая)
-                        </a>
-                      </li>
-                      <li>
-                        <a data-value="scr">Скромный(ая)
-                        </a>
-                      </li>
                     </ul>
                     <input type="hidden" id="select">
                   </div>
                   <div  class="flex_row flex_space-between column-3">
-                    <!-- <div>Дата:</div> -->
                     <div class="div_datepic">
                       <input  type="text" class=" slct_div slct search_datepicker">
                     </div> 	
@@ -275,12 +266,8 @@
                     <div class="div_datepic">
                       <input type="text" class=" slct_div slct search_datepicker">
                     </div>
-                    <!-- <div class=" flex_row"><p>Дата от: </p><input  type="text" class="input_middle slct_div slct search_datepicker"></div> 	
-&#8212
-<div class=" flex_row"><p>до: </p><input type="text" class="input_middle slct_div slct search_datepicker"></div> -->
                   </div>
                   <div class="slct_div column-3 ">
-                    <!-- <label >Месяц</label> -->
                     <a href="javascript:void(0);" id="month" class="slct">Месяц
                     </a>
                     <ul class="drop">
@@ -308,10 +295,10 @@
                     <input type="hidden" id="select">
                   </div>
                   <!-- 
-<div class="form-row width_45">
+<div class="input_style width_45">
 <input type="text" id="author" required autocomplete="off"><label for="author">Автор</label>
 </div>
-<div class="form-row width_45">
+<div class="input_style width_45">
 <input type="text" id="article_name" required autocomplete="off"><label for="article_name">Название</label>
 </div> -->
                 </div>
@@ -370,69 +357,40 @@
                     </li>
                   </ul>
                 </div>
-                <div class="flex_row  width_100 padding_top_2em">
-                  <div class="form-row column-3">
+                <div class="flex_row  width_100 padding_top_2em margin_bottom_1em">
+                  <div class="input_style column-3">
                     <input type="text" style="margin-top: 0em;" id="num" required autocomplete="off">
                     <label for="num">Номер заказа
                     </label>
                   </div>
-                  <div class="form-row column-3">
+                  <div class="input_style column-3">
                     <input type="text" style="margin-top: 0em;" id="name" required autocomplete="off">
-                    <label for="name">Наименование ПО 
+                    <label for="name">Наименование заказа 
                     </label>
                   </div> 
-                  <div class = "flex_row column-3">
-                    <div class=" slct_div" style ="width: 30%;">
-                      <a href="javascript:void(0);" class="slct">По
-                      </a>
-                      <ul class="drop ">
-                        <li>
-                          <a data-value="kras">4
-                          </a>
-                        </li>
-                        <li>
-                          <a data-value="ymn">6
-                          </a>
-                        </li>
-                        <li>
-                          <a data-value="kom">10
-                          </a>
-                        </li>
-                        <li>
-                          <a data-value="scr">12
-                          </a>
-                        </li>
-                      </ul>
-                      <input type="hidden" id="select">
-                    </div>
-                    <div class="slct_div" style="margin-left: .5em; width: calc(100% - 30% - 10px);">
-                      <a href="javascript:void(0);" class="slct">Сортировать:
-                      </a>
-                      <ul class="drop">
-                        <li>
-                          <a data-value="kras">Все
-                          </a>
-                        </li>
-                        <li>
-                          <a data-value="ymn">Популярное
-                          </a>
-                        </li>
-                        <li>
-                          <a data-value="kom">Новое
-                          </a>
-                        </li>
-                        <li>
-                          <a data-value="scr">&#8657 по размеру
-                          </a>
-                        </li>
-                        <li>
-                          <a data-value="scr">&#8659 по размеру
-                          </a>
-                        </li>
-                      </ul>
-                      <input type="hidden" id="select">
-                    </div>
-                  </div >
+                  <div class="slct_div column-3 ">
+                    <a href="javascript:void(0);" class="slct">Вид ПО:
+                    </a>
+                    <ul class="drop">
+                      <li>
+                        <a data-value="kras">Все
+                        </a>
+                      </li>
+                      <li>
+                        <a data-value="ymn">Настольное приложение
+                        </a>
+                      </li>
+                      <li>
+                        <a data-value="kom">Сайт
+                        </a>
+                      </li>
+                      <li>
+                        <a data-value="scr">Мобильное приложение
+                        </a>
+                      </li>
+                    </ul>
+                    <input type="hidden" id="select">
+                  </div>
                 </div>
                 <div class="flex_row flex_space-between ">
                   <div class="margin_top-bootom_1em">
@@ -444,11 +402,63 @@
                     </a>
                   </div>  
                 </div>
-                <!-- </div>            -->
-                <!-- </div> -->
               </form>
             </fieldset>
+
+
+            <fieldset class="fieldset_border_primary margin_top_1em" name="fieldset" >
+              <form>
+                <!-- <div class="flex_column"> -->
+    
+    
+    
+                  <div class = "flex_row ">
+    
+                      
+                    <div class=" slct_div column-3">
+                      <a href="javascript:void(0);" class="slct">По</a>
+                      <ul class="drop ">
+                        <li><a>4</a></li>
+                        <li><a>6</a></li>
+                        <li><a>10</a></li>
+                        <li><a>12</a></li>
+                      </ul>
+                      <input type="hidden" id="select">
+                    </div>
+    
+    
+                    <div class="slct_div column-3">
+                      <a href="javascript:void(0);" class="slct">Сортировать:</a>
+                      <ul class="drop">
+                        <li><a>Все</a></li>
+                        <li><a>Популярное</a></li>
+                        <li><a>Новое</a></li>
+                        <li><a>&#8657 по размеру</a></li>
+                        <li><a>&#8659 по размеру</a></li>
+                      </ul>
+                      <input type="hidden" id="select">
+                    </div>
+
+
+                    <div class="flex_row column-3">
+                      <input class="slct" type="number" min="0" style="width: calc(100% - 75px);" placeholder="Перейти на страницу...">
+                      <div class="">
+                        <a type="button" style="width: 25px;" class="button_delicate pos_center"><i class="fas fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+
+
+                    </div>
+                  
+    
+              </form>
+             </fieldset>
+
+
           </div>
+
+
+          
           <div class="flex_row main_block_bg padding_top-bootom_1em flex_flex-start" style="line-height: 2em;">
             <div class="flex_row">
               <div class=" pos_right order_card_type_state_small">
@@ -476,12 +486,12 @@
             </div>
           </div>
           <!-- Контейнер для всех карточек --> 
-          <div  class="flex_row pos_center article_container padding_bottom_2em margin_top_2em">
+          <div  class="flex_row pos_center article_container padding_bottom_2em margin_top_2">
             <div class="column-2"> 
               <!-- Бокс одной карточки --> 
               <article class="flex_column  "> 
                 <!-- Контейнер одной карточки --> 
-                <fieldset class=" order_card margin_top_2em" name="fieldset">
+                <fieldset class=" order_card margin_top_2" name="fieldset">
                   <legend>Заказ №25
                   </legend>
                   <form>
@@ -558,7 +568,7 @@
               <!-- Бокс одной карточки --> 
               <article class="flex_column  "> 
                 <!-- Контейнер одной карточки --> 
-                <fieldset class=" order_card margin_top_2em" name="fieldset">
+                <fieldset class=" order_card margin_top_2" name="fieldset">
                   <legend>Заказ №25
                   </legend>
                   <form>
@@ -624,7 +634,7 @@
               <!-- Бокс одной карточки --> 
               <article class="flex_column  "> 
                 <!-- Контейнер одной карточки --> 
-                <fieldset class=" order_card margin_top_2em" name="fieldset">
+                <fieldset class=" order_card margin_top_2" name="fieldset">
                   <legend>Заказ №25
                   </legend>
                   <form>
@@ -690,7 +700,7 @@
               <!-- Бокс одной карточки --> 
               <article class="flex_column  "> 
                 <!-- Контейнер одной карточки --> 
-                <fieldset class=" order_card margin_top_2em" name="fieldset">
+                <fieldset class=" order_card margin_top_2" name="fieldset">
                   <legend>Заказ №25
                   </legend>
                   <form>
@@ -756,7 +766,7 @@
               <!-- Бокс одной карточки --> 
               <article class="flex_column  "> 
                 <!-- Контейнер одной карточки --> 
-                <fieldset class=" order_card margin_top_2em" name="fieldset">
+                <fieldset class=" order_card margin_top_2" name="fieldset">
                   <legend>Заказ №25
                   </legend>
                   <form>
@@ -822,7 +832,7 @@
               <!-- Бокс одной карточки --> 
               <article class="flex_column  "> 
                 <!-- Контейнер одной карточки --> 
-                <fieldset class=" order_card margin_top_2em" name="fieldset">
+                <fieldset class=" order_card margin_top_2" name="fieldset">
                   <legend>Заказ №25
                   </legend>
                   <form>

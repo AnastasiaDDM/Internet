@@ -1,10 +1,10 @@
-.form-row_edit {
+.input_style_edit {
     position: relative;
     // &_edit {
 
     // }
   }
-  .form-row_edit input {
+  .input_style_edit input {
     margin-top: 2em;
     display: block;
     width: 100%;
@@ -22,7 +22,7 @@
       padding-left: 0rem;
     }
   }
-  .form-row_edit label {
+  .input_style_edit label {
     position: absolute;
     left: 1rem;
     bottom: -2rem;
@@ -33,12 +33,12 @@
     transition: all 0.2s ease;
     
   }
-  .form-row_edit input:focus {
+  .input_style_edit input:focus {
     outline: 0;
     border-color: #F77A52;
   }
-  .form-row_edit input:focus + label, 
-  .form-row_edit input:valid + label {
+  .input_style_edit input:focus + label, 
+  .input_style_edit input:valid + label {
     transform: translateY(-60px);
     margin-left: -13px;
     margin-top: -7px;
@@ -53,10 +53,10 @@
 
 
 
-  .form-row {
+  .input_style {
     position: relative;
   }
-  .form-row input {
+  .input_style input {
     margin-top: 1.3em;
     display: block;
     width: 100%;
@@ -70,7 +70,7 @@
       border-bottom: 2px solid $rose;
     } 
   }
-  .form-row label {
+  .input_style label {
     position: absolute;
     left: 12px;
     color: #9d959d;
@@ -80,11 +80,11 @@
     transition: all 0.2s ease;
     
   }
-  .form-row input:focus {
+  .input_style input:focus {
     outline: 0;
     border-color: #F77A52;
   }
-  .form-row input:focus + label {
+  .input_style input:focus + label {
     transform: translateY(-60px);
     margin-left: -13px;
     font-size: 90%;
@@ -111,7 +111,7 @@
 
 
 
-  // .form-row textarea {
+  // .input_style textarea {
   //   margin-top: .8em;
   //   display: block;
   //   width: 100%;
@@ -125,7 +125,7 @@
   //     border-bottom: 2px solid $rose;
   //   } 
   // }
-  // .form-row label {
+  // .input_style label {
   //   position: absolute;
   //   left: 12px;
   //   color: #9d959d;
@@ -134,12 +134,12 @@
   //   transform: translateY(-35px);
   //   transition: all 0.2s ease;
   // }
-  // .form-row textarea:focus {
+  // .input_style textarea:focus {
   //   outline: 0;
   //   border-color: #F77A52;
   // }
-  // .form-row textarea:focus + label, 
-  // .form-row textarea:valid + label {
+  // .input_style textarea:focus + label, 
+  // .input_style textarea:valid + label {
   //   transform: translateY(-60px);
   //   margin-left: -13px;
   //   font-size: 90%;
@@ -738,7 +738,7 @@
 .radio_checkbox {
   padding: 0;
   list-style: none;
-  width: fit-content;
+  // width: fit-content;
   max-width: 320px;
   text-align: left;
 
@@ -868,13 +868,11 @@
         width: 19px;
         height: 19px;
         border-radius: 50%;
-        background: var(--active-inner);
         opacity: 0;
         transform: scale(var(--s, .7));
       }
       &:checked {
         --s: .75;
-        // --s: .5;
       }
     }
   }
@@ -1037,3 +1035,6 @@
     width: calc(100% - 25px);
   }
 }
+
+
+

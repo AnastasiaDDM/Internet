@@ -19,17 +19,13 @@ width: 33.3333%;
 
 
     &_adm {
-        // width: 80%;
-        // border-top:solid 0.1em $red;
-        // // border-top:dotted 0.2em $red;
-        // border-left:solid 0.3em $red;
-        // padding: .5em;
-        // margin-top: 1em;
-
         overflow: hidden;
         max-height: 20em;
         @extend .border_fieldset_top;
 
+        &_px {
+            padding: 0em 1em;
+        }
 
         &_full {
             // border:solid 0.1em $red;

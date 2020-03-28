@@ -190,7 +190,7 @@
             <li>Каталог</li>
         </ul>
 
-        <section class="margin_top_2em">
+        <section class="margin_top_2">
           <div class="software_container_width"> 
             <!-- <div class="search_title">Фильтр <a class="search_roll-up">Развернуть ↓</a></div> -->
 
@@ -213,10 +213,10 @@
                         <div class=" slct_div" style ="width: 30%;">
                           <a href="javascript:void(0);" class="slct">По</a>
                           <ul class="drop ">
-                            <li><a data-value="kras">4</a></li>
-                            <li><a data-value="ymn">6</a></li>
-                            <li><a data-value="kom">10</a></li>
-                            <li><a data-value="scr">12</a></li>
+                            <li><a>4</a></li>
+                            <li><a>6</a></li>
+                            <li><a>10</a></li>
+                            <li><a>12</a></li>
                           </ul>
                           <input type="hidden" id="select">
                         </div>
@@ -225,20 +225,20 @@
                         <div class="slct_div" style="margin-left: .5em; width: calc(100% - 30% - 10px);">
                           <a href="javascript:void(0);" class="slct">Сортировать:</a>
                           <ul class="drop">
-                            <li><a data-value="kras">Все</a></li>
-                            <li><a data-value="ymn">Популярное</a></li>
-                            <li><a data-value="kom">Новое</a></li>
-                            <li><a data-value="scr">&#8657 по размеру</a></li>
-                            <li><a data-value="scr">&#8659 по размеру</a></li>
+                            <li><a>Все</a></li>
+                            <li><a>Популярное</a></li>
+                            <li><a>Новое</a></li>
+                            <li><a>&#8657 по размеру</a></li>
+                            <li><a>&#8659 по размеру</a></li>
                           </ul>
                           <input type="hidden" id="select">
                         </div>
-                        </div >
+                        </div>
                       
         
                   </form>
                  </fieldset>
-                <fieldset class="fieldset_border_primary margin_top_2em" name="fieldset" >
+                <fieldset class="fieldset_border_primary margin_top_2" name="fieldset" >
                
                   <form>
         
@@ -247,7 +247,7 @@
               
         
         
-                    <div class="form-row ">
+                    <div class="input_style ">
                       <input type="text" id="email" required autocomplete="off"><label for="email">Наименование ПО</label>
                     </div>
         
@@ -273,10 +273,10 @@
                         </ul>
 
             <div class=" flex_row flex_space-between">
-              <div class ="width_45 form-row" >
+              <div class ="width_45 input_style" >
                 <input type="text" id="pricefrom" required autocomplete="off"><label for="pricefrom">Цена от:</label>
               </div>
-              <div class ="width_45 form-row" >
+              <div class ="width_45 input_style" >
                 <input type="text" id="priceto" required autocomplete="off"><label for="priceto">Цена до:</label>
               </div>            
             </div>
@@ -1134,16 +1134,20 @@
     // });
 
     $( "#search_roll_up" ).click(function() {
+      $( "#search_roll_up" ).hide();
+      $( "#search_roll_down" ).show();
+
       $( "#search_div_fieldset" ).slideUp( "slow", function() {
-        $( "#search_roll_down" ).show();
-        $( "#search_roll_up" ).hide();
+
         // Animation complete.
       });
     });
     $( "#search_roll_down" ).click(function() {
+      $( "#search_roll_down" ).hide();
+      $( "#search_roll_up" ).show();
+
       $( "#search_div_fieldset" ).slideDown( "slow", function() {
-        $( "#search_roll_up" ).show();
-        $( "#search_roll_down" ).hide();
+
         // Animation complete.
       });
     });
