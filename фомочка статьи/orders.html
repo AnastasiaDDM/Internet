@@ -2,14 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Заказы
+    <title>Мои заказы
     </title>
     <meta name="description" content="Описание страницы" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
-    <script src="js/jquery.js">
-    </script>
     <script src="js/jquery.js">
     </script>
     <link href="css/datepicker.css" rel="stylesheet" type="text/css">
@@ -27,9 +25,9 @@
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="header_container_mail_phone">
           <div class="flex_row flex_space-between header_container_m_p_w">
-            <div class="flex_row pos_cen_400">
+            <div class="flex_row pos_cen_headerder">
               <a>
-                <div class="header_i_for_div margin_right_04em disp_none_400">
+                <div class="header_i_for_div margin_right_04em disp_none_headerder">
                   <i class="far fa-envelope header_i">
                   </i>
                 </div>
@@ -40,8 +38,8 @@
                 </a>
               </div>
             </div>
-            <div class="flex_row pos_cen_400">
-              <div class="header_i_for_div margin_right_04em disp_none_400">
+            <div class="flex_row pos_cen_headerder">
+              <div class="header_i_for_div margin_right_04em disp_none_headerder">
                 <i class="fas fa-phone-alt header_i">
                 </i>
               </div>
@@ -98,7 +96,7 @@
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
         <div class="header">
-          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em width_70">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -201,7 +199,7 @@
     <div class="flex_row second_menu margin_bottom_1em header_disp_none">
       <ul class="pos_center">
         <li>
-          <a href="/order.html">Мои&nbsp;заказы
+          <a class = "header_navbar_active" href="/order.html">Мои&nbsp;заказы
           </a>
         </li>
         <li>
@@ -209,11 +207,11 @@
           </a>
         </li>
         <li>
-          <a href="/reviews.html">Избранное
+          <a href="/favourites.html">Избранное
           </a>
         </li>
         <li>
-          <a class = "header_navbar_active" href="/aboutcompany.html">Мои&nbsp;данные
+          <a href="/aboutcompany.html">Мои&nbsp;данные
           </a>
         </li>
       </ul>
@@ -294,13 +292,6 @@
                     </ul>
                     <input type="hidden" id="select">
                   </div>
-                  <!-- 
-<div class="input_style width_45">
-<input type="text" id="author" required autocomplete="off"><label for="author">Автор</label>
-</div>
-<div class="input_style width_45">
-<input type="text" id="article_name" required autocomplete="off"><label for="article_name">Название</label>
-</div> -->
                 </div>
                 <div class="flex_row width_100 flex_space-between padding_top_2em">
                   <div class="slct_div column-3 ">
@@ -359,12 +350,12 @@
                 </div>
                 <div class="flex_row  width_100 padding_top_2em margin_bottom_1em">
                   <div class="input_style column-3">
-                    <input type="text" style="margin-top: 0em;" id="num" required autocomplete="off">
+                    <input type="text" style="margin-top: 0em;" id="num" autocomplete="off">
                     <label for="num">Номер заказа
                     </label>
                   </div>
                   <div class="input_style column-3">
-                    <input type="text" style="margin-top: 0em;" id="name" required autocomplete="off">
+                    <input type="text" style="margin-top: 0em;" id="name" autocomplete="off">
                     <label for="name">Наименование заказа 
                     </label>
                   </div> 
@@ -408,7 +399,6 @@
 
             <fieldset class="fieldset_border_primary margin_top_1em" name="fieldset" >
               <form>
-                <!-- <div class="flex_column"> -->
     
     
     
@@ -495,7 +485,7 @@
                   <legend>Заказ №25
                   </legend>
                   <form>
-                    <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+                    <div class="float_right ml_mb">
                       <div class="order_type_i pos_right order_card_type_state_small">
                         <i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true">
                         </i>
@@ -511,7 +501,7 @@
                       <div class = "orders_text_small" href="URL">Настольное приложение
                       </div>
                       <div class="float_right w_55_xs">
-                        <div  class="order_state_dev">Состояние: В разработке
+                        <div  class="order_state_dev">В разработке
                         </div>
                         <div class="">
                           <div class = "flex_row flex_space-between">
@@ -528,17 +518,6 @@
                           </button>
                         </div> 
                       </div>    
-                      <!-- <div  class="order_state_dev">Состояние: В разработке</div> -->
-                      <!-- <div class="float_right" style="width: 50%; ">
-<div class = "flex_row flex_space-between">
-<div style ="font-size: 140%;">Итого: 100 000 &#8381</div>
-<div style =" vertical-align: middle;">
-<div>Внесено: 5 000 &#8381</div>
-<div>Осталось: 95 000 &#8381</div>
-</div>
-</div>
-<button class="button_pay margin_top_1em img_width">Оплатить</button>
-</div>  -->
                       <div class="margin_top_07em">
                         <div class="orders_text_medium">
                           <div>Дата заказа: 10.12.2019 11:45
@@ -572,7 +551,7 @@
                   <legend>Заказ №25
                   </legend>
                   <form>
-                    <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+                    <div class="float_right ml_mb">
                       <div class="order_type_i pos_right order_card_type_state_small">
                         <i class="fas fa-pencil-alt order_type_i" title="Оригинальная разработка" aria-hidden="true">
                         </i>
@@ -588,7 +567,7 @@
                       <div class = "orders_text_small" href="URL">Настольное приложение
                       </div>
                       <div class="float_right w_55_xs">
-                        <div  class="order_state_pay">Состояние: Оплачено
+                        <div  class="order_state_pay">Оплачено
                         </div>
                         <div class="">
                           <div class = "flex_row flex_space-between">
@@ -638,7 +617,7 @@
                   <legend>Заказ №25
                   </legend>
                   <form>
-                    <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+                    <div class="float_right ml_mb">
                       <div class="order_type_i pos_right order_card_type_state_small">
                         <i class="fas fa-cart-plus order_type_i" title="Купленное ПО" aria-hidden="true">
                         </i>
@@ -654,7 +633,7 @@
                       <div class = "orders_text_small" href="URL">Настольное приложение
                       </div>
                       <div class="float_right w_55_xs">
-                        <div  class="order_state_not_pay">Состояние: Не оплачено
+                        <div  class="order_state_not_pay">Не оплачено
                         </div>
                         <div class="">
                           <div class = "flex_row flex_space-between">
@@ -704,7 +683,7 @@
                   <legend>Заказ №25
                   </legend>
                   <form>
-                    <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+                    <div class="float_right ml_mb">
                       <div class="order_type_i pos_right order_card_type_state_small">
                         <i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true">
                         </i>
@@ -712,7 +691,6 @@
                     </div> 
                     <div class = "pos_left_for_text "> 
                       <div class="order_div_name">
-                        <!-- <div class = "software_price">350 000 000 р</div> -->
                         <!-- Контейнер названия и типа ПО -->
                         <a class = "orders_text_big" href="URL">Автоматизированное кафе для доставки кофе на дом и в офис
                         </a>
@@ -720,7 +698,7 @@
                       <div class = "orders_text_small" href="URL">Настольное приложение
                       </div>
                       <div class="float_right w_55_xs">
-                        <div  class="order_state_dev">Состояние: В разработке
+                        <div  class="order_state_dev">В разработке
                         </div>
                         <div class="">
                           <div class = "flex_row flex_space-between">
@@ -770,7 +748,7 @@
                   <legend>Заказ №25
                   </legend>
                   <form>
-                    <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+                    <div class="float_right ml_mb">
                       <div class="order_type_i pos_right order_card_type_state_small">
                         <i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true">
                         </i>
@@ -786,7 +764,7 @@
                       <div class = "orders_text_small" href="URL">Настольное приложение
                       </div>
                       <div class="float_right width_55">
-                        <div  class="order_state_dev">Состояние: В разработке
+                        <div  class="order_state_dev">В разработке
                         </div>
                         <div class="">
                           <div class = "flex_row flex_space-between">
@@ -836,7 +814,7 @@
                   <legend>Заказ №25
                   </legend>
                   <form>
-                    <div class="float_right" style="margin-left: 0.5em; margin-bottom: 0.5em;">
+                    <div class="float_right ml_mb">
                       <div class="order_type_i pos_right order_card_type_state_small">
                         <i class="fa fa-magic order_type_i" title="Оригинальная разработка" aria-hidden="true">
                         </i>
@@ -852,7 +830,7 @@
                       <div class = "orders_text_small" href="URL">Сайт
                       </div>
                       <div class="float_right width_55">
-                        <div  class="order_state_dev">Состояние: В разработке
+                        <div  class="order_state_dev">В разработке
                         </div>
                         <div class="">
                           <div class = "flex_row flex_space-between">

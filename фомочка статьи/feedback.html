@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название страницы
+    <title>Заказать звонок
     </title>
     <meta name="description" content="Описание страницы" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -10,15 +10,19 @@
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="js/jquery.js">
+    </script>
+    <script type="text/javascript" src="js/javascript.js" charset="UTF-8">
+    </script>
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="header_container_mail_phone">
           <div class="flex_row flex_space-between header_container_m_p_w">
-            <div class="flex_row pos_cen_400">
+            <div class="flex_row pos_cen_headerder">
               <a>
-                <div class="header_i_for_div margin_right_04em disp_none_400">
+                <div class="header_i_for_div margin_right_04em disp_none_header">
                   <i class="far fa-envelope header_i">
                   </i>
                 </div>
@@ -29,8 +33,8 @@
                 </a>
               </div>
             </div>
-            <div class="flex_row pos_cen_400">
-              <div class="header_i_for_div margin_right_04em disp_none_400">
+            <div class="flex_row pos_cen_headerder">
+              <div class="header_i_for_div margin_right_04em disp_none_header">
                 <i class="fas fa-phone-alt header_i">
                 </i>
               </div>
@@ -87,7 +91,7 @@
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
         <div class="header">
-          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em width_70">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -185,7 +189,6 @@
         </ul>
         <div class="    margin_top_2">     
           <!-- Форма комментария -->
-          <!-- <h1>Заказать звонок</h1> -->
           <fieldset class="border_fieldset_top" >
             <legend class="pos_center padding_left-right_1em">
               <h1>Заказать звонок
@@ -194,7 +197,7 @@
             <form>
               <div class = "w_50_sm_70_md pos_center margin_top_3em" class="pos_center">
                 <div class="input_style ">
-                  <input type="text" id="name" required autocomplete="off">
+                  <input type="text" id="name" autocomplete="off">
                   <label for="name">Ваше имя
                   </label>
                 </div>
@@ -203,11 +206,9 @@
                   <label for="email">Номер телефона
                   </label>
                 </div>
-                <!-- <div>	
-&#42;</div> -->
                 <div>
                   <div class="form_group_textarea margin_top_3em">
-                    <textarea class = "form_textarea" type="textarea" rows="5" required="required"></textarea>
+                    <textarea class = "form_textarea" type="textarea" rows="5"></textarea>
                     <label id = "label" class = "form_textarea_label">Опишите свою проблему
                     </label>
                   </div>
@@ -223,10 +224,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="flex_row flex_space-between margin_top_3em">
-<div class="pos_сenter"><a href="#" class="button_reset">Отменить</a></div>
-<div class="pos_сenter"><a href="#" class="button_show-more">Заказать звонок</a></div>
-</div> -->
             </form>
           </fieldset>
         </div>

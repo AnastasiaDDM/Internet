@@ -47,18 +47,22 @@
   height: 24.3em;
   overflow: hidden;
   position: relative;
-  border-width: $border_width;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, $light_blue 0%, transparent 40%, transparent 60%, $light_blue 100%);
-  border-image-slice: 1;
+  // border-width: $border_width;
+  // border-style: solid;
+  // border-image: linear-gradient(to bottom, $light_blue 0%, transparent 40%, transparent 60%, $light_blue 100%);
+  // border-image-slice: 1;
+    // border: solid $border_width $light_blue;
+    border: solid $border_width $light_blue_2;
+    transition: all .4s;
   &:hover {
     // border: .6em solid $light_blue_2;
 
-    // border-image: linear-gradient(to top, $light_blue 100%, transparent 100%, transparent 100%, $light_blue 100%);
-    border-image: linear-gradient(to bottom, $dark_blue 0%, transparent 40%, transparent 60%, $dark_blue 100%);
-  border-image-slice: 1;
+  //   border-image: linear-gradient(to bottom, $dark_blue 0%, transparent 40%, transparent 60%, $dark_blue 100%);
+  // border-image-slice: 1;
   // border: solid $border_width $light_blue;
-    // transition: all .1s;
+    transition: all .4s;
+    // border: solid $border_width $dark_blue;
+    border: solid $border_width $light_blue;
   }
 }
 

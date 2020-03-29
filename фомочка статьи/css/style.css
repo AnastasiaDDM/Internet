@@ -81,10 +81,6 @@
   letter-spacing: 0.1em;
 }
 
-.let_sp_1px {
-  letter-spacing: 1px;
-}
-
 /* background: radial-gradient(#F2B9B3 0.2px, transparent 0.9px); */
 /* background-size: 20px 20px; */
 /* background-image:  */
@@ -133,6 +129,10 @@
 .blue_bg {
   /*  ЦВЕТ !!!!!!!!!!! */
   background-color: #F0F8FF;
+}
+
+.blue_bg:hover {
+  background-color: #f9fcff;
 }
 
 .img_width {
@@ -234,6 +234,10 @@ a:hover {
 
 .pos_right_for_text {
   text-align: right;
+}
+
+.align_self_end {
+  align-self: flex-end;
 }
 
 .width_100 {
@@ -470,6 +474,10 @@ a:hover {
   .w_45_xs {
     width: 100%;
   }
+}
+
+.w_45_sm {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -834,6 +842,11 @@ legend h1 {
   font-size: 1.5em;
 }
 
+.ml_mb {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .header_pers_menu {
   background-color: #fdf9f9;
 }
@@ -1145,7 +1158,7 @@ legend h1 {
 
 .main_banner:hover {
   background: #F0F8FF;
-  box-shadow: 0 0 10px 10px #F0F8FF;
+  box-shadow: 0 0 3px 4px #F0F8FF;
   transition: .2s ease;
 }
 
@@ -1320,7 +1333,7 @@ legend h1 {
 
 .main_contact_title_div {
   background-color: #eff3fd;
-  box-shadow: 0 0 10px 10px #eff3fd;
+  box-shadow: 0 0 3px 4px #eff3fd;
 }
 
 .main_bg_img {
@@ -1655,7 +1668,7 @@ legend h1 {
 .reviews_text {
   padding-top: .2em;
   overflow: hidden;
-  max-height: 19.1em;
+  max-height: 18.1em;
   line-height: 180%;
 }
 
@@ -2083,66 +2096,9 @@ legend h1 {
   transition: 0.6s;
 }
 
-.checkbox {
-  display: flex;
-  align-items: center;
-  user-select: none;
-}
-
-.checkbox label {
-  position: absolute;
-  z-index: 10;
-  padding-left: 50px;
-  cursor: pointer;
-}
-
-.checkbox input {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-}
-
-.checkbox input:checked ~ .checkbox_options {
-  border-color: #7EB9BF;
-  box-shadow: 0px 0px 0px 15px #7EB9BF inset;
-}
-
-.checkbox input:checked ~ .checkbox_options::after {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.checkbox .checkbox_options {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border-radius: 100px;
-  background-color: #FFF;
-  border: 2px solid #7EB9BF;
-  box-shadow: 0px 0px 0px 0px #7EB9BF inset;
-  transition: all 0.3s cubic-bezier(0, 1.05, 0.72, 1.07);
-}
-
-.checkbox .checkbox_options::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 4;
-  position: absolute;
-  transform: scale(0);
-  background-size: 50%;
-  transition-delay: 0.3s !important;
-  transition: all 0.3s cubic-bezier(0, 1.05, 0.72, 1.07);
-}
-
 .radio_checkbox {
   padding: 0;
   list-style: none;
-  max-width: 320px;
   text-align: left;
 }
 
@@ -2221,7 +2177,6 @@ legend h1 {
   .radio_checkbox input[type='checkbox'] + label,
   .radio_checkbox input[type='radio'] + label {
     line-height: 21px;
-    display: inline-block;
     vertical-align: top;
     cursor: pointer;
     margin-left: 4px;
@@ -2740,15 +2695,13 @@ legend h1 {
   height: 24.3em;
   overflow: hidden;
   position: relative;
-  border-width: 0.1em;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, #7EB9BF 0%, transparent 40%, transparent 60%, #7EB9BF 100%);
-  border-image-slice: 1;
+  border: solid 0.1em #F0F8FF;
+  transition: all .4s;
 }
 
 .software_alone_container:hover {
-  border-image: linear-gradient(to bottom, #207D90 0%, transparent 40%, transparent 60%, #207D90 100%);
-  border-image-slice: 1;
+  transition: all .4s;
+  border: solid 0.1em #7EB9BF;
 }
 
 .software_name {
@@ -3004,7 +2957,7 @@ legend h1 {
 }
 
 .contact_img {
-  width: 50%;
+  width: 40%;
 }
 
 .contact_i {
@@ -3162,7 +3115,7 @@ legend h1 {
 }
 
 .chat_comment_bubble_right {
-  background: #DAF3F5;
+  background: #F0F8FF;
   position: relative;
   border-radius: 16px;
   margin-right: 2em;
@@ -3177,7 +3130,7 @@ legend h1 {
   width: 0;
   height: 0;
   border-top: 12px solid transparent;
-  border-left: 18px solid #DAF3F5;
+  border-left: 18px solid #F0F8FF;
   border-bottom: 12px solid transparent;
 }
 
@@ -3427,6 +3380,10 @@ input[type="password"] {
   -webkit-transition: 300ms ease all;
   transition: 300ms ease all;
   line-height: 0px;
+}
+
+.textarea_height_small {
+  height: 3em;
 }
 
 .footer_container {
@@ -4024,14 +3981,14 @@ input[type="password"] {
     margin: 0em auto;
     padding-top: 1.5em;
   }
-  .pos_cen_400 {
+  .pos_cen_header {
     margin: 0em auto;
     width: 100%;
   }
-  .pos_cen_400:nth-child(2) {
+  .pos_cen_header:nth-child(2) {
     padding-top: 1.5em;
   }
-  .disp_none_400 {
+  .disp_none_header {
     display: none;
   }
 }

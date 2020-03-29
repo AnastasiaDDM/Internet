@@ -15,7 +15,6 @@
     <link href="css/datepicker.css" rel="stylesheet" type="text/css">
     <script src="js/datepicker.min.js"></script>
 
-    <!-- Include English language -->
     <script src="js/datepicker.ru.js"></script>
 
     <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
@@ -26,9 +25,9 @@
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="header_container_mail_phone">
           <div class="flex_row flex_space-between header_container_m_p_w">
-            <div class="flex_row pos_cen_400">
+            <div class="flex_row pos_cen_header">
               <a>
-                <div class="header_i_for_div margin_right_04em disp_none_400">
+                <div class="header_i_for_div margin_right_04em disp_none_header">
                   <i class="far fa-envelope header_i">
                   </i>
                 </div>
@@ -39,8 +38,8 @@
                 </a>
               </div>
             </div>
-            <div class="flex_row pos_cen_400">
-              <div class="header_i_for_div margin_right_04em disp_none_400">
+            <div class="flex_row pos_cen_header">
+              <div class="header_i_for_div margin_right_04em disp_none_header">
                 <i class="fas fa-phone-alt header_i">
                 </i>
               </div>
@@ -97,7 +96,7 @@
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
         <div class="header">
-          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em width_70">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -192,7 +191,6 @@
 
         <section class="margin_top_2">
           <div class="software_container_width"> 
-            <!-- <div class="search_title">Фильтр <a class="search_roll-up">Развернуть ↓</a></div> -->
 
             <div class="search_title">Фильтр <a id = "search_roll_up" class="search_roll-up search_disp_r_u">Свернуть <i class="fas fa-arrow-up"></i></a>
               <a id = "search_roll_down" class="search_roll-up search_disp_r_d" ">Развернуть <i class="fas fa-arrow-down"></i></a></div>
@@ -203,7 +201,6 @@
         
                  <fieldset class="fieldset_border_primary" name="fieldset" >
                   <form>
-                    <!-- <div class="flex_column"> -->
         
         
         
@@ -235,6 +232,12 @@
                         </div>
                         </div>
                       
+                        <div class="flex_row flex_space-between margin_top_1em">
+                          <input class="slct" type="number" min="0" style="width: calc(100% - 75px);" placeholder="Перейти на страницу...">
+                          <div class="">
+                            <a type="button" style="width: 25px;" class="button_delicate pos_center"><i class="fas fa-arrow-right"></i></a>
+                          </div>
+                        </div>
         
                   </form>
                  </fieldset>
@@ -248,7 +251,7 @@
         
         
                     <div class="input_style ">
-                      <input type="text" id="email" required autocomplete="off"><label for="email">Наименование ПО</label>
+                      <input type="text" id="email" autocomplete="off"><label for="email">Наименование ПО</label>
                     </div>
         
                     <div class="margin_top-bootom_1em pos_right_for_div"><a href="#" class="button_search ">Поиск</a></div> 
@@ -274,10 +277,10 @@
 
             <div class=" flex_row flex_space-between">
               <div class ="width_45 input_style" >
-                <input type="text" id="pricefrom" required autocomplete="off"><label for="pricefrom">Цена от:</label>
+                <input type="text" id="pricefrom" autocomplete="off"><label for="pricefrom">Цена от:</label>
               </div>
               <div class ="width_45 input_style" >
-                <input type="text" id="priceto" required autocomplete="off"><label for="priceto">Цена до:</label>
+                <input type="text" id="priceto" autocomplete="off"><label for="priceto">Цена до:</label>
               </div>            
             </div>
         
@@ -414,38 +417,7 @@
                       </li>
                     </ul>   
                   </fieldset>
-        
-        
-        <!-- <div>
-          <p>
-            <label for="amount">Price range:</label>
-            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-          </p>
-          
-        </div>
-                      <div id="slider-range"></div>
-        
-        
-                      <script>
-                        $( function() {
-                          $( "#slider-range" ).slider({
-                            range: true,
-                            min: 0,
-                            max: 500,
-                            values: [ 75, 300 ],
-                            slide: function( event, ui ) {
-                              $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-                            }
-                          });
-                          $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-                            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-                        } );
-                        </script> -->
-        
-        
-        
-        
-        
+
                   </div>
           
                   <div class="flex_row flex_space-between">
@@ -544,7 +516,7 @@
         
                <div class="software_column-2 catalog_card_software"> 
                   <!-- Бокс одной карточки --> 
-                  <article class="flex_column software_alone_container "> 
+                  <article class="flex_column software_alone_container blue_bg"> 
                     <!-- Контейнер одной карточки --> 
         
                     <div class = "flex_column width_100"> 
@@ -639,7 +611,7 @@
         
                 <div class="software_column-2 catalog_card_software"> 
                   <!-- Бокс одной карточки --> 
-                  <article class="flex_column software_alone_container "> 
+                  <article class="flex_column software_alone_container blue_bg"> 
                     <!-- Контейнер одной карточки --> 
         
                     <div class = "flex_column width_100"> 
@@ -730,7 +702,7 @@
                 </div>
                <div class="software_column-2"> 
                   <!-- Бокс одной карточки --> 
-                  <article class="flex_column software_alone_container "> 
+                  <article class="flex_column software_alone_container blue_bg"> 
                     <!-- Контейнер одной карточки --> 
         
                     <div class = "flex_column width_100"> 
@@ -821,7 +793,7 @@
                 
               <div class="software_column-2"> 
                 <!-- Бокс одной карточки --> 
-                <article class="flex_column software_alone_container "> 
+                <article class="flex_column software_alone_container blue_bg"> 
                   <!-- Контейнер одной карточки --> 
         
                   <div class = "flex_column width_100"> 
@@ -909,7 +881,7 @@
               </div>
              <div class="software_column-2"> 
                 <!-- Бокс одной карточки --> 
-                <article class="flex_column software_alone_container "> 
+                <article class="flex_column software_alone_container blue_bg"> 
                   <!-- Контейнер одной карточки --> 
         
                   <div class = "flex_column width_100"> 

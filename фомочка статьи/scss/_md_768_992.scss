@@ -216,14 +216,14 @@
         margin: 0em auto;
         padding-top: 1.5em;
     }
-    .pos_cen_400 {
+    .pos_cen_header {
         margin: 0em auto;
         width: 100%;
         &:nth-child(2){
             padding-top: 1.5em;
         }
     }
-    .disp_none_400 {
+    .disp_none_header {
         display: none;
     }
 }

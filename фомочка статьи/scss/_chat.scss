@@ -122,7 +122,7 @@
                 }
             }
             &_right {
-                background: $light_blue_1;
+                background: $light_blue_2;
                 position: relative;
                 // -moz-border-radius: 10px;
                 // -webkit-border-radius: 10px;
@@ -137,7 +137,7 @@
                     width: 0;
                     height: 0;
                     border-top: 12px solid transparent;
-                    border-left: 18px solid $light_blue_1;
+                    border-left: 18px solid $light_blue_2;
                     border-bottom: 12px solid transparent;
                 }
             }

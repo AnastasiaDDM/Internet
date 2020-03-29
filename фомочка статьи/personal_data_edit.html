@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название страницы
+    <title>Редактирование личных данных
     </title>
     <meta name="description" content="Описание страницы" />
     <script src="https://use.fontawesome.com/65da41867f.js">
@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
-    <script src="js/jquery.js">
-    </script>
     <script src="js/jquery.js">
     </script>
     <link href="css/datepicker.css" rel="stylesheet" type="text/css">
@@ -29,9 +27,9 @@
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="header_container_mail_phone">
           <div class="flex_row flex_space-between header_container_m_p_w">
-            <div class="flex_row pos_cen_400">
+            <div class="flex_row pos_cen_header">
               <a>
-                <div class="header_i_for_div margin_right_04em disp_none_400">
+                <div class="header_i_for_div margin_right_04em disp_none_header">
                   <i class="far fa-envelope header_i">
                   </i>
                 </div>
@@ -42,8 +40,8 @@
                 </a>
               </div>
             </div>
-            <div class="flex_row pos_cen_400">
-              <div class="header_i_for_div margin_right_04em disp_none_400">
+            <div class="flex_row pos_cen_header">
+              <div class="header_i_for_div margin_right_04em disp_none_header">
                 <i class="fas fa-phone-alt header_i">
                 </i>
               </div>
@@ -100,7 +98,7 @@
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
         <div class="header">
-          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em width_70">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -257,7 +255,7 @@
                   </label>
                 </div>
                 <div class="input_style_edit ">
-                  <input type="text" id="phone_2" required autocomplete="off" value="8-901-666-61-61">
+                  <input type="text" id="phone_2" autocomplete="off" value="8-901-666-61-61">
                   <label for="phone_2"
                          >Запасной телефон
                   </label>
@@ -269,19 +267,18 @@
                   </label>
                 </div>
                 <div class="input_style_edit ">
-                  <input type="text" id="soc" required autocomplete="off" value="https://vk.com/dmitrievnaa1999">
+                  <input type="text" id="soc" autocomplete="off" value="https://vk.com/dmitrievnaa1999">
                   <label for="soc"
                          >Электронная почта
                   </label>
                 </div>
               </div>
             </div>
-            <div class="checkbox pos_center_for_div w_70_sm padding_top_2em margin_bottom_1em">
-              <input id="one" type="checkbox">
-              <span class="checkbox_options">
-              </span>
-              <label for="one">Подписаться на рассылку новинок по электронной почте
-              </label>
+            <div class="radio_checkbox pos_center_for_div w_70_sm margin_bottom_1em margin_top_2">
+              <li>
+                <input id="c" type="checkbox">
+                <label for="c">Подписаться на рассылку новинок по электронной почте</label>
+              </li>
             </div>
           </div>
           <div class="pos_center_for_div padding_bottom_2em padding_top_2em">

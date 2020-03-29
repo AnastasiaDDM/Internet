@@ -12,7 +12,8 @@
     transition-delay: .2s;
     &:hover {
         background: $light_blue_2;
-        box-shadow: 0 0 10px 10px $light_blue_2;
+        // box-shadow: 0 0 10px 10px $light_blue_2;
+        box-shadow: 0 0 3px 4px $light_blue_2;
         transition: .2s ease; 
     }
     &_order {
@@ -193,7 +194,9 @@
                 background-color: #eff3fd;
                 // border-right:solid $border_width $light_blue;
                 // border-left:solid $border_width $light_blue;
-                box-shadow: 0 0 10px 10px #eff3fd;
+                // box-shadow: 0 0 10px 10px #eff3fd;
+
+                box-shadow: 0 0 3px 4px #eff3fd;
             }
         }
     }

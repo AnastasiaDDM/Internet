@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название страницы
+    <title>Отзывы
     </title>
     <meta name="description" content="Описание страницы" />
     <script src="https://use.fontawesome.com/65da41867f.js">
@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script src="js/jquery.js">
-    </script>
     <script src="js/jquery.js">
     </script>
     <link href="css/datepicker.css" rel="stylesheet" type="text/css">
@@ -29,9 +27,9 @@
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="header_container_mail_phone">
           <div class="flex_row flex_space-between header_container_m_p_w">
-            <div class="flex_row pos_cen_400">
+            <div class="flex_row pos_cen_header">
               <a>
-                <div class="header_i_for_div margin_right_04em disp_none_400">
+                <div class="header_i_for_div margin_right_04em disp_none_header">
                   <i class="far fa-envelope header_i">
                   </i>
                 </div>
@@ -42,8 +40,8 @@
                 </a>
               </div>
             </div>
-            <div class="flex_row pos_cen_400">
-              <div class="header_i_for_div margin_right_04em disp_none_400">
+            <div class="flex_row pos_cen_header">
+              <div class="header_i_for_div margin_right_04em disp_none_header">
                 <i class="fas fa-phone-alt header_i">
                 </i>
               </div>
@@ -100,7 +98,7 @@
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
         <div class="header">
-          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em width_70">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -184,7 +182,6 @@
         </div>
       </div>
     </header>
-
     <main>
       <section>
         <h1>Отзывы
@@ -208,33 +205,18 @@
           </div>
           <fieldset class="fieldset_border_primary"  name="fieldset">
             <form>
-              <!-- <div class="margin_left-right_1em"> -->
-              <!-- <legend>Поиск:</legend> -->
-              <!-- <div class="flex_column"> -->
               <div class="flex_row flex_space-between">
-                <!-- <div  class="flex_row  pos_center">
-<div class="">
-<input  type="date" class="input_middle">
-</div> 	
-&#8212
-<div class="padding_left_2em">
-<input type="date" class="input_middle">
-</div>
-</div> -->
-                <div  class="flex_row flex_space-between margin_top_1em w_45_sm">
-                  <!-- <div>Дата:</div> -->
-                  <div class="div_datepic">
+                <div  class="flex_row flex_space-between margin_bottom_1em w_45_sm">
+                  <div class="div_datepic flex_column">
+                    <div>Дата от: </div>
                     <input  type="text" class=" slct_div slct search_datepicker">
-                  </div> 	
-                  &#8212  
-                  <div class="div_datepic">
+                  </div>
+                  <div class="div_datepic flex_column">
+                    <div>Дата до: </div>
                     <input type="text" class=" slct_div slct search_datepicker">
                   </div>
-                  <!-- <div class=" flex_row"><p>Дата от: </p><input  type="text" class="input_middle slct_div slct search_datepicker"></div> 	
-&#8212
-<div class=" flex_row"><p>до: </p><input type="text" class="input_middle slct_div slct search_datepicker"></div> -->
                 </div>
-                <div class="slct_div w_50_sm margin_top_1em">
+                <div class="slct_div w_50_sm align_self_end margin_bottom_1em">
                   <a href="javascript:void(0);" class="slct">Тип продукта:
                   </a>
                   <ul class="drop">
@@ -291,6 +273,39 @@
               </div>
             </form>
           </fieldset>
+          <fieldset class="fieldset_border_primary margin_top_1em" name="fieldset" >
+            <form>
+                <div class = "flex_row ">
+                  <div class=" slct_div column-3">
+                    <a href="javascript:void(0);" class="slct">По</a>
+                    <ul class="drop ">
+                      <li><a>4</a></li>
+                      <li><a>6</a></li>
+                      <li><a>10</a></li>
+                      <li><a>12</a></li>
+                    </ul>
+                    <input type="hidden" id="select">
+                  </div>
+                  <div class="slct_div column-3">
+                    <a href="javascript:void(0);" class="slct">Сортировать:</a>
+                    <ul class="drop">
+                      <li><a>Все</a></li>
+                      <li><a>Популярное</a></li>
+                      <li><a>Новое</a></li>
+                      <li><a>&#8657 по размеру</a></li>
+                      <li><a>&#8659 по размеру</a></li>
+                    </ul>
+                    <input type="hidden" id="select">
+                  </div>
+                  <div class="flex_row column-3">
+                    <input class="slct" type="number" min="0" style="width: calc(100% - 75px);" placeholder="Перейти на страницу...">
+                    <div class="">
+                      <a type="button" style="width: 25px;" class="button_delicate pos_center"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                  </div>
+            </form>
+           </fieldset>
         </div>
         <section class="flex_row article_container padding_bottom_2em padding_top_2em"> 
           <!-- Контейнер для всех карточек --> 
@@ -301,17 +316,6 @@
                   <div class="flex_column width_30 review_img_big_disp"> 
                     <!--фото ПО и теги(которые потом в мобилке будут убираться)-->
                     <img  class = "img_width " src="images/rewiew.jpg" alt="Расписание"/>
-                    <!-- <div class="flex_row flex_space-between">
-<div class = "img_width_calc">
-<img class = "img_width_calc"  src="images/rewiew.jpg" alt="Расписание"/>
-</div>
-<div class = "img_width_calc">
-<img  class = "img_width_calc" src="images/rewiew.jpg" alt="Расписание"/>
-</div>
-<div class = "img_width_calc">
-<img class = "img_width_calc"  src="images/rewiew.jpg" alt="Расписание"/>
-</div>
-</div> -->
                     <div class="flex_row  margin_top-bootom_1em" >
                       <div class = " chat_img_margin_between">
                         <img class = "reviews_img cursor"  src="images/rewiew.jpg" alt="Расписание"/>
@@ -325,10 +329,6 @@
                       <div class = "chat_img_margin_between">
                         <img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/>
                       </div>
-                      <!-- <div class = " chat_img_margin_between"><img class = "reviews_img cursor"  src="images/rewiew.jpg" alt="Расписание"/></div>
-<div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div>
-<div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div>
-<div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div> -->
                     </div>
                   </div>
                   <div class="flex_row  margin_top-bootom_1em review_img_small_disp" >
@@ -400,17 +400,6 @@
                   <div class="flex_column width_30 review_img_big_disp"> 
                     <!--фото ПО и теги(которые потом в мобилке будут убираться)-->
                     <img  class = "img_width " src="images/rewiew.jpg" alt="Расписание"/>
-                    <!-- <div class="flex_row flex_space-between">
-<div class = "img_width_calc">
-<img class = "img_width_calc"  src="images/rewiew.jpg" alt="Расписание"/>
-</div>
-<div class = "img_width_calc">
-<img  class = "img_width_calc" src="images/rewiew.jpg" alt="Расписание"/>
-</div>
-<div class = "img_width_calc">
-<img class = "img_width_calc"  src="images/rewiew.jpg" alt="Расписание"/>
-</div>
-</div> -->
                     <div class="flex_row  margin_top-bootom_1em" >
                       <div class = " chat_img_margin_between">
                         <img class = "reviews_img cursor"  src="images/rewiew.jpg" alt="Расписание"/>
@@ -424,10 +413,6 @@
                       <div class = "chat_img_margin_between">
                         <img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/>
                       </div>
-                      <!-- <div class = " chat_img_margin_between"><img class = "reviews_img cursor"  src="images/rewiew.jpg" alt="Расписание"/></div>
-<div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div>
-<div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div>
-<div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div> -->
                     </div>
                   </div>
                   <div class="flex_row  margin_top-bootom_1em review_img_small_disp" >
@@ -499,17 +484,6 @@
                   <div class="flex_column width_30 review_img_big_disp"> 
                     <!--фото ПО и теги(которые потом в мобилке будут убираться)-->
                     <img  class = "img_width " src="images/rewiew.jpg" alt="Расписание"/>
-                    <!-- <div class="flex_row flex_space-between">
-<div class = "img_width_calc">
-<img class = "img_width_calc"  src="images/rewiew.jpg" alt="Расписание"/>
-</div>
-<div class = "img_width_calc">
-<img  class = "img_width_calc" src="images/rewiew.jpg" alt="Расписание"/>
-</div>
-<div class = "img_width_calc">
-<img class = "img_width_calc"  src="images/rewiew.jpg" alt="Расписание"/>
-</div>
-</div> -->
                     <div class="flex_row  margin_top-bootom_1em" >
                       <div class = " chat_img_margin_between">
                         <img class = "reviews_img cursor"  src="images/rewiew.jpg" alt="Расписание"/>
@@ -523,10 +497,6 @@
                       <div class = "chat_img_margin_between">
                         <img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/>
                       </div>
-                      <!-- <div class = " chat_img_margin_between"><img class = "reviews_img cursor"  src="images/rewiew.jpg" alt="Расписание"/></div>
-<div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div>
-<div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div>
-<div class = "chat_img_margin_between"><img  class = "reviews_img cursor" src="images/rewiew.jpg" alt="Расписание"/></div> -->
                     </div>
                   </div>
                   <div class="flex_row  margin_top-bootom_1em review_img_small_disp" >

@@ -2,31 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название страницы
+    <title>Обсуждение
     </title>
     <meta name="description" content="Описание страницы" />
-    <!--script src="https://use.fontawesome.com/65da41867f.js"></script-->
-    <!--link rel="stylesheet" type="text/css" href="normalize.css">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="stylesheet" type="text/css" href="stprostoi.css"-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--link href="bxslider-4-4.2.12/dist/jquery.bxslider.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
-<script src="bxslider-4-4.2.12/dist/jquery.bxslider.js"></script-->
+    <script src="js/jquery.js">
+    </script>
+    <script type="text/javascript" src="js/javascript.js" charset="UTF-8">
+    </script>
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="header_container_mail_phone">
           <div class="flex_row flex_space-between header_container_m_p_w">
-            <div class="flex_row pos_cen_400">
+            <div class="flex_row pos_cen_header">
               <a>
-                <div class="header_i_for_div margin_right_04em disp_none_400">
+                <div class="header_i_for_div margin_right_04em disp_none_header">
                   <i class="far fa-envelope header_i">
                   </i>
                 </div>
@@ -37,8 +33,8 @@
                 </a>
               </div>
             </div>
-            <div class="flex_row pos_cen_400">
-              <div class="header_i_for_div margin_right_04em disp_none_400">
+            <div class="flex_row pos_cen_header">
+              <div class="header_i_for_div margin_right_04em disp_none_header">
                 <i class="fas fa-phone-alt header_i">
                 </i>
               </div>
@@ -95,7 +91,7 @@
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
         <div class="header">
-          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em width_70">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -204,7 +200,6 @@
             <h2>Интересен продукт, о котором создано обсуждение?
             </h2> 
           </div>
-          <!-- <div class=""><a href="#" class="button_show-more">Я тоже хочу оставить отзыв</a></div> -->
         </div>
         <div class="reviews_soft_full">Посмотри его прямо сейчас: 
           <a href="/software.html" class="link_style_col_bor margin_left_05em">
@@ -212,7 +207,6 @@
           </a>
         </div>
         <div class="padding_top_2em">
-          <!-- <div class="pos_center padding_top_2em"><h2>Обсуждения данного продукта</h2></div> -->
           <div class="margin_top_3em">      
             <!-- Контейнер обсуждений и формы -->
             <div>      
@@ -245,6 +239,42 @@
                   <a class="link_style_border">Комментарии (10)
                   </a>
                 </div>
+
+                <div class=" flex_column pos_center margin_top_1em width_100">     
+                  <!-- Форма комментария -->
+                  <h3>Ответ
+                  </h3>
+                  <fieldset class=" border_fieldset_top main_block_bg padding_2em_xs">
+                    <form>
+                      <div class="pos_center">
+                        <div class="flex_row flex_space-between">
+                          <div class="input_style w_45_sm">
+                            <input type="text" id="name" autocomplete="off">
+                            <label for="name">Ваше имя
+                            </label>
+                          </div>
+                          <div class="input_style w_45_sm">
+                            <input type="text" id="email" required autocomplete="off">
+                            <label for="email">Номер телефона/ эл.почта
+                            </label>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="form_group_textarea margin_top_3em">
+                            <textarea class = "form_textarea textarea_height_small" type="textarea"></textarea>
+                            <label id = "label" class = "form_textarea_label">Ваш комментарий
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pos_сenter">
+                        <a href="#" class="button_reset">Оставить комментарий
+                        </a>
+                      </div>
+                    </form>
+                  </fieldset>
+                </div>
+
                 <div class ="discussion_comment pos_right">      
                   <!-- комментарии к обсуждению -->
                   <div  class="discussion_comment_one flex_column  ">
@@ -308,7 +338,6 @@
                     <a class="search_roll-up">Свернуть ↑
                     </a>
                   </div>
-                  <!-- <div class="pos_left_for_div margin_top-bootom_1em"><a href="#" class="button_reset">Свернуть</a></div> -->
                 </div>
               </div>
               <div class="discussion flex_column pos_center_for_div">      
@@ -408,7 +437,6 @@
                     <a class="search_roll-up">Свернуть ↑
                     </a>
                   </div>
-                  <!-- <div class="pos_left_for_div margin_top-bootom_1em"><a href="#" class="button_reset">Свернуть</a></div> -->
                 </div>
               </div>
               <div class="discussion flex_column pos_center_for_div">      
@@ -453,7 +481,7 @@
                 <form>
                   <div class="pos_center w_70_xl">
                     <div class="input_style ">
-                      <input type="text" id="name" required autocomplete="off">
+                      <input type="text" id="name" autocomplete="off">
                       <label for="name">Ваше имя
                       </label>
                     </div>
@@ -462,11 +490,6 @@
                       <label for="email">Номер телефона/ эл.почта
                       </label>
                     </div>
-                    <!-- <div class="input_style">
-<label for="comment">Ваш комментарий</label>
-<textarea rows="3" cols="40"  id="comment" placeholder  = "Ваш комментарий">
-</textarea>
-</div-->
                     <div>
                       <div class="form_group_textarea margin_top_3em">
                         <textarea class = "form_textarea" type="textarea" rows="5" required="required"></textarea>
@@ -474,14 +497,6 @@
                         </label>
                       </div>
                     </div>
-                    <!--div class="input_style">
-<label for="address">Адрес</label>
-<textarea rows="3" id="address" required></textarea>
-</div> -->
-                    <!-- <div class="group">
-<label class = "label" for="comment">Ваш комментарий</label>
-<textarea class= "textarea_style bar" rows="3" cols="40"  id="comment" placeholder  = "Ваш комментарий">
-</textarea> -->
                   </div>
                   <div class="pos_сenter">
                     <a href="#" class="button_reset">Оставить комментарий
@@ -542,7 +557,6 @@
                         <li class="widget_marker">Контроль доходов и расходов
                         <li class="widget_marker">Мониторинг деятельности компании
                       </ul>
-                      <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
                     </div>
                     <button class="width_100 software_button-pay_style ">Скачать бесплатно
                     </button>
@@ -563,7 +577,6 @@
                         <li class="widget_marker">Контроль доходов и расходов
                         <li class="widget_marker">Мониторинг деятельности компании
                       </ul>
-                      <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
                     </div>
                     <button class="width_100 software_button-pay_style ">Скачать бесплатно
                     </button>
@@ -584,7 +597,6 @@
                         <li class="widget_marker">Контроль доходов и расходов
                         <li class="widget_marker">Мониторинг деятельности компании
                       </ul>
-                      <!-- <a class = "widget_div_text" href="URL">Автоматизируй образование!</a> -->
                     </div>
                     <button class="width_100 software_button-pay_style ">Скачать бесплатно
                     </button>

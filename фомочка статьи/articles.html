@@ -25,9 +25,9 @@
       <div class="flex_row header-top_container header-top_border flex_space-between">
         <div class="header_container_mail_phone">
           <div class="flex_row flex_space-between header_container_m_p_w">
-            <div class="flex_row pos_cen_400">
+            <div class="flex_row pos_cen_header">
               <a>
-                <div class="header_i_for_div margin_right_04em disp_none_400">
+                <div class="header_i_for_div margin_right_04em disp_none_header">
                   <i class="far fa-envelope header_i">
                   </i>
                 </div>
@@ -38,8 +38,8 @@
                 </a>
               </div>
             </div>
-            <div class="flex_row pos_cen_400">
-              <div class="header_i_for_div margin_right_04em disp_none_400">
+            <div class="flex_row pos_cen_header">
+              <div class="header_i_for_div margin_right_04em disp_none_header">
                 <i class="fas fa-phone-alt header_i">
                 </i>
               </div>
@@ -96,7 +96,7 @@
       </div>
       <div class="flex_row header-bottom flex_space-between flex_wrap">
         <div class="header">
-          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em" style="width: 70%;">
+          <div class="flex_row flex_justify-content_flex-start logo margin_bottom_1em width_70">
             <div class="header-logo">
               <a href="/main.html">
                 <img class="logo" href="/main.html" src="icons/logo.png" alt="Название сайта"/>
@@ -153,7 +153,7 @@
         <div class="flex_row header_navbar header_disp_none">
           <ul>
             <li>
-              <a  class = "header_navbar_active" title="О компании" href="/aboutcompany.html">О&nbsp;компании
+              <a title="О компании" href="/aboutcompany.html">О&nbsp;компании
               </a>
             </li>
             <li>
@@ -161,7 +161,7 @@
               </a>
             </li>
             <li>
-              <a title="Статьи" href="/articles.html">Статьи
+              <a  class = "header_navbar_active" title="Статьи" href="/articles.html">Статьи
               </a>
             </li>
             <li>
@@ -202,19 +202,19 @@
           <form>
             <div class="flex_row flex_space-between">
               <div class="input_style w_45_xs">
-                <input type="text" id="author" required autocomplete="off">
+                <input type="text" id="author" autocomplete="off">
                 <label for="author">Автор
                 </label>
               </div>
               <div class="input_style w_45_xs">
-                <input type="text" id="article_name" required autocomplete="off">
+                <input type="text" id="article_name" autocomplete="off">
                 <label for="article_name">Название
                 </label>
               </div>
             </div>
             <div class="flex_row flex_space-between padding_top-bootom_1em ">
               <div class="input_style w_45_xs">
-                <input type="text" id="keyword" required autocomplete="off">
+                <input type="text" id="keyword" autocomplete="off">
                 <label for="keyword">Ключевые слова
                 </label>
               </div>
@@ -240,6 +240,39 @@
             </div>
           </form>
         </fieldset>
+        <fieldset class="fieldset_border_primary margin_top_1em" name="fieldset" >
+          <form>
+              <div class = "flex_row ">                  
+                <div class=" slct_div column-3">
+                  <a href="javascript:void(0);" class="slct">По</a>
+                  <ul class="drop ">
+                    <li><a>4</a></li>
+                    <li><a>6</a></li>
+                    <li><a>10</a></li>
+                    <li><a>12</a></li>
+                  </ul>
+                  <input type="hidden" id="select">
+                </div>
+                <div class="slct_div column-3">
+                  <a href="javascript:void(0);" class="slct">Сортировать:</a>
+                  <ul class="drop">
+                    <li><a>Все</a></li>
+                    <li><a>Популярное</a></li>
+                    <li><a>Новое</a></li>
+                    <li><a>&#8657 по размеру</a></li>
+                    <li><a>&#8659 по размеру</a></li>
+                  </ul>
+                  <input type="hidden" id="select">
+                </div>
+                <div class="flex_row column-3">
+                  <input class="slct" type="number" min="0" style="width: calc(100% - 75px);" placeholder="Перейти на страницу...">
+                  <div class="">
+                    <a type="button" style="width: 25px;" class="button_delicate pos_center"><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+                </div>
+          </form>
+         </fieldset>
       </div>
       <div>
         <section class="flex_row article_container padding_bottom_2em"> 

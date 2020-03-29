@@ -85,7 +85,6 @@
 
 
 .let_sp_01em {letter-spacing: 0.1em; }
-.let_sp_1px {letter-spacing: 1px; }
 
 
 
@@ -171,7 +170,10 @@
 
 .blue_bg {                                                         /*  ЦВЕТ !!!!!!!!!!! */
 //  background-color: #F0F8FF;	
-background-color: $light_blue_2;
+	background-color: $light_blue_2;
+	&:hover {
+		background-color: $light_blue_2_light;
+	}
 }
 
 // .blue_bg {                                                         /*  ЦВЕТ !!!!!!!!!!! */
@@ -291,6 +293,10 @@ color: $gray;
 
 .pos_right_for_text {
 	text-align: right;
+}
+
+.align_self_end {
+	align-self: flex-end;
 }
 
 .width_100 {
@@ -472,6 +478,7 @@ color: $gray;
 }
 
 .w_45_sm {
+	width: 100%;
 	@media (min-width: 768px) { 
 		width: 45%;
 	}
@@ -757,4 +764,13 @@ ul.breadcrumb li {
 
 legend h1 {
 	font-size: 1.5em;
+}
+
+
+
+
+
+
+.ml_mb {
+	margin-left: 0.5em; margin-bottom: 0.5em;
 }
