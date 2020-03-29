@@ -3981,11 +3981,11 @@ input[type="password"] {
     margin: 0em auto;
     padding-top: 1.5em;
   }
-  .pos_cen_header {
+  .header_contact_center {
     margin: 0em auto;
     width: 100%;
   }
-  .pos_cen_header:nth-child(2) {
+  .header_contact_center:nth-child(2) {
     padding-top: 1.5em;
   }
   .disp_none_header {
