@@ -1,0 +1,49 @@
+.page_software_price{
+    @include price;
+    }
+
+@mixin mix_button_pay {
+
+    text-decoration: none;
+      outline: none;
+      display: inline-block;
+
+      position: relative;
+      color: white;
+      border: $border_width solid rgba(255,255,255,.4);
+      background: $dark_blue;
+      font-weight: 300;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: .2s ease; 
+
+
+
+      &:hover { 
+        color: #fff; /* цвет текста */
+        background:$light_blue; 
+        transition: .1s ease; 
+    } /* при наведении курсора мышки */
+    &:active { 
+        color: #fff; /* цвет текста */
+        background: $dark_blue_too 
+    } /* при нажатии */
+
+}
+
+.page_software_description {
+    padding: 1em 0em;
+    text-align: left;
+    overflow: hidden;
+    &_full {
+        padding: 1em 0em;
+        text-align: left;
+        // overflow: none;
+        // height: 5.9em;
+    }
+}
+.page_software_slider_float {
+    @include float_left;
+}

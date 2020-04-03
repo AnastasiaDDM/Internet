@@ -1,0 +1,23 @@
+.discussion {
+    width: 70%;
+    &:nth-child(n+2) {
+        margin-top: 2em;
+
+        }
+    &_text {
+        padding: .7em 0em;
+        border-bottom:solid 0.1rem $red;
+    }
+    &_comment {
+        width: 90%;
+        &_one {
+            padding: .5em 0em;
+            margin-top: 1em;
+            border-bottom:solid 0.1rem $red;
+        }
+    }
+    &_icon_com {
+        font-size: 150%;
+        padding-right: .3em;
+    }
+}

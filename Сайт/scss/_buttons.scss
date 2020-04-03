@@ -1,0 +1,111 @@
+.button_search {
+    color: #fff; 
+    text-decoration: none; 
+    user-select: none; 
+    background: rgb(212,75,56); 
+    padding: .7em 2em; 
+    outline: none;
+    border-radius: 20% 0%;
+    transition-duration: .2s;
+    transition-delay: .1s;
+    &:hover { 
+        color: #fff;
+        background: rgb(232,95,76); 
+        transition: .1s ease;
+    }
+    &:active { 
+        color: #fff;
+        background: rgb(152,15,0); 
+    } 
+}
+
+
+.button_reset {
+    color: #fff; 
+    text-decoration: none; 
+    user-select: none;
+    background: rgb(212,75,56); 
+    padding: .3em .5em; 
+    outline: none; 
+    border-radius: 20% 0%;
+    transition-duration: .2s;
+    transition-delay: .1s;
+    &:hover { 
+        color: #fff; 
+        background: rgb(232,95,76); 
+        transition: .1s ease;
+    }
+    &:active { 
+        color: #fff;
+        background: rgb(152,15,0); 
+    } 
+}
+
+.button_show-more {
+    color: #fff; 
+    text-decoration: none; 
+    user-select: none; 
+    background: #d44b38; 
+    padding: .7em 6em; 
+    outline: none; 
+    border-radius: 20% 0%;
+    border: none;
+    transition-duration: .2s;
+    transition-delay: .1s;
+    &:hover { 
+        color: #fff; 
+        background: #e85f4c;
+        transition: .1s ease; 
+    } 
+    &:active { 
+        color: #fff; 
+        background: rgb(152,15,0); 
+    }
+}
+
+.button_pay {
+    @include mix_button_pay;
+    padding: .9em;
+    &_width {width:80%;}
+    &_width_70 {width:70%;}
+    &_width_50 {width:50%;}
+    &_width_full {width:calc(100% - 80px);}
+}
+ 
+.button_like_pos {
+    margin-left: 1em;
+    margin-top: .5em;
+}
+
+
+.button_with_icon {
+    &_i {
+        font-size: 150%;
+        vertical-align: middle;
+        padding-right: 6px;
+    }
+}
+
+.button_delicate {
+    @extend .link_style_none;
+    user-select: none;
+    background: $light_blue_1;
+    padding: .33em .5em;
+    outline: none;
+    // border-radius: 20% 0%;
+    // transition-duration: .2s;
+    // transition-delay: .1s;
+    &:hover { 
+        background: $light_blue_2; 
+    } 
+}
+
+.button_like {
+    font-size: 350%;
+    cursor: pointer;
+    color: lightgrey;
+    vertical-align: middle;
+    &:hover {
+        color:$red;
+    }
+}

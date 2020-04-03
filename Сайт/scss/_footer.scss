@@ -1,0 +1,40 @@
+.footer_container {
+	height: 10em;
+	border-top:solid 0.1em $red;
+	margin-top: 3em;
+	padding: 1em;
+	&_social {
+		justify-content: space-between;
+		width: 70%;
+		height: 60%;
+		margin-top: 1em;
+		align-self: flex-end;
+	}
+	&_mail {
+		align-items: center;
+		align-self: center;
+		padding-right: 2em;
+	}
+	&_phone {
+		align-items: center;
+		align-self: center;
+	}
+}
+
+.footer_all-link {
+	line-height: 200%;
+	width: 20%;
+	flex-grow: 4;
+}
+
+
+
+.footer_first-link {
+	padding: 0em 4em;
+
+}
+
+.footer_second-link {
+	padding-right: 4em;
+
+}

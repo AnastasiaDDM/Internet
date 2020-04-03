@@ -1,0 +1,125 @@
+
+.software_alone_container {
+  @include alone_card; 
+  height: 24.3em;
+  overflow: hidden;
+  position: relative;
+  // border-width: $border_width;
+  // border-style: solid;
+  // border-image: linear-gradient(to bottom, $light_blue 0%, transparent 40%, transparent 60%, $light_blue 100%);
+  // border-image-slice: 1;
+    // border: solid $border_width $light_blue;
+    border: solid $border_width $light_blue_2;
+    transition: all .4s;
+  &:hover {
+    // border: .6em solid $light_blue_2;
+
+  //   border-image: linear-gradient(to bottom, $dark_blue 0%, transparent 40%, transparent 60%, $dark_blue 100%);
+  // border-image-slice: 1;
+  // border: solid $border_width $light_blue;
+    transition: all .4s;
+    // border: solid $border_width $dark_blue;
+    border: solid $border_width $light_blue;
+  }
+}
+
+.software_name {
+  text-align: left;
+  font-size: 150%;
+  line-height: 120%;	
+}
+
+.software_div_name {
+  overflow: hidden;
+  height: 3.7em;
+}
+
+.software_price{
+  @include price;
+  @include float_right;
+  padding-top: 0.6em;
+  padding-left: .4em;
+}
+
+
+
+.software_type {
+text-align: left;
+font-size: 90%;
+padding: 0.5em 0em;
+}
+
+.software_description {
+text-align: left;
+font-size: 100%;
+overflow: hidden;
+  &_marker::before {
+    content: "\273D";
+    display: inline-block; 
+    width: 1.4em;
+  }
+  &_list {
+    margin-block-start: 0em;
+    padding-inline-start: 0em;
+    line-height: 160%;
+    overflow: hidden;
+    max-height: 9.3em;
+  }
+}
+
+.software_container {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  width: 78%;
+  &_button {
+	margin-top: 1.4em;
+  font-size: 70%;
+  }
+  &_image_button {
+    width: 40%;
+        padding-right: 1em;
+  }
+}
+
+
+.software_container_all-width {
+  width: 90%;
+  &_button {
+	height: 3em;
+	margin-top: 1.4em;
+  font-size: 70%;
+  }
+  &_image_button {
+    width: 35%;
+        padding-right: 1em;
+  }
+}
+	
+.software_button {
+    &-pay_style {                                            
+      @include mix_button_pay;
+      padding: .5em;
+      line-height: 130%;
+      &_width {width: calc(100% - 50px)}
+      &_width_100 {width:100%;}
+    }   
+}
+
+.software_tag {
+  font-size: 70%;
+  word-spacing: 1em;
+  overflow: hidden;
+  max-height: 4em;
+  margin-top: .4rem;
+  &_first {
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  &_second {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
