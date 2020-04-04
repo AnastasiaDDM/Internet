@@ -7,7 +7,8 @@
     }
 
     // max-height: 25em;
-    padding: .7em;
+    // padding: .7em;
+    padding: 11.2px;
     cursor: pointer;
     border:solid $border_width $light_blue;
     background-color: white;
@@ -25,7 +26,8 @@
         line-height: 160%;
         overflow: hidden;
         list-style: none;
-        height: 5em;	
+        // height: 4.8em;	
+        height:76.8px;
       }
       &:hover { 
         // color: #fff; /* цвет текста */
@@ -65,20 +67,27 @@
             letter-spacing: 1px;
         }
     }
+
+    &_bt_h { height: 55px;}
     
 }
 .widget_div {
     &_img {
         width: 100%;
+        height: 160px;
+        overflow: hidden;
+        // margin-top: .5em;
+        margin-top: 8px;
     }
     &_title {
-        // padding-left: .5em;
-        padding-bottom: .5em;
         text-align: center;
         line-height: 140%;
         margin: auto;
         font-size: 110%;  
-        flex-grow: 2;
+        // height: 2.8em;
+        height: 44.8px;
+        overflow: hidden;
+        vertical-align: middle;
     }
     &_date {
         text-align: center;

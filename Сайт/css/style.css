@@ -1405,7 +1405,7 @@ legend h1 {
 }
 
 .widget {
-  padding: .7em;
+  padding: 11.2px;
   cursor: pointer;
   border: solid 0.1em #7EB9BF;
   background-color: white;
@@ -1426,7 +1426,7 @@ legend h1 {
   line-height: 160%;
   overflow: hidden;
   list-style: none;
-  height: 5em;
+  height: 76.8px;
 }
 
 .widget:hover {
@@ -1468,17 +1468,25 @@ legend h1 {
   letter-spacing: 1px;
 }
 
+.widget_bt_h {
+  height: 55px;
+}
+
 .widget_div_img {
   width: 100%;
+  height: 160px;
+  overflow: hidden;
+  margin-top: 8px;
 }
 
 .widget_div_title {
-  padding-bottom: .5em;
   text-align: center;
   line-height: 140%;
   margin: auto;
   font-size: 110%;
-  flex-grow: 2;
+  height: 44.8px;
+  overflow: hidden;
+  vertical-align: middle;
 }
 
 .widget_div_date {
