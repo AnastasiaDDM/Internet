@@ -9,7 +9,9 @@
         width: 60%;
     }
     .widget_section {
-        width: 25%;
+        width: 33%;
+        margin: 0em auto;
+        margin-bottom: 1em;
     }
     .order_card_type_state {
         float: none;
@@ -164,6 +166,10 @@
         width: calc((99% -0.5em)/2);
         justify-content: space-between;
     }
+
+    .div_horizontal_soft {
+        width: 80%;
+    }
 }
 
 @media (min-width: 930px) and (max-width: 1199.98px) {
@@ -196,6 +202,13 @@
     .header_person {
         margin-top: 1.5em;
     }
+
+    .widget_section {
+        // width: 65%;
+        width: 75%;
+        margin: 0em auto;
+        margin-bottom: 1em;
+    }
 }
 
 @media (max-width: 469.98px) {
@@ -225,6 +238,13 @@
     }
     .disp_none_header {
         display: none;
+    }
+
+    .widget_section {
+        // width: 65%;
+    width: 95%;
+    margin: 0em auto;
+    margin-bottom: 1em;
     }
 }
 

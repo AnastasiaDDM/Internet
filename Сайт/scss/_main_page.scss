@@ -286,3 +286,38 @@
 .text_center {
     text-align: center; 
 }
+
+
+
+
+
+
+
+
+
+.div_main {
+
+    a {	text-decoration: none;
+    	color: $gray;}
+
+    // .ma5slider .slides{height:781.906px;}
+
+    .ma5slider .slide{
+        text-align: unset;
+        font-size: unset;
+    }
+
+    .ma5slider .slide img,.ma5slider>img.slide{
+        display: unset;
+        outline:unset;
+        height:unset;
+    }
+
+    // .slide-area{max-height:783.906px;}
+
+    .ma5slider>.slides>:first-child{
+        text-align:unset;
+        font-size:unset;
+    }
+
+}
