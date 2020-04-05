@@ -1,5 +1,35 @@
+// // core
+// @import "components/_ma5slider.scss";
+
+
+// // navs
+// @import "components/_ma5slider__navs.scss";
+// @import "components/_ma5slider__navs--horizontal.scss";
+// @import "components/_ma5slider__navs--overwrite-direction.scss";
+
+// // dots
+// @import "components/_ma5slider__dots.scss";
+// @import "components/_ma5slider__dots--inside.scss";
+// @import "components/_ma5slider__dots--outside.scss";
+// @import "components/_ma5slider__dots--right.scss";
+// @import "components/_ma5slider__dots--center.scss";
+// @import "components/_ma5slider__dots--left.scss";
+// @import "components/_ma5slider__dots--top.scss";
+// @import "components/_ma5slider__dots--bottom.scss";
+// @import "components/_ma5slider__dots--vertical.scss";
+
+// // sets
+// @import "components/_ma5slider__anim--horizontal.scss";
+// @import "components/_ma5slider__anim--vertical.scss";
+// @import "components/_ma5slider__anim--fade.scss";
+
+
+
 @import "_variables.scss";
 @import "_general-styles.scss";
+
+@import "_slick.scss";
+
 @import "_header.scss"; 
 @import "_personal_acc.scss"; 
 @import "_slider_style.scss"; 
