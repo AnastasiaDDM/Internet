@@ -1393,7 +1393,7 @@ legend h1 {
   padding-inline-start: 0em;
   line-height: 160%;
   list-style: none;
-  height: 18em;
+  height: 17.4em;
   overflow: hidden;
 }
 
@@ -1458,13 +1458,12 @@ legend h1 {
 }
 
 .main_type-soft:hover {
-  font-size: 82%;
-  transition: .1s ease;
+  font-size: 100%;
 }
 
 .main_type-soft_active {
   width: 20%;
-  font-size: 110%;
+  font-size: 100%;
   color: #2F4F4F;
 }
 

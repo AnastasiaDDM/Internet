@@ -143,9 +143,6 @@
 
 
     &_order {
-        
-        // height: 23em;
-        // width: 17em;
         height: 29em;
         overflow: hidden;
         padding: .7em;
@@ -157,10 +154,8 @@
         margin-block-start: 0em;
         padding-inline-start: 0em;
         line-height: 160%;
-        // overflow: hidden;
         list-style: none;
-        // height: 5.5em;
-        height: 18em;
+        height: 17.4em;
         overflow: hidden;
             &_price {
                 font-size: 120%; 
@@ -231,16 +226,16 @@
 
         color: slategray;
         &:hover {
-            font-size: 82%;
-            // transition-duration: .1s;
-            // transition-delay: .1s;
-            transition: .1s ease;
-
+            // font-size: 82%;
+            // // transition-duration: .1s;
+            // // transition-delay: .1s;
+            // transition: .1s ease;
+            font-size: 100%;
         }
         &_active {
 
             width: 20%;
-            font-size: 110%;
+            font-size: 100%;
             color: $gray;
         }
     }

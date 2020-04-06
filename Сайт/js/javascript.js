@@ -150,8 +150,8 @@ function areas_more() {
   }
  
 
-  function carousel_soft() {
-	$('.carousel_software').slick({
+  function carousel_soft(target) {
+	$('#'+target).slick({
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -185,7 +185,7 @@ function areas_more() {
 	}
 	],
 	arrows:true,
-	appendArrows: $(".car_software_container"),
+	appendArrows: $("#"+target+"_container"),
 	prevArrow:'<i class="fa fa-angle-left pos_center widget_arrows" aria-hidden="true" ></i>',
 	nextArrow:'<i class="fa fa-angle-right pos_center widget_arrows" aria-hidden="true"></i>',
 	
@@ -201,7 +201,6 @@ function areas_more() {
 	textarea_filled();
 	search_roll();
 	areas_more();
-	carousel_soft();
 
 	if ($( window ).width() < 600) {
 		$('.search_datepicker').each(function() {
