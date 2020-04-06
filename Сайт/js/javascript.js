@@ -149,6 +149,49 @@ function areas_more() {
 	});
   }
  
+
+  function carousel_soft() {
+	$('.carousel_software').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		speed: 300,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	respondTo: 'min',
+	
+	responsive: [
+	{
+	  breakpoint: 1024,
+	  settings: {
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true,
+	  }
+	},
+	{
+	  breakpoint: 790,
+	  settings: {
+		slidesToShow: 2,
+		slidesToScroll: 1
+	  }
+	},
+	{
+	  breakpoint: 480,
+	  settings: {
+		slidesToShow: 1,
+		slidesToScroll: 1
+	  }
+	}
+	],
+	arrows:true,
+	appendArrows: $(".car_software_container"),
+	prevArrow:'<i class="fa fa-angle-left pos_center widget_arrows" aria-hidden="true" ></i>',
+	nextArrow:'<i class="fa fa-angle-right pos_center widget_arrows" aria-hidden="true"></i>',
+	
+		})
+  }
+  
  
  jQuery(document).ready(function () {
 	
@@ -158,7 +201,8 @@ function areas_more() {
 	textarea_filled();
 	search_roll();
 	areas_more();
-	
+	carousel_soft();
+
 	if ($( window ).width() < 600) {
 		$('.search_datepicker').each(function() {
 			$( this  ).attr( "type", "date" );
