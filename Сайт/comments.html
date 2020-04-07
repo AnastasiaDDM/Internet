@@ -216,7 +216,7 @@
             <!-- Контейнер обсуждений и формы -->
             <div>      
               <!-- Контейнер обсуждений -->
-              <div class="discussion flex_column pos_center_for_div">      
+              <div class="discussion flex_column pos_center_for_div" id="dis_1">      
                 <!-- одно обсуждение -->
                 <div class="flex_row">
                   <div class = "reviews_title">Иванов М.Л.
@@ -233,51 +233,17 @@
                     которую предложила, и тогда приложение станет совершенно идеальным 
                     для меня! Спасибо вам! 
                   </span>
-                  <div class="pos_right_for_div">
-                    <a href="#" class="button_reset">Ответить
+                  <div class="pos_right_for_div bt_ans" data-target="dis_1">
+                    <a class="button_reset">Ответить
                     </a>
                   </div>
                 </div>
-                <div class="margin_top_07em" id = "comment_roll_1">
+                <div class="margin_top_07em comment_roll" id = "comment_roll_1" data-target="dis_1">
                   <a class="link_style_border"><i class="far fa-comments discussion_icon_com" aria-hidden="true">
                   </i>Комментарии (10)
                   </a>
                 </div>
 
-                <div class=" flex_column pos_center margin_top_1em width_100">     
-                  <!-- Форма комментария -->
-                  <h3>Ответ
-                  </h3>
-                  <fieldset class=" border_fieldset_top main_block_bg padding_2em_xs">
-                    <form>
-                      <div class="pos_center">
-                        <div class="flex_row flex_space-between">
-                          <div class="input_style w_45_sm">
-                            <input type="text" id="name" autocomplete="off">
-                            <label for="name">Ваше имя
-                            </label>
-                          </div>
-                          <div class="input_style w_45_sm">
-                            <input type="text" id="email" required autocomplete="off">
-                            <label for="email">Номер телефона/ эл.почта
-                            </label>
-                          </div>
-                        </div>
-                        <div>
-                          <div class="form_group_textarea margin_top_3em">
-                            <textarea class = "form_textarea textarea_height_small" type="textarea"></textarea>
-                            <label id = "label" class = "form_textarea_label">Ваш комментарий
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="pos_сenter">
-                        <a href="#" class="button_reset">Оставить комментарий
-                        </a>
-                      </div>
-                    </form>
-                  </fieldset>
-                </div>
 
                 <div class ="discussion_comment pos_right" style="display: none;" id="comment_1">      
                   <!-- комментарии к обсуждению -->
@@ -326,7 +292,7 @@
                       </span>
                     </div>
                   </div>
-                  <div  class="discussion_comment_one flex_column  ">
+                  <div  class="discussion_comment_one flex_column">
                     <div class="flex_row">
                       <div class = "reviews_title">Иванов М.Л.
                       </div>
@@ -338,12 +304,12 @@
                       </span>
                     </div>
                   </div>
-                  <div class="search_title"> 
-                    <a id = "comment_rollup_1" class="search_roll-up">Свернуть <i class="fas fa-arrow-up"></i></a>
+                  <div class="search_title bt_rollup"> 
+                    <a class="search_roll-up">Свернуть <i class="fas fa-arrow-up"></i></a>
                   </div>
                 </div>
               </div>
-              <div class="discussion flex_column pos_center_for_div">      
+              <div class="discussion flex_column pos_center_for_div" id="dis_2">      
                 <!-- одно обсуждение -->
                 <div class="flex_row">
                   <div class = "reviews_title">Иванов М.Л.
@@ -360,17 +326,17 @@
                     которую предложила, и тогда приложение станет совершенно идеальным 
                     для меня! Спасибо вам! 
                   </span>
-                  <div class="pos_right_for_div">
-                    <a href="#" class="button_reset">Ответить
+                  <div class="pos_right_for_div bt_ans" data-target="dis_2">
+                    <a class="button_reset">Ответить
                     </a>
                   </div>
                 </div>
-                <div class="margin_top_07em">
+                <div class="margin_top_07em comment_roll" data-target="dis_2">
                   <a class="link_style_border"><i class="far fa-comments discussion_icon_com" aria-hidden="true">
                   </i>Комментарии (10)
                   </a>
                 </div>
-                <div class ="discussion_comment pos_right">      
+                <div class ="discussion_comment pos_right" style="display: none;">      
                   <!-- комментарии к обсуждению -->
                   <div  class="discussion_comment_one flex_column  ">
                     <div class="flex_row">
@@ -435,13 +401,13 @@
                       </span>
                     </div>
                   </div>
-                  <div class="search_title"> 
+                  <div class="search_title bt_rollup"> 
                     <a class="search_roll-up">Свернуть ↑
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="discussion flex_column pos_center_for_div">      
+              <div class="discussion flex_column pos_center_for_div" id="dis_3">      
                 <!-- одно обсуждение -->
                 <div class="flex_row">
                   <div class = "reviews_title">Иванов М.Л.
@@ -458,14 +424,14 @@
                     которую предложила, и тогда приложение станет совершенно идеальным 
                     для меня! Спасибо вам! 
                   </span>
-                  <div class="pos_right_for_div">
-                    <a href="#" class="button_reset">Ответить
+                  <div class="pos_right_for_div bt_ans" data-target="dis_3">
+                    <a class="button_reset">Ответить
                     </a>
                   </div>
                 </div>
-                <div class="margin_top_07em">
+                <div class="margin_top_07em comment_roll" data-target="dis_3">
                   <a class="link_style_border"><i class="far fa-comments discussion_icon_com" aria-hidden="true">
-                  </i>Комментарии (10)
+                  </i>Комментарии (0)
                   </a>
                 </div>
               </div>
@@ -775,6 +741,61 @@
           </div>
         </div>
       </footer>
+
+
+<div id="pattern_form_answer" style="display: none;">
+  <div class="form_ans">
+    <div class=" flex_column pos_center margin_top_1em width_100">     
+      <!-- Форма комментария -->
+      <h3>Ответ
+      </h3>
+      <fieldset class=" border_fieldset_top main_block_bg padding_2em_xs">
+        <form>
+          <div class="pos_center">
+            <div class="flex_row flex_space-between">
+              <div class="input_style w_45_sm">
+                <input type="text" id="name" autocomplete="off">
+                <label for="name">Ваше имя
+                </label>
+              </div>
+              <div class="input_style w_45_sm">
+                <input type="text" id="email" required autocomplete="off">
+                <label for="email">Номер телефона/ эл.почта
+                </label>
+              </div>
+            </div>
+            <div>
+              <div class="form_group_textarea margin_top_3em">
+                <textarea class = "form_textarea textarea_height_small" type="textarea"></textarea>
+                <label id = "label" class = "form_textarea_label">Ваш комментарий
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="flex_row flex_space-between margin_top_3em">
+            <div class="bt_res">
+              <a href="" class="button_reset">Отменить
+              </a>
+            </div>
+            <div class="">
+              <a href="#" class="button_reset">Оставить комментарий
+              </a>
+            </div>
+          </div> -->
+
+
+          <div class="pos_сenter">
+            <a href="#" class="button_reset">Оставить комментарий
+            </a>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+  </div>
+</div>
+     
+
       </body>
       <script>
         $(window).on('load', function () {
@@ -782,16 +803,77 @@
         })
 
         jQuery(document).ready(function () {
-          $( "#comment_roll_1" ).click(function() {
 
-            $( "#comment_1" ).slideToggle( "slow", function() {
-            });
+
+          $( ".bt_ans" ).one('click', function () {
+
+            var bt_data = $(this).data("target");
+
+            var form = $( "#pattern_form_answer").html(); 
+
+
+            $( ".discussion_text [data-target="+bt_data+"]" ).append( $(form) );
+
+            // ( $( form).html() ).slideToggle( "slow", function() {
+            // });
           });
-          $( "#comment_rollup_1" ).click(function() {
+
+
+        //   $( ".bt_ans" ).click(function () {
+        //     console.log($( "[id="+bt_data+"] .form_ans"));
+
+        // ( "[id="+bt_data+"] .form_ans" ).slideToggle( "slow", function() {
+        // });
+        //   });
+
+
+
+          // $( "[id="+bt_data+"] .bt_res" ).click(function() {
+
+          //   $( "[id="+bt_data+"] form_ans" ).html();
+          // });
+
+
+
+          // $( "#comment_roll_1" ).click(function() {
+
+          //   $( "#comment_1" ).slideToggle( "slow", function() {
+          //   });
+          // });
+          // $( "#comment_rollup_1" ).click(function() {
             
-            $( "#comment_1" ).slideToggle( "slow", function() {
+          //   $( "#comment_1" ).slideToggle( "slow", function() {
+          //   });
+          // });
+
+
+
+          $( ".comment_roll" ).click(function() {
+
+            var com_data = $(this).data("target");
+
+            // console.log( com_data);
+
+            $( "[id="+com_data+"] .discussion_comment" ).slideToggle( "slow", function() {
             });
           });
+
+          $( ".bt_rollup" ).click(function() {
+            
+            $( this ).parent().slideToggle( "slow", function() {
+            });
+
+            // $( "#comment_1" ).slideToggle( "slow", function() {
+            // });
+          });
+
+
+
+
+
         })
       </script>
     </html>
+    
+
+  

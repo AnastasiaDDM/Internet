@@ -226,11 +226,7 @@
 
         color: slategray;
         &:hover {
-            // font-size: 82%;
-            // // transition-duration: .1s;
-            // // transition-delay: .1s;
-            // transition: .1s ease;
-            font-size: 100%;
+            color: $gray;
         }
         &_active {
 
