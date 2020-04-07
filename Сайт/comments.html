@@ -233,9 +233,11 @@
                     которую предложила, и тогда приложение станет совершенно идеальным 
                     для меня! Спасибо вам! 
                   </span>
-                  <div class="pos_right_for_div bt_ans" data-target="dis_1">
-                    <a class="button_reset">Ответить
-                    </a>
+                  <div>
+                    <div class="pos_right_for_div bt_ans" data-target="dis_1">
+                      <a class="button_reset">Ответить
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div class="margin_top_07em comment_roll" id = "comment_roll_1" data-target="dis_1">
@@ -304,10 +306,24 @@
                       </span>
                     </div>
                   </div>
-                  <div class="search_title bt_rollup"> 
-                    <a class="search_roll-up">Свернуть <i class="fas fa-arrow-up"></i></a>
-                  </div>
+
+                   <div class="flex_row flex_space-between margin_top_1em">
+                    <div class="search_title bt_rollup"> 
+                      <a class="search_roll-up">Свернуть <i class="fas fa-arrow-up"></i></a>
+                    </div>
+
+                    <div class=" bt_ans_two" data-target="dis_1">
+                      <a class="button_reset">Ответить
+                      </a>
+                    </div>
+                   </div>
+
                 </div>
+
+
+
+
+
               </div>
               <div class="discussion flex_column pos_center_for_div" id="dis_2">      
                 <!-- одно обсуждение -->
@@ -401,10 +417,16 @@
                       </span>
                     </div>
                   </div>
-                  <div class="search_title bt_rollup"> 
-                    <a class="search_roll-up">Свернуть ↑
-                    </a>
-                  </div>
+                  <div class="flex_row flex_space-between margin_top_1em">
+                    <div class="search_title bt_rollup"> 
+                      <a class="search_roll-up">Свернуть <i class="fas fa-arrow-up"></i></a>
+                    </div>
+
+                    <div class=" bt_ans_two" data-target="dis_2">
+                      <a class="button_reset">Ответить
+                      </a>
+                    </div>
+                   </div>
                 </div>
               </div>
               <div class="discussion flex_column pos_center_for_div" id="dis_3">      
@@ -773,22 +795,22 @@
             </div>
           </div>
 
-          <!-- <div class="flex_row flex_space-between margin_top_3em">
+          <div class="flex_row flex_space-between margin_top_3em">
             <div class="bt_res">
-              <a href="" class="button_reset">Отменить
+              <a class="button_reset">Отменить
               </a>
             </div>
             <div class="">
               <a href="#" class="button_reset">Оставить комментарий
               </a>
             </div>
-          </div> -->
+          </div>
 
-
+<!-- 
           <div class="pos_сenter">
             <a href="#" class="button_reset">Оставить комментарий
             </a>
-          </div>
+          </div> -->
         </form>
       </fieldset>
     </div>
@@ -809,14 +831,30 @@
 
             var bt_data = $(this).data("target");
 
-            var form = $( "#pattern_form_answer").html(); 
+            var form = $( "#pattern_form_answer").html();
 
+            $(this).parent().append( $(form) );
 
-            $( ".discussion_text [data-target="+bt_data+"]" ).append( $(form) );
-
-            // ( $( form).html() ).slideToggle( "slow", function() {
-            // });
           });
+
+
+          
+          $( ".bt_ans_two" ).one('click', function () {
+
+var bt_data = $(this).data("target");
+
+var form = $( "#pattern_form_answer").html(); 
+
+
+// $( ".discussion_text [data-target="+bt_data+"]" ).append( $(form) );
+
+        // console.log($(this).parents(".discussion_comment").html());
+
+$(this).parents(".discussion").append( $(form) );
+
+// ( $( form).html() ).slideToggle( "slow", function() {
+// });
+});
 
 
         //   $( ".bt_ans" ).click(function () {
@@ -834,6 +872,21 @@
           // });
 
 
+
+          $( ".bt_res" ).click(function() {
+
+            console.log( $(this).parents(".form_ans"));
+
+            $($(this).parents(".form_ans")).hide();
+
+
+            // $( "[id="+bt_data+"] form_ans" ).html();
+          });
+
+
+
+
+          
 
           // $( "#comment_roll_1" ).click(function() {
 
@@ -860,7 +913,7 @@
 
           $( ".bt_rollup" ).click(function() {
             
-            $( this ).parent().slideToggle( "slow", function() {
+            $( this ).parents(".discussion_comment").slideToggle( "slow", function() {
             });
 
             // $( "#comment_1" ).slideToggle( "slow", function() {
