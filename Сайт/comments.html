@@ -767,7 +767,7 @@
 
 
 <div id="pattern_form_answer" style="display: none;">
-  <div class="copy_form_answer">
+  <div class="copy_form_answer" style="display: none;">
     <div class=" flex_column pos_center margin_top_1em width_100">     
       <!-- Форма комментария -->
       <h3>Ответ
@@ -817,114 +817,79 @@
       <script>
 
 
-function activate_form_answer()
-    {
-      $(".btn_cancel").click(function() {
-           $(this).parents(".copy_form_answer").hide(500);
-          });
-    }
+  // function activate_form_answer()
+  //     {
+  //       $(".btn_cancel").click(function() {
+  //           $(this).parents(".copy_form_answer").hide(500);
+  //           $(".btn_answer").show(500);
+  //           $(".btn_answer_two").show(500);
+  //       });
+  //     }
 
 
-        $(window).on('load', function () {
-            carousel_soft('same_software');
-        })
+  $(window).on('load', function () {
+      carousel_soft('same_software');
+  })
 
-        jQuery(document).ready(function () {
+  // jQuery(document).ready(function () {
 
+  //   $(".btn_answer" ).click( function () {
 
-          $( ".btn_answer" ).click( function () {
+  //     $(".btn_answer").show(500);
+  //     $(this).hide(500);
+  //     $("[data-rel='single_form_answer']").hide(500);
+  //     $("[data-rel='single_form_answer']").detach();
 
-            $("[data-rel='single_form_answer']").hide();
+  //     var form = $( "#pattern_form_answer").html();
 
-            var form = $( "#pattern_form_answer").html();
+  //     $(this).parent().append( $(form) );
 
-            $(this).parent().append( $(form) );
+  //     // console.log($(this).siblings(".copy_form_answer"));
 
-            console.log($(this).siblings(".copy_form_answer"));
+  //     $($(this).siblings(".copy_form_answer").attr( "data-rel", "single_form_answer" ));
 
-            activate_form_answer();
+  //     $("[data-rel='single_form_answer']").show(500);
 
-            $($(this).siblings(".copy_form_answer").attr( "data-rel", "single_form_answer" ));
+  //     activate_form_answer();
+  //   });
 
+  //   $( ".btn_answer_two" ).click(function () {
 
+  //       $(".btn_answer_two").show(500);
+  //       $(this).hide(500);
 
-          });
+  //       $("[data-rel='single_form_answer']").hide(500);
+  //       $("[data-rel='single_form_answer']").detach();
 
-          $( ".btn_answer_two" ).click(function () {
+  //       // var bt_data = $(this).data("target");
 
-              $("[data-rel='single_form_answer']").hide();
+  //       var form = $( "#pattern_form_answer").html(); 
 
-              var bt_data = $(this).data("target");
+  //       $(this).parents(".discussion").append( $(form) );
 
-              var form = $( "#pattern_form_answer").html(); 
+  //       $($( ".discussion" ).children( ".copy_form_answer" ).attr( "data-rel", "single_form_answer" ));
 
-              $(this).parents(".discussion").append( $(form) );
+  //       $("[data-rel='single_form_answer']").show(500);
 
-              activate_form_answer();
+  //       activate_form_answer();
+  //   });
 
-              // console.log($( ".discussion" ).children( ".copy_form_answer" ));
+  //   $( ".comment_roll" ).click(function() {
 
-              $($( ".discussion" ).children( ".copy_form_answer" ).attr( "data-rel", "single_form_answer" ));
-          });
+  //     var com_data = $(this).data("target");
 
+  //     $( "[id="+com_data+"] .discussion_comment" ).slideToggle( "slow", function() {
 
+  //     });
+  //   });
 
+  //   $( ".btn_rollup" ).click(function() {
+      
+  //     $( this ).parents(".discussion_comment").slideToggle( "slow", function() {
+  //     });
+  //   });
 
-        //   $( ".bt_ans" ).click(function () {
-        //     console.log($( "[id="+bt_data+"] .form_ans"));
-
-        // ( "[id="+bt_data+"] .form_ans" ).slideToggle( "slow", function() {
-        // });
-        //   });
-
-
-
-          // $( "[id="+bt_data+"] .btn_cancel" ).click(function() {
-
-          //   $( "[id="+bt_data+"] form_ans" ).html();
-          // });
-
-
-
-          
-
-          // $( "#comment_roll_1" ).click(function() {
-
-          //   $( "#comment_1" ).slideToggle( "slow", function() {
-          //   });
-          // });
-          // $( "#comment_rollup_1" ).click(function() {
-            
-          //   $( "#comment_1" ).slideToggle( "slow", function() {
-          //   });
-          // });
-
-
-
-          $( ".comment_roll" ).click(function() {
-
-            var com_data = $(this).data("target");
-
-            // console.log( com_data);
-
-            $( "[id="+com_data+"] .discussion_comment" ).slideToggle( "slow", function() {
-            });
-          });
-
-          $( ".btn_rollup" ).click(function() {
-            
-            $( this ).parents(".discussion_comment").slideToggle( "slow", function() {
-            });
-
-            // $( "#comment_1" ).slideToggle( "slow", function() {
-            // });
-          });
-
-
-
-
-
-        })
+  // })
       </script>
     </html>
     

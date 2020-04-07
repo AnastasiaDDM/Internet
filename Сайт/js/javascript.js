@@ -42,6 +42,8 @@
 });
 
 }
+
+
  
  function input_file() {
 let inputs = document.querySelectorAll('.input__file');
@@ -61,6 +63,7 @@ let inputs = document.querySelectorAll('.input__file');
                 });
               });
  }
+
 
  function search_roll() {
 
@@ -150,6 +153,88 @@ function areas_more() {
   }
  
 
+  function activate_form_answer()
+  {
+	$(".btn_cancel").click(function() {
+		$(this).parents(".copy_form_answer").hide(500);
+		$(".btn_answer").show(500);
+		$(".btn_answer_two").show(500);
+	});
+  }
+
+
+
+
+
+
+
+  function comments_form_answer()
+  {
+
+	$(".btn_answer" ).click( function () {
+
+		$(".btn_answer").show(500);
+		$(this).hide(500);
+		$("[data-rel='single_form_answer']").hide(500);
+		$("[data-rel='single_form_answer']").detach();
+  
+		var form = $( "#pattern_form_answer").html();
+  
+		$(this).parent().append( $(form) );
+  
+		// console.log($(this).siblings(".copy_form_answer"));
+  
+		$($(this).siblings(".copy_form_answer").attr( "data-rel", "single_form_answer" ));
+  
+		$("[data-rel='single_form_answer']").show(500);
+  
+		activate_form_answer();
+	  });
+  
+	  $( ".btn_answer_two" ).click(function () {
+  
+		  $(".btn_answer_two").show(500);
+		  $(this).hide(500);
+  
+		  $("[data-rel='single_form_answer']").hide(500);
+		  $("[data-rel='single_form_answer']").detach();
+  
+		  // var bt_data = $(this).data("target");
+  
+		  var form = $( "#pattern_form_answer").html(); 
+  
+		  $(this).parents(".discussion").append( $(form) );
+  
+		  $($( ".discussion" ).children( ".copy_form_answer" ).attr( "data-rel", "single_form_answer" ));
+  
+		  $("[data-rel='single_form_answer']").show(500);
+  
+		  activate_form_answer();
+	  });
+  
+	  $( ".comment_roll" ).click(function() {
+  
+		var com_data = $(this).data("target");
+  
+		$( "[id="+com_data+"] .discussion_comment" ).slideToggle( "slow", function() {
+  
+		});
+	  });
+  
+	  $( ".btn_rollup" ).click(function() {
+		
+		$( this ).parents(".discussion_comment").slideToggle( "slow", function() {
+		});
+	  });
+
+  }
+
+
+
+
+
+
+
   function carousel_soft(target) {
 	$('#'+target).slick({
 		infinite: true,
@@ -201,6 +286,7 @@ function areas_more() {
 	textarea_filled();
 	search_roll();
 	areas_more();
+	comments_form_answer();
 
 	if ($( window ).width() < 600) {
 		$('.search_datepicker').each(function() {

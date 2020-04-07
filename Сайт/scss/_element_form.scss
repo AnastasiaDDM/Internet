@@ -285,8 +285,7 @@
 .radio_checkbox {
   padding: 0;
   list-style: none;
-  // width: fit-content;
-  // max-width: 320px;
+  width: fit-content;
   text-align: left;
 
   @supports(-webkit-appearance: none) or (-moz-appearance: none) {
