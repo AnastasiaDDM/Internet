@@ -222,12 +222,10 @@
     &_type-soft {
         // width: 25%;
         font-size: 80%;
-        transition: .1s ease;
+        // transition: .1s ease;
 
         color: slategray;
-        &:hover {
-            color: $gray;
-        }
+
         &_active {
 
             width: 20%;
@@ -290,25 +288,5 @@
 
     a {	text-decoration: none;
     	color: $gray;}
-
-    .ma5slider .slides{height:481.906px;}
-
-    .ma5slider .slide{
-        text-align: unset;
-        font-size: unset;
-    }
-
-    .ma5slider .slide img,.ma5slider>img.slide{
-        display: unset;
-        outline:unset;
-        height:unset;
-    }
-
-    // .slide-area{max-height:783.906px;}
-
-    .ma5slider>.slides>:first-child{
-        text-align:unset;
-        font-size:unset;
-    }
 
 }
