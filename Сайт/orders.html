@@ -239,29 +239,33 @@
             <fieldset class="fieldset_border_primary search_div_fieldset">
               <form>
                 <div class="flex_row width_100 flex_space-between margin_top_1em">
-                  <div class="slct_div find_column-3 ">
-                    <a href="javascript:void(0);" class="slct">Выберите по какой дате искать:
+                  <div class="slct_div find_column-3 " id="div_date_select">
+                    <a href="javascript:void(0);" id="date_type_select_a" class="slct">Выберите по какой дате искать:
                     </a>
                     <ul class="drop">
-                      <li>
+					  <li id="date_type_1">
+                        <a data-value="date_type_select_not_selected">Выберите по какой дате искать:
+                        </a>
+                      </li>
+                      <li id="date_type_2">
                         <a data-value="kras">По дате начала
                         </a>
                       </li>
-                      <li>
+                      <li id="date_type_3">
                         <a data-value="ymn">По дате завершения
                         </a>
                       </li>
                     </ul>
-                    <input type="hidden" id="select">
+                    <input type="hidden" id="date_type_select" value="date_type_select_not_selected">
                   </div>
                   <div  class="find_column-3">
                     <div  class="flex_row flex_space-between">
                       <div class="div_datepic">
-                        <input  type="text" class=" slct_div slct search_datepicker">
+                        <input id="datefrom_input" disabled type="text" class=" slct_div slct search_datepicker">
                       </div> 	
                       &#8212  
                       <div class="div_datepic">
-                        <input type="text" class=" slct_div slct search_datepicker">
+                        <input id="dateto_input" disabled type="text" class=" slct_div slct search_datepicker">
                       </div>
                    </div>
                   </div>
@@ -995,4 +999,57 @@
       </div>
     </footer>
   </body>
+  <script>
+
+	
+	jQuery(document).ready(function () {
+
+		<!-- $("#date_type_select ul").click(function(){ -->
+
+		$("#date_type_1").click(function(){
+
+			console.log("111");
+
+			$("#datefrom_input").attr("disabled", true); 
+			$("#dateto_input").attr("disabled", true); 
+
+
+			<!-- if ($(this).find("a").attr("data-value") == "date_type_select_not_selected") { -->
+
+			<!-- $("#datefrom_input").attr("disabled", true);  -->
+			<!-- $("#dateto_input").attr("disabled", true);  -->
+			<!-- } -->
+			<!-- else { -->
+			<!-- $("#datefrom_input").attr("disabled", false);  -->
+			<!-- $("#dateto_input").attr("disabled", false);  -->
+			<!-- } -->
+
+		}); 
+
+
+		$("#date_type_2").click(function(){
+
+			console.log("222");
+
+			$("#datefrom_input").attr("disabled", false); 
+			$("#dateto_input").attr("disabled", false); 
+
+		}); 
+
+
+		$("#date_type_3").click(function(){
+
+			console.log("333");
+
+			$("#datefrom_input").attr("disabled", false); 
+			$("#dateto_input").attr("disabled", false); 
+
+
+		})
+
+
+	})
+
+	
+  </script>
 </html>
