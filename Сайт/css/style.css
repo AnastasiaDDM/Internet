@@ -1453,12 +1453,7 @@ legend h1 {
 
 .main_type-soft {
   font-size: 80%;
-  transition: .1s ease;
   color: slategray;
-}
-
-.main_type-soft:hover {
-  font-size: 100%;
 }
 
 .main_type-soft_active {
@@ -1511,26 +1506,6 @@ legend h1 {
 .div_main a {
   text-decoration: none;
   color: #2F4F4F;
-}
-
-.div_main .ma5slider .slides {
-  height: 481.906px;
-}
-
-.div_main .ma5slider .slide {
-  text-align: unset;
-  font-size: unset;
-}
-
-.div_main .ma5slider .slide img, .div_main .ma5slider > img.slide {
-  display: unset;
-  outline: unset;
-  height: unset;
-}
-
-.div_main .ma5slider > .slides > :first-child {
-  text-align: unset;
-  font-size: unset;
 }
 
 .container_img_text {
@@ -2159,6 +2134,7 @@ legend h1 {
 .radio_checkbox {
   padding: 0;
   list-style: none;
+  width: fit-content;
   text-align: left;
 }
 

@@ -9,18 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script src="js/jquery.js"></script>
-
     <link href="css/datepicker.css" rel="stylesheet" type="text/css">
-    <script src="js/datepicker.min.js"></script>
-
-    <script src="js/datepicker.ru.js"></script>
-
-    <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
-
-    <script src="js/slick.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
@@ -1062,21 +1052,32 @@
           </div>
         </div>
       </footer>
-      <script>
-        $(window).on('load', function () {
-		    $('#widgets_vertical_slider').slick({
-				vertical:true,
-				infinite: true,
-				slidesToShow: 2,
-				slidesToScroll: 1,
-				speed: 500,
-				autoplay: true,
-				autoplaySpeed: 4000,
-				arrows:true,
-				prevArrow:'<div class = "pos_center margin_bottom_1em cursor"><i class="fa fa-angle-up widget_arrows" aria-hidden="true"></i></div>',
-				nextArrow:'<div class = "pos_center margin_top_1em cursor"> <i class="fa fa-angle-down widget_arrows" aria-hidden="true"></i></div>'	
-        });
-        });
+    </body>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      $(window).on('load', function () {
+      $('#widgets_vertical_slider').slick({
+      vertical:true,
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      arrows:true,
+      prevArrow:'<div class = "pos_center margin_bottom_1em cursor"><i class="fa fa-angle-up widget_arrows" aria-hidden="true"></i></div>',
+      nextArrow:'<div class = "pos_center margin_top_1em cursor"> <i class="fa fa-angle-down widget_arrows" aria-hidden="true"></i></div>'	
+      });
+      });
     </script>
-</body>
+    <script>
+      jQuery(document).ready(function () {
+        select();
+        input_filled();
+        search_roll();
+        areas_more();
+      })
+    </script>
 </html>

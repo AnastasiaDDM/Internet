@@ -12,15 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
-    <script src="js/jquery.js">
-    </script>
-    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
-    <script src="js/datepicker.min.js">
-    </script>
-    <script src="js/datepicker.ru.js">
-    </script>
-    <script type="text/javascript" src="js/javascript.js" charset="UTF-8">
-    </script>
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
@@ -423,8 +414,11 @@
       </div>
     </footer>
   </body>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
   <script>
     jQuery(document).ready(function () {
+      input_filled();
       $( ".password_roll" ).click(function() {
 
         $( ".password" ).slideToggle( "slow", function() {

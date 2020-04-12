@@ -12,17 +12,6 @@
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script src="js/jquery.js"></script>
-
-    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
-    <script src="js/datepicker.min.js"></script>
-
-    <script src="js/datepicker.ru.js"></script>
-
-    <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
-
-    <script src="js/slick.min.js"></script>
-
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
@@ -1497,23 +1486,19 @@
       </div>
     </footer>
   </body>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
+  <script src="js/slick.min.js"></script>
   <script>
-    $(window).on('load', function () {
-	
-		
+    $(window).on('load', function () {	
 		carousel_soft('new_software');
-		
 		carousel_soft('desktop_software'); // Инициализируем сначала слайдер в настольными приложениям
-
 		$("#type_software").children().click(function(){
-		
 
-			
       $("#type_software").children().removeClass('main_type-soft_active').addClass('main_type-soft'); // Убираем класс активности
 			$(this).addClass('main_type-soft_active');
 			
-			// Слайдер неверно работает, если раньше был скрыт, поэтому приходится его уничтожать, а потом делать заново у целевого элемента
-			try // Не у всех элементов есть слайдер сейчас, поэтому уничтожение вызывает ошибку у тех, где слайдера нет. Приходится делать обработку исключения. 
+			try // Не у всех элементов есть слайдер, поэтому уничтожение вызывает ошибку у тех, где слайдера нет. Приходится делать обработку исключения. 
 			{
 				$("#software_container").find(".width_90").slick('unslick'); // Находим внутри #software_container все элементы, у которых есть вот такой класс .width_90 Ну это получаются все контейнеры слайдера.
 			}
@@ -1521,23 +1506,22 @@
 			
 			$("#software_container").children().hide(); // Скрываем все слайдеры
 			
-			var target = $(this).data('target'); // На что указывает нажатая ссылка?
+			var target = $(this).data('target');
 			
 			$("#"+target+"_container").show(); // Показываем целевой контейнер со слайдером
 			
 			carousel_soft(target);
 		});
 		
-		
 		$('#main_slider').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		speed: 500,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		arrows:false,
-		});	
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows:false,
+      });	
     });
-</script>
+  </script>
 </html>

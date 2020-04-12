@@ -12,15 +12,6 @@
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script src="js/jquery.js">
-    </script>
-    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
-    <script src="js/datepicker.min.js">
-    </script>
-    <script src="js/datepicker.ru.js">
-    </script>
-    <script type="text/javascript" src="js/javascript.js" charset="UTF-8">
-    </script>
   </head>
   <div id= "toTop">         
     <i class="fa fa-chevron-circle-up chat_panel_sticky_i" aria-hidden="true">
@@ -537,33 +528,37 @@
       </div>
     </footer>
   </body>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
   <script src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/file_input_custom.js" charset="UTF-8"></script>
   <script>
- 
-    $(function() {
-     
-    $(window).scroll(function() {
-     
-    if($(this).scrollTop() != 0) {
-     
-    $('#toTop').fadeIn();
-     
-    } else {
-     
-    $('#toTop').fadeOut();
-     
-    }
-     
-    });
-     
-    $('#toTop').click(function() {
-     
-    $('body,html').animate({scrollTop:430},400);
-     
-    });
-     
-    });
+    jQuery(document).ready(function () {
+      input_file();
 
- 
-    </script>
+      $(function() {
+
+        $(window).scroll(function() {
+        
+          if($(this).scrollTop() != 0) {
+          
+            $('#toTop').fadeIn();
+          
+          } else {
+          
+            $('#toTop').fadeOut();
+          
+          }
+        
+        });
+        
+        $('#toTop').click(function() {
+          
+          $('body,html').animate({scrollTop:430},400);
+        
+        });  
+      });
+
+    })
+  </script>
 </html>

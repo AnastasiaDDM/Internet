@@ -10,15 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script src="js/jquery.js">
-    </script>
-    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
-    <script src="js/datepicker.min.js">
-    </script>
-    <script src="js/datepicker.ru.js">
-    </script>
-    <script src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
   </head>
   <body class = "fix_width bg-head ">
     <header class = "flex_column header_container_height">
@@ -811,85 +802,20 @@
     </div>
   </div>
 </div>
-     
-
+  
       </body>
+      <script src="js/jquery.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
       <script>
-
-
-  // function activate_form_answer()
-  //     {
-  //       $(".btn_cancel").click(function() {
-  //           $(this).parents(".copy_form_answer").hide(500);
-  //           $(".btn_answer").show(500);
-  //           $(".btn_answer_two").show(500);
-  //       });
-  //     }
-
-
-  $(window).on('load', function () {
-      carousel_soft('same_software');
-  })
-
-  // jQuery(document).ready(function () {
-
-  //   $(".btn_answer" ).click( function () {
-
-  //     $(".btn_answer").show(500);
-  //     $(this).hide(500);
-  //     $("[data-rel='single_form_answer']").hide(500);
-  //     $("[data-rel='single_form_answer']").detach();
-
-  //     var form = $( "#pattern_form_answer").html();
-
-  //     $(this).parent().append( $(form) );
-
-  //     // console.log($(this).siblings(".copy_form_answer"));
-
-  //     $($(this).siblings(".copy_form_answer").attr( "data-rel", "single_form_answer" ));
-
-  //     $("[data-rel='single_form_answer']").show(500);
-
-  //     activate_form_answer();
-  //   });
-
-  //   $( ".btn_answer_two" ).click(function () {
-
-  //       $(".btn_answer_two").show(500);
-  //       $(this).hide(500);
-
-  //       $("[data-rel='single_form_answer']").hide(500);
-  //       $("[data-rel='single_form_answer']").detach();
-
-  //       // var bt_data = $(this).data("target");
-
-  //       var form = $( "#pattern_form_answer").html(); 
-
-  //       $(this).parents(".discussion").append( $(form) );
-
-  //       $($( ".discussion" ).children( ".copy_form_answer" ).attr( "data-rel", "single_form_answer" ));
-
-  //       $("[data-rel='single_form_answer']").show(500);
-
-  //       activate_form_answer();
-  //   });
-
-  //   $( ".comment_roll" ).click(function() {
-
-  //     var com_data = $(this).data("target");
-
-  //     $( "[id="+com_data+"] .discussion_comment" ).slideToggle( "slow", function() {
-
-  //     });
-  //   });
-
-  //   $( ".btn_rollup" ).click(function() {
-      
-  //     $( this ).parents(".discussion_comment").slideToggle( "slow", function() {
-  //     });
-  //   });
-
-  // })
+        $(window).on('load', function () {
+            carousel_soft('same_software');
+        })
+        
+        jQuery(document).ready(function () {
+          input_filled();
+          comments_form_answer();
+        })
       </script>
     </html>
     

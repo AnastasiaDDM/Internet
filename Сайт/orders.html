@@ -8,15 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fa/css/all.css">
-    <script src="js/jquery.js">
-    </script>
     <link href="css/datepicker.css" rel="stylesheet" type="text/css">
-    <script src="js/datepicker.min.js">
-    </script>
-    <script src="js/datepicker.ru.js">
-    </script>
-    <script type="text/javascript" src="js/javascript.js" charset="UTF-8">
-    </script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
@@ -999,57 +991,27 @@
       </div>
     </footer>
   </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/datepicker.min.js"></script>
+  <script src="js/datepicker.ru.js"></script>
+  <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
   <script>
+    jQuery(document).ready(function () {
+      datepicker_init();
+      input_filled();
+      search_roll();
+      select();
+      $("#date_type_select").change(function(){
 
-	
-	jQuery(document).ready(function () {
-
-		<!-- $("#date_type_select ul").click(function(){ -->
-
-		$("#date_type_1").click(function(){
-
-			console.log("111");
-
-			$("#datefrom_input").attr("disabled", true); 
-			$("#dateto_input").attr("disabled", true); 
-
-
-			<!-- if ($(this).find("a").attr("data-value") == "date_type_select_not_selected") { -->
-
-			<!-- $("#datefrom_input").attr("disabled", true);  -->
-			<!-- $("#dateto_input").attr("disabled", true);  -->
-			<!-- } -->
-			<!-- else { -->
-			<!-- $("#datefrom_input").attr("disabled", false);  -->
-			<!-- $("#dateto_input").attr("disabled", false);  -->
-			<!-- } -->
-
-		}); 
-
-
-		$("#date_type_2").click(function(){
-
-			console.log("222");
-
-			$("#datefrom_input").attr("disabled", false); 
-			$("#dateto_input").attr("disabled", false); 
-
-		}); 
-
-
-		$("#date_type_3").click(function(){
-
-			console.log("333");
-
-			$("#datefrom_input").attr("disabled", false); 
-			$("#dateto_input").attr("disabled", false); 
-
-
-		})
-
-
-	})
-
-	
+        if ($(this).val() == "date_type_select_not_selected") {
+          $("#datefrom_input").attr("disabled", true); 
+          $("#dateto_input").attr("disabled", true); 
+        }
+        else {
+          $("#datefrom_input").attr("disabled", false); 
+          $("#dateto_input").attr("disabled", false); 
+        }	  
+      });
+    })
   </script>
 </html>
