@@ -149,15 +149,15 @@ function comments_form_answer_hide() {
 
 function read_more_text_roll() {
 	$( ".text_roll" ).click(function() {
-		var current_text= $(this).data("rel");
-        if ($("[data-target="+current_text+"]").attr('style') == 'display: none;' ) {
+		var target_id= $(this).data("target");
+        if ($("#"+target_id).attr('style') == 'display: none;' ) {
           $( ".text_roll" ).html( "Свернуть" );
         }
         else {
           $( ".text_roll" ).html( "Читать полностью" );
         }
         
-        $("[data-target="+current_text+"]").slideToggle( "slow", function() {
+        $("#"+target_id).slideToggle( "slow", function() {
         });
       });
 }
