@@ -766,17 +766,7 @@
   <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
   <script>
     jQuery(document).ready(function () {
-      $( "#text_roll" ).click(function() {
-        if ($( "#all_text" ).attr('style') == 'display: none;' ) {
-          $( "#text_roll" ).html( "Свернуть требования" );
-        }
-        else {
-          $( "#text_roll" ).html( "Читать полностью" );
-        }
-        
-        $( "#all_text" ).slideToggle( "slow", function() {
-        });
-      });
+      read_more_text_roll();
     })
   </script>
 </html>

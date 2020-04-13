@@ -999,25 +999,12 @@
     <script src="js/slick.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script>
-      $(window).on('load', function () {
         jQuery(document).ready(function () {
           comments_form_answer();
           input_filled('input');
           input_filled('textarea');
           carousel_soft('same_software');
-          $( "#text_roll" ).click(function() {
-    
-            if ($( "#all_text" ).attr('style') == 'display: none;' ) {
-              $( "#text_roll" ).html( "Свернуть описание" );
-            }
-            else {
-              $( "#text_roll" ).html( "Читать полностью" );
-            }
-            
-            $( "#all_text" ).slideToggle( "slow", function() {
-            });   
-          });
+          read_more_text_roll();
         })          
-      })
     </script>
 </html>
