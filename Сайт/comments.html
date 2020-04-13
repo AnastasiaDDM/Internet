@@ -472,9 +472,9 @@
                       </label>
                     </div>
                     <div>
-                      <div class="form_group_textarea margin_top_3em">
-                        <textarea class = "form_textarea" type="textarea" rows="5" required="required"></textarea>
-                        <label id = "label" class = "form_textarea_label">Ваш комментарий
+                      <div class="textarea_style margin_top_3em">
+                        <textarea type="textarea" rows="5" required="required"></textarea>
+                        <label id = "label" class = "textarea_style_label">Ваш комментарий
                         </label>
                       </div>
                     </div>
@@ -779,9 +779,9 @@
               </div>
             </div>
             <div>
-              <div class="form_group_textarea margin_top_3em">
-                <textarea class = "form_textarea textarea_height_small" type="textarea"></textarea>
-                <label id = "label" class = "form_textarea_label">Ваш комментарий
+              <div class="textarea_style margin_top_3em textarea_height_small">
+                <textarea type="textarea"></textarea>
+                <label id = "label" class = "textarea_style_label">Ваш комментарий
                 </label>
               </div>
             </div>
@@ -809,13 +809,15 @@
       <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
       <script>
         $(window).on('load', function () {
+          jQuery(document).ready(function () {
+            input_filled('input');
+            input_filled('textarea');
+            comments_form_answer();
             carousel_soft('same_software');
+          })
         })
         
-        jQuery(document).ready(function () {
-          input_filled();
-          comments_form_answer();
-        })
+      
       </script>
     </html>
     

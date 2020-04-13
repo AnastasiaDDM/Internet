@@ -1491,37 +1491,39 @@
   <script src="js/slick.min.js"></script>
   <script>
     $(window).on('load', function () {	
-		carousel_soft('new_software');
-		carousel_soft('desktop_software'); // Инициализируем сначала слайдер в настольными приложениям
-		$("#type_software").children().click(function(){
+      jQuery(document).ready(function () {
+        carousel_soft('new_software');
+        carousel_soft('desktop_software'); // Инициализируем сначала слайдер в настольными приложениям
+        $("#type_software").children().click(function(){
 
-      $("#type_software").children().removeClass('main_type-soft_active').addClass('main_type-soft'); // Убираем класс активности
-			$(this).addClass('main_type-soft_active');
-			
-			try // Не у всех элементов есть слайдер, поэтому уничтожение вызывает ошибку у тех, где слайдера нет. Приходится делать обработку исключения. 
-			{
-				$("#software_container").find(".width_90").slick('unslick'); // Находим внутри #software_container все элементы, у которых есть вот такой класс .width_90 Ну это получаются все контейнеры слайдера.
-			}
-			catch{}
-			
-			$("#software_container").children().hide(); // Скрываем все слайдеры
-			
-			var target = $(this).data('target');
-			
-			$("#"+target+"_container").show(); // Показываем целевой контейнер со слайдером
-			
-			carousel_soft(target);
-		});
-		
-		$('#main_slider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      arrows:false,
-      });	
-    });
+          $("#type_software").children().removeClass('main_type-soft_active').addClass('main_type-soft'); // Убираем класс активности
+          $(this).addClass('main_type-soft_active');
+          
+          try // Не у всех элементов есть слайдер, поэтому уничтожение вызывает ошибку у тех, где слайдера нет. Приходится делать обработку исключения. 
+          {
+            $("#software_container").find(".width_90").slick('unslick'); // Находим внутри #software_container все элементы, у которых есть вот такой класс .width_90 Ну это получаются все контейнеры слайдера.
+          }
+          catch{}
+          
+          $("#software_container").children().hide(); // Скрываем все слайдеры
+          
+          var target = $(this).data('target');
+          
+          $("#"+target+"_container").show(); // Показываем целевой контейнер со слайдером
+          
+          carousel_soft(target);
+        });
+        
+        $('#main_slider').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          arrows:false,
+        });	
+      });
+    })
   </script>
 </html>

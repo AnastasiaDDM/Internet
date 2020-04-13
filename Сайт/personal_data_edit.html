@@ -233,34 +233,34 @@
           <div class=" w_70_sm pos_center_for_div  margin_top_3em">
             <div class="  pos_center_for_div person_acc">
               <div class="pos_center w_70_sm"  >
-                <div class="input_style_edit ">
+                <div class="input_style">
                   <input type="text" id="name" required autocomplete="off" value="Дмитриева Анастасия Дмитриевна">
                   <label for="name"
                          >ФИО
                   </label>
                 </div>
-                <div class="input_style_edit ">
+                <div class="input_style">
                   <input type="text" id="phone_1" required autocomplete="off" value="8-901-666-60-60">
                   <label for="phone_1"
                          >Телефон
                   </label>
                 </div>
-                <div class="input_style_edit ">
+                <div class="input_style">
                   <input type="text" id="phone_2" autocomplete="off" value="8-901-666-61-61">
                   <label for="phone_2"
                          >Запасной телефон
                   </label>
                 </div>
-                <div class="input_style_edit ">
-                  <input type="text" id="email" required autocomplete="off" value="anastasia@mail.ru">
+                <div class="input_style">
+                  <input type="text" id="email" autocomplete="off" value="anastasia@mail.ru">
                   <label for="email"
                          >Электронная почта
                   </label>
                 </div>
-                <div class="input_style_edit ">
+                <div class="input_style">
                   <input type="text" id="soc" autocomplete="off" value="https://vk.com/dmitrievnaa1999">
                   <label for="soc"
-                         >Электронная почта
+                         >Социальные сети
                   </label>
                 </div>
               </div>
@@ -418,7 +418,7 @@
   <script type="text/javascript" src="js/javascript.js" charset="UTF-8"></script>
   <script>
     jQuery(document).ready(function () {
-      input_filled();
+      input_filled('input');
       $( ".password_roll" ).click(function() {
 
         $( ".password" ).slideToggle( "slow", function() {

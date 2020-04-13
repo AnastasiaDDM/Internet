@@ -205,7 +205,7 @@
                     </label>
                   </li> 
                 </ul>
-                <div class="input_style padding_bottom_2em">
+                <div class="input_style">
                   <input type="text" id="name" autocomplete="off">
                   <label for="name">Наименование ПО
                   </label>
@@ -229,7 +229,7 @@
                     </label>
                   </div>	
                 </div>
-                <div class="input_style ">
+                <div class="input_style">
                   <input type="text" id="fio" autocomplete="off">
                   <label for="fio">Ваше имя
                   </label>
@@ -240,9 +240,9 @@
                   </label>
                 </div>
                 <div>
-                  <div class="form_group_textarea margin_top_3em">
-                    <textarea class = "form_textarea" type="textarea" rows="5" ></textarea>
-                    <label id = "label" class = "form_textarea_label">Отзыв
+                  <div class="textarea_style margin_top_3em">
+                    <textarea type="textarea" rows="5" ></textarea>
+                    <label id = "label" class = "textarea_style_label">Отзыв
                     </label>
                   </div>
                 </div>
@@ -367,7 +367,8 @@
       <script type="text/javascript" src="js/file_input_custom.js" charset="UTF-8"></script>
       <script>
         jQuery(document).ready(function () {
-          input_filled();
+          input_filled('input');
+          input_filled('textarea');
           search_roll();
           input_file();
         })

@@ -1,7 +1,7 @@
   
 
 // Ф-ия для стилизации селекта (выпадающего списка) 
-function select() {
+function select_style() {
   $('.slct').click(function(){
 		/* Заносим выпадающий список в переменную */
 		var dropBlock = $(this).parent().find('.drop');
@@ -82,40 +82,36 @@ function search_roll() {
 }
 
 
-// Ф-ия корректировки работы input (для label)
-function input_filled() {
-  $('.input_style input').each(function(){
-    $(this).change(function(){
-      if ($(this).val().length > 0)
-      {
-        $(this).addClass("input_filled");
-      }
-      else
-      {
-        $(this).removeClass("input_filled");  
-      }
-    })
-  });
-}
- 
-// Ф-ия корректировки работы textarea (для label)
-function textarea_filled()
+// Ф-ия корректировки работы input и textarea (для label)
+function input_filled(type)
 {
-  $('textarea').each(function(){
-    $(this).change(function(){
-      if ($(this).val().length > 0)
+  $('.'+type+'_style '+type).each(function(){
+
+		// Это вызов ф-ии для того, как страница загрузилась и еще не менялась 
+		var element = this;
+		input_filled_addClass(type, element);
+
+		// Это вызов ф-ии для отслеживания изменеения полей
+		$(this).change(function(){
+			var element = this;
+			input_filled_addClass(type, element);
+		});
+  });
+}
+
+// Ф-ия корректировки работы input и textarea добавление класса
+function input_filled_addClass(type, element)
+{
+      if ($(element).val().length > 0)
       {
-        $(this).addClass("textarea_filled");
+        $(element).addClass(type+"_filled");
       }
       else
       {
-        $(this).removeClass("textarea_filled");  
+        $(element).removeClass(type+"_filled");  
       }
-    })
-  });
 }
- 
- 
+
 
 // Ф-ия раскрытия списка всех возможных областей (поиск в каталоге)
 function areas_more() {
@@ -184,6 +180,8 @@ function comments_form_answer() {
 		$("[data-rel='single_form_answer']").show(500);
   
 		comments_form_answer_hide();
+		input_filled('input');
+		input_filled('textarea');
 	  });
   
 	  $( ".btn_answer_two" ).click(function () {
@@ -211,6 +209,8 @@ function comments_form_answer() {
 		  $("[data-rel='single_form_answer']").show(500);
   
 		  comments_form_answer_hide();
+		  input_filled('input');
+          input_filled('textarea');
 	  });
   
 	  // Нажатие кнопки просмотра комментариев 
@@ -299,7 +299,7 @@ function datepicker_init() {
 
 //  jQuery(document).ready(function () {
 	
-// 	select();
+// 	select_style();
 // 	input_filled();
 // 	textarea_filled();
 // 	search_roll();

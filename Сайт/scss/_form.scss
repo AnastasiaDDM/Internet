@@ -1,11 +1,11 @@
-.form_group_textarea {
+.textarea_style {
   position: relative;
   margin: 45px 0;
 }
 
 
 
-.form_textarea {
+.textarea_style textarea{
   resize: none;
   top: -3rem;
   // background: none;
@@ -32,12 +32,12 @@
   } 
 }
 
-.form_textarea:focus {
+.textarea_style textarea:focus {
   outline: none;
   border-color: #F77A52;
 }
 
-.form_textarea:focus ~ .form_textarea_label {
+.textarea_style textarea:focus ~ .textarea_style_label {
   top: -14px;
   // font-size: 12px;
   // color: #2196F3;
@@ -74,7 +74,7 @@
 
 
 
-.form_textarea:focus ~ .bar:before {
+.textarea_style textarea:focus ~ .bar:before {
   width: 320px;
 }
 
@@ -82,7 +82,7 @@ input[type="password"] {
   letter-spacing: 0.3em;
 }
 
-.form_textarea_label {
+.textarea_style_label {
   color: #9d959d;
   font-size: 16px;
   font-weight: normal;
@@ -97,6 +97,6 @@ input[type="password"] {
 }
 
 
-.textarea_height_small {
+.textarea_height_small textarea {
 	height: 3em;
 }

@@ -1895,70 +1895,18 @@ legend h1 {
   text-shadow: 1px 1px #c60;
 }
 
-.input_style_edit {
+.input_style {
   position: relative;
 }
 
-.input_style_edit input {
+.input_style input {
   margin-top: 2em;
   display: block;
   width: 100%;
   line-height: 40px;
   background: none;
   border-width: 0;
-  border-bottom: 2px solid #7EB9BF;
-  transition: all 0.2s ease;
-  padding-left: 1rem;
-}
-
-.input_style_edit input:hover {
-  border-bottom: 2px solid #F2B9B3;
-}
-
-@media (max-width: 767.98px) {
-  .input_style_edit input {
-    padding-left: 0rem;
-  }
-}
-
-.input_style_edit label {
-  position: absolute;
-  left: 1rem;
-  bottom: -2rem;
-  color: #9d959d;
-  font-weight: 300;
-  transform: translateY(-35px);
-  transition: all 0.2s ease;
-}
-
-.input_style_edit input:focus {
-  outline: 0;
-  border-color: #F77A52;
-}
-
-.input_style_edit input:focus + label,
-.input_style_edit input:valid + label {
-  transform: translateY(-60px);
-  margin-left: -13px;
-  margin-top: -7px;
-  font-size: 70%;
-  font-weight: 400;
-  outline: 0;
-  border-color: #F77A52;
-  color: #F77A52;
-}
-
-.input_style {
-  position: relative;
-}
-
-.input_style input {
-  margin-top: 1.3em;
-  display: block;
-  width: 100%;
-  line-height: 40px;
-  background: none;
-  border-width: 0;
+  padding-left: .8rem;
   border-bottom: 2px solid #7EB9BF;
   transition: all 0.2s ease;
 }
@@ -1967,9 +1915,16 @@ legend h1 {
   border-bottom: 2px solid #F2B9B3;
 }
 
+@media (max-width: 767.98px) {
+  .input_style input {
+    padding-left: 0rem;
+  }
+}
+
 .input_style label {
   position: absolute;
-  left: 12px;
+  left: .8rem;
+  bottom: -2rem;
   color: #9d959d;
   font-weight: 300;
   transform: translateY(-35px);
@@ -1984,7 +1939,8 @@ legend h1 {
 .input_style input:focus + label {
   transform: translateY(-60px);
   margin-left: -13px;
-  font-size: 90%;
+  margin-top: -7px;
+  font-size: 80%;
   font-weight: 400;
   outline: 0;
   border-color: #F77A52;
@@ -1994,7 +1950,7 @@ legend h1 {
 .input_filled + label {
   transform: translateY(-60px);
   margin-left: -13px;
-  font-size: 90%;
+  font-size: 80%;
   font-weight: 400;
   outline: 0;
   border-color: #F77A52;
@@ -3247,12 +3203,12 @@ legend h1 {
   display: none;
 }
 
-.form_group_textarea {
+.textarea_style {
   position: relative;
   margin: 45px 0;
 }
 
-.form_textarea {
+.textarea_style textarea {
   resize: none;
   top: -3rem;
   margin-top: .8em;
@@ -3266,16 +3222,16 @@ legend h1 {
   transition: all 0.2s ease;
 }
 
-.form_textarea:hover {
+.textarea_style textarea:hover {
   border-bottom: 2px solid #F2B9B3;
 }
 
-.form_textarea:focus {
+.textarea_style textarea:focus {
   outline: none;
   border-color: #F77A52;
 }
 
-.form_textarea:focus ~ .form_textarea_label {
+.textarea_style textarea:focus ~ .textarea_style_label {
   top: -14px;
   border-color: #F77A52;
   color: #F77A52;
@@ -3295,7 +3251,7 @@ legend h1 {
   outline: 0;
 }
 
-.form_textarea:focus ~ .bar:before {
+.textarea_style textarea:focus ~ .bar:before {
   width: 320px;
 }
 
@@ -3303,7 +3259,7 @@ input[type="password"] {
   letter-spacing: 0.3em;
 }
 
-.form_textarea_label {
+.textarea_style_label {
   color: #9d959d;
   font-size: 16px;
   font-weight: normal;
@@ -3317,7 +3273,7 @@ input[type="password"] {
   line-height: 0px;
 }
 
-.textarea_height_small {
+.textarea_height_small textarea {
   height: 3em;
 }
 

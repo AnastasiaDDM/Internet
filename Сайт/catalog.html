@@ -1058,26 +1058,25 @@
     <script src="js/slick.min.js"></script>
     <script>
       $(window).on('load', function () {
-      $('#widgets_vertical_slider').slick({
-      vertical:true,
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      arrows:true,
-      prevArrow:'<div class = "pos_center margin_bottom_1em cursor"><i class="fa fa-angle-up widget_arrows" aria-hidden="true"></i></div>',
-      nextArrow:'<div class = "pos_center margin_top_1em cursor"> <i class="fa fa-angle-down widget_arrows" aria-hidden="true"></i></div>'	
-      });
-      });
-    </script>
-    <script>
-      jQuery(document).ready(function () {
-        select();
+        jQuery(document).ready(function () {
+        select_style();
         input_filled();
         search_roll();
         areas_more();
+
+        $('#widgets_vertical_slider').slick({
+          vertical:true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          speed: 500,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          arrows:true,
+          prevArrow:'<div class = "pos_center margin_bottom_1em cursor"><i class="fa fa-angle-up widget_arrows" aria-hidden="true"></i></div>',
+          nextArrow:'<div class = "pos_center margin_top_1em cursor"> <i class="fa fa-angle-down widget_arrows" aria-hidden="true"></i></div>'	
+        });
       })
+      });
     </script>
 </html>
